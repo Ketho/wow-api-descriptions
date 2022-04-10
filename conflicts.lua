@@ -762,7 +762,7 @@ local t = {
 	["GetArchaeologyRaceInfoByID"] = [=[Returns information about a branch of Archaeology.]=],
 
 	["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
-	["GetAreaSpiritHealerTime"] = [=[ timeleft = GetAreaSpiritHealerTime()]=],
+	["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
 
 	["GetArtifactProgress"] = [=[Returns fragment-information about the [[API SetSelectedArtifact|selected]] artifact.]=],
 	["GetArtifactProgress"] = [=[Returns information about current used fragments for the selected artifact.]=],
@@ -783,7 +783,7 @@ local t = {
 	["GetAverageItemLevel"] = [=[Returns the average item level of the player's character and average item level equipped.]=],
 
 	["GetBagName"] = [=[Get the name of one of the player's bags.]=],
-	["GetBagName"] = [=[ bagName = GetBagName(index)  ]=],
+	["GetBagName"] = [=[Returns the name of the bag for the selected index.]=],
 
 	["GetBankSlotCost"] = [=[Returns the cost of the next bank slot.]=],
 	["GetBankSlotCost"] = [=[Returns the price of a particular bank slot.]=],
@@ -801,7 +801,7 @@ local t = {
 	["GetBattlefieldScore"] = [=[Returns information about a player's score in battlegrounds.]=],
 
 	["GetBattlefieldStatData"] = [=[Get information for a player from a column thats specific to a battleground (like Warsong Gulch flag captures).]=],
-	["GetBattlefieldStatData"] = [=[ battlefieldStatData = GetBattlefieldStatData(playerIndex,slotIndex)]=],
+	["GetBattlefieldStatData"] = [=[Get data from the custom battlefield scoreboard columns.]=],
 
 	["GetBattlefieldStatus"] = [=[Get the battlefield's current status.]=],
 	["GetBattlefieldStatus"] = [=[Get the status of the arena, battleground, or wargame that the player is either queued for or inside.]=],
@@ -810,10 +810,10 @@ local t = {
 	["GetBattlefieldTeamInfo"] = [=[Returns information regarding an Arena team]=],
 
 	["GetBattlefieldTimeWaited"] = [=[Get time waited in queue in milliseconds.]=],
-	["GetBattlefieldTimeWaited"] = [=[ timeInQueue = GetBattlefieldTimeWaited( battlegroundQueuePosition )]=],
+	["GetBattlefieldTimeWaited"] = [=[Get time this player's been in the queue in milliseconds]=],
 
 	["GetBattlefieldWinner"] = [=[Get the battlefields winner.]=],
-	["GetBattlefieldWinner"] = [=[ winner = GetBattlefieldWinner()]=],
+	["GetBattlefieldWinner"] = [=[Get the winner of the battlefield.]=],
 
 	["GetBestRFChoice"] = [=[Returns the suggested/default dungeonId for the Raid Finder.]=],
 	["GetBestRFChoice"] = [=[Returns the suggested/default Dungeon Id for the Raid Finder.]=],
@@ -992,14 +992,8 @@ local t = {
 	["GetGuildBankTabInfo"] = [=[Returns the name and icon of the guild bank tab queried.]=],
 	["GetGuildBankTabInfo"] = [=[Gets display / player's access information regarding a guild bank tab.]=],
 
-	["GetGuildBankTabPermissions"] = [=[Gets display / player's access info. Limited data available without bank proximity.]=],
-	["GetGuildBankTabPermissions"] = [=[ canView, canDeposit, canEdit, stacksPerDay = GetGuildBankTabPermissions(tab)]=],
-
 	["GetGuildBankTransaction"] = [=[Requires Guild Bank Proximity.]=],
 	["GetGuildBankTransaction"] = [=[Get information for specific item transaction from Guild Bank.]=],
-
-	["GetGuildBankWithdrawGoldLimit"] = [=[Returns withdraw limit for currently selected rank in guild control.]=],
-	["GetGuildBankWithdrawGoldLimit"] = [=[ dailyGoldWithdrawlLimit = GetGuildBankWithdrawGoldLimit()]=],
 
 	["GetGuildInfo"] = [=[This function returns the name of the guild ''unit'' belongs to.]=],
 	["GetGuildInfo"] = [=[Returns guild-related information about a unit.]=],
@@ -1038,7 +1032,7 @@ local t = {
 	["GetInboxNumItems"] = [=[Reports the number of messages in the client's inbox when the mailbox window is displayed.]=],
 
 	["GetInboxText"] = [=[Returns the message text of message at (index).]=],
-	["GetInboxText"] = [=[ bodyText, stationaryMiddle, stationaryEdge, isTakeable, isInvoice = GetInboxText(index)]=],
+	["GetInboxText"] = [=[Returns information about a mailbox item.]=],
 
 	["GetInspectHonorData"] = [=[Returns honor information about the inspected player.]=],
 	["GetInspectHonorData"] = [=[Get the honor information about the inspected unit.]=],
@@ -1156,9 +1150,6 @@ local t = {
 
 	["GetMasteryEffect"] = [=[Returns the player's buffed mastery in percentage and (unknown number value).]=],
 	["GetMasteryEffect"] = [=[Returns the effect of player's current Mastery.]=],
-
-	["GetMerchantItemCostInfo"] = [=[Returns "alternative currency" information about an item.]=],
-	["GetMerchantItemCostInfo"] = [=[ itemCount = GetMerchantItemCostInfo(index)]=],
 
 	["GetMerchantItemCostItem"] = [=[Returns information about an "alternative currency" component of the price for a purchasable item.]=],
 	["GetMerchantItemCostItem"] = [=[Returns information about an item's token/currency cost.]=],
@@ -1358,12 +1349,6 @@ local t = {
 	["GetQuestItemLink"] = [=[Returns an [[itemLink]] for a selected quest reward/choice/required item for quest currently in gossip window.]=],
 	["GetQuestItemLink"] = [=[Returns link to the quest item.]=],
 
-	["GetQuestLink"] = [=[Returns a [[QuestLink]] for a quest.]=],
-	["GetQuestLink"] = [=[ [[QuestLink]] = GetQuestLink([[QuestID]])]=],
-
-	["GetQuestLogItemLink"] = [=[Returns item link for selected quest reward/choice/required item from quest log.]=],
-	["GetQuestLogItemLink"] = [=[ [[itemLink]] = GetQuestLogItemLink(type, index)]=],
-
 	["GetQuestLogLeaderBoard"] = [=[Gets information about the objectives for a quest.]=],
 	["GetQuestLogLeaderBoard"] = [=[Returns information about a quest objective.]=],
 
@@ -1398,7 +1383,7 @@ local t = {
 	["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] index assigned to a unit.]=],
 
 	["GetRangedCritChance"] = [=[Returns the players ranged critical strike chance.]=],
-	["GetRangedCritChance"] = [=[ critChance = GetRangedCritChance()]=],
+	["GetRangedCritChance"] = [=[Returns the player's ranged critical hit chance.]=],
 
 	["GetRealZoneText"] = [=[Returns either instance name or zone name.]=],
 	["GetRealZoneText"] = [=[Returns the map instance name.]=],
@@ -1447,9 +1432,6 @@ local t = {
 
 	["GetServerTime"] = [=[Returns the server's Unix time.]=],
 	["GetServerTime"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]].]=],
-
-	["GetShapeshiftForm"] = [=[Returns zero-based index of current form/stance.]=],
-	["GetShapeshiftForm"] = [=[ index = GetShapeshiftForm(flag)]=],
 
 	["GetShapeshiftFormID"] = [=[Returns the current shapeshift form as a constant. If the player is not shapeshifted it returns nil.]=],
 	["GetShapeshiftFormID"] = [=[Returns the ID of the form or stance the player is currently in.]=],
@@ -1802,9 +1784,6 @@ local t = {
 	["IsSpellInRange"] = [=[Is nil for no valid target, 0 for out of range, 1 for in range.]=],
 	["IsSpellInRange"] = [=[Returns whether a given spell is in range.]=],
 
-	["IsSpellKnown"] = [=[Returns whether the player (or pet) knows the given spell.]=],
-	["IsSpellKnown"] = [=[ isKnown = IsSpellKnown(spellID, isPetSpell)]=],
-
 	["IsSpellOverlayed"] = [=[Returns whether the spell is currently affected by a proc (glow highlighting).]=],
 	["IsSpellOverlayed"] = [=[Returns whether spellID is using SpellActivationAlert (glowing-circle around it) currently, or not.]=],
 
@@ -2013,7 +1992,7 @@ local t = {
 	["PutItemInBackpack"] = [=[Places the item currently on the cursor into the player's backpack otherwise it has no effect. If there is already a partial stack of the item in the backpack, it will attempt to stack them together.]=],
 
 	["PutItemInBag"] = [=[Attempts to place item in a specific bag.]=],
-	["PutItemInBag"] = [=[Puts the item on the cursor into the specified bag slot on the main bar, if it's a bag. Otherwise, attempts to place the item inside the bag in that slot. Note that to place an item in the backpack, you must use [[API_PutItemInBackpack|PutItemInBackpack]].]=],  
+	["PutItemInBag"] = [=[Puts the item on the cursor into the specified bag slot on the main bar, if it's a bag. Otherwise, attempts to place the item inside the bag in that slot. Note that to place an item in the backpack, you must use [[API_PutItemInBackpack|PutItemInBackpack]].]=],
 
 	["QuestChooseRewardError"] = [=[Throws an error when the quest choose reward method doesn't work.]=],
 	["QuestChooseRewardError"] = [=[Throws an error when the choose reward method doesn't work.]=],
