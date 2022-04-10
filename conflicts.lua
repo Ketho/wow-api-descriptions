@@ -28,7 +28,6 @@ local t = {
 	["AcceptProposal"] = [=[Enters the Dungeon if the LFG queue is ready.]=],
 
 	-- ["AcceptQuest"] = [=[Accept the specified quest.]=],
-	-- ["AcceptQuest"] = [=[Accepts the currently offered quest.]=],
 	["AcceptQuest"] = [=[Accepts the currently offered quest.]=],
 
 	-- ["AcceptResurrect"] = [=[The player accepts the request from another player to resurrect him/herself.]=],
