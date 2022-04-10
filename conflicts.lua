@@ -43,45 +43,53 @@ local t = {
 
 	-- ["AcceptXPLoss"] = [=[Accept the durability loss to be reborn by a spirit healer. (The name is a remnant from when sprit res was an XP loss instead.)]=],
 	-- ["AcceptXPLoss"] = [=[Accept the [[resurrection sickness]] and durability loss when being resurrected by the spirit healer instead of returning to a corpse.]=],
-	["AcceptXPLoss"] = [=[Confirms accepting the [[resurrection sickness]] and durability loss on being resurrected by a spirit healer.]=],
+	["AcceptXPLoss"] = [=[Accepts the [[resurrection sickness]] and durability loss penalty on being resurrected by a spirit healer.]=],
 
 	-- ["ActionHasRange"] = [=[Determine if the specified action is a range restriction (1 if yes, nil if no)]=],
 	-- ["ActionHasRange"] = [=[Returns true if the action has a numeric range requirement.]=],
 	["ActionHasRange"] = [=[True if the action has has a range requirement.]=],
 
 	-- ["AddAutoQuestPopUp"] = [=[Adds quest to an internal list of quests for offer/completion popup notification.]=],
-	["AddAutoQuestPopUp"] = [=[Adds a popup notification to the objectives tracker, showing that a quest is available or completed.]=],
+	-- ["AddAutoQuestPopUp"] = [=[Adds a popup notification to the objectives tracker, showing that a quest is available or completed.]=],
+	["AddAutoQuestPopUp"] = [=[Adds a notification to the ObjectiveTrackerFrame that a quest is available or completed.]=],
 
 	-- ["AddChatWindowChannel"] = [=[Make a chat channel visible in a specific ChatFrame.]=],
 	-- ["AddChatWindowChannel"] = [=[Makes messages from a specified chat channel output in a specific chat frame.]=],
-	["AddChatWindowChannel"] = [=[Enables receiving messages from a chat channel in a specific ChatFrame.]=],
+	["AddChatWindowChannel"] = [=[Enables messages from a chat channel index for a ChatFrame.]=],
 
-	["AddChatWindowMessages"] = [=[Adds a messaging group to the specified chat window.]=],
-	["AddChatWindowMessages"] = [=[Sets a chat frame to receive and show messages of the given message group.]=],
+	-- ["AddChatWindowMessages"] = [=[Adds a messaging group to the specified chat window.]=],
+	-- ["AddChatWindowMessages"] = [=[Sets a chat frame to receive and show messages of the given message group.]=],
+	["AddChatWindowMessages"] = [=[Enables messages from the chat message type for a ChatFrame, e.g. "SAY".]=],
 
-	["AddTrackedAchievement"] = [=[Add an achievement to tracking.]=],
-	["AddTrackedAchievement"] = [=[Marks an achievement for tracking in the WatchFrame.]=],
+	-- ["AddTrackedAchievement"] = [=[Add an achievement to tracking.]=],
+	-- ["AddTrackedAchievement"] = [=[Marks an achievement for tracking in the WatchFrame.]=],
+	["AddTrackedAchievement"] = [=[Tracks an achievement in the ObjectiveTrackerFrame.]=],
 
-	["AddTradeMoney"] = [=[Adds the money dropped into the player's trade frame.]=],
+	-- ["AddTradeMoney"] = [=[Adds the money dropped into the player's trade frame.]=],
 	["AddTradeMoney"] = [=[Adds money currently on the cursor to your trade offer.]=],
 
-	["ArchaeologyMapUpdateAll"] = [=[Updates the digsites and returns the number of digsites in the current map-zone.]=],
-	["ArchaeologyMapUpdateAll"] = [=[Returns how many [[digsite]]s are in a zone like [[Azsuna]] or [[Elwynn Forest]].]=],
+	-- ["ArchaeologyMapUpdateAll"] = [=[Updates the digsites and returns the number of digsites in the current map-zone.]=],
+	-- ["ArchaeologyMapUpdateAll"] = [=[Returns how many [[digsite]]s are in a zone like [[Azsuna]] or [[Elwynn Forest]].]=],
+	["ArchaeologyMapUpdateAll"] = [=[Updates and returns the amount of [[digsite]]s in a zone.]=],
 
 	["AscendStop"] = [=[Called when you release the jump key.]=],
-	["AscendStop"] = [=[Apparent null function that performs {{api|nop|no operation}}.]=],
+	-- ["AscendStop"] = [=[Apparent null function that performs {{api|nop|no operation}}.]=],
 
-	["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
-	["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
+	-- ["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
+	-- ["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
+	["AssistUnit"] = [=[Assists the specified unit, setting your target to theirs.]=],
 
-	["AttackTarget"] = [=[Attacks the targetted unit.]=],
-	["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
+	-- ["AttackTarget"] = [=[Attacks the targetted unit.]=],
+	-- ["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
+	["AttackTarget"] = [=[Toggles auto-attacking of your current target.]=],
 
-	["AutoEquipCursorItem"] = [=[Causes the equipment on the cursor to be equipped.]=],
-	["AutoEquipCursorItem"] = [=[Automatically equips the item currently held on the cursor.]=],
+	-- ["AutoEquipCursorItem"] = [=[Causes the equipment on the cursor to be equipped.]=],
+	-- ["AutoEquipCursorItem"] = [=[Automatically equips the item currently held on the cursor.]=],
+	["AutoEquipCursorItem"] = [=[Equips the item currently held on the cursor.]=],
 
-	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the bank, and automatically stores it in the player's inventory.]=],
-	["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
+	-- ["AutoStoreGuildBankItem"] = [=[Withdraws an item from the bank, and automatically stores it in the player's inventory.]=],
+	-- ["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
+	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to your inventory.]=],
 
 	["BNConnected"] = [=[Returns whether your battle.net state is connected.]=],
 	["BNConnected"] = [=[Returns info whether the WoW Client is connected to the Battle.net.]=],
