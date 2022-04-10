@@ -1,8 +1,11 @@
+-- first description is from https://wowpedia.fandom.com/wiki/World_of_Warcraft_API
+-- second description is from the individual API pages
+
 ---@diagnostic disable: duplicate-index
 local t = {
 	-- ["AcceptAreaSpiritHeal"] = [=[Accept a spirit heal.]=],
 	-- ["AcceptAreaSpiritHeal"] = [=[Acccept the area Spirit Healer's resurrection in battlegrounds.]=],
-	["AcceptAreaSpiritHeal"] = [=[Signs up for the Spirit Healer's resurrection timer in battlegrounds when in range.]=],
+	["AcceptAreaSpiritHeal"] = [=[Acccepts the Spirit Healer's resurrection in battlegrounds.]=],
 
 	-- ["AcceptBattlefieldPort"] = [=[Accept or reject an offered battlefield port.]=],
 	-- ["AcceptBattlefieldPort"] = [=[Confirms entry into a Battleground you are queued for that is ready.]=],
@@ -2532,3 +2535,5 @@ local t = {
 	["seterrorhandler"] = [=[Set the error handler to the given parameter.]=],
 	["seterrorhandler"] = [=[Sets the function to be called when WoW encounters an error.]=],
 }
+
+return t
