@@ -5,7 +5,7 @@
 local t = {
 	-- ["AcceptAreaSpiritHeal"] = [=[Accept a spirit heal.]=],
 	-- ["AcceptAreaSpiritHeal"] = [=[Acccept the area Spirit Healer's resurrection in battlegrounds.]=],
-	["AcceptAreaSpiritHeal"] = [=[Acccepts the Spirit Healer's resurrection in battlegrounds.]=],
+	["AcceptAreaSpiritHeal"] = [=[Signs up for the Spirit Healer's resurrection timer in battlegrounds when in range.]=],
 
 	-- ["AcceptBattlefieldPort"] = [=[Accept or reject an offered battlefield port.]=],
 	-- ["AcceptBattlefieldPort"] = [=[Confirms entry into a Battleground you are queued for that is ready.]=],
