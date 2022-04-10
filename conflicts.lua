@@ -146,53 +146,64 @@ local t = {
 	["BuyMerchantItem"] = [=[Buys an item from a merchant.]=],
 	-- ["BuyMerchantItem"] = [=[Buys the specified item.]=],
 
-	["BuyTrainerService"] = [=[Used for buying new/upgrading professions, profession items and class skills.]=],
-	["BuyTrainerService"] = [=[Buys a service available at the current trainer.]=],
+	-- ["BuyTrainerService"] = [=[Used for buying new/upgrading professions, profession items and class skills.]=],
+	-- ["BuyTrainerService"] = [=[Buys a service available at the current trainer.]=],
+	["BuyTrainerService"] = [=[Buys a trainer service, e.g. class skills and tradeskill recipes.]=],
 
-	["BuybackItem"] = [=[Buys back a sold item.]=],
-	["BuybackItem"] = [=[Buyback an item from a merchant if you have the merchant window open.]=],
+	-- ["BuybackItem"] = [=[Buys back a sold item.]=],
+	-- ["BuybackItem"] = [=[Buyback an item from a merchant if you have the merchant window open.]=],
+	["BuybackItem"] = [=[Buys back an item from the merchant.]=],
 
-	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns area point of interest info.]=],
-	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
+	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns area point of interest info.]=],
+	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
+	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info on an area point of interest, e.g. World PvP objectives.]=],
 
-	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area poi.]=],
+	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area poi.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 
-	["C_ArtifactUI.Clear"] = [=[Clear artifact data of last opened artifact weapon.]=],
-	["C_ArtifactUI.Clear"] = [=[Clears artifact data of last opened artifact weapon.]=],
+	-- ["C_ArtifactUI.Clear"] = [=[Clear artifact data of last opened artifact weapon.]=],
+	-- ["C_ArtifactUI.Clear"] = [=[Clears artifact data of last opened artifact weapon.]=],
+	["C_ArtifactUI.Clear"] = [=[Clears data of the last opened artifact weapon.]=],
 
-	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of game accounts.]=],
-	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of toons.]=],
+	-- ["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of game accounts.]=],
+	-- ["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of toons.]=],
+	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the number of game accounts for the Battle.net friend.]=],
 
-	["C_BlackMarket.Close"] = [=[Notifies the server that the Black Market UI was closed.]=],
+	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the Black Market UI was closed.]=],
 	["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=],
 
-	["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
-	["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
+	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
+	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
+	["C_BlackMarket.GetItemInfoByID"] = [=[Returns info on a [[Black Market]] auction.]=],
 
 	["C_CVar.GetCVar"] = [=[Returns the current value of a console variable.]=],
-	["C_CVar.GetCVar"] = [=[Returns the current value of a [[Console variables|console variable]].]=],
+	-- ["C_CVar.GetCVar"] = [=[Returns the current value of a [[Console variables|console variable]].]=],
 
-	["C_CVar.RegisterCVar"] = [=[Registers a custom cvar (temporarily).]=],
-	["C_CVar.RegisterCVar"] = [=[Registers a custom (temporary) [[Console variables|console variable]].]=],
+	-- ["C_CVar.RegisterCVar"] = [=[Registers a custom cvar (temporarily).]=],
+	-- ["C_CVar.RegisterCVar"] = [=[Registers a custom (temporary) [[Console variables|console variable]].]=],
+	["C_CVar.RegisterCVar"] = [=[Temporarily registers a custom console variable.]=],
 
 	["C_CVar.ResetTestCVars"] = [=[Resets the {{api|t=c|ActionCam}} cvars.]=],
-	["C_CVar.ResetTestCVars"] = [=[Resets the {{api|t=c|ActionCam}} cvars. This is part of an extra measure against users accidentally enabling the ActionCam.]=],
+	-- ["C_CVar.ResetTestCVars"] = [=[Resets the {{api|t=c|ActionCam}} cvars. This is part of an extra measure against users accidentally enabling the ActionCam.]=],
 
-	["C_ChatInfo.RegisterAddonMessagePrefix"] = [=[Registers an addon message prefix.]=],
-	["C_ChatInfo.RegisterAddonMessagePrefix"] = [=[Registers an addon message prefix, allowing messages sent over addon channels with that prefix to be received by the client.]=],
+	-- ["C_ChatInfo.RegisterAddonMessagePrefix"] = [=[Registers an addon message prefix.]=],
+	-- ["C_ChatInfo.RegisterAddonMessagePrefix"] = [=[Registers an addon message prefix, allowing messages sent over addon channels with that prefix to be received by the client.]=],
+	["C_ChatInfo.RegisterAddonMessagePrefix"] = [=[Registers an addon message prefix to receive messages for that prefix.]=],
 
-	["C_ChatInfo.SendAddonMessage"] = [=[Sends a message to the hidden addon channel.]=],
+	-- ["C_ChatInfo.SendAddonMessage"] = [=[Sends a message to the hidden addon channel.]=],
 	["C_ChatInfo.SendAddonMessage"] = [=[Sends a message over an addon comm channel.]=],
 
-	["C_ClassColor.GetClassColor"] = [=[ Returns information about a class' color.]=],
-	["C_ClassColor.GetClassColor"] = [=[Returns the class coloring for a class.]=],
+	-- ["C_ClassColor.GetClassColor"] = [=[ Returns information about a class' color.]=],
+	-- ["C_ClassColor.GetClassColor"] = [=[Returns the class coloring for a class.]=],
+	["C_ClassColor.GetClassColor"] = [=[Returns a ColorMixin for a class.]=],
 
-	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided when a building is active.]=],
-	["C_ContributionCollector.GetBuffs"] = [=[Retrieve the [[buff]]s provided by a building on the [[Broken Shore]] or from a Warfront.]=],
+	-- ["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided when a building is active.]=],
+	-- ["C_ContributionCollector.GetBuffs"] = [=[Retrieve the [[buff]]s provided by a building on the [[Broken Shore]] or from a Warfront.]=],
+	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided by a building on the [[Broken Shore]] or from a [[Warfront]].]=],
 
-	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data.]=],
-	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
+	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data.]=],
+	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
+	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[True if the Contribution API is waiting for quest data.]=],
 
 	["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
 	["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
