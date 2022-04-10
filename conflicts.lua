@@ -43,7 +43,7 @@ local t = {
 
 	-- ["AcceptXPLoss"] = [=[Accept the durability loss to be reborn by a spirit healer. (The name is a remnant from when sprit res was an XP loss instead.)]=],
 	-- ["AcceptXPLoss"] = [=[Accept the [[resurrection sickness]] and durability loss when being resurrected by the spirit healer instead of returning to a corpse.]=],
-	["AcceptXPLoss"] = [=[Accepts the [[resurrection sickness]] and durability loss penalty on being resurrected by a spirit healer.]=],
+	["AcceptXPLoss"] = [=[Confirms the [[resurrection sickness]] and durability loss penalty on being resurrected by a spirit healer.]=],
 
 	-- ["ActionHasRange"] = [=[Determine if the specified action is a range restriction (1 if yes, nil if no)]=],
 	-- ["ActionHasRange"] = [=[Returns true if the action has a numeric range requirement.]=],
@@ -59,7 +59,7 @@ local t = {
 
 	-- ["AddChatWindowMessages"] = [=[Adds a messaging group to the specified chat window.]=],
 	-- ["AddChatWindowMessages"] = [=[Sets a chat frame to receive and show messages of the given message group.]=],
-	["AddChatWindowMessages"] = [=[Enables messages from the chat message type for a ChatFrame, e.g. "SAY".]=],
+	["AddChatWindowMessages"] = [=[Enables messages from the chat message type (e.g. "SAY") for a ChatFrame.]=],
 
 	-- ["AddTrackedAchievement"] = [=[Add an achievement to tracking.]=],
 	-- ["AddTrackedAchievement"] = [=[Marks an achievement for tracking in the WatchFrame.]=],
@@ -91,47 +91,60 @@ local t = {
 	-- ["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
 	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to your inventory.]=],
 
-	["BNConnected"] = [=[Returns whether your battle.net state is connected.]=],
-	["BNConnected"] = [=[Returns info whether the WoW Client is connected to the Battle.net.]=],
+	-- ["BNConnected"] = [=[Returns whether your battle.net state is connected.]=],
+	-- ["BNConnected"] = [=[Returns info whether the WoW Client is connected to the Battle.net.]=],
+	["BNConnected"] = [=[True if the WoW Client is connected to Battle.net.]=],
 
-	["BNGetFOFInfo"] = [=[Returns presenceID, givenName, surname, isFriend.]=],
-	["BNGetFOFInfo"] = [=[Returns information about the specified friend of a RealID friend]=],
+	-- ["BNGetFOFInfo"] = [=[Returns presenceID, givenName, surname, isFriend.]=],
+	-- ["BNGetFOFInfo"] = [=[Returns information about the specified friend of a RealID friend]=],
+	["BNGetFOFInfo"] = [=[Returns info on the specified friend of a Battle.net friend.]=],
 
-	["BNGetFriendInviteInfo"] = [=[Returns presenceID, givenName, surname.]=],
-	["BNGetFriendInviteInfo"] = [=[Returns information about a Battle.net friend invite.]=],
+	-- ["BNGetFriendInviteInfo"] = [=[Returns presenceID, givenName, surname.]=],
+	-- ["BNGetFriendInviteInfo"] = [=[Returns information about a Battle.net friend invite.]=],
+	["BNGetFriendInviteInfo"] = [=[Returns info on a Battle.net friend invite.]=],
 
-	["BNGetInfo"] = [=[Returns own battle.net data like battleTag.]=],
-	["BNGetInfo"] = [=[Returns information about the player]=],
+	-- ["BNGetInfo"] = [=[Returns own battle.net data like battleTag.]=],
+	-- ["BNGetInfo"] = [=[Returns information about the player]=],
+	["BNGetInfo"] = [=[Returns your own Battle.net info.]=],
 
-	["BNGetNumFriends"] = [=[Returns numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline.]=],
-	["BNGetNumFriends"] = [=[Returns info about how much Battle.net friends are added to the friendslist and how much of them are currently online.]=],
+	-- ["BNGetNumFriends"] = [=[Returns numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline.]=],
+	-- ["BNGetNumFriends"] = [=[Returns info about how much Battle.net friends are added to the friendslist and how much of them are currently online.]=],
+	["BNGetNumFriends"] = [=[Returns the amount of (online) Battle.net friends.]=],
 
-	["BNSendGameData"] = [=[BNet equivalent of SendAddonMessage.]=],
-	["BNSendGameData"] = [=[BNSendGameData is the battle.net chat-equivalent of {{api|SendAddonMessage}}().]=],
+	-- ["BNSendGameData"] = [=[BNet equivalent of SendAddonMessage.]=],
+	-- ["BNSendGameData"] = [=[BNSendGameData is the battle.net chat-equivalent of {{api|SendAddonMessage}}().]=],
+	["BNSendGameData"] = [=[Sends an addon comm message to a Battle.net friend.]=],
 
-	["BNSetAFK"] = [=[Set or unset afk status.]=],
-	["BNSetAFK"] = [=[Set or unset afk status]=],
+	-- ["BNSetAFK"] = [=[Set or unset afk status.]=],
+	-- ["BNSetAFK"] = [=[Set or unset afk status]=],
+	["BNSetAFK"] = [=[Sets your Battle.net AFK status.]=],
 
-	["BNSetDND"] = [=[Set or unset dnd status.]=],
-	["BNSetDND"] = [=[Set or unset DND status]=],
+	-- ["BNSetDND"] = [=[Set or unset dnd status.]=],
+	-- ["BNSetDND"] = [=[Set or unset DND status]=],
+	["BNSetDND"] = [=[Sets your Battle.net DND status.]=],
 
-	["BNSetFriendFavoriteFlag"] = [=[Set a battle.net friend as favorite.]=],
-	["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
+	-- ["BNSetFriendFavoriteFlag"] = [=[Set a battle.net friend as favorite.]=],
+	-- ["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
+	["BNSetFriendFavoriteFlag"] = [=[Favorites/unfavorites a Battle.net friend.]=],
 
-	["BankButtonIDToInvSlotID"] = [=[Returns the ID number of a bank button or bag in terms of inventory slot ID.]=],
-	["BankButtonIDToInvSlotID"] = [=[Map a bank item button or bag to an inventory slot button for use in inventory functions.]=],
+	-- ["BankButtonIDToInvSlotID"] = [=[Returns the ID number of a bank button or bag in terms of inventory slot ID.]=],
+	-- ["BankButtonIDToInvSlotID"] = [=[Map a bank item button or bag to an inventory slot button for use in inventory functions.]=],
+	["BankButtonIDToInvSlotID"] = [=[Maps a BankButtonID to InventorySlotID.]=],
 
-	["BindEnchant"] = [=[Confirm the binding of the item when enchanting it.]=],
-	["BindEnchant"] = [=[Accepts the confirmation to bind an item by enchanting it, and proceeds with applying the enchantment.]=],
+	-- ["BindEnchant"] = [=[Confirm the binding of the item when enchanting it.]=],
+	-- ["BindEnchant"] = [=[Accepts the confirmation to bind an item by enchanting it, and proceeds with applying the enchantment.]=],
+	["BindEnchant"] = [=[Confirms that enchanting an item will make it soulbound.]=],
 
-	["BreakUpLargeNumbers"] = [=[Converts a number into a localized string, grouping digits as required.]=],
-	["BreakUpLargeNumbers"] = [=[Breaks up large numbers (>=1000), or shortens lengthy decimal values (<1000), into a localized string.]=],
+	-- ["BreakUpLargeNumbers"] = [=[Converts a number into a localized string, grouping digits as required.]=],
+	-- ["BreakUpLargeNumbers"] = [=[Breaks up large numbers (>=1000), or shortens lengthy decimal values (<1000), into a localized string.]=],
+	["BreakUpLargeNumbers"] = [=[Divides numbers with many digits into groups using a localized delimiter character.]=],
 
-	["BuyGuildCharter"] = [=[Purchases a guild charter for ''guildName''.]=],
-	["BuyGuildCharter"] = [=[Purchase a Guild Charter.]=],
+	-- ["BuyGuildCharter"] = [=[Purchases a guild charter for ''guildName''.]=],
+	-- ["BuyGuildCharter"] = [=[Purchase a Guild Charter.]=],
+	["BuyGuildCharter"] = [=[Purchases a Guild Charter.]=],
 
 	["BuyMerchantItem"] = [=[Buys an item from a merchant.]=],
-	["BuyMerchantItem"] = [=[Buys the specified item.]=],
+	-- ["BuyMerchantItem"] = [=[Buys the specified item.]=],
 
 	["BuyTrainerService"] = [=[Used for buying new/upgrading professions, profession items and class skills.]=],
 	["BuyTrainerService"] = [=[Buys a service available at the current trainer.]=],
