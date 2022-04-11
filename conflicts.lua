@@ -125,7 +125,7 @@ local t = {
 
 	-- ["BNSetFriendFavoriteFlag"] = [=[Set a battle.net friend as favorite.]=],
 	-- ["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
-	["BNSetFriendFavoriteFlag"] = [=[Favorites/unfavorites a Battle.net friend.]=],
+	["BNSetFriendFavoriteFlag"] = [=[Favorites a Battle.net friend.]=],
 
 	-- ["BankButtonIDToInvSlotID"] = [=[Returns the ID number of a bank button or bag in terms of inventory slot ID.]=],
 	-- ["BankButtonIDToInvSlotID"] = [=[Map a bank item button or bag to an inventory slot button for use in inventory functions.]=],
@@ -137,7 +137,7 @@ local t = {
 
 	-- ["BreakUpLargeNumbers"] = [=[Converts a number into a localized string, grouping digits as required.]=],
 	-- ["BreakUpLargeNumbers"] = [=[Breaks up large numbers (>=1000), or shortens lengthy decimal values (<1000), into a localized string.]=],
-	["BreakUpLargeNumbers"] = [=[Divides numbers with many digits into groups using a localized delimiter character.]=],
+	["BreakUpLargeNumbers"] = [=[Divides digits into groups using a localized delimiter character.]=],
 
 	-- ["BuyGuildCharter"] = [=[Purchases a guild charter for ''guildName''.]=],
 	-- ["BuyGuildCharter"] = [=[Purchase a Guild Charter.]=],
@@ -205,32 +205,41 @@ local t = {
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
 	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[True if the Contribution API is waiting for quest data.]=],
 
-	["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
-	["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
+	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
+	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
+	["C_CreatureInfo.GetClassInfo"] = [=[Returns a (localized) class name by ID.]=],
 
-	["C_CurrencyInfo.ExpandCurrencyList"] = [=[Sets the expanded/collapsed state of a currency list header.]=],
-	["C_CurrencyInfo.ExpandCurrencyList"] = [=[Alters the expanded state of a currency list header.]=],
+	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Sets the expanded/collapsed state of a currency list header.]=],
+	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Alters the expanded state of a currency list header.]=],
+	["C_CurrencyInfo.ExpandCurrencyList"] = [=[Expands/collapses a currency list header.]=],
 
-	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a watched currency.]=],
-	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a currency item currently being shown as part of the backpack.]=],
+	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a watched currency.]=],
+	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a currency item currently being shown as part of the backpack.]=],
+	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info on a watched currency in the backpack.]=],
 
-	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies.]=],
-	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies in the [[currency tab]].]=],
+	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies.]=],
+	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies in the [[currency tab]].]=],
+	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info on a currency by ID.]=],
 
-	["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns the currencyLink for the specified currencyID.]=],
-	["C_CurrencyInfo.GetCurrencyLink"] = [=[Get the currency link for the specified currency ID.]=],
+	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns the currencyLink for the specified currencyID.]=],
+	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Get the currency link for the specified currency ID.]=],
+	["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns a currency link.]=],
 
-	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns information about an element in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on an entry in the currency list.]=],
+	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns information about an element in the currency list.]=],
+	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on an entry in the currency list.]=],
+	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on a currency in the currency tab.]=],
 
-	["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
+	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
+	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
+	["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the amount of elements (headers and currencies) in the currency tab.]=],
 
-	["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters whether a currency is tracked.]=],
-	["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters the backpack tracking state of a currency.]=],
+	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters whether a currency is tracked.]=],
+	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters the backpack tracking state of a currency.]=],
+	["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Watches a currency in the backpack.]=],
 
-	["C_CurrencyInfo.SetCurrencyUnused"] = [=[Alters whether a currency is marked as unused.]=],
-	["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks or unmarks a currency as unused.]=],
+	-- ["C_CurrencyInfo.SetCurrencyUnused"] = [=[Alters whether a currency is marked as unused.]=],
+	-- ["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks or unmarks a currency as unused.]=],
+	["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks a currency as unused in the currency tab.]=],
 
 	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days.]=],
 	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days or minutes.]=],
