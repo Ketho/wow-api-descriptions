@@ -66,7 +66,7 @@ local t = {
 	["AddTrackedAchievement"] = [=[Tracks an achievement in the ObjectiveTrackerFrame.]=],
 
 	-- ["AddTradeMoney"] = [=[Adds the money dropped into the player's trade frame.]=],
-	["AddTradeMoney"] = [=[Adds money currently on the cursor to your trade offer.]=],
+	["AddTradeMoney"] = [=[Adds money currently on the cursor to the trade offer.]=],
 
 	-- ["ArchaeologyMapUpdateAll"] = [=[Updates the digsites and returns the number of digsites in the current map-zone.]=],
 	-- ["ArchaeologyMapUpdateAll"] = [=[Returns how many [[digsite]]s are in a zone like [[Azsuna]] or [[Elwynn Forest]].]=],
@@ -77,11 +77,11 @@ local t = {
 
 	-- ["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
 	-- ["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
-	["AssistUnit"] = [=[Assists the specified unit, setting your target to theirs.]=],
+	["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
 
 	-- ["AttackTarget"] = [=[Attacks the targetted unit.]=],
 	-- ["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
-	["AttackTarget"] = [=[Toggles auto-attacking of your current target.]=],
+	["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
 
 	-- ["AutoEquipCursorItem"] = [=[Causes the equipment on the cursor to be equipped.]=],
 	-- ["AutoEquipCursorItem"] = [=[Automatically equips the item currently held on the cursor.]=],
@@ -89,7 +89,7 @@ local t = {
 
 	-- ["AutoStoreGuildBankItem"] = [=[Withdraws an item from the bank, and automatically stores it in the player's inventory.]=],
 	-- ["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
-	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to your inventory.]=],
+	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to the player's inventory.]=],
 
 	-- ["BNConnected"] = [=[Returns whether your battle.net state is connected.]=],
 	-- ["BNConnected"] = [=[Returns info whether the WoW Client is connected to the Battle.net.]=],
@@ -105,7 +105,7 @@ local t = {
 
 	-- ["BNGetInfo"] = [=[Returns own battle.net data like battleTag.]=],
 	-- ["BNGetInfo"] = [=[Returns information about the player]=],
-	["BNGetInfo"] = [=[Returns your own Battle.net info.]=],
+	["BNGetInfo"] = [=[Returns the player's own Battle.net info.]=],
 
 	-- ["BNGetNumFriends"] = [=[Returns numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline.]=],
 	-- ["BNGetNumFriends"] = [=[Returns info about how much Battle.net friends are added to the friendslist and how much of them are currently online.]=],
@@ -117,11 +117,11 @@ local t = {
 
 	-- ["BNSetAFK"] = [=[Set or unset afk status.]=],
 	-- ["BNSetAFK"] = [=[Set or unset afk status]=],
-	["BNSetAFK"] = [=[Sets your Battle.net AFK status.]=],
+	["BNSetAFK"] = [=[Sets the player's Battle.net AFK status.]=],
 
 	-- ["BNSetDND"] = [=[Set or unset dnd status.]=],
 	-- ["BNSetDND"] = [=[Set or unset DND status]=],
-	["BNSetDND"] = [=[Sets your Battle.net DND status.]=],
+	["BNSetDND"] = [=[Sets the player's Battle.net DND status.]=],
 
 	-- ["BNSetFriendFavoriteFlag"] = [=[Set a battle.net friend as favorite.]=],
 	-- ["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
@@ -158,7 +158,6 @@ local t = {
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
 	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info on an area point of interest, e.g. World PvP objectives.]=],
 
-	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area poi.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 
 	-- ["C_ArtifactUI.Clear"] = [=[Clear artifact data of last opened artifact weapon.]=],
@@ -169,7 +168,6 @@ local t = {
 	-- ["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of toons.]=],
 	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the number of game accounts for the Battle.net friend.]=],
 
-	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the Black Market UI was closed.]=],
 	["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=],
 
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
@@ -203,11 +201,11 @@ local t = {
 
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data.]=],
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
-	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[True if the Contribution API is waiting for quest data.]=],
+	["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[True if the client is waiting for quest reward data.]=],
 
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
-	["C_CreatureInfo.GetClassInfo"] = [=[Returns a (localized) class name by ID.]=],
+	["C_CreatureInfo.GetClassInfo"] = [=[Returns info on a class by ID.]=],
 
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Sets the expanded/collapsed state of a currency list header.]=],
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Alters the expanded state of a currency list header.]=],
@@ -215,7 +213,7 @@ local t = {
 
 	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a watched currency.]=],
 	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a currency item currently being shown as part of the backpack.]=],
-	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info on a watched currency in the backpack.]=],
+	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info on a tracked currency in the backpack.]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies.]=],
 	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies in the [[currency tab]].]=],
@@ -235,89 +233,105 @@ local t = {
 
 	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters whether a currency is tracked.]=],
 	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters the backpack tracking state of a currency.]=],
-	["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Watches a currency in the backpack.]=],
+	["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Tracks a currency in the backpack.]=],
 
 	-- ["C_CurrencyInfo.SetCurrencyUnused"] = [=[Alters whether a currency is marked as unused.]=],
 	-- ["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks or unmarks a currency as unused.]=],
 	["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks a currency as unused in the currency tab.]=],
 
 	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days.]=],
-	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days or minutes.]=],
+	-- ["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days or minutes.]=],
 
-	["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date of a given amount of time since the UNIX epoch.]=],
-	["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date of a given amount of time since the UNIX epoch, for the operating system's time zone.]=],
+	-- ["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date of a given amount of time since the UNIX epoch.]=],
+	["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date for a given amount of time since the UNIX epoch for the OS time zone.]=],
 
-	["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's Unix time offset by the server's UTC timezone.]=],
-	["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]] offset by the server's UTC timezone.]=],
+	-- ["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's Unix time offset by the server's UTC timezone.]=],
+	["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]] offset by the server's timezone.]=],
 
-	["C_DeathInfo.GetDeathReleasePosition"] = [=[Returns the death release location.]=],
-	["C_DeathInfo.GetDeathReleasePosition"] = [=[Returns the death release location. Currently unused in the FrameXML.]=],
+	-- ["C_DeathInfo.GetDeathReleasePosition"] = [=[Returns the death release location.]=],
+	-- ["C_DeathInfo.GetDeathReleasePosition"] = [=[Returns the death release location. Currently unused in the FrameXML.]=],
+	["C_DeathInfo.GetDeathReleasePosition"] = [=[When the player is dead and hasn't released spirit, returns the location of the graveyard they will release to.]=],
 
-	["C_EncounterJournal.GetLootInfo"] = [=[Returns loot info for an encounter or instance.]=],
-	["C_EncounterJournal.GetLootInfo"] = [=[Returns info on encounter journal loot items.]=],
+	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns loot info for an encounter or instance.]=],
+	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns info on encounter journal loot items.]=],
+	["C_EncounterJournal.GetLootInfo"] = [=[Returns info on loot items available from an encounter.]=],
 
-	["C_EncounterJournal.GetSlotFilter"] = [=[Returns the current equipment type slot filter.]=],
-	["C_EncounterJournal.GetSlotFilter"] = [=[Returns the currently active equipment slot filter.]=],
+	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the current equipment type slot filter.]=],
+	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the currently active equipment slot filter.]=],
+	["C_EncounterJournal.GetSlotFilter"] = [=[Returns the current item slot filter for loot items.]=],
 
-	["C_EncounterJournal.ResetSlotFilter"] = [=[Resets the current slot filter.]=],
-	["C_EncounterJournal.ResetSlotFilter"] = [=[Resets the equipment slot filter.]=],
+	-- ["C_EncounterJournal.ResetSlotFilter"] = [=[Resets the current slot filter.]=],
+	-- ["C_EncounterJournal.ResetSlotFilter"] = [=[Resets the equipment slot filter.]=],
+	["C_EncounterJournal.ResetSlotFilter"] = [=[Resets the item slot filter for loot items.]=],
 
-	["C_EncounterJournal.SetSlotFilter"] = [=[Sets the Encounter Journal's equipment slot filter.]=],
-	["C_EncounterJournal.SetSlotFilter"] = [=[Sets the active equipment slot filter.]=],
+	-- ["C_EncounterJournal.SetSlotFilter"] = [=[Sets the Encounter Journal's equipment slot filter.]=],
+	-- ["C_EncounterJournal.SetSlotFilter"] = [=[Sets the active equipment slot filter.]=],
+	["C_EncounterJournal.SetSlotFilter"] = [=[Sets the item slot filter for loot items.]=],
 
-	["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war ID for an (Island Expedition) map.]=],
-	["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war ID for an ([[Island Expedition]]) map.]=],
+	-- ["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war ID for an ([[Island Expedition]]) map.]=],
+	["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war for an [[Island Expedition]] map.]=],
 
-	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns fog of war info for an (Island Expedition) map.]=],
-	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns fog of war info for an ([[Island Expedition]]) map.]=],
+	-- ["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns fog of war info for an ([[Island Expedition]]) map.]=],
+	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns info on the fog of war for an [[Island Expedition]] map.]=],
 
-	["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command /who or entering a query in the entry field of the Who List.]=],
-	["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command [[MACRO_who|/who]] or entering a query in the entry field of the [[Who List]].]=],
+	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command /who or entering a query in the entry field of the Who List.]=],
+	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command [[MACRO_who|/who]] or entering a query in the entry field of the [[Who List]].]=],
+	["C_FriendList.SendWho"] = [=[Requests info on other online players.]=],
 
-	["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a /who request will be handled.]=],
-	["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO_who|/who]] request will be handled.]=],
+	-- ["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a /who request will be handled.]=],
+	-- ["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO_who|/who]] request will be handled.]=],
+	["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO_who|/who]] request will be delivered.]=],
 
-	["C_Garrison.GetFollowers"] = [=[Returns a table of followers and their attributes.]=],
-	["C_Garrison.GetFollowers"] = [=[Returns a list of garrison followers.]=],
+	-- ["C_Garrison.GetFollowers"] = [=[Returns a table of followers and their attributes.]=],
+	["C_Garrison.GetFollowers"] = [=[Returns a list of followers.]=],
 
-	["C_GossipInfo.CloseGossip"] = [=[Dismiss the gossip window.]=],
-	["C_GossipInfo.CloseGossip"] = [=[Dismisses the gossip dialog.]=],
+	["C_GossipInfo.CloseGossip"] = [=[Closes the gossip window.]=],
+	-- ["C_GossipInfo.CloseGossip"] = [=[Dismisses the gossip dialog.]=],
 
-	["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text ''must'' be displayed.]=],
-	["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text must be displayed.]=],
+	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text ''must'' be displayed.]=],
+	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text must be displayed.]=],
+	["C_GossipInfo.ForceGossip"] = [=[True if gossip text must be displayed e.g. making this return true shows the Banker gossip.]=],
 
-	["C_GossipInfo.GetActiveQuests"] = [=[Retrieves a list of quests which can be turned in on the NPC you are talking to.]=],
-	["C_GossipInfo.GetActiveQuests"] = [=[Gets the list of active quests from an NPC.]=],
+	-- ["C_GossipInfo.GetActiveQuests"] = [=[Retrieves a list of quests which can be turned in on the NPC you are talking to.]=],
+	-- ["C_GossipInfo.GetActiveQuests"] = [=[Gets the list of active quests from an NPC.]=],
+	["C_GossipInfo.GetActiveQuests"] = [=[Returns the quests which can be turned in at an NPC.]=],
 
-	["C_GossipInfo.GetAvailableQuests"] = [=[Retrieves a list of the available quests on the NPC you are talking to.]=],
-	["C_GossipInfo.GetAvailableQuests"] = [=[Returns a list of available quests from an NPC.]=],
+	-- ["C_GossipInfo.GetAvailableQuests"] = [=[Retrieves a list of the available quests on the NPC you are talking to.]=],
+	-- ["C_GossipInfo.GetAvailableQuests"] = [=[Returns a list of available quests from an NPC.]=],
+	["C_GossipInfo.GetAvailableQuests"] = [=[Returns the available quests at an NPC.]=],
 
-	["C_GossipInfo.GetOptions"] = [=[Retrieves a list of the available gossip items on the NPC you are talking to.]=],
-	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip items at an NPC.]=],
+	-- ["C_GossipInfo.GetOptions"] = [=[Retrieves a list of the available gossip items on the NPC you are talking to.]=],
+	-- ["C_GossipInfo.GetOptions"] = [=[Returns the available gossip items at an NPC.]=],
+	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip options at an NPC.]=],
 
-	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns gossip poi for a map.]=],
-	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the ID of a gossip point of interest on the map, e.g. when asking city guards for directions.]=],
+	-- ["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns gossip poi for a map.]=],
+	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the gossip point of interest on the map e.g. the red flags when asking city guards for directions.]=],
 
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns info on gossip POI icons, e.g. the red flags when asking city guards for directions.]=],
+	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
+	["C_GossipInfo.GetPoiInfo"] = [=[Returns info on a gossip point of interest e.g. the red flags when asking city guards for directions.]=],
 
-	["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
+	-- ["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
 	["C_GossipInfo.GetText"] = [=[Returns the gossip text.]=],
 
-	["C_GossipInfo.SelectActiveQuest"] = [=[Selects an active quest.]=],
-	["C_GossipInfo.SelectActiveQuest"] = [=[Selects an active quest from a gossip list.]=],
+	-- ["C_GossipInfo.SelectActiveQuest"] = [=[Selects an active quest.]=],
+	-- ["C_GossipInfo.SelectActiveQuest"] = [=[Selects an active quest from a gossip list.]=],
+	["C_GossipInfo.SelectActiveQuest"] = [=[Selects an active quest from the gossip window.]=],
 
-	["C_GossipInfo.SelectAvailableQuest"] = [=[Selects an available quest.]=],
-	["C_GossipInfo.SelectAvailableQuest"] = [=[Selects an available quest from a gossip list.]=],
+	-- ["C_GossipInfo.SelectAvailableQuest"] = [=[Selects an available quest.]=],
+	-- ["C_GossipInfo.SelectAvailableQuest"] = [=[Selects an available quest from a gossip list.]=],
+	["C_GossipInfo.SelectAvailableQuest"] = [=[Selects an available quest from the gossip window.]=],
 
-	["C_GuildInfo.CanEditOfficerNote"] = [=[Returns if the player is allowed to edit guild officer notes.]=],
-	["C_GuildInfo.CanEditOfficerNote"] = [=[Returns if the player can edit guild officer notes.]=],
+	-- ["C_GuildInfo.CanEditOfficerNote"] = [=[Returns if the player is allowed to edit guild officer notes.]=],
+	-- ["C_GuildInfo.CanEditOfficerNote"] = [=[Returns if the player can edit guild officer notes.]=],
+	["C_GuildInfo.CanEditOfficerNote"] = [=[True if the player can edit guild officer notes.]=],
 
-	["C_GuildInfo.CanSpeakInGuildChat"] = [=[Returns if the player is allowed to use guild chat.]=],
-	["C_GuildInfo.CanSpeakInGuildChat"] = [=[Returns whether the player is allowed to use guild chat.]=],
+	-- ["C_GuildInfo.CanSpeakInGuildChat"] = [=[Returns if the player is allowed to use guild chat.]=],
+	-- ["C_GuildInfo.CanSpeakInGuildChat"] = [=[Returns whether the player is allowed to use guild chat.]=],
+	["C_GuildInfo.CanSpeakInGuildChat"] = [=[True if the player can use guild chat.]=],
 
-	["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player is allowed to view guild officer notes.]=],
-	["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player can view guild officer notes.]=],
+	-- ["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player is allowed to view guild officer notes.]=],
+	-- ["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player can view guild officer notes.]=],
+	["C_GuildInfo.CanViewOfficerNote"] = [=[True if the player can view guild officer notes.]=],
 
 	["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
 	["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
