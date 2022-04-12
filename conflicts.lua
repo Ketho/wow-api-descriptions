@@ -158,7 +158,8 @@ local t = {
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
 	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info on an area point of interest, e.g. World PvP objectives.]=],
 
-	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
+	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
+	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area point of interest.]=],
 
 	-- ["C_ArtifactUI.Clear"] = [=[Clear artifact data of last opened artifact weapon.]=],
 	-- ["C_ArtifactUI.Clear"] = [=[Clears artifact data of last opened artifact weapon.]=],
@@ -168,7 +169,7 @@ local t = {
 	-- ["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of toons.]=],
 	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the number of game accounts for the Battle.net friend.]=],
 
-	["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=],
+	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=], -- ?
 
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
@@ -225,7 +226,7 @@ local t = {
 
 	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns information about an element in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on an entry in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on a currency in the currency tab.]=],
+	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on a currency in the [[currency tab]].]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
@@ -276,14 +277,14 @@ local t = {
 
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command /who or entering a query in the entry field of the Who List.]=],
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command [[MACRO_who|/who]] or entering a query in the entry field of the [[Who List]].]=],
-	["C_FriendList.SendWho"] = [=[Requests info on other online players.]=],
+	["C_FriendList.SendWho"] = [=[Requests a list of other online players.]=],
 
 	-- ["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a /who request will be handled.]=],
 	-- ["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO_who|/who]] request will be handled.]=],
-	["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO_who|/who]] request will be delivered.]=],
+	["C_FriendList.SetWhoToUi"] = [=[Sets how the result of a [[MACRO who|/who]] request will be delivered.]=],
 
 	-- ["C_Garrison.GetFollowers"] = [=[Returns a table of followers and their attributes.]=],
-	["C_Garrison.GetFollowers"] = [=[Returns a list of followers.]=],
+	["C_Garrison.GetFollowers"] = [=[Returns a list of garrison tech followers.]=],
 
 	["C_GossipInfo.CloseGossip"] = [=[Closes the gossip window.]=],
 	-- ["C_GossipInfo.CloseGossip"] = [=[Dismisses the gossip dialog.]=],
@@ -333,40 +334,45 @@ local t = {
 	-- ["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player can view guild officer notes.]=],
 	["C_GuildInfo.CanViewOfficerNote"] = [=[True if the player can view guild officer notes.]=],
 
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
+	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
+	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
+	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info on a [[Premade Groups|LFG]] activity.]=],
 
-	["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an activity.]=],
-	["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
+	-- ["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
+	["C_LFGList.GetActivityInfoExpensive"] = [=[Returns the zone associated with an activity.]=],
 
-	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns name, class, level and more about an applicant group member.]=],
-	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns name, class, level and more about an applicant group member]=],
+	-- ["C_LFGList.GetApplicantMemberInfo"] = [=[Returns name, class, level and more about an applicant group member.]=],
+	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns info on an applicant.]=],
 
-	["C_LFGList.GetApplicantMemberStats"] = [=[Returns stats about an applicant group member.]=],
-	["C_LFGList.GetApplicantMemberStats"] = [=[Returns stats about an applicant group member]=],
+	-- ["C_LFGList.GetApplicantMemberStats"] = [=[Returns stats about an applicant group member.]=],
+	["C_LFGList.GetApplicantMemberStats"] = [=[Returns the [[Proving Grounds]] stats of an applicant.]=],
 
-	["C_LFGList.GetApplicants"] = [=[Returns a table with applicantIDs.]=],
-	["C_LFGList.GetApplicants"] = [=[Returns a table with applicantIDs]=],
+	-- ["C_LFGList.GetApplicants"] = [=[Returns a table with applicantIDs.]=],
+	["C_LFGList.GetApplicants"] = [=[Returns the list of applicants to your group.]=],
 
-	["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs.]=],
-	["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs. For information about an activity use [[API_C_LFGList.GetActivityInfo|C_LFGList.GetActivityInfo]]().]=],
+	-- ["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs.]=],
+	-- ["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs. For information about an activity use [[API_C_LFGList.GetActivityInfo|C_LFGList.GetActivityInfo]]().]=],
+	["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available LFG activities.]=],
 
-	["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs.]=],
-	["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs. For information about a group use [[API_C_LFGList.GetActivityGroupInfo|C_LFGList.GetActivityGroupInfo]](groupID).]=],
+	-- ["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs.]=],
+	-- ["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs. For information about a group use [[API_C_LFGList.GetActivityGroupInfo|C_LFGList.GetActivityGroupInfo]](groupID).]=],
+	["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available LFG groups.]=],
 
-	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs.]=],
-	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs. For information about a category use [[API_C_LFGList.GetCategoryInfo|C_LFGList.GetCategoryInfo]](categoryID).]=],
+	-- ["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs.]=],
+	-- ["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs. For information about a category use [[API_C_LFGList.GetCategoryInfo|C_LFGList.GetCategoryInfo]](categoryID).]=],
+	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available LFG categories.]=],
 
-	["C_Map.GetMapChildrenInfo"] = [=[Returns information on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
-	["C_Map.GetMapChildrenInfo"] = [=[Returns information on the sub-maps of the given UI map, optionally restricted to a specific "map type", and/or recursive.]=],
+	-- ["C_Map.GetMapChildrenInfo"] = [=[Returns information on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
+	["C_Map.GetMapChildrenInfo"] = [=[Returns info on the submaps of a map.]=],
 
-	["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map.]=],
-	["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map]=],
+	-- ["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map.]=],
+	["C_Map.GetMapInfoAtPosition"] = [=[Returns info for any child or adjacent maps at a position on the map.]=],
 
-	["C_Map.GetPlayerMapPosition"] = [=[Returns the location of the given unit. Only works for the player and party members.]=],
-	["C_Map.GetPlayerMapPosition"] = [=[Returns the position of the given unit for a map. Only works for the player and party members.]=],
+	-- ["C_Map.GetPlayerMapPosition"] = [=[Returns the location of the given unit. Only works for the player and party members.]=],
+	-- ["C_Map.GetPlayerMapPosition"] = [=[Returns the position of the given unit for a map. Only works for the player and party members.]=],
+	["C_Map.GetPlayerMapPosition"] = [=[Returns the location of the unit on a map.]=],
 
-	["C_Map.GetWorldPosFromMapPos"] = [=[Translates a world map position to a map position.]=],
+	-- ["C_Map.GetWorldPosFromMapPos"] = [=[Translates a world map position to a map position.]=],
 	["C_Map.GetWorldPosFromMapPos"] = [=[Translates a map position to a world map position.]=],
 
 	["C_MountJournal.GetMountAllCreatureDisplayInfoByID"] = [=[Returns all display IDs for a mount by ID.]=],
