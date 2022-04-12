@@ -76,7 +76,6 @@ local t = {
 	-- ["AscendStop"] = [=[Apparent null function that performs {{api|nop|no operation}}.]=],
 
 	-- ["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
-	-- ["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
 	["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
 
 	-- ["AttackTarget"] = [=[Attacks the targetted unit.]=],
@@ -115,15 +114,12 @@ local t = {
 	-- ["BNSendGameData"] = [=[BNSendGameData is the battle.net chat-equivalent of {{api|SendAddonMessage}}().]=],
 	["BNSendGameData"] = [=[Sends an addon comm message to a Battle.net friend.]=],
 
-	-- ["BNSetAFK"] = [=[Set or unset afk status.]=],
-	-- ["BNSetAFK"] = [=[Set or unset afk status]=],
+	-- ["BNSetAFK"] = [=[Set or unset AFK status]=],
 	["BNSetAFK"] = [=[Sets the player's Battle.net AFK status.]=],
 
-	-- ["BNSetDND"] = [=[Set or unset dnd status.]=],
 	-- ["BNSetDND"] = [=[Set or unset DND status]=],
 	["BNSetDND"] = [=[Sets the player's Battle.net DND status.]=],
 
-	-- ["BNSetFriendFavoriteFlag"] = [=[Set a battle.net friend as favorite.]=],
 	-- ["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
 	["BNSetFriendFavoriteFlag"] = [=[Favorites a Battle.net friend.]=],
 
@@ -141,7 +137,7 @@ local t = {
 
 	-- ["BuyGuildCharter"] = [=[Purchases a guild charter for ''guildName''.]=],
 	-- ["BuyGuildCharter"] = [=[Purchase a Guild Charter.]=],
-	["BuyGuildCharter"] = [=[Purchases a Guild Charter.]=],
+	["BuyGuildCharter"] = [=[Purchases a [[Guild Charter]].]=],
 
 	["BuyMerchantItem"] = [=[Buys an item from a merchant.]=],
 	-- ["BuyMerchantItem"] = [=[Buys the specified item.]=],
@@ -161,7 +157,6 @@ local t = {
 	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area point of interest.]=],
 
-	-- ["C_ArtifactUI.Clear"] = [=[Clear artifact data of last opened artifact weapon.]=],
 	-- ["C_ArtifactUI.Clear"] = [=[Clears artifact data of last opened artifact weapon.]=],
 	["C_ArtifactUI.Clear"] = [=[Clears data of the last opened artifact weapon.]=],
 
@@ -169,7 +164,8 @@ local t = {
 	-- ["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the Battle.net friend's number of toons.]=],
 	["C_BattleNet.GetFriendNumGameAccounts"] = [=[Returns the number of game accounts for the Battle.net friend.]=],
 
-	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=], -- ?
+	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=],
+	["C_BlackMarket.Close"] = [=[Closes the [[Black Market]] window.]=],
 
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
