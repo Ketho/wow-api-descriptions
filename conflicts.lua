@@ -336,7 +336,7 @@ local t = {
 
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info on a [[Premade Groups|LFG]] activity.]=],
+	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info on a activity group.]=],
 
 	-- ["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
 	["C_LFGList.GetActivityInfoExpensive"] = [=[Returns the zone associated with an activity.]=],

@@ -117,7 +117,7 @@ local t = {
 	["C_LFGInfo.CanPlayerUsePremadeGroup"] = [=[Returns true if the player is allowed to use the premade group finder, or false and a reason string if not.]=],
 	["C_LFGInfo.GetAllEntriesForCategory"] = [=[Returns any dungeons for a LFG category you're queued up for.]=],
 	["C_LFGInfo.HideNameFromUI"] = [=[Returns true if a dungeon name has to be hidden in the UI.]=],
-	["C_LFGList.GetActivityInfo"] = [=[Returns information about an activity for premade groups.]=],
+	["C_LFGList.GetActivityInfo"] = [=[Returns info on a [[Premade Groups|LFG]] activity.]=],
 	["C_LFGList.GetCategoryInfo"] = [=[Returns information about a specific category.]=],      
 	["C_LFGList.GetSearchResults"] = [=[Returns a table of search result IDs.]=],
 	["C_LFGList.InviteApplicant"] = [=[Invites a queued applicant to your group.]=],
