@@ -499,36 +499,42 @@ local t = {
 	["C_QuestLog.SetSelectedQuest"] = [=[Selects a quest in the quest log.]=],
 
 	["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting a player.]=],
-	["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting other player's violations of the [[End-User License Agreement]]]=],
+	-- ["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting other player's violations of the [[End-User License Agreement]]]=],
 
-	["C_Reputation.GetFactionParagonInfo"] = [=[Gets Paragon information.]=],
-	["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] information about a faction.]=],
+	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Gets Paragon information.]=],
+	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] information about a faction.]=],
+	["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] info on a faction.]=],
 
-	["C_Reputation.IsFactionParagon"] = [=[Returns true/false if a factionID is a Paragon.]=],
-	["C_Reputation.IsFactionParagon"] = [=[One line summary description of function.]=],
+	-- ["C_Reputation.IsFactionParagon"] = [=[Returns true/false if a factionID is a Paragon.]=],
+	-- ["C_Reputation.IsFactionParagon"] = [=[One line summary description of function.]=],
+	["C_Reputation.IsFactionParagon"] = [=[True if a faction is a paragon reputation.]=],
 
-	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current Proving Grounds trial.]=],
-	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current [[Proving Grounds]] trial.]=],
+	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current Proving Grounds trial.]=],
+	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current [[Proving Grounds]] trial.]=],
+	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info on the current [[Proving Grounds]] trial.]=],
 
-	["C_SummonInfo.CancelSummon"] = [=[Rejects a summon request.]=],
-	["C_SummonInfo.CancelSummon"] = [=[Declines a pending summon.]=],
+	-- ["C_SummonInfo.CancelSummon"] = [=[Rejects a summon request.]=],
+	-- ["C_SummonInfo.CancelSummon"] = [=[Declines a pending summon.]=],
+	["C_SummonInfo.CancelSummon"] = [=[Declines a summon request.]=],
 
 	["C_SummonInfo.ConfirmSummon"] = [=[Accepts a summon request.]=],
-	["C_SummonInfo.ConfirmSummon"] = [=[Accepts a summon request (only works during the two minutes the summon is available).]=],
+	-- ["C_SummonInfo.ConfirmSummon"] = [=[Accepts a summon request (only works during the two minutes the summon is available).]=],
 
-	["C_SummonInfo.GetSummonConfirmAreaName"] = [=[Returns the name of the area you're being summoned to.]=],
+	-- ["C_SummonInfo.GetSummonConfirmAreaName"] = [=[Returns the name of the area you're being summoned to.]=],
 	["C_SummonInfo.GetSummonConfirmAreaName"] = [=[Returns the zone where you will be summoned to.]=],
 
 	["C_SummonInfo.GetSummonConfirmSummoner"] = [=[Returns the name of the player summoning you.]=],
-	["C_SummonInfo.GetSummonConfirmSummoner"] = [=[Get the name of the unit which initiated the player's summon.]=],
+	-- ["C_SummonInfo.GetSummonConfirmSummoner"] = [=[Get the name of the unit which initiated the player's summon.]=],
 
-	["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left before the pending summon expires.]=],
-	["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left for accepting a summon.]=],
+	-- ["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left before the pending summon expires.]=],
+	-- ["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left for accepting a summon.]=],
+	["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the time left for accepting a summon.]=],
 
-	["C_Timer.After"] = [=[Runs callback after given duration.]=],
-	["C_Timer.After"] = [=[Schedules a new timer.]=],
+	-- ["C_Timer.After"] = [=[Runs callback after given duration.]=],
+	-- ["C_Timer.After"] = [=[Schedules a new timer.]=],
+	["C_Timer.After"] = [=[Schedules a timer.]=],
 
-	["C_ToyBox.GetToyLink"] = [=[Returns item link.]=],
+	-- ["C_ToyBox.GetToyLink"] = [=[Returns item link.]=],
 	["C_ToyBox.GetToyLink"] = [=[Returns an item link for a toy.]=],
 
 	["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns a table containing all the recipe IDs for the current trade skill.]=],
