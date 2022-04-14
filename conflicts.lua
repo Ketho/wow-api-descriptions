@@ -537,37 +537,44 @@ local t = {
 	-- ["C_ToyBox.GetToyLink"] = [=[Returns item link.]=],
 	["C_ToyBox.GetToyLink"] = [=[Returns an item link for a toy.]=],
 
-	["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns a table containing all the recipe IDs for the current trade skill.]=],
-	["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns a table containing all the recipe IDs for the current trade skill]=],
+	-- ["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns a table containing all the recipe IDs for the current trade skill.]=],
+	["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns all recipes for the current profession.]=],
 
-	["C_TradeSkillUI.GetRecipeDescription"] = [=[Returns the description text of the indicated trade skill.]=],
-	["C_TradeSkillUI.GetRecipeDescription"] = [=[Returns a string description of what the current trade skill does.]=],
+	-- ["C_TradeSkillUI.GetRecipeDescription"] = [=[Returns the description text of the indicated trade skill.]=],
+	-- ["C_TradeSkillUI.GetRecipeDescription"] = [=[Returns a string description of what the current trade skill does.]=],
+	["C_TradeSkillUI.GetRecipeDescription"] = [=[Returns the description for a recipe.]=],
 
-	["C_TradeSkillUI.GetRecipeItemLink"] = [=[Returns the [[itemLink]] for a trade skill item.]=],
-	["C_TradeSkillUI.GetRecipeItemLink"] = [=[Returns a string contaning a name of the object that is created by recipe in the interactive format that can be printed and clicked in chat.]=],
+	-- ["C_TradeSkillUI.GetRecipeItemLink"] = [=[Returns the [[itemLink]] for a trade skill item.]=],
+	-- ["C_TradeSkillUI.GetRecipeItemLink"] = [=[Returns a string contaning a name of the object that is created by recipe in the interactive format that can be printed and clicked in chat.]=],
+	["C_TradeSkillUI.GetRecipeItemLink"] = [=[Returns the result item link for a recipe.]=],
 
-	["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Gets the number of items made in a single use of a skill.]=],
-	["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Get the number of items made in each use of a tradeskill.]=],
+	-- ["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Gets the number of items made in a single use of a skill.]=],
+	-- ["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Get the number of items made in each use of a tradeskill.]=],
+	["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Returns the number of items produced for a recipe.]=],
 
-	["C_TradeSkillUI.GetRecipeTools"] = [=[Returns information about the tools needed for a tradeskill.]=],
-	["C_TradeSkillUI.GetRecipeTools"] = [=[Returns the required tools for a specific trade skill.]=],
+	-- ["C_TradeSkillUI.GetRecipeTools"] = [=[Returns information about the tools needed for a tradeskill.]=],
+	-- ["C_TradeSkillUI.GetRecipeTools"] = [=[Returns the required tools for a specific trade skill.]=],
+	["C_TradeSkillUI.GetRecipeTools"] = [=[Returns the required tools for a recipe.]=],
 
-	["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns information about the selected skill line.]=],
-	["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns the profession displayed in the trade skill frame, or nil when it is closed.]=],
+	-- ["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns information about the selected skill line.]=],
+	-- ["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns the profession displayed in the trade skill frame, or nil when it is closed.]=],
+	["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns the current profession displayed in the trade skill window.]=],
 
-	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns the [[TradeSkillLink]] for a trade skill.]=],
-	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a hyperlink to the player's list of recipes for the current trade skill]=],
+	-- ["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns the [[TradeSkillLink]] for a trade skill.]=],
+	-- ["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a hyperlink to the player's list of recipes for the current trade skill]=],
+	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a link for the player's current profession.]=],
 
-	["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC.]=],
-	["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC]=],
+	-- ["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC.]=],
+	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is displaying for an NPC.]=],
 
-	["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications, and pays for the cost.]=],
-	["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications.]=],
+	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications, and pays for the cost.]=],
+	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications.]=],
+	["C_Transmog.ApplyAllPending"] = [=[Confirms all pending transmogs.]=],
 
-	["C_Transmog.ClearPending"] = [=[Clears the specified transmogrify slot.]=],
-	["C_Transmog.ClearPending"] = [=[Clears a transmogrify slot.]=],
+	-- ["C_Transmog.ClearPending"] = [=[Clears the specified transmogrify slot.]=],
+	["C_Transmog.ClearPending"] = [=[Clears an equipment slot of pending transmogs.]=],
 
-	["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
+	-- ["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
 	["CallCompanion"] = [=[Summons a companion.]=],
