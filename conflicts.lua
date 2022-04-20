@@ -96,11 +96,11 @@ local t = {
 
 	-- ["BNGetFOFInfo"] = [=[Returns presenceID, givenName, surname, isFriend.]=],
 	-- ["BNGetFOFInfo"] = [=[Returns information about the specified friend of a RealID friend]=],
-	["BNGetFOFInfo"] = [=[Returns info on the specified friend of a Battle.net friend.]=],
+	["BNGetFOFInfo"] = [=[Returns info about the specified friend of a Battle.net friend.]=],
 
 	-- ["BNGetFriendInviteInfo"] = [=[Returns presenceID, givenName, surname.]=],
 	-- ["BNGetFriendInviteInfo"] = [=[Returns information about a Battle.net friend invite.]=],
-	["BNGetFriendInviteInfo"] = [=[Returns info on a Battle.net friend invite.]=],
+	["BNGetFriendInviteInfo"] = [=[Returns info about a Battle.net friend invite.]=],
 
 	-- ["BNGetInfo"] = [=[Returns own battle.net data like battleTag.]=],
 	-- ["BNGetInfo"] = [=[Returns information about the player]=],
@@ -152,7 +152,7 @@ local t = {
 
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns area point of interest info.]=],
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
-	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info on an area point of interest, e.g. World PvP objectives.]=],
+	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest, e.g. World PvP objectives.]=],
 
 	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area point of interest.]=],
@@ -169,7 +169,7 @@ local t = {
 
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
 	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
-	["C_BlackMarket.GetItemInfoByID"] = [=[Returns info on a [[Black Market]] auction.]=],
+	["C_BlackMarket.GetItemInfoByID"] = [=[Returns info about a [[Black Market]] auction.]=],
 
 	["C_CVar.GetCVar"] = [=[Returns the current value of a console variable.]=],
 	-- ["C_CVar.GetCVar"] = [=[Returns the current value of a [[Console variables|console variable]].]=],
@@ -202,7 +202,7 @@ local t = {
 
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
-	["C_CreatureInfo.GetClassInfo"] = [=[Returns info on a class by ID.]=],
+	["C_CreatureInfo.GetClassInfo"] = [=[Returns info about a class by ID.]=],
 
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Sets the expanded/collapsed state of a currency list header.]=],
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Alters the expanded state of a currency list header.]=],
@@ -210,11 +210,11 @@ local t = {
 
 	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a watched currency.]=],
 	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a currency item currently being shown as part of the backpack.]=],
-	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info on a tracked currency in the backpack.]=],
+	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info about a tracked currency in the backpack.]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies.]=],
 	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies in the [[currency tab]].]=],
-	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info on a currency by ID.]=],
+	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info about a currency by ID.]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns the currencyLink for the specified currencyID.]=],
 	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Get the currency link for the specified currency ID.]=],
@@ -222,7 +222,7 @@ local t = {
 
 	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns information about an element in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on an entry in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on a currency in the [[currency tab]].]=],
+	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info about a currency in the [[currency tab]].]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
@@ -251,7 +251,7 @@ local t = {
 
 	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns loot info for an encounter or instance.]=],
 	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns info on encounter journal loot items.]=],
-	["C_EncounterJournal.GetLootInfo"] = [=[Returns info on loot items available from an encounter.]=],
+	["C_EncounterJournal.GetLootInfo"] = [=[Returns info about loot items available from an encounter.]=],
 
 	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the current equipment type slot filter.]=],
 	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the currently active equipment slot filter.]=],
@@ -269,7 +269,7 @@ local t = {
 	["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war for an [[Island Expedition]] map.]=],
 
 	-- ["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns fog of war info for an ([[Island Expedition]]) map.]=],
-	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns info on the fog of war for an [[Island Expedition]] map.]=],
+	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns info about the fog of war for an [[Island Expedition]] map.]=],
 
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command /who or entering a query in the entry field of the Who List.]=],
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command [[MACRO_who|/who]] or entering a query in the entry field of the [[Who List]].]=],
@@ -305,7 +305,7 @@ local t = {
 	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the gossip point of interest on the map e.g. the red flags when asking city guards for directions.]=],
 
 	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns info on a gossip point of interest e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiInfo"] = [=[Returns info about a gossip point of interest e.g. the red flags when asking city guards for directions.]=],
 
 	-- ["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
 	["C_GossipInfo.GetText"] = [=[Returns the gossip text.]=],
@@ -332,13 +332,13 @@ local t = {
 
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info on a activity group.]=],
+	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info about a activity group.]=],
 
 	-- ["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
 	["C_LFGList.GetActivityInfoExpensive"] = [=[Returns the zone associated with an activity.]=],
 
 	-- ["C_LFGList.GetApplicantMemberInfo"] = [=[Returns name, class, level and more about an applicant group member.]=],
-	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns info on an applicant.]=],
+	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns info about an applicant.]=],
 
 	-- ["C_LFGList.GetApplicantMemberStats"] = [=[Returns stats about an applicant group member.]=],
 	["C_LFGList.GetApplicantMemberStats"] = [=[Returns the [[Proving Grounds]] stats of an applicant.]=],
@@ -359,7 +359,7 @@ local t = {
 	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available LFG categories.]=],
 
 	-- ["C_Map.GetMapChildrenInfo"] = [=[Returns information on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
-	["C_Map.GetMapChildrenInfo"] = [=[Returns info on the submaps of a map.]=],
+	["C_Map.GetMapChildrenInfo"] = [=[Returns info about the submaps of a map.]=],
 
 	-- ["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map.]=],
 	["C_Map.GetMapInfoAtPosition"] = [=[Returns info for any child or adjacent maps at a position on the map.]=],
@@ -456,7 +456,7 @@ local t = {
 
 	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns information about objective status for a quest.]=],
 	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns information about the objective status of a quest.]=],
-	["C_QuestLog.GetQuestObjectives"] = [=[Returns info on the objectives of a quest.]=],
+	["C_QuestLog.GetQuestObjectives"] = [=[Returns info about the objectives of a quest.]=],
 
 	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag information about the specified quest.]=],
 	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag information about the quest.]=],
@@ -511,7 +511,7 @@ local t = {
 
 	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current Proving Grounds trial.]=],
 	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current [[Proving Grounds]] trial.]=],
-	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info on the current [[Proving Grounds]] trial.]=],
+	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info about the current [[Proving Grounds]] trial.]=],
 
 	-- ["C_SummonInfo.CancelSummon"] = [=[Rejects a summon request.]=],
 	-- ["C_SummonInfo.CancelSummon"] = [=[Declines a pending summon.]=],
