@@ -236,11 +236,11 @@ local t = {
 	-- ["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks or unmarks a currency as unused.]=],
 	["C_CurrencyInfo.SetCurrencyUnused"] = [=[Marks a currency as unused in the currency tab.]=],
 
-	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days.]=],
+	["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a specified amount of days.]=],
 	-- ["C_DateAndTime.AdjustTimeByDays"] = [=[Returns the date after a given amount of days or minutes.]=],
 
 	-- ["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date of a given amount of time since the UNIX epoch.]=],
-	["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date for a given amount of time since the UNIX epoch for the OS time zone.]=],
+	["C_DateAndTime.GetCalendarTimeFromEpoch"] = [=[Returns the date for a specified amount of time since the UNIX epoch for the OS time zone.]=],
 
 	-- ["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's Unix time offset by the server's UTC timezone.]=],
 	["C_DateAndTime.GetServerTimeLocal"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]] offset by the server's timezone.]=],
@@ -480,7 +480,7 @@ local t = {
 
 	-- ["C_QuestLog.IsUnitOnQuest"] = [=[Determine if the specified unit is on the given quest.]=],
 	-- ["C_QuestLog.IsUnitOnQuest"] = [=[Returns whether the unit is on the given quest.]=],
-	["C_QuestLog.IsUnitOnQuest"] = [=[True if the unit is on the given quest.]=],
+	["C_QuestLog.IsUnitOnQuest"] = [=[True if the unit is on the specified quest.]=],
 
 	-- ["C_QuestLog.RemoveQuestWatch"] = [=[Removes a quest watch.]=],
 	-- ["C_QuestLog.RemoveQuestWatch"] = [=[Removes a quest from being watched.]=],
@@ -850,10 +850,10 @@ local t = {
 
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the timer.]=],
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
-	["ForceQuit"] = [=[Instantly quits the game, bypassing the 20 seconds timer.]=],
+	["ForceQuit"] = [=[Instantly quits the game, ignoring the 20 seconds timer.]=],
 
-	["GetAchievementCriteriaInfo"] = [=[Returns information about the requested criteria.]=],
-	["GetAchievementCriteriaInfo"] = [=[Returns information about the given Achievement's specified criteria.]=],
+	["GetAchievementCriteriaInfo"] = [=[Returns info about the specified achievement criteria.]=],
+	-- ["GetAchievementCriteriaInfo"] = [=[Returns information about the given Achievement's specified criteria.]=],
 
 	["GetAchievementInfo"] = [=[Returns information about the requested achievement.]=],
 	["GetAchievementInfo"] = [=[Returns information about an Achievement.]=],
