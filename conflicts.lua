@@ -1176,28 +1176,35 @@ local t = {
 
 	-- ["GetFriendshipReputationRanks"] = [=[Gets rank data about an NPC friend.]=],
 	-- ["GetFriendshipReputationRanks"] = [=[Returns friendship rank indices.]=],
-	["GetFriendshipReputationRanks"] = [=[Returns the ranks for a friendship reputation.]=],
+	["GetFriendshipReputationRanks"] = [=[Returns the (max) rank for a friendship reputation.]=],
 
-	["GetGuildBankItemInfo"] = [=[Returns texture, amount and integer 1 or nil depending on locked state.]=],
-	["GetGuildBankItemInfo"] = [=[Gets information about an item slot from the guild bank.]=],
+	-- ["GetGuildBankItemInfo"] = [=[Returns texture, amount and integer 1 or nil depending on locked state.]=],
+	-- ["GetGuildBankItemInfo"] = [=[Gets information about an item slot from the guild bank.]=],
+	["GetGuildBankItemInfo"] = [=[Returns item info for a guild bank slot.]=],
 
-	["GetGuildBankItemLink"] = [=[Returns itemLink.]=],
-	["GetGuildBankItemLink"] = [=[Returns the item link for an item in the given Guild Bank tab and slot.]=],
+	-- ["GetGuildBankItemLink"] = [=[Returns itemLink.]=],
+	-- ["GetGuildBankItemLink"] = [=[Returns the item link for an item in the given Guild Bank tab and slot.]=],
+	["GetGuildBankItemLink"] = [=[Returns an item link for a guild bank slot.]=],
 
-	["GetGuildBankMoney"] = [=[Integer, funds available in copper.]=],
-	["GetGuildBankMoney"] = [=[Returns the amount of money in the guild bank in copper.]=],
+	-- ["GetGuildBankMoney"] = [=[Integer, funds available in copper.]=],
+	-- ["GetGuildBankMoney"] = [=[Returns the amount of money in the guild bank in copper.]=],
+	["GetGuildBankMoney"] = [=[Returns the amount of money in the guild bank.]=],
 
-	["GetGuildBankMoneyTransaction"] = [=[No bank proximity required, however QueryGuildBankLog function requires proximity.]=],
-	["GetGuildBankMoneyTransaction"] = [=[gets a specific money transaction from the guild bank]=],
+	-- ["GetGuildBankMoneyTransaction"] = [=[No bank proximity required, however QueryGuildBankLog function requires proximity.]=],
+	-- ["GetGuildBankMoneyTransaction"] = [=[gets a specific money transaction from the guild bank]=],
+	["GetGuildBankMoneyTransaction"] = [=[Returns info about a money transaction from the guild bank]=],
 
-	["GetGuildBankTabInfo"] = [=[Returns the name and icon of the guild bank tab queried.]=],
-	["GetGuildBankTabInfo"] = [=[Gets display / player's access information regarding a guild bank tab.]=],
+	-- ["GetGuildBankTabInfo"] = [=[Returns the name and icon of the guild bank tab queried.]=],
+	-- ["GetGuildBankTabInfo"] = [=[Gets display / player's access information regarding a guild bank tab.]=],
+	["GetGuildBankTabInfo"] = [=[Returns info about a guild bank tab.]=],
 
-	["GetGuildBankTransaction"] = [=[Requires Guild Bank Proximity.]=],
-	["GetGuildBankTransaction"] = [=[Get information for specific item transaction from Guild Bank.]=],
+	-- ["GetGuildBankTransaction"] = [=[Requires Guild Bank Proximity.]=],
+	-- ["GetGuildBankTransaction"] = [=[Get information for specific item transaction from Guild Bank.]=],
+	["GetGuildBankTransaction"] = [=[Returns info about an item transaction from the guild bank.]=],
 
-	["GetGuildInfo"] = [=[This function returns the name of the guild ''unit'' belongs to.]=],
-	["GetGuildInfo"] = [=[Returns guild-related information about a unit.]=],
+	-- ["GetGuildInfo"] = [=[This function returns the name of the guild ''unit'' belongs to.]=],
+	-- ["GetGuildInfo"] = [=[Returns guild-related information about a unit.]=],
+	["GetGuildInfo"] = [=[Returns guild info for a unit.]=],
 
 	["GetGuildRosterInfo"] = [=[This function is used to get info on members in the guild.]=],
 	["GetGuildRosterInfo"] = [=[Returns information about a character in your current guild.]=],
