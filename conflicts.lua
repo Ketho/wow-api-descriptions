@@ -32,7 +32,7 @@ local t = {
 
 	-- ["AcceptResurrect"] = [=[The player accepts the request from another player to resurrect him/herself.]=],
 	-- ["AcceptResurrect"] = [=[Accepts a resurrection, returning the character to life.]=],
-	["AcceptResurrect"] = [=[Accepts a resurrection from another player.]=],
+	["AcceptResurrect"] = [=[Accepts a resurrection offer.]=],
 
 	-- ["AcceptSockets"] = [=[Sockets tentative gems into the sockets, replacing existing gems if necessary.]=],
 	-- ["AcceptSockets"] = [=[Confirms insertion of new gems into the item currently being socketed.]=],
@@ -66,7 +66,7 @@ local t = {
 	["AddTrackedAchievement"] = [=[Tracks an achievement.]=],
 
 	-- ["AddTradeMoney"] = [=[Adds the money dropped into the player's trade frame.]=],
-	["AddTradeMoney"] = [=[Adds money currently on the cursor to the trade offer.]=],
+	["AddTradeMoney"] = [=[Adds money currently held by the cursor to the trade offer.]=],
 
 	-- ["ArchaeologyMapUpdateAll"] = [=[Updates the digsites and returns the number of digsites in the current map-zone.]=],
 	-- ["ArchaeologyMapUpdateAll"] = [=[Returns how many [[digsite]]s are in a zone like [[Azsuna]] or [[Elwynn Forest]].]=],
@@ -84,7 +84,7 @@ local t = {
 
 	-- ["AutoEquipCursorItem"] = [=[Causes the equipment on the cursor to be equipped.]=],
 	-- ["AutoEquipCursorItem"] = [=[Automatically equips the item currently held on the cursor.]=],
-	["AutoEquipCursorItem"] = [=[Equips the item currently held on the cursor.]=],
+	["AutoEquipCursorItem"] = [=[Equips the item currently held by the cursor.]=],
 
 	-- ["AutoStoreGuildBankItem"] = [=[Withdraws an item from the bank, and automatically stores it in the player's inventory.]=],
 	-- ["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
@@ -687,7 +687,7 @@ local t = {
 
 	-- ["ClearCursor"] = [=[Clears whatever item the cursor is dragging from the cursor.]=],
 	-- ["ClearCursor"] = [=[Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).]=],
-	["ClearCursor"] = [=[Clears any objects from the in-game cursor.]=],
+	["ClearCursor"] = [=[Clears any objects from the cursor.]=],
 
 	-- ["ClearFocus"] = [=[Removes any focus you may have set.]=],
 	-- ["ClearFocus"] = [=[I believe this is supposed to clear your focus just like /clearfocus does. However, it has been blocked by blizzard or something like that.]=],
@@ -730,88 +730,97 @@ local t = {
 	-- ["CloseTrade"] = [=[Closes the trade.]=],
 	["CloseTrade"] = [=[Closes the trade window.]=],
 
-	["CombatLogGetCurrentEventInfo"] = [=[Returns the current {{api|t=e|COMBAT_LOG_EVENT}} values.]=],
+	-- ["CombatLogGetCurrentEventInfo"] = [=[Returns the current {{api|t=e|COMBAT_LOG_EVENT}} values.]=],
 	["CombatLogGetCurrentEventInfo"] = [=[Returns the current {{api|t=e|COMBAT_LOG_EVENT}} payload.]=],
 
-	["CombatTextSetActiveUnit"] = [=[Changes the entity for which COMBAT_TEXT_UPDATE events fire.]=],
-	["CombatTextSetActiveUnit"] = [=[Alters the entity for which the COMBAT_TEXT_UPDATE event fires.]=],
+	["CombatTextSetActiveUnit"] = [=[Changes the entity for which {{api|t=e|COMBAT_TEXT_UPDATE}} events fire.]=],
+	-- ["CombatTextSetActiveUnit"] = [=[Alters the entity for which the COMBAT_TEXT_UPDATE event fires.]=],
 
-	["CompleteQuest"] = [=[Complete the specified quest.]=],
-	["CompleteQuest"] = [=[Advances the quest completion dialog to the reward selection step.]=],
+	-- ["CompleteQuest"] = [=[Completes the specified quest.]=],
+	["CompleteQuest"] = [=[Continues the quest dialog to the reward selection step.]=],
 
-	["ConfirmAcceptQuest"] = [=[Accepts an offered quest that has been started by a party member; usually escort quests. (Might only be available after QUEST_ACCEPT_CONFIRM event.)]=],
-	["ConfirmAcceptQuest"] = [=[Accept an escort quest being started by a player nearby.  ]=],
+	-- ["ConfirmAcceptQuest"] = [=[Accepts an offered quest that has been started by a party member; usually escort quests. (Might only be available after QUEST_ACCEPT_CONFIRM event.)]=],
+	-- ["ConfirmAcceptQuest"] = [=[Accept an escort quest being started by a player nearby.  ]=],
+	["ConfirmAcceptQuest"] = [=[Accepts a quest started by a group member, e.g. escort quests]=],
 
-	["ConfirmLootRoll"] = [=[Confirm a loot roll.]=],
-	["ConfirmLootRoll"] = [=[Confirm your loot roll after either {{api|t=e|CONFIRM_LOOT_ROLL}} or {{api|t=e|CONFIRM_DISENCHANT_ROLL}} fires.]=],
+	["ConfirmLootRoll"] = [=[Confirms a loot roll.]=],
+	-- ["ConfirmLootRoll"] = [=[Confirm your loot roll after either {{api|t=e|CONFIRM_LOOT_ROLL}} or {{api|t=e|CONFIRM_DISENCHANT_ROLL}} fires.]=],
 
-	["ConfirmLootSlot"] = [=[Confirm looting of a BoP item.]=],
-	["ConfirmLootSlot"] = [=[After a Bind on Pickup item has been looted via a LootButton, this function needs to be called to confirm that the player wants to loot the item.  ]=],
+	["ConfirmLootSlot"] = [=[Confirms looting of a BoP item.]=],
+	-- ["ConfirmLootSlot"] = [=[After a Bind on Pickup item has been looted via a LootButton, this function needs to be called to confirm that the player wants to loot the item.  ]=],
 
-	["ConfirmReadyCheck"] = [=[Indicate if you are ready or not.]=],
-	["ConfirmReadyCheck"] = [=[Sends a response to a raid ready check]=],
+	["ConfirmReadyCheck"] = [=[Responds to a ready check.]=],
+	-- ["ConfirmReadyCheck"] = [=[Sends a response to a raid ready check]=],
 
-	["CreateFont"] = [=[Dynamically creates a font object.]=],
-	["CreateFont"] = [=[Creates a font object.]=],
+	-- ["CreateFont"] = [=[Dynamically creates a font object.]=],
+	["CreateFont"] = [=[Creates a {{api|t=o|Font}} object.]=],
 
-	["CreateFrame"] = [=[Create a new frame of the specified type.]=],
-	["CreateFrame"] = [=[Creates a new {{api|t=o|Frame}} object.]=],
+	-- ["CreateFrame"] = [=[Create a new frame of the specified type.]=],
+	["CreateFrame"] = [=[Creates a {{api|t=o|Frame}} object.]=],
 
-	["CreateMacro"] = [=[Create a new macro.]=],
-	["CreateMacro"] = [=[Creates a new macro command/button.]=],
+	["CreateMacro"] = [=[Creates a macro.]=],
+	-- ["CreateMacro"] = [=[Creates a new macro command/button.]=],
 
-	["CursorCanGoInSlot"] = [=[Returns true if the item currently held by the cursor can go into the given inventory (equipment) slot.]=],
-	["CursorCanGoInSlot"] = [=[Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.]=],
+	-- ["CursorCanGoInSlot"] = [=[Returns true if the item currently held by the cursor can go into the given inventory (equipment) slot.]=],
+	-- ["CursorCanGoInSlot"] = [=[Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.]=],
+	["CursorCanGoInSlot"] = [=[True if the item held by the cursor can be equipped in the specified inventory slot.]=],
 
-	["CursorHasItem"] = [=[Returns true if the cursor currently holds an item.]=],
-	["CursorHasItem"] = [=[Returns 1 if the cursor currently holds an item, nil otherwise.]=],
+	-- ["CursorHasItem"] = [=[Returns true if the cursor currently holds an item.]=],
+	-- ["CursorHasItem"] = [=[Returns 1 if the cursor currently holds an item, nil otherwise.]=],
+	["CursorHasItem"] = [=[True if the cursor currently holds an item.]=],
 
-	["DeclineGuild"] = [=[The player declines the invitation to join a guild.]=],
-	["DeclineGuild"] = [=[Declines a guild invitation.]=],
+	-- ["DeclineGuild"] = [=[The player declines the invitation to join a guild.]=],
+	["DeclineGuild"] = [=[Declines a guild invite.]=],
 
-	["DeclineResurrect"] = [=[Decline the request from another player to resurrect him/herself.]=],
+	-- ["DeclineResurrect"] = [=[Decline the request from another player to resurrect him/herself.]=],
 	["DeclineResurrect"] = [=[Declines a resurrection offer.]=],
 
-	["DeleteCursorItem"] = [=[Destroys the item on the cursor.]=],
-	["DeleteCursorItem"] = [=[Destroys the item currently held by the cursor.]=],
+	["DeleteCursorItem"] = [=[Destroys the item held by the cursor.]=],
+	-- ["DeleteCursorItem"] = [=[Destroys the item currently held by the cursor.]=],
 
-	["DeleteInboxItem"] = [=[Deletes the inbox item at index. It returns immediately, it does not seem to wait for the deletion to go through, giving the normal problems with rapid mail removal attempts.]=],
-	["DeleteInboxItem"] = [=[Asynchronously request the server to remove a message from the mailbox.]=],
+	-- ["DeleteInboxItem"] = [=[Deletes the inbox item at index. It returns immediately, it does not seem to wait for the deletion to go through, giving the normal problems with rapid mail removal attempts.]=],
+	["DeleteInboxItem"] = [=[Requests the server to remove a mailbox message.]=],
 
-	["DescendStop"] = [=[The player stops descending (while swimming or flying)]=],
-	["DescendStop"] = [=[The player stops descending (while flying or swimming).]=],
+	-- ["DescendStop"] = [=[The player stops descending (while swimming or flying)]=],
+	-- ["DescendStop"] = [=[The player stops descending (while flying or swimming).]=],
+	["DescendStop"] = [=[Stops descending while flying or swimming.]=],
 
 	-- ["DisableAddOn"] = [=[Disable the specified AddOn for subsequent sessions.]=],
 	-- ["DisableAddOn"] = [=[Disable an AddOn for subsequent sessions.]=],
-	["DisableAddOn"] = [=[Disables an addon on the next session.]=],
+	["DisableAddOn"] = [=[Disables an addon for subsequent sessions.]=],
 
-	["DismissCompanion"] = [=[Dismisses an active companion.]=],
-	["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
+	-- ["DismissCompanion"] = [=[Dismisses an active companion.]=],
+	-- ["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
+	["DismissCompanion"] = [=[Dismisses the current mount or companion pet.]=],
 
-	["Dismount"] = [=[The player dismounts the current mount.]=],
-	["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
+	-- ["Dismount"] = [=[The player dismounts the current mount.]=],
+	-- ["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
+	["Dismount"] = [=[Dismounts the player.]=],
 
-	["DisplayChannelOwner"] = [=[Displays the owner of the specified channel in the default chat.]=],
-	["DisplayChannelOwner"] = [=[Displays the name of the owner of the specified channel in the Default Chat Frame. Same as typing "/owner <channel>" in chat.]=],
+	-- ["DisplayChannelOwner"] = [=[Displays the owner of the specified channel in the default chat.]=],
+	-- ["DisplayChannelOwner"] = [=[Displays the name of the owner of the specified channel in the Default Chat Frame. Same as typing "/owner <channel>" in chat.]=],
+	["DisplayChannelOwner"] = [=[Prints the name of the owner of the specified channel.]=],
 
-	["DoEmote"] = [=[Perform a voice emote.]=],
-	["DoEmote"] = [=[ DoEmote(token [,target])]=],
+	-- ["DoEmote"] = [=[Perform a voice emote.]=],
+	-- ["DoEmote"] = [=[ DoEmote(token [,target])]=],
+	["DoEmote"] = [=[Performs an emote.]=],
 
-	["DoReadyCheck"] = [=[Initiate a ready check.]=],
-	["DoReadyCheck"] = [=[Initiates a raid ready check.  Can only be called by the raid leader, does nothing if called by other raid members or outside of a raid.]=],
+	["DoReadyCheck"] = [=[Initiates a ready check.]=],
+	-- ["DoReadyCheck"] = [=[Initiates a raid ready check.  Can only be called by the raid leader, does nothing if called by other raid members or outside of a raid.]=],
 
-	["DropCursorMoney"] = [=[Drops the amount of money held by the cursor.]=],
-	["DropCursorMoney"] = [=[Drops the money currently attached to your cursor back into your bag.]=],
+	-- ["DropCursorMoney"] = [=[Drops the amount of money held by the cursor.]=],
+	-- ["DropCursorMoney"] = [=[Drops the money currently attached to your cursor back into your bag.]=],
+	["DropCursorMoney"] = [=[Drops money held by the cursor back into your bag.]=],
 
-	["DropItemOnUnit"] = [=[Drops an item from the cursor onto a unit.]=],
-	["DropItemOnUnit"] = [=[Drops an item from the cursor onto the specified target. Can be used to initiate a trade session (though see [[World_of_Warcraft_API#Trading_Functions|Trade functions]]) or feeding pets.]=],
+	["DropItemOnUnit"] = [=[Drops an item from the cursor onto a unit, i.e. to initiate a trade.]=],
+	-- ["DropItemOnUnit"] = [=[Drops an item from the cursor onto the specified target. Can be used to initiate a trade session (though see [[World_of_Warcraft_API#Trading_Functions|Trade functions]]) or feeding pets.]=],
 
-	["EditMacro"] = [=[Saves a macro.]=],
+	-- ["EditMacro"] = [=[Saves a macro.]=],
 	["EditMacro"] = [=[Modifies an existing macro.]=],
 
 	-- ["EnableAddOn"] = [=[Enable the specified AddOn for subsequent sessions.]=],
 	-- ["EnableAddOn"] = [=[Enables an AddOn for subsequent sessions.]=],
-	["EnableAddOn"] = [=[Enables an addon on the next session.]=],
+	["EnableAddOn"] = [=[Enables an addon for subsequent sessions.]=],
 
 	["EnumerateFrames"] = [=[Get the Frame which follows currentFrame.]=],
 	["EnumerateFrames"] = [=[Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.]=],
