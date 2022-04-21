@@ -194,7 +194,7 @@ local t = {
 
 	-- ["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided when a building is active.]=],
 	-- ["C_ContributionCollector.GetBuffs"] = [=[Retrieve the [[buff]]s provided by a building on the [[Broken Shore]] or from a Warfront.]=],
-	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided by a building on the [[Broken Shore]] or from a [[Warfront]].]=],
+	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided by a building, e.g. in a [[Warfront]].]=],
 
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data.]=],
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
@@ -833,7 +833,7 @@ local t = {
 
 	-- ["FactionToggleAtWar"] = [=[Toggle the At War flag for a faction.]=],
 	-- ["FactionToggleAtWar"] = [=[Toggle the At War status of a faction row.]=],
-	["FactionToggleAtWar"] = [=[Toggles the "At War" status for a faction.]=],
+	["FactionToggleAtWar"] = [=[Toggles the [[At War]] status for a faction.]=],
 
 	-- ["FillLocalizedClassList"] = [=[Fills table with localized class names.]=],
 	["FillLocalizedClassList"] = [=[Fills a table with localized (female) class names.]=],
@@ -1112,64 +1112,71 @@ local t = {
 	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots in a bag.]=],
 
 	["GetCritChance"] = [=[Returns the player's melee critical hit chance.]=],
-	["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
+	-- ["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
 
-	["GetCurrentArenaSeason"] = [=[Gets the current Arena season.]=],
+	-- ["GetCurrentArenaSeason"] = [=[Gets the current Arena season.]=],
 	["GetCurrentArenaSeason"] = [=[Returns the current arena season]=],
 
-	["GetCurrentBindingSet"] = [=[Queries if current set of key bindings is character or account specific.]=],
-	["GetCurrentBindingSet"] = [=[Returns whether account- or character-specific bindings are active.]=],
+	-- ["GetCurrentBindingSet"] = [=[Queries if current set of key bindings is character or account specific.]=],
+	-- ["GetCurrentBindingSet"] = [=[Returns whether account- or character-specific bindings are active.]=],
+	["GetCurrentBindingSet"] = [=[Returns if either account or character-specific bindings are active.]=],
 
-	["GetCurrentResolution"] = [=[Get the index of the current screen resolution.]=],
-	["GetCurrentResolution"] = [=[Returns the index of the current resolution in effect]=],
+	-- ["GetCurrentResolution"] = [=[Get the index of the current screen resolution.]=],
+	["GetCurrentResolution"] = [=[Returns the index of the current screen resolution.]=],
 
-	["GetCurrentTitle"] = [=[Returns the player's current [[titleId]].]=],
-	["GetCurrentTitle"] = [=[Returns the title currently used by the player.]=],
+	-- ["GetCurrentTitle"] = [=[Returns the player's current [[titleId]].]=],
+	["GetCurrentTitle"] = [=[Returns the current [[title]].]=],
 
-	["GetCursorInfo"] = [=[Returns information about what the cursor is holding.]=],
-	["GetCursorInfo"] = [=[Returns information about what the mouse cursor is holding.]=],
+	-- ["GetCursorInfo"] = [=[Returns information about what the cursor is holding.]=],
+	-- ["GetCursorInfo"] = [=[Returns information about what the mouse cursor is holding.]=],
+	["GetCursorInfo"] = [=[Returns what the mouse cursor is holding.]=],
 
 	["GetCursorMoney"] = [=[Returns the amount of money held by the cursor.]=],
-	["GetCursorMoney"] = [=[Returns the amount of copper held on the cursor.]=],
+	-- ["GetCursorMoney"] = [=[Returns the amount of copper held on the cursor.]=],
 
-	["GetDefaultLanguage"] = [=[Returns the default language that the unit is speaking after logon.]=],
+	-- ["GetDefaultLanguage"] = [=[Returns the default language that the unit is speaking after logon.]=],
 	["GetDefaultLanguage"] = [=[Returns the player's default language.]=],
 
-	["GetDetailedItemLevelInfo"] = [=[Returns an item's item level.]=],
-	["GetDetailedItemLevelInfo"] = [=[Returns detailed item level information about a given item.]=],
+	-- ["GetDetailedItemLevelInfo"] = [=[Returns an item's item level.]=],
+	["GetDetailedItemLevelInfo"] = [=[Returns detailed item level info.]=],
 
-	["GetDodgeChance"] = [=[Returns the player's percentage dodge chance.]=],
-	["GetDodgeChance"] = [=[Returns the Player's dodge chance in percentage.]=],
+	-- ["GetDodgeChance"] = [=[Returns the player's percentage dodge chance.]=],
+	["GetDodgeChance"] = [=[Returns the player's dodge chance %.]=],
 
-	["GetDungeonDifficultyID"] = [=[Returns the player's current Dungeon Difficulty setting (1, 2, 8).]=],
-	["GetDungeonDifficultyID"] = [=[Returns the player's currently selected dungeon difficulty.]=],
+	-- ["GetDungeonDifficultyID"] = [=[Returns the player's current Dungeon Difficulty setting (1, 2, 8).]=],
+	-- ["GetDungeonDifficultyID"] = [=[Returns the player's currently selected dungeon difficulty.]=],
+	["GetDungeonDifficultyID"] = [=[Returns selected dungeon difficulty.]=],
 
-	["GetFactionInfo"] = [=[Gets details for a specific faction/faction header.]=],
-	["GetFactionInfo"] = [=[Returns information about the specified faction or faction header in the player's reputation pane.]=],
+	-- ["GetFactionInfo"] = [=[Gets details for a specific faction/faction header.]=],
+	-- ["GetFactionInfo"] = [=[Returns information about the specified faction or faction header in the player's reputation pane.]=],
+	["GetFactionInfo"] = [=[Returns info about a faction.]=],
 
-	["GetFileIDFromPath"] = [=[Returns the fileID corresponding to the given game file path (texture, sound, model, etc.).]=],
-	["GetFileIDFromPath"] = [=[Returns the FileDataID corresponding to the given game file path (texture, sound, model, etc.).]=],
+	-- ["GetFileIDFromPath"] = [=[Returns the fileID corresponding to the given game file path (texture, sound, model, etc.).]=],
+	-- ["GetFileIDFromPath"] = [=[Returns the FileDataID corresponding to the given game file path (texture, sound, model, etc.).]=],
+	["GetFileIDFromPath"] = [=[Returns the FileID for an Interface/ file path.]=],
 
-	["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement.]=],
-	["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement, resulting from a call to {{api|SetAchievementSearchString}}.]=],
+	["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement by index.]=],
+	-- ["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement, resulting from a call to {{api|SetAchievementSearchString}}.]=],
 
-	["GetFonts"] = [=[Returns all available fonts.]=],
-	["GetFonts"] = [=[Returns a table listing all registered font object names.]=],
+	-- ["GetFonts"] = [=[Returns all available fonts.]=],
+	-- ["GetFonts"] = [=[Returns a table listing all registered font object names.]=],
+	["GetFonts"] = [=[Returns a list of available fonts.]=],
 
-	["GetFrameCPUUsage"] = [=[Returns the time used and number of function calls of any of the frame's script handlers. If 'includeChildren' is true or omitted, the time and call count will include the handlers for all of the frame's children as well.]=],
+	-- ["GetFrameCPUUsage"] = [=[Returns the time used and number of function calls of any of the frame's script handlers. If 'includeChildren' is true or omitted, the time and call count will include the handlers for all of the frame's children as well.]=],
 	["GetFrameCPUUsage"] = [=[Returns the total time used by and number of calls of a frame's event handlers.]=],
 
-	["GetFramerate"] = [=[Returns the current framerate (full precision)]=],
-	["GetFramerate"] = [=[Retrieve the current framerate (frames / second).]=],
+	["GetFramerate"] = [=[Returns the current framerate.]=],
+	-- ["GetFramerate"] = [=[Retrieve the current framerate (frames / second).]=],
 
-	["GetFramesRegisteredForEvent"] = [=[Returns a list of frames that are registered for the given event.]=],
-	["GetFramesRegisteredForEvent"] = [=[Returns all frames registered for the specified event, in dispatch order.]=],
+	["GetFramesRegisteredForEvent"] = [=[Returns a list of frames that are registered for the specified event.]=],
+	-- ["GetFramesRegisteredForEvent"] = [=[Returns all frames registered for the specified event, in dispatch order.]=],
 
-	["GetFriendshipReputation"] = [=[Gets details about an NPC friend.]=],
-	["GetFriendshipReputation"] = [=[Returns information about the specified friendship in the player's reputation pane.]=],
+	-- ["GetFriendshipReputation"] = [=[Gets details about an NPC friend.]=],
+	["GetFriendshipReputation"] = [=[Returns info about a friendship reputation.]=],
 
-	["GetFriendshipReputationRanks"] = [=[Gets rank data about an NPC friend.]=],
-	["GetFriendshipReputationRanks"] = [=[Returns friendship rank indices.]=],
+	-- ["GetFriendshipReputationRanks"] = [=[Gets rank data about an NPC friend.]=],
+	-- ["GetFriendshipReputationRanks"] = [=[Returns friendship rank indices.]=],
+	["GetFriendshipReputationRanks"] = [=[Returns the ranks for a friendship reputation.]=],
 
 	["GetGuildBankItemInfo"] = [=[Returns texture, amount and integer 1 or nil depending on locked state.]=],
 	["GetGuildBankItemInfo"] = [=[Gets information about an item slot from the guild bank.]=],
