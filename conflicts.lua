@@ -115,10 +115,10 @@ local t = {
 	["BNSendGameData"] = [=[Sends an addon comm message to a Battle.net friend.]=],
 
 	-- ["BNSetAFK"] = [=[Set or unset AFK status]=],
-	["BNSetAFK"] = [=[Sets the player's Battle.net AFK status.]=],
+	["BNSetAFK"] = [=[Sets the player's online AFK status.]=],
 
 	-- ["BNSetDND"] = [=[Set or unset DND status]=],
-	["BNSetDND"] = [=[Sets the player's Battle.net DND status.]=],
+	["BNSetDND"] = [=[Sets the player's online DND status.]=],
 
 	-- ["BNSetFriendFavoriteFlag"] = [=[Sets a battle.net friend as favorite.]=],
 	["BNSetFriendFavoriteFlag"] = [=[Favorites a Battle.net friend.]=],
@@ -915,26 +915,30 @@ local t = {
 	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns information about a branch of Archaeology.]=],
 	["GetArchaeologyRaceInfoByID"] = [=[Returns info about an Archaeology race.]=],
 
-	["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
-	["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
+	-- ["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
+	-- ["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
+	["GetAreaSpiritHealerTime"] = [=[Returns the time until the next Spirit Healer resurrection in battlegrounds.]=],
 
-	["GetArtifactProgress"] = [=[Returns fragment-information about the [[API SetSelectedArtifact|selected]] artifact.]=],
-	["GetArtifactProgress"] = [=[Returns information about current used fragments for the selected artifact.]=],
+	-- ["GetArtifactProgress"] = [=[Returns fragment-information about the [[API SetSelectedArtifact|selected]] artifact.]=],
+	-- ["GetArtifactProgress"] = [=[Returns information about current used fragments for the selected artifact.]=],
+	["GetArtifactProgress"] = [=[Returns progress info for the selected Archaeology artifact.]=],
 
-	["GetAttackPowerForStat"] = [=[Returns the amount of attack power contributed by a specified amount of a particular stat.]=],
-	["GetAttackPowerForStat"] = [=[Returns attack power granted by particular amount of a particular stat.]=],
+	["GetAttackPowerForStat"] = [=[Returns the amount of attack power contributed by a specific amount of a stat.]=],
+	-- ["GetAttackPowerForStat"] = [=[Returns attack power granted by particular amount of a particular stat.]=],
 
-	["GetAutoDeclineGuildInvites"] = [=[Returns if guild invites are blocked.]=],
-	["GetAutoDeclineGuildInvites"] = [=[Returns whether guild invitations are being automatically declined.]=],
+	-- ["GetAutoDeclineGuildInvites"] = [=[Returns if guild invites are blocked.]=],
+	-- ["GetAutoDeclineGuildInvites"] = [=[Returns whether guild invitations are being automatically declined.]=],
+	["GetAutoDeclineGuildInvites"] = [=[True if guild invites are being automatically declined.]=],
 
-	["GetAutoQuestPopUp"] = [=[Retrieves quest info by index that added using [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
-	["GetAutoQuestPopUp"] = [=[Returns information about a popup quest notification.]=],
+	-- ["GetAutoQuestPopUp"] = [=[Retrieves quest info by index that added using [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
+	["GetAutoQuestPopUp"] = [=[Returns info about a popup quest notification.]=],
 
-	["GetAvailableQuestInfo"] = [=[Returns metadata (quest type) about an available quest.]=],
-	["GetAvailableQuestInfo"] = [=[Returns information about the type of an available quest.]=],
+	-- ["GetAvailableQuestInfo"] = [=[Returns metadata (quest type) about an available quest.]=],
+	["GetAvailableQuestInfo"] = [=[Returns info about an available quest.]=],
 
-	["GetAverageItemLevel"] = [=[Returns the character's current average iLevel and current average iLevel equipped.]=],
-	["GetAverageItemLevel"] = [=[Returns the average item level of the player's character and average item level equipped.]=],
+	-- ["GetAverageItemLevel"] = [=[Returns the character's current average iLevel and current average iLevel equipped.]=],
+	-- ["GetAverageItemLevel"] = [=[Returns the average item level of the player's character and average item level equipped.]=],
+	["GetAverageItemLevel"] = [=[Returns the average item level of the player.]=],
 
 	["GetBagName"] = [=[Get the name of one of the player's bags.]=],
 	["GetBagName"] = [=[Returns the name of the bag for the selected index.]=],
