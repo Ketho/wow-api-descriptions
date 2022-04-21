@@ -822,32 +822,35 @@ local t = {
 	-- ["EnableAddOn"] = [=[Enables an AddOn for subsequent sessions.]=],
 	["EnableAddOn"] = [=[Enables an addon for subsequent sessions.]=],
 
-	["EnumerateFrames"] = [=[Get the Frame which follows currentFrame.]=],
-	["EnumerateFrames"] = [=[Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.]=],
+	-- ["EnumerateFrames"] = [=[Get the Frame which follows currentFrame.]=],
+	-- ["EnumerateFrames"] = [=[Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.]=],
+	["EnumerateFrames"] = [=[Returns the frame which follows the current frame.]=],
 
 	["EnumerateServerChannels"] = [=[Retrieves all available server channels (zone dependent).]=],
-	["EnumerateServerChannels"] = [=[Retrieves all available server channels (zone dependent). ]=],
 
-	["ExpandQuestHeader"] = [=[Expands a quest header.]=],
-	["ExpandQuestHeader"] = [=[Expands and collapses quest log headers.]=],
+	-- ["ExpandQuestHeader"] = [=[Expands a quest header.]=],
+	["ExpandQuestHeader"] = [=[Expands/collapses a quest log header.]=],
 
-	["FactionToggleAtWar"] = [=[Toggle the At War flag for a faction.]=],
-	["FactionToggleAtWar"] = [=[Toggle the At War status of a faction row.]=],
+	-- ["FactionToggleAtWar"] = [=[Toggle the At War flag for a faction.]=],
+	-- ["FactionToggleAtWar"] = [=[Toggle the At War status of a faction row.]=],
+	["FactionToggleAtWar"] = [=[Toggles the "At War" status for a faction.]=],
 
-	["FillLocalizedClassList"] = [=[Fills table with localized class names.]=],
+	-- ["FillLocalizedClassList"] = [=[Fills table with localized class names.]=],
 	["FillLocalizedClassList"] = [=[Fills a table with localized (female) class names.]=],
 
-	["FlipCameraYaw"] = [=[Rotates the camera about the Z-axis by the angle amount specified in degrees.]=],
-	["FlipCameraYaw"] = [=[Rotates the camera about the Z-axis.]=],
+	-- ["FlipCameraYaw"] = [=[Rotates the camera about the Z-axis by the angle amount specified in degrees.]=],
+	["FlipCameraYaw"] = [=[Rotates the camera around the Z-axis.]=],
 
-	["FocusUnit"] = [=[Sets your unit for focus.]=],
+	-- ["FocusUnit"] = [=[Sets your unit for focus.]=],
 	["FocusUnit"] = [=[Sets the [[focus target]].]=],
 
-	["FollowUnit"] = [=[Follow an ally with the specified UnitID.]=],
-	["FollowUnit"] = [=[Start following an allied unit]=],
+	-- ["FollowUnit"] = [=[Follow an ally with the specified UnitID.]=],
+	-- ["FollowUnit"] = [=[Start following an allied unit]=],
+	["FollowUnit"] = [=[Follows an allied unit.]=],
 
-	["ForceQuit"] = [=[Instantly quits the game, bypassing the timer.]=],
-	["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
+	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the timer.]=],
+	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
+	["ForceQuit"] = [=[Instantly quits the game, bypassing the 20 seconds timer.]=],
 
 	["GetAchievementCriteriaInfo"] = [=[Returns information about the requested criteria.]=],
 	["GetAchievementCriteriaInfo"] = [=[Returns information about the given Achievement's specified criteria.]=],
