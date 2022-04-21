@@ -846,7 +846,7 @@ local t = {
 
 	-- ["FollowUnit"] = [=[Follow an ally with the specified UnitID.]=],
 	-- ["FollowUnit"] = [=[Start following an allied unit]=],
-	["FollowUnit"] = [=[Follows an allied unit.]=],
+	["FollowUnit"] = [=[Follows a friendly player.]=],
 
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the timer.]=],
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
