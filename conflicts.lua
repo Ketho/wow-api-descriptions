@@ -1000,11 +1000,11 @@ local t = {
 
 	-- ["GetBindingAction"] = [=[Get the action bound to that key.]=],
 	-- ["GetBindingAction"] = [=[Returns the name of the action performed by the specified binding.]=],
-	["GetBindingAction"] = [=[Returns the binding name for a specific key (combination).]=],
+	["GetBindingAction"] = [=[Returns the binding name for a key (combination).]=],
 
 	-- ["GetBindingKey"] = [=[Get the key(s) bound to that action.]=],
 	-- ["GetBindingKey"] = [=[Returns all keys currently bound to the command specified by ''command''.  This function is almost identical to [[API GetBinding|GetBinding(index)]] except it takes the command name as an argument instead of the index and doesn't return the command name along with the key bindings.]=],
-	["GetBindingKey"] = [=[[Returns the binding name for a specific key (combination). Discards key modifiers until it finds a binding.]=],
+	["GetBindingKey"] = [=[[Returns the binding name for a key (combination). Discards key modifiers until it finds a binding.]=],
 
 	-- ["GetBindingText"] = [=[Gets the string value for the key.]=],
 	["GetBindingText"] = [=[Returns the string for the given key and prefix. Essentially a constrained getglobal() for bindings.]=],
@@ -1064,41 +1064,52 @@ local t = {
 	-- ["GetChatWindowMessages"] = [=[Returns chat types received by a chat window.]=],
 	["GetChatWindowMessages"] = [=[Returns subscribed message types for a chat window.]=],
 
-	["GetCoinText"] = [=[Breaks down money and inserts separator strings.]=],
-	["GetCoinText"] = [=[Breaks down an amount of money into gold/silver/copper, inserts separator strings, and returns the resulting string.]=],
+	-- ["GetCoinText"] = [=[Breaks down money and inserts separator strings.]=],
+	-- ["GetCoinText"] = [=[Breaks down an amount of money into gold/silver/copper, inserts separator strings, and returns the resulting string.]=],
+	["GetCoinText"] = [=[Breaks up an amount of money into gold/silver/copper.]=],
 
-	["GetCoinTextureString"] = [=[Breaks down money and inserts texture strings.]=],
-	["GetCoinTextureString"] = [=[Breaks down an amount of money into gold/silver/copper, inserts appropriate [[UI_escape_sequences|"|T" texture strings]] for coin icons, and returns the resulting string.]=],
+	-- ["GetCoinTextureString"] = [=[Breaks down money and inserts texture strings.]=],
+	-- ["GetCoinTextureString"] = [=[Breaks down an amount of money into gold/silver/copper, inserts appropriate [[UI_escape_sequences|"|T" texture strings]] for coin icons, and returns the resulting string.]=],
+	["GetCoinTextureString"] = [=[Breaks up an amount of money into gold/silver/copper with icons.]=],
 
-	["GetCombatRating"] = [=[Returns the player's combat rating for a particular combat rating.]=],
-	["GetCombatRating"] = [=[Returns the number of points of a specific combat rating the player has.]=],
+	-- ["GetCombatRating"] = [=[Returns the player's combat rating for a particular combat rating.]=],
+	-- ["GetCombatRating"] = [=[Returns the number of points of a specific combat rating the player has.]=],
+	["GetCombatRating"] = [=[Returns a specific combat rating.]=],
 
-	["GetCombatRatingBonus"] = [=[Returns the player's combat rating bonus for a particular combat rating.]=],
-	["GetCombatRatingBonus"] = [=[Returns the bonus, in percent (or other converted units, such as skill points), of a specific combat rating for the player.]=],
+	-- ["GetCombatRatingBonus"] = [=[Returns the player's combat rating bonus for a particular combat rating.]=],
+	-- ["GetCombatRatingBonus"] = [=[Returns the bonus, in percent (or other converted units, such as skill points), of a specific combat rating for the player.]=],
+	["GetCombatRatingBonus"] = [=[Returns the bonus percentage for a specific combat rating.]=],
 
-	["GetComboPoints"] = [=[Get the current number of combo points.]=],
-	["GetComboPoints"] = [=[Retrieves the number of combo points gained by a player.]=],
+	-- ["GetComboPoints"] = [=[Get the current number of combo points.]=],
+	-- ["GetComboPoints"] = [=[Retrieves the number of combo points gained by a player.]=],
+	["GetComboPoints"] = [=[Returns the amount of current combo points.]=],
 
-	["GetCompanionInfo"] = [=[Returns info about a selected companion.]=],
-	["GetCompanionInfo"] = [=[Returns information about the companions you have.]=],
+	-- ["GetCompanionInfo"] = [=[Returns info about a selected companion.]=],
+	-- ["GetCompanionInfo"] = [=[Returns information about the companions you have.]=],
+	["GetCompanionInfo"] = [=[Returns info about a companion.]=],
 
-	["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
-	["GetComparisonStatistic"] = [=[Return the value of the requested Statistic from the comparison unit.]=],
+	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
+	-- ["GetComparisonStatistic"] = [=[Return the value of the requested Statistic from the comparison unit.]=],
+	["GetComparisonStatistic"] = [=[Returns the specified statistic from the comparison player.]=],
 
-	["GetContainerItemDurability"] = [=[Get current and maximum durability of an item in the character's bags.]=],
-	["GetContainerItemDurability"] = [=[Returns current and maximum durability of an item in the character's bags.]=],
+	-- ["GetContainerItemDurability"] = [=[Get current and maximum durability of an item in the character's bags.]=],
+	-- ["GetContainerItemDurability"] = [=[Returns current and maximum durability of an item in the character's bags.]=],
+	["GetContainerItemDurability"] = [=[Returns the durability of an item in a container slot.]=],
 
-	["GetContainerItemID"] = [=[Returns the item ID of the item in a particular container slot.]=],
-	["GetContainerItemID"] = [=[Returns the item id of the item in a particular container slot.]=],
+	["GetContainerItemID"] = [=[Returns the item ID of an item in a container slot.]=],
+	-- ["GetContainerItemID"] = [=[Returns the item id of the item in a particular container slot.]=],
 
-	["GetContainerItemInfo"] = [=[Get the info for an item in one of the player's bags.]=],
-	["GetContainerItemInfo"] = [=[Returns information about an item in a container slot.]=],
+	-- ["GetContainerItemInfo"] = [=[Get the info for an item in one of the player's bags.]=],
+	-- ["GetContainerItemInfo"] = [=[Returns information about an item in a container slot.]=],
+	["GetContainerItemInfo"] = [=[Returns info about an item in a container slot.]=],
 
-	["GetContainerItemQuestInfo"] = [=[Returns information about quest and quest-starting items in your bags.]=],
-	["GetContainerItemQuestInfo"] = [=[Returns whether the item in the slot is a quest item.]=],
+	-- ["GetContainerItemQuestInfo"] = [=[Returns information about quest and quest-starting items in your bags.]=],
+	-- ["GetContainerItemQuestInfo"] = [=[Returns whether the item in the slot is a quest item.]=],
+	["GetContainerItemQuestInfo"] = [=[Returns info about a quest item in a container slot.]=],
 
-	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots and type of slots in the bag specified by the index.]=],
-	["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
+	-- ["GetContainerNumFreeSlots"] = [=[Returns the number of free slots and type of slots in the bag specified by the index.]=],
+	-- ["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
+	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots in a bag.]=],
 
 	["GetCritChance"] = [=[Returns the player's melee critical hit chance.]=],
 	["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
@@ -1235,8 +1246,9 @@ local t = {
 	["GetInventoryItemBroken"] = [=[Determine if an inventory item is broken (no durability).]=],
 	["GetInventoryItemBroken"] = [=[Determine if an inventory item is broken (no durability)]=],
 
-	["GetInventoryItemDurability"] = [=[Returns the maximum and remaining durability points for an inventory item.]=],
-	["GetInventoryItemDurability"] = [=[Returns current and maximum durability of an equipped item.]=],
+	-- ["GetInventoryItemDurability"] = [=[Returns the maximum and remaining durability points for an inventory item.]=],
+	-- ["GetInventoryItemDurability"] = [=[Returns current and maximum durability of an equipped item.]=],
+	["GetInventoryItemDurability"] = [=[Returns the durability of an equipped item.]=],
 
 	["GetInventoryItemID"] = [=[Returns the item id of the item in the specified inventory slot.]=],
 	["GetInventoryItemID"] = [=[Returns the item id of the item in the specified inventory slot]=],
