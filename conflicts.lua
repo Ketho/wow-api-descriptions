@@ -36,7 +36,7 @@ local t = {
 
 	-- ["AcceptSockets"] = [=[Sockets tentative gems into the sockets, replacing existing gems if necessary.]=],
 	-- ["AcceptSockets"] = [=[Confirms insertion of new gems into the item currently being socketed.]=],
-	["AcceptSockets"] = [=[Confirms tentatively socketed gems.]=],
+	["AcceptSockets"] = [=[Confirms pending gems for socketing.]=],
 
 	-- ["AcceptTrade"] = [=[A pending trade will be accepted.]=],
 	["AcceptTrade"] = [=[Accepts the current trade offer.]=],
@@ -685,43 +685,49 @@ local t = {
 	-- ["CheckInteractDistance"] = [=[Checks whether you are in range to perform a specific interaction with a specified unit.]=],
 	["CheckInteractDistance"] = [=[True if the player is in range to perform a specific interaction with the specified unit.]=],
 
-	["ClearCursor"] = [=[Clears whatever item the cursor is dragging from the cursor.]=],
-	["ClearCursor"] = [=[Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).]=],
+	-- ["ClearCursor"] = [=[Clears whatever item the cursor is dragging from the cursor.]=],
+	-- ["ClearCursor"] = [=[Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).]=],
+	["ClearCursor"] = [=[Clears any objects from the in-game cursor.]=],
 
-	["ClearFocus"] = [=[Removes any focus you may have set.]=],
-	["ClearFocus"] = [=[I believe this is supposed to clear your focus just like /clearfocus does. However, it has been blocked by blizzard or something like that.]=],
+	-- ["ClearFocus"] = [=[Removes any focus you may have set.]=],
+	-- ["ClearFocus"] = [=[I believe this is supposed to clear your focus just like /clearfocus does. However, it has been blocked by blizzard or something like that.]=],
+	["ClearFocus"] = [=[Clears the focus target.]=],
 
-	["ClearOverrideBindings"] = [=[Reset all overrides belonging to an owner.]=],
+	-- ["ClearOverrideBindings"] = [=[Reset all overrides belonging to an owner.]=],
+	-- ["ClearOverrideBindings"] = [=[Removes all override bindings owned by a particular frame.]=],
 	["ClearOverrideBindings"] = [=[Removes all override bindings owned by a particular frame.]=],
 
-	["ClearSendMail"] = [=[This clears the text in the send mail tab and places the COD item in the inventory.]=],
-	["ClearSendMail"] = [=[Clears everything that has been typed into the 'Send Mail' window.]=],
+	-- ["ClearSendMail"] = [=[This clears the text in the send mail tab and places the COD item in the inventory.]=],
+	-- ["ClearSendMail"] = [=[Clears everything that has been typed into the 'Send Mail' window.]=],
+	["ClearSendMail"] = [=[Clears the text and item attachments in the Send Mail tab.]=],
 
 	["ClearTarget"] = [=[Clears the selected target.]=],
-	["ClearTarget"] = [=[Clears the player's target.]=],
+	-- ["ClearTarget"] = [=[Clears the player's target.]=],
 
-	["ClickSendMailItemButton"] = [=[Places or picks up an item from the send mail frame.]=],
-	["ClickSendMailItemButton"] = [=[Places or picks up an item from the send mail frame. Can also clear an item rather than picking it up.]=],
+	["ClickSendMailItemButton"] = [=[Drops or picks up an item from the cursor to the Send Mail tab.]=],
+	-- ["ClickSendMailItemButton"] = [=[Places or picks up an item from the send mail frame. Can also clear an item rather than picking it up.]=],
 
-	["CloseBankFrame"] = [=[Close the bank frame if it's open.]=],
-	["CloseBankFrame"] = [=[Will Close the Bank Frame if opened.]=],
+	-- ["CloseBankFrame"] = [=[Close the bank frame if it's open.]=],
+	-- ["CloseBankFrame"] = [=[Will Close the Bank Frame if opened.]=],
+	["CloseBankFrame"] = [=[Closes the bank window.]=],
 
 	["CloseMail"] = [=[Closes the mail window.]=],
-	["CloseMail"] = [=[Closes the 'Mailbox' window.]=],
+	-- ["CloseMail"] = [=[Closes the 'Mailbox' window.]=],
 
-	["ClosePetStables"] = [=[Close the pet stables user interface.]=],
+	-- ["ClosePetStables"] = [=[Close the pet stables user interface.]=],
 	["ClosePetStables"] = [=[Closes the pet stable window.]=],
 
 	["ClosePetition"] = [=[Closes the current petition.]=],
-	["ClosePetition"] = [=[Closes a petition that has been presented to the player.]=],
+	-- ["ClosePetition"] = [=[Closes a petition that has been presented to the player.]=],
 
-	["CloseSocketInfo"] = [=[Stops considering the item for socketing, without applying changes.]=],
-	["CloseSocketInfo"] = [=[Stops considering the item for socketing, ignoring any tentative changes made.]=],
+	-- ["CloseSocketInfo"] = [=[Stops considering the item for socketing, without applying changes.]=],
+	-- ["CloseSocketInfo"] = [=[Stops considering the item for socketing, ignoring any tentative changes made.]=],
+	["CloseSocketInfo"] = [=[Cancels pending gems for socketing.]=],
 
-	["CloseTaxiMap"] = [=[Closes the Flightpath Map.]=],
-	["CloseTaxiMap"] = [=[Closes your Flightpath Map.]=],
+	["CloseTaxiMap"] = [=[Closes the [[Flight Map]].]=],
+	-- ["CloseTaxiMap"] = [=[Closes your Flightpath Map.]=],
 
-	["CloseTrade"] = [=[Closes the trade.]=],
+	-- ["CloseTrade"] = [=[Closes the trade.]=],
 	["CloseTrade"] = [=[Closes the trade window.]=],
 
 	["CombatLogGetCurrentEventInfo"] = [=[Returns the current {{api|t=e|COMBAT_LOG_EVENT}} values.]=],
