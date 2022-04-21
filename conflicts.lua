@@ -39,7 +39,7 @@ local t = {
 	["AcceptSockets"] = [=[Confirms tentatively socketed gems.]=],
 
 	-- ["AcceptTrade"] = [=[A pending trade will be accepted.]=],
-	["AcceptTrade"] = [=[Accepts a pending trade.]=],
+	["AcceptTrade"] = [=[Accepts the current trade offer.]=],
 
 	-- ["AcceptXPLoss"] = [=[Accept the durability loss to be reborn by a spirit healer. (The name is a remnant from when sprit res was an XP loss instead.)]=],
 	-- ["AcceptXPLoss"] = [=[Accept the [[resurrection sickness]] and durability loss when being resurrected by the spirit healer instead of returning to a corpse.]=],
@@ -287,7 +287,7 @@ local t = {
 
 	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text ''must'' be displayed.]=],
 	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text must be displayed.]=],
-	["C_GossipInfo.ForceGossip"] = [=[True if gossip text must be displayed e.g. making this return true shows the Banker gossip.]=],
+	["C_GossipInfo.ForceGossip"] = [=[True if gossip text must be displayed, e.g. making this return true shows the Banker gossip.]=],
 
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Retrieves a list of quests which can be turned in on the NPC you are talking to.]=],
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Gets the list of active quests from an NPC.]=],
@@ -302,10 +302,10 @@ local t = {
 	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip options at an NPC.]=],
 
 	-- ["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns gossip poi for a map.]=],
-	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the gossip point of interest on the map e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the gossip point of interest on the map, e.g. the red flags when asking city guards for directions.]=],
 
 	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns info about a gossip point of interest e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiInfo"] = [=[Returns info about a gossip point of interest, e.g. the red flags when asking city guards for directions.]=],
 
 	-- ["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
 	["C_GossipInfo.GetText"] = [=[Returns the gossip text.]=],
@@ -612,65 +612,78 @@ local t = {
 	-- ["CanGuildPromote"] = [=[Checks if the player can promote guild members.]=],
 	["CanGuildPromote"] = [=[True if the player can promote guild members.]=],
 
-	["CanInspect"] = [=[Returns whether you can inspect the specified unit.]=],
-	["CanInspect"] = [=[Returns whether you can inspect a particular unit.]=],
+	-- ["CanInspect"] = [=[Returns whether you can inspect the specified unit.]=],
+	-- ["CanInspect"] = [=[Returns whether you can inspect a particular unit.]=],
+	["CanInspect"] = [=[True if the player can inspect the specified unit.]=],
 
-	["CanJoinBattlefieldAsGroup"] = [=[Returns nil if the player can not do a group join for a battlefield.]=],
-	["CanJoinBattlefieldAsGroup"] = [=[Returns, whether the player can join a battlefield as group or not.]=],
+	-- ["CanJoinBattlefieldAsGroup"] = [=[Returns nil if the player can not do a group join for a battlefield.]=],
+	-- ["CanJoinBattlefieldAsGroup"] = [=[Returns, whether the player can join a battlefield as group or not.]=],
+	["CanJoinBattlefieldAsGroup"] = [=[True if the player can join a battlefield with a group.]=],
 
-	["CanMerchantRepair"] = [=[Returns true if the merchant can repair items.]=],
-	["CanMerchantRepair"] = [=[Can the merchant repair items or not.]=],
+	-- ["CanMerchantRepair"] = [=[Returns true if the merchant can repair items.]=],
+	-- ["CanMerchantRepair"] = [=[Can the merchant repair items or not.]=],
+	["CanMerchantRepair"] = [=[True if the merchant can repair items.]=],
 
-	["CanScanResearchSite"] = [=[Returns whether the player is currently on a digsite.]=],
-	["CanScanResearchSite"] = [=[Returns whether the player is currently on a [[digsite]].]=],
+	-- ["CanScanResearchSite"] = [=[Returns whether the player is currently on a [[digsite]].]=],
+	["CanScanResearchSite"] = [=[True if the player is on a [[digsite]].]=],
 
-	["CanShowResetInstances"] = [=[Determine if player can reset instances at the moment.]=],
-	["CanShowResetInstances"] = [=[Returns true if the player can reset instances now.]=],
+	-- ["CanShowResetInstances"] = [=[Determine if player can reset instances at the moment.]=],
+	-- ["CanShowResetInstances"] = [=[Returns true if the player can reset instances now.]=],
+	["CanShowResetInstances"] = [=[True if the player can currently reset instances.]=],
 
-	["CancelAreaSpiritHeal"] = [=[Cancel a spirit heal.]=],
-	["CancelAreaSpiritHeal"] = [=[Cancels the area Spirit Healer's resurrection in battlegrounds.]=],
+	-- ["CancelAreaSpiritHeal"] = [=[Cancel a spirit heal.]=],
+	-- ["CancelAreaSpiritHeal"] = [=[Cancels the area Spirit Healer's resurrection in battlegrounds.]=],
+	["CancelAreaSpiritHeal"] = [=[Cancels the Spirit Healer's resurrection in battlegrounds.]=],
 
-	["CancelDuel"] = [=[Refuse the invitation to fight a duel.]=],
-	["CancelDuel"] = [=[Forfeits the current duel, or declines an invitation to duel.]=],
+	-- ["CancelDuel"] = [=[Refuse the invitation to fight a duel.]=],
+	-- ["CancelDuel"] = [=[Forfeits the current duel, or declines an invitation to duel.]=],
+	["CancelDuel"] = [=[Forfeits the current duel or declines a duel invitation.]=],
 
-	["CancelItemTempEnchantment"] = [=[Cancels a temporary weapon enchant on ''weaponHand'' (1 for Main hand, 2 for Off hand).]=],
-	["CancelItemTempEnchantment"] = [=[Removes temporary item buffs, such as Rogue poisons, Shaman weapon buffs, and sharpening stones from either the Main Hand or Off Hand equipment slots.]=],
+	-- ["CancelItemTempEnchantment"] = [=[Cancels a temporary weapon enchant on ''weaponHand'' (1 for Main hand, 2 for Off hand).]=],
+	-- ["CancelItemTempEnchantment"] = [=[Removes temporary item buffs, such as Rogue poisons, Shaman weapon buffs, and sharpening stones from either the Main Hand or Off Hand equipment slots.]=],
+	["CancelItemTempEnchantment"] = [=[Removes temporary weapon enchants, e.g. Rogue poisons and sharpening stones.]=],
 
-	["CancelPendingEquip"] = [=[This function is used to cancel a pending equip.]=],
-	["CancelPendingEquip"] = [=[Cancels a pending equip operation.]=],
+	-- ["CancelPendingEquip"] = [=[This function is used to cancel a pending equip.]=],
+	-- ["CancelPendingEquip"] = [=[Cancels a pending equip operation.]=],
+	["CancelPendingEquip"] = [=[Cancels a pending equip confirmation.]=],
 
-	["CancelShapeshiftForm"] = [=[Cancels a druid's shapeshift form buff.]=],
-	["CancelShapeshiftForm"] = [=[Cancels a druid's shapeshift buff.]=],
+	-- ["CancelShapeshiftForm"] = [=[Cancels a druid's shapeshift form buff.]=],
+	-- ["CancelShapeshiftForm"] = [=[Cancels a druid's shapeshift buff.]=],
+	["CancelShapeshiftForm"] = [=[Cancels a shapeshift form.]=],
 
-	["CancelTrade"] = [=[Declines the offer to trade with the other player.]=],
-	["CancelTrade"] = [=[Cancels the currently open trade.]=],
+	-- ["CancelTrade"] = [=[Declines the offer to trade with the other player.]=],
+	-- ["CancelTrade"] = [=[Cancels the currently open trade.]=],
+	["CancelTrade"] = [=[Declines the current trade offer.]=],
 
 	["CancelUnitBuff"] = [=[Removes a specific buff from the player.]=],
-	["CancelUnitBuff"] = [=[Removes a specific buff from the unit.]=],
+	-- ["CancelUnitBuff"] = [=[Removes a specific buff from the unit.]=],
 
-	["CastSpell"] = [=[Cast the spell in the specified spell book slot.]=],
-	["CastSpell"] = [=[Casts the specified spell.]=],
+	["CastSpell"] = [=[Casts a spell from the spell book.]=],
+	-- ["CastSpell"] = [=[Casts the specified spell.]=],
 
-	["CastSpellByName"] = [=[Cast the specified spell by display name.]=],
-	["CastSpellByName"] = [=[Casts the specified spell.]=],
+	-- ["CastSpellByName"] = [=[Cast the specified spell by display name.]=],
+	-- ["CastSpellByName"] = [=[Casts the specified spell.]=],
+	["CastSpellByName"] = [=[Casts a spell by name.]=],
 
 	["ChangeActionBarPage"] = [=[Changes the current action bar page.]=],
-	["ChangeActionBarPage"] = [=[Changes the current action button to the one specified in the arguments.]=],
+	-- ["ChangeActionBarPage"] = [=[Changes the current action button to the one specified in the arguments.]=],
 
-	["ChangeChatColor"] = [=[Update the color for a type of chat message.]=],
-	["ChangeChatColor"] = [=[Changes the text color of the specified chat channel.  The "color wheel" popup calls this function to do the actual work, once the user is done with the popup.]=],
+	["ChangeChatColor"] = [=[Updates the color for a type of chat message.]=],
+	-- ["ChangeChatColor"] = [=[Changes the text color of the specified chat channel.  The "color wheel" popup calls this function to do the actual work, once the user is done with the popup.]=],
 
-	["ChannelKick"] = [=[Kicks the specified user from the channel.]=],
+	-- ["ChannelKick"] = [=[Kicks the specified user from the channel.]=],
 	["ChannelKick"] = [=[Kicks a player from the specified channel.]=],
 
-	["ChannelUnban"] = [=[Unbans a player from a channel.]=],
+	-- ["ChannelUnban"] = [=[Unbans a player from a channel.]=],
 	["ChannelUnban"] = [=[Unbans a player from the specified channel.]=],
 
-	["CheckInbox"] = [=[Populate client's inbox with mail from server.]=],
-	["CheckInbox"] = [=[Populates client's inbox with messages.]=],
+	-- ["CheckInbox"] = [=[Populate client's inbox with mail from server.]=],
+	-- ["CheckInbox"] = [=[Populates client's inbox with messages.]=],
+	["CheckInbox"] = [=[Queries the server for mail.]=],
 
-	["CheckInteractDistance"] = [=[Returns whether you're in range to perform various interactions with the specified unit.]=],
-	["CheckInteractDistance"] = [=[Checks whether you are in range to perform a specific interaction with a specified unit.]=],
+	-- ["CheckInteractDistance"] = [=[Returns whether you're in range to perform various interactions with the specified unit.]=],
+	-- ["CheckInteractDistance"] = [=[Checks whether you are in range to perform a specific interaction with a specified unit.]=],
+	["CheckInteractDistance"] = [=[True if the player is in range to perform a specific interaction with the specified unit.]=],
 
 	["ClearCursor"] = [=[Clears whatever item the cursor is dragging from the cursor.]=],
 	["ClearCursor"] = [=[Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).]=],
