@@ -578,31 +578,39 @@ local t = {
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
 	["CallCompanion"] = [=[Summons a companion.]=],
-	["CallCompanion"] = [=[Summons the specified companion.]=],
+	-- ["CallCompanion"] = [=[Summons the specified companion.]=],
 
-	["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D world.]=],
-	["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D game world.]=],
+	-- ["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D world.]=],
+	-- ["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D game world.]=],
+	["CameraOrSelectOrMoveStop"] = [=[Called when you release the "Left-Click" mouse button.]=],
 
-	["CameraZoomIn"] = [=[Zooms the camera into the viewplane by increment.]=],
-	["CameraZoomIn"] = [=[Zooms the camera into the viewplane]=],
+	-- ["CameraZoomIn"] = [=[Zooms the camera into the viewplane by increment.]=],
+	-- ["CameraZoomIn"] = [=[Zooms the camera into the viewplane]=],
+	["CameraZoomIn"] = [=[Zooms the camera in.]=],
 
-	["CameraZoomOut"] = [=[Zooms the camera out of the viewplane by increment.]=],
-	["CameraZoomOut"] = [=[<center>'''CameraZoomOut'''</center>]=],
+	-- ["CameraZoomOut"] = [=[Zooms the camera out of the viewplane by increment.]=],
+	-- ["CameraZoomOut"] = [=[<center>'''CameraZoomOut'''</center>]=],
+	["CameraZoomOut"] = [=[Zooms the camera out.]=],
 
-	["CanBeRaidTarget"] = [=[Returns if a unit can be marked with a raid target symbol.]=],
-	["CanBeRaidTarget"] = [=[Returns whether the specified unit can be assigned a raid target marker.]=],
+	-- ["CanBeRaidTarget"] = [=[Returns if a unit can be marked with a raid target symbol.]=],
+	-- ["CanBeRaidTarget"] = [=[Returns whether the specified unit can be assigned a raid target marker.]=],
+	["CanBeRaidTarget"] = [=[True if the unit can be marked with a raid target icon.]=],
 
-	["CanEditMOTD"] = [=[Returns true if you are allowed to edit the guild motd.]=],
-	["CanEditMOTD"] = [=[Checks if the player can edit the guild MOTD.]=],
+	-- ["CanEditMOTD"] = [=[Returns true if you are allowed to edit the guild motd.]=],
+	-- ["CanEditMOTD"] = [=[Checks if the player can edit the guild MOTD.]=],
+	["CanEditMOTD"] = [=[True if the player can edit the guild MOTD.]=],
 
-	["CanGuildDemote"] = [=[Returns true if you are allowed to demote a guild member.]=],
-	["CanGuildDemote"] = [=[Checks if the player can demote guild members.]=],
+	-- ["CanGuildDemote"] = [=[Returns true if you are allowed to demote a guild member.]=],
+	-- ["CanGuildDemote"] = [=[Checks if the player can demote guild members.]=],
+	["CanGuildDemote"] = [=[True if the player can demote guild members.]=],
 
-	["CanGuildInvite"] = [=[Returns true if you are allowed to invite a new member to the guild.]=],
-	["CanGuildInvite"] = [=[Checks whether you have guild inviting permission.]=],
+	-- ["CanGuildInvite"] = [=[Returns true if you are allowed to invite a new member to the guild.]=],
+	-- ["CanGuildInvite"] = [=[Checks whether you have guild inviting permission.]=],
+	["CanGuildInvite"] = [=[True if the player can invite new members to the guild.]=],
 
-	["CanGuildPromote"] = [=[Returns true if you are allowed to demote a guild member.]=],
-	["CanGuildPromote"] = [=[Checks if the player can promote guild members.]=],
+	-- ["CanGuildPromote"] = [=[Returns true if you are allowed to demote a guild member.]=],
+	-- ["CanGuildPromote"] = [=[Checks if the player can promote guild members.]=],
+	["CanGuildPromote"] = [=[True if the player can promote guild members.]=],
 
 	["CanInspect"] = [=[Returns whether you can inspect the specified unit.]=],
 	["CanInspect"] = [=[Returns whether you can inspect a particular unit.]=],
@@ -754,8 +762,9 @@ local t = {
 	["DescendStop"] = [=[The player stops descending (while swimming or flying)]=],
 	["DescendStop"] = [=[The player stops descending (while flying or swimming).]=],
 
-	["DisableAddOn"] = [=[Disable the specified AddOn for subsequent sessions.]=],
-	["DisableAddOn"] = [=[Disable an AddOn for subsequent sessions.]=],
+	-- ["DisableAddOn"] = [=[Disable the specified AddOn for subsequent sessions.]=],
+	-- ["DisableAddOn"] = [=[Disable an AddOn for subsequent sessions.]=],
+	["DisableAddOn"] = [=[Disables an addon on the next session.]=],
 
 	["DismissCompanion"] = [=[Dismisses an active companion.]=],
 	["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
@@ -781,8 +790,9 @@ local t = {
 	["EditMacro"] = [=[Saves a macro.]=],
 	["EditMacro"] = [=[Modifies an existing macro.]=],
 
-	["EnableAddOn"] = [=[Enable the specified AddOn for subsequent sessions.]=],
-	["EnableAddOn"] = [=[Enables an AddOn for subsequent sessions.]=],
+	-- ["EnableAddOn"] = [=[Enable the specified AddOn for subsequent sessions.]=],
+	-- ["EnableAddOn"] = [=[Enables an AddOn for subsequent sessions.]=],
+	["EnableAddOn"] = [=[Enables an addon on the next session.]=],
 
 	["EnumerateFrames"] = [=[Get the Frame which follows currentFrame.]=],
 	["EnumerateFrames"] = [=[Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.]=],
