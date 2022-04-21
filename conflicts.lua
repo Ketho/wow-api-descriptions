@@ -629,7 +629,7 @@ local t = {
 
 	-- ["CanShowResetInstances"] = [=[Determine if player can reset instances at the moment.]=],
 	-- ["CanShowResetInstances"] = [=[Returns true if the player can reset instances now.]=],
-	["CanShowResetInstances"] = [=[True if the player can currently reset instances.]=],
+	["CanShowResetInstances"] = [=[True if the player can currently reset their instances.]=],
 
 	-- ["CancelAreaSpiritHeal"] = [=[Cancel a spirit heal.]=],
 	-- ["CancelAreaSpiritHeal"] = [=[Cancels the area Spirit Healer's resurrection in battlegrounds.]=],
@@ -855,53 +855,65 @@ local t = {
 	["GetAchievementCriteriaInfo"] = [=[Returns info about the specified achievement criteria.]=],
 	-- ["GetAchievementCriteriaInfo"] = [=[Returns information about the given Achievement's specified criteria.]=],
 
-	["GetAchievementInfo"] = [=[Returns information about the requested achievement.]=],
-	["GetAchievementInfo"] = [=[Returns information about an Achievement.]=],
+	-- ["GetAchievementInfo"] = [=[Returns information about the requested achievement.]=],
+	["GetAchievementInfo"] = [=[Returns info about an achievement.]=],
 
-	["GetAchievementLink"] = [=[Returns a [[achievementLink]] for the specified achievement.]=],
-	["GetAchievementLink"] = [=[Returns a [[achievementLink]] for the specified Achievement.]=],
+	-- ["GetAchievementLink"] = [=[Returns a [[achievementLink]] for the specified achievement.]=],
+	["GetAchievementLink"] = [=[Returns an achievement link.]=],
 
-	["GetAchievementNumCriteria"] = [=[Returns the number of criteria the requested achievement has.]=],
-	["GetAchievementNumCriteria"] = [=[Returns the number of criteria for the given Achievement.]=],
+	-- ["GetAchievementNumCriteria"] = [=[Returns the number of criteria the requested achievement has.]=],
+	-- ["GetAchievementNumCriteria"] = [=[Returns the number of criteria for the given Achievement.]=],
+	["GetAchievementNumCriteria"] = [=[Returns the number of criteria for an achievement.]=],
 
-	["GetActionBarPage"] = [=[Returns the current action bar page. CURRENT_ACTIONBAR_PAGE is obsolete.]=],
-	["GetActionBarPage"] = [=[Returns the index of the currently-selected action bar page.]=],
+	-- ["GetActionBarPage"] = [=[Returns the current action bar page. CURRENT_ACTIONBAR_PAGE is obsolete.]=],
+	-- ["GetActionBarPage"] = [=[Returns the index of the currently-selected action bar page.]=],
+	["GetActionBarPage"] = [=[Returns the current action bar page.]=],
 
-	["GetActionBarToggles"] = [=[Returns the toggles for each action bar.]=],
-	["GetActionBarToggles"] = [=[Gets the toggle states of the extra action bars.]=],
+	-- ["GetActionBarToggles"] = [=[Returns the toggles for each action bar.]=],
+	-- ["GetActionBarToggles"] = [=[Gets the toggle states of the extra action bars.]=],
+	["GetActionBarToggles"] = [=[Returns the enabled states for the extra action bars.]=],
 
-	["GetActionCooldown"] = [=[This returns the cooldown values of the specified action.]=],
-	["GetActionCooldown"] = [=[Retrieves the [[cooldown]] data of the action specified.]=],
+	-- ["GetActionCooldown"] = [=[This returns the cooldown values of the specified action.]=],
+	-- ["GetActionCooldown"] = [=[Retrieves the [[cooldown]] data of the action specified.]=],
+	["GetActionCooldown"] = [=[Returns cooldown info for the specified action slot.]=],
 
-	["GetActionCount"] = [=[Get the count (bandage/potion/etc) for an action, returns 0 if none or not applicable.]=],
-	["GetActionCount"] = [=[Counts the available uses of certain kinds of actions.]=],
+	-- ["GetActionCount"] = [=[Get the count (bandage/potion/etc) for an action, returns 0 if none or not applicable.]=],
+	-- ["GetActionCount"] = [=[Counts the available uses of certain kinds of actions.]=],
+	["GetActionCount"] = [=[Returns the available number of uses for an action.]=],
 
-	["GetActionInfo"] = [=[Returns type, id, subtype.]=],
-	["GetActionInfo"] = [=[Returns information about a specific action. ]=],
+	-- ["GetActionInfo"] = [=[Returns type, id, subtype.]=],
+	["GetActionInfo"] = [=[Returns info about an action.]=],
 
-	["GetActionText"] = [=[Get the text label (macros, etc) for an action, returns nil if none.]=],
-	["GetActionText"] = [=[Gets the text label for an action.]=],
+	-- ["GetActionText"] = [=[Get the text label (macros, etc) for an action, returns nil if none.]=],
+	-- ["GetActionText"] = [=[Gets the text label for an action.]=],
+	["GetActionText"] = [=[Returns the label text for an action.]=],
 
-	["GetActionTexture"] = [=[Gets the texture path for the specified action.]=],
-	["GetActionTexture"] = [=[Returns the filepath for an action's texture.]=],
+	-- ["GetActionTexture"] = [=[Gets the texture path for the specified action.]=],
+	-- ["GetActionTexture"] = [=[Returns the filepath for an action's texture.]=],
+	["GetActionTexture"] = [=[Returns the FileID for an action's texture.]=],
 
-	["GetActiveArtifactByRace"] = [=[Returns the information for the active artifact of raceIndex.]=],
-	["GetActiveArtifactByRace"] = [=[Returns the information for a specific race's active artifact.]=],
+	-- ["GetActiveArtifactByRace"] = [=[Returns the information for the active artifact of raceIndex.]=],
+	-- ["GetActiveArtifactByRace"] = [=[Returns the information for a specific race's active artifact.]=],
+	["GetActiveArtifactByRace"] = [=[Returns the active Archaeology artifact for a race.]=],
 
-	["GetAddOnCPUUsage"] = [=[Returns the total time used by the specified AddOn. This returns a cached value calculated by UpdateAddOnCPUUsage().]=],
-	["GetAddOnCPUUsage"] = [=[Returns the total time used by the specified AddOn.]=],
+	-- ["GetAddOnCPUUsage"] = [=[Returns the total time used by the specified AddOn. This returns a cached value calculated by UpdateAddOnCPUUsage().]=],
+	["GetAddOnCPUUsage"] = [=[Returns the total time used for an addon.]=],
 
-	["GetAddOnDependencies"] = [=[Get dependency list for an AddOn.]=],
-	["GetAddOnDependencies"] = [=[Get the required dependencies for an AddOn.]=],
+	-- ["GetAddOnDependencies"] = [=[Get dependency list for an AddOn.]=],
+	-- ["GetAddOnDependencies"] = [=[Get the required dependencies for an AddOn.]=],
+	["GetAddOnDependencies"] = [=[Returns the TOC dependencies for an addon.]=],
 
-	["GetAddOnMetadata"] = [=[Retrieve metadata from addon's TOC file.]=],
-	["GetAddOnMetadata"] = [=[Returns addon metadata.]=],
+	-- ["GetAddOnMetadata"] = [=[Retrieve metadata from addon's TOC file.]=],
+	-- ["GetAddOnMetadata"] = [=[Returns addon metadata.]=],
+	["GetAddOnMetadata"] = [=[Returns TOC metadata from an addon.]=],
 
-	["GetArchaeologyInfo"] = [=[Returns localized name of Archaeology skill.]=],
-	["GetArchaeologyInfo"] = [=[Returns the localized name for Archaeology.]=],
+	-- ["GetArchaeologyInfo"] = [=[Returns localized name of Archaeology skill.]=],
+	-- ["GetArchaeologyInfo"] = [=[Returns the localized name for Archaeology.]=],
+	["GetArchaeologyInfo"] = [=[Returns the localized name for the Archaeology profession.]=],
 
-	["GetArchaeologyRaceInfoByID"] = [=[Returns Racename and texture.]=],
-	["GetArchaeologyRaceInfoByID"] = [=[Returns information about a branch of Archaeology.]=],
+	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns Racename and texture.]=],
+	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns information about a branch of Archaeology.]=],
+	["GetArchaeologyRaceInfoByID"] = [=[Returns info about an Archaeology race.]=],
 
 	["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
 	["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
