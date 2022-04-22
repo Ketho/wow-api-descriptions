@@ -226,7 +226,7 @@ local t = {
 
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the amount of elements (headers and currencies) in the currency tab.]=],
+	["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the amount of currencies and headers in the currency tab.]=],
 
 	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters whether a currency is tracked.]=],
 	-- ["C_CurrencyInfo.SetCurrencyBackpack"] = [=[Alters the backpack tracking state of a currency.]=],
@@ -291,15 +291,15 @@ local t = {
 
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Retrieves a list of quests which can be turned in on the NPC you are talking to.]=],
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Gets the list of active quests from an NPC.]=],
-	["C_GossipInfo.GetActiveQuests"] = [=[Returns the quests which can be turned in at an NPC.]=],
+	["C_GossipInfo.GetActiveQuests"] = [=[Returns the quests which can be turned in at a quest giver.]=],
 
 	-- ["C_GossipInfo.GetAvailableQuests"] = [=[Retrieves a list of the available quests on the NPC you are talking to.]=],
 	-- ["C_GossipInfo.GetAvailableQuests"] = [=[Returns a list of available quests from an NPC.]=],
-	["C_GossipInfo.GetAvailableQuests"] = [=[Returns the available quests at an NPC.]=],
+	["C_GossipInfo.GetAvailableQuests"] = [=[Returns the available quests at a quest giver.]=],
 
 	-- ["C_GossipInfo.GetOptions"] = [=[Retrieves a list of the available gossip items on the NPC you are talking to.]=],
 	-- ["C_GossipInfo.GetOptions"] = [=[Returns the available gossip items at an NPC.]=],
-	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip options at an NPC.]=],
+	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip options at a quest giver.]=],
 
 	-- ["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns gossip poi for a map.]=],
 	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns any gossip point of interest on the map.]=],
@@ -565,7 +565,7 @@ local t = {
 	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a link for the player's current profession.]=],
 
 	-- ["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC.]=],
-	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is being used for an NPC.]=],
+	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is displayed for an NPC.]=],
 
 	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications, and pays for the cost.]=],
 	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications.]=],
@@ -658,7 +658,7 @@ local t = {
 	["CancelUnitBuff"] = [=[Removes a specific buff from the player.]=],
 	-- ["CancelUnitBuff"] = [=[Removes a specific buff from the unit.]=],
 
-	["CastSpell"] = [=[Casts a spell from the spell book.]=],
+	["CastSpell"] = [=[Casts a spell from the spellbook.]=],
 	-- ["CastSpell"] = [=[Casts the specified spell.]=],
 
 	-- ["CastSpellByName"] = [=[Cast the specified spell by display name.]=],
@@ -1010,7 +1010,7 @@ local t = {
 	["GetBindingText"] = [=[Returns the string for the given key and prefix. Essentially a constrained getglobal() for bindings.]=],
 
 	-- ["GetBlockChance"] = [=[Returns the player's percentage block chance.]=],
-	["GetBlockChance"] = [=[Returns the player's block chance %.]=],
+	["GetBlockChance"] = [=[Returns the player's block chance percentage.]=],
 
 	-- ["GetBonusBarOffset"] = [=[Determine which page of bonus actions to show.]=],
 	-- ["GetBonusBarOffset"] = [=[Returns the current bonus action bar index.]=],
@@ -1038,7 +1038,7 @@ local t = {
 
 	-- ["GetChannelDisplayInfo"] = [=[ Returns the name of the channel according to the given id.]=],
 	-- ["GetChannelDisplayInfo"] = [=[Retrieves channels (and category headers) that would be displayed in Blizzards ChannelFrame.]=],
-	["GetChannelDisplayInfo"] = [=[Returns info about chat channels, including category headers.]=],
+	["GetChannelDisplayInfo"] = [=[Returns info about chat channels and headers in the Chat Pane.]=],
 
 	-- ["GetChannelList"] = [=[Retrieves joined channels.]=],
 	-- ["GetChannelList"] = [=[Retrieves joined channels, the return list can be of variable length so the 4th return is id2 and so on. (see Blizzard_TradeSkillUI.lua TradeSkillUIMixin:InitLinkToMenu())]=],
@@ -1111,7 +1111,7 @@ local t = {
 	-- ["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
 	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots in a bag.]=],
 
-	["GetCritChance"] = [=[Returns the player's melee critical hit chance %.]=],
+	["GetCritChance"] = [=[Returns the player's melee critical hit chance percentage.]=],
 	-- ["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
 
 	-- ["GetCurrentArenaSeason"] = [=[Gets the current Arena season.]=],
@@ -1141,7 +1141,7 @@ local t = {
 	["GetDetailedItemLevelInfo"] = [=[Returns detailed item level info.]=],
 
 	-- ["GetDodgeChance"] = [=[Returns the player's percentage dodge chance.]=],
-	["GetDodgeChance"] = [=[Returns the player's dodge chance %.]=],
+	["GetDodgeChance"] = [=[Returns the player's dodge chance percentage.]=],
 
 	-- ["GetDungeonDifficultyID"] = [=[Returns the player's current Dungeon Difficulty setting (1, 2, 8).]=],
 	-- ["GetDungeonDifficultyID"] = [=[Returns the player's currently selected dungeon difficulty.]=],
@@ -1320,7 +1320,7 @@ local t = {
 
 	-- ["GetItemSpell"] = [=[Returns name, rank.]=],
 	-- ["GetItemSpell"] = [=[Return spell information about a specific item.]=],
-	["GetItemSpell"] = [=[Return the spell effect for an item.]=],
+	["GetItemSpell"] = [=[Returns the spell effect for an item.]=],
 
 	-- ["GetLFGBootProposal"] = [=[Returns info about a LFG Kick vote in progress.]=],
 	-- ["GetLFGBootProposal"] = [=[Returns information about an LFG Kick vote currently in progress.]=],
@@ -1384,11 +1384,11 @@ local t = {
 
 	-- ["GetMastery"] = [=[Returns the player's mastery before mastery rating.]=],
 	-- ["GetMastery"] = [=[Returns the (raw) mastery of the player.]=],
-	["GetMastery"] = [=[Returns the player's base mastery %.]=],
+	["GetMastery"] = [=[Returns the player's base mastery percentage.]=],
 
 	-- ["GetMasteryEffect"] = [=[Returns the player's buffed mastery in percentage and (unknown number value).]=],
 	-- ["GetMasteryEffect"] = [=[Returns the effect of player's current Mastery.]=],
-	["GetMasteryEffect"] = [=[Returns the player's effective mastery %.]=],
+	["GetMasteryEffect"] = [=[Returns the player's effective mastery percentage.]=],
 
 	-- ["GetMerchantItemCostItem"] = [=[Returns information about an "alternative currency" component of the price for a purchasable item.]=],
 	-- ["GetMerchantItemCostItem"] = [=[Returns information about an item's token/currency cost.]=],
@@ -1424,7 +1424,7 @@ local t = {
 
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
-	["GetMouseButtonClicked"] = [=[Returns the used mouse button for an OnClick event, e.g. "RightButton".]=],
+	["GetMouseButtonClicked"] = [=[Returns the mouse button responsible during an OnClick event, e.g. "RightButton".]=],
 
 	-- ["GetMouseFocus"] = [=[Returns the frame that currently has the mouse focus.]=],
 	-- ["GetMouseFocus"] = [=[Returns the frame that is currently receiving mouse events.  The frame must have enableMouse="true"]=],
@@ -1442,115 +1442,129 @@ local t = {
 
 	-- ["GetNumActiveQuests"] = [=[Gets the number of currently active quests from this NPC (only available after QUEST_GREETING event).]=],
 	-- ["GetNumActiveQuests"] = [=[Returns the number of active quests from a non-gossip quest NPC.]=],
-	["GetNumActiveQuests"] = [=[Returns the number of quests which can be turned in to a non-gossip NPC.]=],
+	["GetNumActiveQuests"] = [=[Returns the number of quests which can be turned in at a non-gossip quest giver.]=],
 
 	-- ["GetNumArchaeologyRaces"] = [=[Returns the amount of Archaeology races in the game.]=],
-	["GetNumArchaeologyRaces"] = [=[Returns the number of existing Archaeology races.]=],
+	["GetNumArchaeologyRaces"] = [=[Returns the number of Archaeology races in the game.]=],
 
 	-- ["GetNumAutoQuestPopUps"] = [=[Retrieves number of quests added via [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
 	-- ["GetNumAutoQuestPopUps"] = [=[Returns the number of popup quest notifications being shown.]=],
-	["GetNumAutoQuestPopUps"] = [=[Returns the number of popup quest notifications being shown.]=],
+	["GetNumAutoQuestPopUps"] = [=[Returns the number of displayed popup quest notifications.]=],
 
 	-- ["GetNumAvailableQuests"] = [=[Gets the number of currently available quests from this NPC (only available after QUEST_GREETING event).]=],
 	-- ["GetNumAvailableQuests"] = [=[Returns the number of available quests from a non-gossip quest NPC.]=],
-	["GetNumAvailableQuests"] = [=[Returns the number of available quests from a non-gossip NPC.]=],
+	["GetNumAvailableQuests"] = [=[Returns the number of available quests at a non-gossip quest giver.]=],
 
 	-- ["GetNumBankSlots"] = [=[Returns total purchased bank bag slots, and a flag indicating if it's full.]=],
 	-- ["GetNumBankSlots"] = [=[Returns information about the number of purchased bank bag slots.]=],
 	["GetNumBankSlots"] = [=[Returns the number of purchased bank bag slots.]=],
 
-	["GetNumBattlefieldScores"] = [=[Returns the number of scores(players) listed in the battlefield scoreboard.]=],
-	["GetNumBattlefieldScores"] = [=[Appears to return the number of scores in the battleground/field scoreboard:]=],
+	-- ["GetNumBattlefieldScores"] = [=[Returns the number of scores(players) listed in the battlefield scoreboard.]=],
+	-- ["GetNumBattlefieldScores"] = [=[Appears to return the number of scores in the battleground/field scoreboard:]=],
+	["GetNumBattlefieldScores"] = [=[Returns the number of players listed in the battlefield scoreboard.]=],
 
-	["GetNumBindings"] = [=[Get total number key bindings and headers.]=],
-	["GetNumBindings"] = [=[Returns the total number of key bindings listed in the key bindings window.  This includes not only actions that can be bound, but also the category headers in the window.  This would generally be used in conjunction with [[API GetBinding|GetBinding]] to loop through and set/get all of the key bindings available.]=],
+	-- ["GetNumBindings"] = [=[Get total number key bindings and headers.]=],
+	-- ["GetNumBindings"] = [=[Returns the total number of key bindings listed in the key bindings window.  This includes not only actions that can be bound, but also the category headers in the window.  This would generally be used in conjunction with [[API GetBinding|GetBinding]] to loop through and set/get all of the key bindings available.]=],
+	["GetNumBindings"] = [=[Returns the number of bindings and headers in the key bindings window.]=],
 
-	["GetNumClasses"] = [=[Returns the amount of classes in the game.]=],
-	["GetNumClasses"] = [=[Returns the number of existing player classes.]=],
+	-- ["GetNumClasses"] = [=[Returns the amount of classes in the game.]=],
+	["GetNumClasses"] = [=[Returns the number of player classes in the game.]=],
 
-	["GetNumCompanions"] = [=[Get the number of companions of the specified type.]=],
-	["GetNumCompanions"] = [=[Returns the number of companions you have.]=],
+	-- ["GetNumCompanions"] = [=[Get the number of companions of the specified type.]=],
+	-- ["GetNumCompanions"] = [=[Returns the number of companions you have.]=],
+	["GetNumCompanions"] = [=[Returns the number of companions of the specified type.]=],
 
-	["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
-	["GetNumCompletedAchievements"] = [=[Return the total number of Achievements, and number completed. ]=],
+	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
+	-- ["GetNumCompletedAchievements"] = [=[Return the total number of Achievements, and number completed. ]=],
+	["GetNumCompletedAchievements"] = [=[Returns the total and completed number of achievements.]=],
 
-	["GetNumFilteredAchievements"] = [=[Returns the number of achievements that matches search text.]=],
-	["GetNumFilteredAchievements"] = [=[Returns the number of achievements that match the search string specified calling {{api|SetAchievementSearchString}}]=],
+	-- ["GetNumFilteredAchievements"] = [=[Returns the number of achievements that matches search text.]=],
+	-- ["GetNumFilteredAchievements"] = [=[Returns the number of achievements that match the search string specified calling {{api|SetAchievementSearchString}}]=],
+	["GetNumFilteredAchievements"] = [=[Returns the number of achievements after filtering.]=],
 
-	["GetNumGroupMembers"] = [=[Returns the total number of players in your group/raid.]=],
-	["GetNumGroupMembers"] = [=[Returns the total number of players in a group.]=],
+	-- ["GetNumGroupMembers"] = [=[Returns the total number of players in your group/raid.]=],
+	["GetNumGroupMembers"] = [=[Returns the number of players in a group.]=],
 
 	["GetNumGuildMembers"] = [=[Returns the number of total and online guild members.]=],
-	["GetNumGuildMembers"] = [=[Returns the number of guild members.]=],
+	-- ["GetNumGuildMembers"] = [=[Returns the number of guild members.]=],
 
-	["GetNumLootItems"] = [=[Returns amount of objects to loot (number)]=],
-	["GetNumLootItems"] = [=[Returns the slot number of the last item in the loot window (the item window must be opened). So it may be more than the number of items remaining, if one or more items have already been taken.]=],
+	-- ["GetNumLootItems"] = [=[Returns amount of objects to loot (number)]=],
+	-- ["GetNumLootItems"] = [=[Returns the slot number of the last item in the loot window (the item window must be opened). So it may be more than the number of items remaining, if one or more items have already been taken.]=],
+	["GetNumLootItems"] = [=[Returns the number of items in the loot window.]=],
 
-	["GetNumMacros"] = [=[Returns the number of macros the user has.]=],
-	["GetNumMacros"] = [=[Return the number of macros the player has.]=],
+	-- ["GetNumMacros"] = [=[Returns the number of macros the user has.]=],
+	-- ["GetNumMacros"] = [=[Return the number of macros the player has.]=],
+	["GetNumMacros"] = [=[Return the number of account and character macros.]=],
 
-	["GetNumPetitionNames"] = [=[Gets the number of signatures on the current petition.]=],
-	["GetNumPetitionNames"] = [=[Gets the number of names that have signed the open petition.]=],
+	["GetNumPetitionNames"] = [=[Returns the number of signatures on the current petition.]=],
+	-- ["GetNumPetitionNames"] = [=[Gets the number of names that have signed the open petition.]=],
 
-	["GetNumQuestChoices"] = [=[Returns the number of rewards available for choice for quest currently in gossip window.]=],
-	["GetNumQuestChoices"] = [=[Returns the number of reward choices in the quest you're currently completing.]=],
+	-- ["GetNumQuestChoices"] = [=[Returns the number of rewards available for choice for quest currently in gossip window.]=],
+	-- ["GetNumQuestChoices"] = [=[Returns the number of reward choices in the quest you're currently completing.]=],
+	["GetNumQuestChoices"] = [=[Returns the number of available rewards for the current quest.]=],
 
-	["GetNumQuestItems"] = [=[Returns the number of items necessary to complete a particular quest.]=],
-	["GetNumQuestItems"] = [=[Returns the number of items nessecary to complete a particular quest.]=],
+	["GetNumQuestItems"] = [=[Returns the number of required items to complete the current quest.]=],
+	-- ["GetNumQuestItems"] = [=[Returns the number of items nessecary to complete a particular quest.]=],
 
-	["GetNumQuestLeaderBoards"] = [=[Returns the number of available quest objectives.]=],
-	["GetNumQuestLeaderBoards"] = [=[Returns the number of objectives for a given quest.]=],
+	["GetNumQuestLeaderBoards"] = [=[Returns the number of objectives for a quest.]=],
+	-- ["GetNumQuestLeaderBoards"] = [=[Returns the number of objectives for a given quest.]=],
 
-	["GetNumQuestLogRewards"] = [=[Returns the count of the rewards for a particular quest. (7.0.3)]=],
-	["GetNumQuestLogRewards"] = [=[Returns the count of the rewards for a particular quest.]=],
+	-- ["GetNumQuestLogRewards"] = [=[Returns the count of the rewards for a particular quest. (7.0.3)]=],
+	["GetNumQuestLogRewards"] = [=[Returns the number of unconditional rewards for the current quest in the quest log.]=],
 
-	["GetNumQuestRewards"] = [=[Returns number of reward items (those that you always get) for quest currently in gossip window.]=],
-	["GetNumQuestRewards"] = [=[Returns the number of items unconditionally rewarded by the quest being completed.]=],
+	-- ["GetNumQuestRewards"] = [=[Returns number of reward items (those that you always get) for quest currently in gossip window.]=],
+	-- ["GetNumQuestRewards"] = [=[Returns the number of items unconditionally rewarded by the quest being completed.]=],
+	["GetNumQuestRewards"] = [=[Returns the number of unconditional rewards at a quest giver.]=],
 
-	["GetNumSavedInstances"] = [=[Gets the number of instances for which the player currently has lockout data saved.]=],
-	["GetNumSavedInstances"] = [=[Returns the number of instances for which the player currently has lockout data saved.]=],
+	-- ["GetNumSavedInstances"] = [=[Gets the number of instances for which the player currently has lockout data saved.]=],
+	["GetNumSavedInstances"] = [=[Returns the number of instances for which the player is locked out.]=],
 
-	["GetNumSockets"] = [=[Returns the number of sockets in the item currently being socketed.]=],
-	["GetNumSockets"] = [=[Returns the number of sockets in the item currently in the item socketing window.]=],
+	-- ["GetNumSockets"] = [=[Returns the number of sockets in the item currently being socketed.]=],
+	-- ["GetNumSockets"] = [=[Returns the number of sockets in the item currently in the item socketing window.]=],
+	["GetNumSockets"] = [=[Returns the number of sockets for an item in the socketing window.]=],
 
-	["GetNumSpellTabs"] = [=[Returns the total number of tabs in the user's spellbook.]=],
-	["GetNumSpellTabs"] = [=[Retrieves the number of tabs in the player's spellbook.]=],
+	-- ["GetNumSpellTabs"] = [=[Returns the total number of tabs in the user's spellbook.]=],
+	["GetNumSpellTabs"] = [=[Returns the number of tabs in the spellbook.]=],
 
-	["GetNumSubgroupMembers"] = [=[Returns the number of ''other'' players in your party (or raid subgroup).]=],
-	["GetNumSubgroupMembers"] = [=[Returns the number of other players in the player's party (5-man sub-group).]=],
+	-- ["GetNumSubgroupMembers"] = [=[Returns the number of ''other'' players in your party (or raid subgroup).]=],
+	["GetNumSubgroupMembers"] = [=[Returns the number of other players in the party or raid subgroup.]=],
 
-	["GetNumTitles"] = [=[Returns the maximum [[titleId]].]=],
-	["GetNumTitles"] = [=[Returns the number of the highest Title ID.]=],
+	-- ["GetNumTitles"] = [=[Returns the maximum [[titleId]].]=],
+	-- ["GetNumTitles"] = [=[Returns the number of the highest Title ID.]=],
+	["GetNumTitles"] = [=[Returns the number of titles, specifically the highest title ID.]=],
 
-	["GetNumTrackedAchievements"] = [=[Returns the total number of the currently tracked achievements.]=],
-	["GetNumTrackedAchievements"] = [=[Returns the total number of tracked achievements.]=],
+	-- ["GetNumTrackedAchievements"] = [=[Returns the total number of the currently tracked achievements.]=],
+	["GetNumTrackedAchievements"] = [=[Returns the number of tracked achievements.]=],
 
-	["GetNumTrackingTypes"] = [=[Returns number of available tracking methods.]=],
-	["GetNumTrackingTypes"] = [=[Returns the number of available tracking methods.]=],
+	-- ["GetNumTrackingTypes"] = [=[Returns number of available tracking methods.]=],
+	["GetNumTrackingTypes"] = [=[Returns the number of available tracking types for the minimap.]=],
 
-	["GetNumTrainerServices"] = [=[Get the number of the trainer services.]=],
+	-- ["GetNumTrainerServices"] = [=[Get the number of the trainer services.]=],
 	["GetNumTrainerServices"] = [=[Returns the number of trainer services.]=],
 
-	["GetOptOutOfLoot"] = [=[Returns whether the character is currently automatically passing on all loot.]=],
-	["GetOptOutOfLoot"] = [=[Returns whether you're currently passing on all loot.]=],
+	-- ["GetOptOutOfLoot"] = [=[Returns whether the character is currently automatically passing on all loot.]=],
+	-- ["GetOptOutOfLoot"] = [=[Returns whether you're currently passing on all loot.]=],
+	["GetOptOutOfLoot"] = [=[True if the player is automatically passing on all loot.]=],
 
-	["GetPVPLifetimeStats"] = [=[Get your PvP/Honor statistics for your lifetime.]=],
-	["GetPVPLifetimeStats"] = [=[Gets the statistics about your lifetime PVP contributions.]=],
+	-- ["GetPVPLifetimeStats"] = [=[Get your PvP/Honor statistics for your lifetime.]=],
+	["GetPVPLifetimeStats"] = [=[Returns the player's lifetime PvP statistics.]=],
 
-	["GetPVPSessionStats"] = [=[Get your PvP/Honor statistics for this session.]=],
-	["GetPVPSessionStats"] = [=[Gets the amount of honorable kills and honor points you have for the current session ( today ).]=],
+	["GetPVPSessionStats"] = [=[Returns the player's Honor statistics for this session.]=],
+	-- ["GetPVPSessionStats"] = [=[Gets the amount of honorable kills and honor points you have for the current session ( today ).]=],
 
-	["GetPVPTimer"] = [=[Returns the amount of time until your PvP flag fades.]=],
-	["GetPVPTimer"] = [=[Returns the amount of time left on your PVP flag.]=],
+	-- ["GetPVPTimer"] = [=[Returns the amount of time until your PvP flag fades.]=],
+	-- ["GetPVPTimer"] = [=[Returns the amount of time left on your PVP flag.]=],
+	["GetPVPTimer"] = [=[Returns the time left until the player is unflagged for PvP.]=],
 
-	["GetPVPYesterdayStats"] = [=[Get your PvP/Honor statistics for yesterday.]=],
-	["GetPVPYesterdayStats"] = [=[Gets the player's PVP contribution statistics for the previous day.]=],
+	["GetPVPYesterdayStats"] = [=[Returns the player's Honor statistics for yesterday.]=],
+	-- ["GetPVPYesterdayStats"] = [=[Gets the player's PVP contribution statistics for the previous day.]=],
 
-	["GetParryChance"] = [=[Returns the player's percentage parry chance.]=],
-	["GetParryChance"] = [=[Returns the Player's parry chance in percentage.]=],
+	-- ["GetParryChance"] = [=[Returns the player's percentage parry chance.]=],
+	["GetParryChance"] = [=[Returns the player's parry chance percentage.]=],
 
-	["GetPartyAssignment"] = [=[Returns a value based on whether the unit is assigned to given role.]=],
-	["GetPartyAssignment"] = [=[Returns a list of raidmembers with a [[Main_tank|main tank]] or [[Main_assist|main assist]] role.]=],
+	-- ["GetPartyAssignment"] = [=[Returns a value based on whether the unit is assigned to given role.]=],
+	-- ["GetPartyAssignment"] = [=[Returns a list of raidmembers with a [[Main_tank|main tank]] or [[Main_assist|main assist]] role.]=],
+	["GetPartyAssignment"] = [=[True if a group member is assigned the main tank/assist role.]=],
 
 	["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action at the specificed pet action bar slot.]=],
 	["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action in the specified pet action bar slot.]=],
@@ -1727,10 +1741,10 @@ local t = {
 	["GetSpellBookItemInfo"] = [=[Retrieves information about a specific [[spellbook]] item.]=],
 
 	["GetSpellBookItemName"] = [=[Returns the spell name and spell rank for a spell in the player's spellbook.]=],
-	["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spell book.]=],
+	["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spellbook.]=],
 
 	["GetSpellBookItemTexture"] = [=[Returns the spell icon fileId for a spell in the player's spellbook.]=],
-	["GetSpellBookItemTexture"] = [=[Returns the icon of a spell book entry.]=],
+	["GetSpellBookItemTexture"] = [=[Returns the icon of a spellbook entry.]=],
 
 	["GetSpellCooldown"] = [=[Retrieves data on the cooldown of a specific spell.]=],
 	["GetSpellCooldown"] = [=[Retrieves the cooldown data of the spell specified.]=],
