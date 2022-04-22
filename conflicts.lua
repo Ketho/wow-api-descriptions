@@ -302,7 +302,7 @@ local t = {
 	["C_GossipInfo.GetOptions"] = [=[Returns the available gossip options at an NPC.]=],
 
 	-- ["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns gossip poi for a map.]=],
-	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns the gossip point of interest on the map, e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns any gossip point of interest on the map.]=],
 
 	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
 	["C_GossipInfo.GetPoiInfo"] = [=[Returns info about a gossip point of interest, e.g. the red flags when asking city guards for directions.]=],
@@ -428,7 +428,7 @@ local t = {
 
 	-- ["C_QuestLog.AbandonQuest"] = [=[Abandon the specified quest.]=],
 	-- ["C_QuestLog.AbandonQuest"] = [=[Abandons the quest specified by {{api|t=a|C_QuestLog.SetAbandonQuest}}()]=],
-	["C_QuestLog.AbandonQuest"] = [=[Abandons the quest specified by {{api|t=a|C_QuestLog.SetAbandonQuest}}.]=],
+	["C_QuestLog.AbandonQuest"] = [=[Abandons the quest specified by {{api|C_QuestLog.SetAbandonQuest}}.]=],
 
 	-- ["C_QuestLog.AddQuestWatch"] = [=[Add a quest to the watch list.]=],
 	-- ["C_QuestLog.AddQuestWatch"] = [=[Adds a quest watch.]=],
@@ -440,7 +440,7 @@ local t = {
 
 	-- ["C_QuestLog.GetAbandonQuest"] = [=[Returns the ID of the quest being abandoned.]=],
 	-- ["C_QuestLog.GetAbandonQuest"] = [=[Returns the ID of the quest being abandoned by {{api|t=a|C_QuestLog.AbandonQuest}}()]=],
-	["C_QuestLog.GetAbandonQuest"] = [=[Returns the quest specified by {{api|t=a|C_QuestLog.SetAbandonQuest}}.]=],
+	["C_QuestLog.GetAbandonQuest"] = [=[Returns the quest specified by {{api|C_QuestLog.SetAbandonQuest}}.]=],
 
 	-- ["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns all completed quests for a character.]=],
 	-- ["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns a list of quests the character has completed in its lifetime.]=],
@@ -1324,7 +1324,7 @@ local t = {
 
 	-- ["GetLFGBootProposal"] = [=[Returns info about a LFG Kick vote in progress.]=],
 	-- ["GetLFGBootProposal"] = [=[Returns information about an LFG Kick vote currently in progress.]=],
-	["GetLFGBootProposal"] = [=[Returns info about a LFG Kick vote in progress.]=],
+	["GetLFGBootProposal"] = [=[Returns info about a LFG votekick in progress.]=],
 
 	-- ["GetLFGDungeonInfo"] = [=[Returns dungeon information.]=],
 	-- ["GetLFGDungeonInfo"] = [=[Retrieves specific dungeon information, not limited by player level and all dungeons can be looked up.]=],
@@ -1440,20 +1440,24 @@ local t = {
 	["GetNextAchievement"] = [=[Returns the next achievement in a chain.]=],
 	-- ["GetNextAchievement"] = [=[Return the next achievement in a chain.]=],
 
-	["GetNumActiveQuests"] = [=[Gets the number of currently active quests from this NPC (only available after QUEST_GREETING event).]=],
-	["GetNumActiveQuests"] = [=[Returns the number of active quests from a non-gossip quest NPC.]=],
+	-- ["GetNumActiveQuests"] = [=[Gets the number of currently active quests from this NPC (only available after QUEST_GREETING event).]=],
+	-- ["GetNumActiveQuests"] = [=[Returns the number of active quests from a non-gossip quest NPC.]=],
+	["GetNumActiveQuests"] = [=[Returns the number of quests which can be turned in to a non-gossip NPC.]=],
 
-	["GetNumArchaeologyRaces"] = [=[Returns the amount of Archaeology races in the game.]=],
-	["GetNumArchaeologyRaces"] = [=[Returns the number of Archaeology races in the game.]=],
+	-- ["GetNumArchaeologyRaces"] = [=[Returns the amount of Archaeology races in the game.]=],
+	["GetNumArchaeologyRaces"] = [=[Returns the number of existing Archaeology races.]=],
 
-	["GetNumAutoQuestPopUps"] = [=[Retrieves number of quests added via [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
+	-- ["GetNumAutoQuestPopUps"] = [=[Retrieves number of quests added via [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
+	-- ["GetNumAutoQuestPopUps"] = [=[Returns the number of popup quest notifications being shown.]=],
 	["GetNumAutoQuestPopUps"] = [=[Returns the number of popup quest notifications being shown.]=],
 
-	["GetNumAvailableQuests"] = [=[Gets the number of currently available quests from this NPC (only available after QUEST_GREETING event).]=],
-	["GetNumAvailableQuests"] = [=[Returns the number of available quests from a non-gossip quest NPC.]=],
+	-- ["GetNumAvailableQuests"] = [=[Gets the number of currently available quests from this NPC (only available after QUEST_GREETING event).]=],
+	-- ["GetNumAvailableQuests"] = [=[Returns the number of available quests from a non-gossip quest NPC.]=],
+	["GetNumAvailableQuests"] = [=[Returns the number of available quests from a non-gossip NPC.]=],
 
-	["GetNumBankSlots"] = [=[Returns total purchased bank bag slots, and a flag indicating if it's full.]=],
-	["GetNumBankSlots"] = [=[Returns information about the number of purchased bank bag slots.]=],
+	-- ["GetNumBankSlots"] = [=[Returns total purchased bank bag slots, and a flag indicating if it's full.]=],
+	-- ["GetNumBankSlots"] = [=[Returns information about the number of purchased bank bag slots.]=],
+	["GetNumBankSlots"] = [=[Returns the number of purchased bank bag slots.]=],
 
 	["GetNumBattlefieldScores"] = [=[Returns the number of scores(players) listed in the battlefield scoreboard.]=],
 	["GetNumBattlefieldScores"] = [=[Appears to return the number of scores in the battleground/field scoreboard:]=],
