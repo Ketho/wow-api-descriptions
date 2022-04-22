@@ -1384,53 +1384,61 @@ local t = {
 
 	-- ["GetMastery"] = [=[Returns the player's mastery before mastery rating.]=],
 	-- ["GetMastery"] = [=[Returns the (raw) mastery of the player.]=],
-	["GetMastery"] = [=[Returns the player's base mastery.]=],
+	["GetMastery"] = [=[Returns the player's base mastery %.]=],
 
 	-- ["GetMasteryEffect"] = [=[Returns the player's buffed mastery in percentage and (unknown number value).]=],
 	-- ["GetMasteryEffect"] = [=[Returns the effect of player's current Mastery.]=],
-	["GetMasteryEffect"] = [=[Returns the player's effective mastery.]=],
+	["GetMasteryEffect"] = [=[Returns the player's effective mastery %.]=],
 
-	["GetMerchantItemCostItem"] = [=[Returns information about an "alternative currency" component of the price for a purchasable item.]=],
-	["GetMerchantItemCostItem"] = [=[Returns information about an item's token/currency cost.]=],
+	-- ["GetMerchantItemCostItem"] = [=[Returns information about an "alternative currency" component of the price for a purchasable item.]=],
+	-- ["GetMerchantItemCostItem"] = [=[Returns information about an item's token/currency cost.]=],
+	["GetMerchantItemCostItem"] = [=[Returns info about the currency cost for a merchant item.]=],
 
-	["GetMerchantItemInfo"] = [=[Returns information about the given purchasable item.]=],
-	["GetMerchantItemInfo"] = [=[Returns information about a merchant's item.]=],
+	-- ["GetMerchantItemInfo"] = [=[Returns information about the given purchasable item.]=],
+	["GetMerchantItemInfo"] = [=[Returns info about a merchant item.]=],
 
-	["GetMerchantItemLink"] = [=[Returns an [[itemLink]] for the given purchasable item.]=],
-	["GetMerchantItemLink"] = [=[Returns a link to the indexed item in the merchant's inventory.]=],
+	-- ["GetMerchantItemLink"] = [=[Returns an [[itemLink]] for the given purchasable item.]=],
+	-- ["GetMerchantItemLink"] = [=[Returns a link to the indexed item in the merchant's inventory.]=],
+	["GetMerchantItemLink"] = [=[Returns an item link for a merchant item.]=],
 
-	["GetMerchantItemMaxStack"] = [=[Returns the maximum number of items in a stack.]=],
-	["GetMerchantItemMaxStack"] = [=[Gets the maximum stack size for an item from the active merchant.]=],
+	-- ["GetMerchantItemMaxStack"] = [=[Returns the maximum number of items in a stack.]=],
+	-- ["GetMerchantItemMaxStack"] = [=[Gets the maximum stack size for an item from the active merchant.]=],
+	["GetMerchantItemMaxStack"] = [=[Returns the maximum stack size for a merchant item.]=],
 
-	["GetMerchantNumItems"] = [=[Returns the number of items the merchant sells.]=],
-	["GetMerchantNumItems"] = [=[Returns the number of items a merchant carries.]=],
+	-- ["GetMerchantNumItems"] = [=[Returns the number of items the merchant sells.]=],
+	-- ["GetMerchantNumItems"] = [=[Returns the number of items a merchant carries.]=],
+	["GetMerchantNumItems"] = [=[Returns the number of different items a merchant sells.]=],
 
-	["GetMinimapZoneText"] = [=[Returns the zone text, that is displayed over the minimap.]=],
-	["GetMinimapZoneText"] = [=[Returns the zone text, that is displayed over the minimap]=],
+	-- ["GetMinimapZoneText"] = [=[Returns the zone text, that is displayed over the minimap.]=],
+	["GetMinimapZoneText"] = [=[Returns the zone text that is displayed over the minimap.]=],
 
-	["GetMirrorTimerInfo"] = [=[Returns information about a mirror timer (exhaustion, breath and feign death timers)]=],
-	["GetMirrorTimerInfo"] = [=[Gives information about the mirror bar. (Spirit release, exhaustion/fatigue, etc)]=],
+	["GetMirrorTimerInfo"] = [=[Returns info about the mirror timer, e.g. fatigue, breath and feign death.]=],
+	-- ["GetMirrorTimerInfo"] = [=[Gives information about the mirror bar. (Spirit release, exhaustion/fatigue, etc)]=],
 
-	["GetMirrorTimerProgress"] = [=[Returns the current value of a mirror timer (exhaustion, breath and feign death timers)]=],
-	["GetMirrorTimerProgress"] = [=[Returns the current value of a mirror timer (fatigue, breath, feign death etc).]=],
+	["GetMirrorTimerProgress"] = [=[Returns the current value of the mirror timer.]=],
+	-- ["GetMirrorTimerProgress"] = [=[Returns the current value of a mirror timer (fatigue, breath, feign death etc).]=],
 
-	["GetMoney"] = [=[Returns an integer value of your held money in copper.]=],
-	["GetMoney"] = [=[Returns an integer value of your held money.]=],
+	-- ["GetMoney"] = [=[Returns an integer value of your held money in copper.]=],
+	-- ["GetMoney"] = [=[Returns an integer value of your held money.]=],
+	["GetMoney"] = [=[Returns the amount of money of the player.]=],
 
-	["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
-	["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
+	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
+	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
+	["GetMouseButtonClicked"] = [=[Returns the used mouse button for an OnClick event, e.g. "RightButton".]=],
 
-	["GetMouseFocus"] = [=[Returns the frame that currently has the mouse focus.]=],
-	["GetMouseFocus"] = [=[Returns the frame that is currently receiving mouse events.  The frame must have enableMouse="true"]=],
+	-- ["GetMouseFocus"] = [=[Returns the frame that currently has the mouse focus.]=],
+	-- ["GetMouseFocus"] = [=[Returns the frame that is currently receiving mouse events.  The frame must have enableMouse="true"]=],
+	["GetMouseFocus"] = [=[Returns the frame that currently has mouse focus.]=],
 
-	["GetMultiCastTotemSpells"] = [=[Returns a list of spellIDs that are applicable for the specified totem slot (1-4)]=],
-	["GetMultiCastTotemSpells"] = [=[Returns a list of valid totem spells for the specified totem bar slot.]=],
+	-- ["GetMultiCastTotemSpells"] = [=[Returns a list of spellIDs that are applicable for the specified totem slot (1-4)]=],
+	-- ["GetMultiCastTotemSpells"] = [=[Returns a list of valid totem spells for the specified totem bar slot.]=],
+	["GetMultiCastTotemSpells"] = [=[Returns a list of valid spells for a totem bar slot.]=],
 
-	["GetNetStats"] = [=[Get bandwidth and latency network information.]=],
-	["GetNetStats"] = [=[Returns various network statistics.]=],
+	["GetNetStats"] = [=[Returns bandwidth and latency network information.]=],
+	-- ["GetNetStats"] = [=[Returns various network statistics.]=],
 
 	["GetNextAchievement"] = [=[Returns the next achievement in a chain.]=],
-	["GetNextAchievement"] = [=[Return the next achievement in a chain.]=],
+	-- ["GetNextAchievement"] = [=[Return the next achievement in a chain.]=],
 
 	["GetNumActiveQuests"] = [=[Gets the number of currently active quests from this NPC (only available after QUEST_GREETING event).]=],
 	["GetNumActiveQuests"] = [=[Returns the number of active quests from a non-gossip quest NPC.]=],
