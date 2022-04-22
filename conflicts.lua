@@ -144,7 +144,7 @@ local t = {
 
 	-- ["BuyTrainerService"] = [=[Used for buying new/upgrading professions, profession items and class skills.]=],
 	-- ["BuyTrainerService"] = [=[Buys a service available at the current trainer.]=],
-	["BuyTrainerService"] = [=[Buys a trainer service, e.g. class skills and tradeskill recipes.]=],
+	["BuyTrainerService"] = [=[Buys a trainer service, e.g. class skills and profession recipes.]=],
 
 	-- ["BuybackItem"] = [=[Buys back a sold item.]=],
 	-- ["BuybackItem"] = [=[Buyback an item from a merchant if you have the merchant window open.]=],
@@ -565,7 +565,7 @@ local t = {
 	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a link for the player's current profession.]=],
 
 	-- ["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC.]=],
-	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is displaying for an NPC.]=],
+	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is being used for an NPC.]=],
 
 	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications, and pays for the cost.]=],
 	-- ["C_Transmog.ApplyAllPending"] = [=[Applies all pending transmogrifications.]=],
@@ -741,7 +741,7 @@ local t = {
 
 	-- ["ConfirmAcceptQuest"] = [=[Accepts an offered quest that has been started by a party member; usually escort quests. (Might only be available after QUEST_ACCEPT_CONFIRM event.)]=],
 	-- ["ConfirmAcceptQuest"] = [=[Accept an escort quest being started by a player nearby.  ]=],
-	["ConfirmAcceptQuest"] = [=[Accepts a quest started by a group member, e.g. escort quests]=],
+	["ConfirmAcceptQuest"] = [=[Accepts a quest started by a group member, e.g. escort quests.]=],
 
 	["ConfirmLootRoll"] = [=[Confirms a loot roll.]=],
 	-- ["ConfirmLootRoll"] = [=[Confirm your loot roll after either {{api|t=e|CONFIRM_LOOT_ROLL}} or {{api|t=e|CONFIRM_DISENCHANT_ROLL}} fires.]=],
@@ -846,7 +846,7 @@ local t = {
 
 	-- ["FollowUnit"] = [=[Follow an ally with the specified UnitID.]=],
 	-- ["FollowUnit"] = [=[Start following an allied unit]=],
-	["FollowUnit"] = [=[Follows a friendly player.]=],
+	["FollowUnit"] = [=[Follows a friendly player unit.]=],
 
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the timer.]=],
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
@@ -890,7 +890,7 @@ local t = {
 
 	-- ["GetActionTexture"] = [=[Gets the texture path for the specified action.]=],
 	-- ["GetActionTexture"] = [=[Returns the filepath for an action's texture.]=],
-	["GetActionTexture"] = [=[Returns the FileID for an action's texture.]=],
+	["GetActionTexture"] = [=[Returns the texture icon for an action.]=],
 
 	-- ["GetActiveArtifactByRace"] = [=[Returns the information for the active artifact of raceIndex.]=],
 	-- ["GetActiveArtifactByRace"] = [=[Returns the information for a specific race's active artifact.]=],
@@ -1090,13 +1090,13 @@ local t = {
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Return the value of the requested Statistic from the comparison unit.]=],
-	["GetComparisonStatistic"] = [=[Returns the specified statistic from the comparison player.]=],
+	["GetComparisonStatistic"] = [=[Returns the specified statistic from the comparison player unit.]=],
 
 	-- ["GetContainerItemDurability"] = [=[Get current and maximum durability of an item in the character's bags.]=],
 	-- ["GetContainerItemDurability"] = [=[Returns current and maximum durability of an item in the character's bags.]=],
 	["GetContainerItemDurability"] = [=[Returns the durability of an item in a container slot.]=],
 
-	["GetContainerItemID"] = [=[Returns the item ID of an item in a container slot.]=],
+	["GetContainerItemID"] = [=[Returns the item ID in a container slot.]=],
 	-- ["GetContainerItemID"] = [=[Returns the item id of the item in a particular container slot.]=],
 
 	-- ["GetContainerItemInfo"] = [=[Get the info for an item in one of the player's bags.]=],
@@ -1111,11 +1111,11 @@ local t = {
 	-- ["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
 	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots in a bag.]=],
 
-	["GetCritChance"] = [=[Returns the player's melee critical hit chance.]=],
+	["GetCritChance"] = [=[Returns the player's melee critical hit chance %.]=],
 	-- ["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
 
 	-- ["GetCurrentArenaSeason"] = [=[Gets the current Arena season.]=],
-	["GetCurrentArenaSeason"] = [=[Returns the current arena season]=],
+	["GetCurrentArenaSeason"] = [=[Returns the current arena season.]=],
 
 	-- ["GetCurrentBindingSet"] = [=[Queries if current set of key bindings is character or account specific.]=],
 	-- ["GetCurrentBindingSet"] = [=[Returns whether account- or character-specific bindings are active.]=],
@@ -1168,8 +1168,8 @@ local t = {
 	["GetFramerate"] = [=[Returns the current framerate.]=],
 	-- ["GetFramerate"] = [=[Retrieve the current framerate (frames / second).]=],
 
-	["GetFramesRegisteredForEvent"] = [=[Returns a list of frames that are registered for the specified event.]=],
-	-- ["GetFramesRegisteredForEvent"] = [=[Returns all frames registered for the specified event, in dispatch order.]=],
+	-- ["GetFramesRegisteredForEvent"] = [=[Returns a list of frames that are registered for the specified event.]=],
+	["GetFramesRegisteredForEvent"] = [=[Returns all frames registered for the specified event, in dispatch order.]=],
 
 	-- ["GetFriendshipReputation"] = [=[Gets details about an NPC friend.]=],
 	["GetFriendshipReputation"] = [=[Returns info about a friendship reputation.]=],
@@ -1192,7 +1192,7 @@ local t = {
 
 	-- ["GetGuildBankMoneyTransaction"] = [=[No bank proximity required, however QueryGuildBankLog function requires proximity.]=],
 	-- ["GetGuildBankMoneyTransaction"] = [=[gets a specific money transaction from the guild bank]=],
-	["GetGuildBankMoneyTransaction"] = [=[Returns info about a money transaction from the guild bank]=],
+	["GetGuildBankMoneyTransaction"] = [=[Returns info about a money transaction from the guild bank.]=],
 
 	-- ["GetGuildBankTabInfo"] = [=[Returns the name and icon of the guild bank tab queried.]=],
 	-- ["GetGuildBankTabInfo"] = [=[Gets display / player's access information regarding a guild bank tab.]=],
@@ -1204,104 +1204,123 @@ local t = {
 
 	-- ["GetGuildInfo"] = [=[This function returns the name of the guild ''unit'' belongs to.]=],
 	-- ["GetGuildInfo"] = [=[Returns guild-related information about a unit.]=],
-	["GetGuildInfo"] = [=[Returns guild info for a unit.]=],
+	["GetGuildInfo"] = [=[Returns guild info for a player unit.]=],
 
-	["GetGuildRosterInfo"] = [=[This function is used to get info on members in the guild.]=],
-	["GetGuildRosterInfo"] = [=[Returns information about a character in your current guild.]=],
+	-- ["GetGuildRosterInfo"] = [=[This function is used to get info on members in the guild.]=],
+	-- ["GetGuildRosterInfo"] = [=[Returns information about a character in your current guild.]=],
+	["GetGuildRosterInfo"] = [=[Returns info about a guild member.]=],
 
-	["GetGuildRosterLastOnline"] = [=[Returns time since last online for indexth member in current sort order.]=],
-	["GetGuildRosterLastOnline"] = [=[Returns a specific guild member's last seen time.]=],
+	-- ["GetGuildRosterLastOnline"] = [=[Returns time since last online for indexth member in current sort order.]=],
+	-- ["GetGuildRosterLastOnline"] = [=[Returns a specific guild member's last seen time.]=],
+	["GetGuildRosterLastOnline"] = [=[Returns time since the guild member was last online.]=],
 
-	["GetGuildRosterMOTD"] = [=[Returns guild's MOTD.]=],
-	["GetGuildRosterMOTD"] = [=[Retrieves the guild's ''Message of the Day''.]=],
+	-- ["GetGuildRosterMOTD"] = [=[Returns guild's MOTD.]=],
+	-- ["GetGuildRosterMOTD"] = [=[Retrieves the guild's ''Message of the Day''.]=],
+	["GetGuildRosterMOTD"] = [=[Returns the guild Message of the Day.]=],
 
-	["GetGuildRosterSelection"] = [=[Returns the index of the current selected guild member.]=],
-	["GetGuildRosterSelection"] = [=[<p>Returns index of the current selected guild member in the guild roster according the active sorting. If none is selected, the return value is 0 (zero).</p>]=],
+	-- ["GetGuildRosterSelection"] = [=[Returns the index of the current selected guild member.]=],
+	-- ["GetGuildRosterSelection"] = [=[<p>Returns index of the current selected guild member in the guild roster according the active sorting. If none is selected, the return value is 0 (zero).</p>]=],
+	["GetGuildRosterSelection"] = [=[Returns the index of the selected guild member in the roster.]=],
 
-	["GetGuildRosterShowOffline"] = [=[Returns true if showing offline members of the guild.]=],
-	["GetGuildRosterShowOffline"] = [=[Returns 1 if the guild roster is currently set to show offline members, nil otherwise.]=],
+	-- ["GetGuildRosterShowOffline"] = [=[Returns true if showing offline members of the guild.]=],
+	-- ["GetGuildRosterShowOffline"] = [=[Returns 1 if the guild roster is currently set to show offline members, nil otherwise.]=],
+	["GetGuildRosterShowOffline"] = [=[True if the guild roster is showing offline members.]=],
 
-	["GetGuildTradeSkillInfo"] = [=[Returns the tradeskill index for a guild tradeskill using the index from GetNumGuildTradeSkill.]=],
-	["GetGuildTradeSkillInfo"] = [=[Returns info about a guild tradeskill.]=],
+	-- ["GetGuildTradeSkillInfo"] = [=[Returns the tradeskill index for a guild tradeskill using the index from GetNumGuildTradeSkill.]=],
+	["GetGuildTradeSkillInfo"] = [=[Returns info about a profession in the guild roster.]=],
 
-	["GetInboxHeaderInfo"] = [=[Returns information about a message in the inbox.]=],
-	["GetInboxHeaderInfo"] = [=[Returns information about a message in the mailbox.]=],
+	-- ["GetInboxHeaderInfo"] = [=[Returns information about a message in the inbox.]=],
+	["GetInboxHeaderInfo"] = [=[Returns info about a message in the mailbox.]=],
 
-	["GetInboxInvoiceInfo"] = [=[Returns informations about an auction house invoice.]=],
-	["GetInboxInvoiceInfo"] = [=[Returns information about an auction house invoice.]=],
+	-- ["GetInboxInvoiceInfo"] = [=[Returns informations about an auction house invoice.]=],
+	["GetInboxInvoiceInfo"] = [=[Returns info about an auction house invoice.]=],
 
-	["GetInboxItem"] = [=[Returns description of the attachment attached to message at (index).]=],
-	["GetInboxItem"] = [=[Provides information about an item attached to a message in the player's mailbox.]=],
+	-- ["GetInboxItem"] = [=[Returns description of the attachment attached to message at (index).]=],
+	-- ["GetInboxItem"] = [=[Provides information about an item attached to a message in the player's mailbox.]=],
+	["GetInboxItem"] = [=[Returns info about an item attached to a message in the mailbox.]=],
 
-	["GetInboxItemLink"] = [=[Returns link of the attachment attached to message at (index).]=],
-	["GetInboxItemLink"] = [=[Returns the [[itemLink]] of an item attached to a message in the player's mailbox.]=],
+	-- ["GetInboxItemLink"] = [=[Returns link of the attachment attached to message at (index).]=],
+	-- ["GetInboxItemLink"] = [=[Returns the [[itemLink]] of an item attached to a message in the player's mailbox.]=],
+	["GetInboxItemLink"] = [=[Returns the item link of an item attached to a message in the mailbox.]=],
 
-	["GetInboxNumItems"] = [=[Returns the number of messages in your inbox.]=],
-	["GetInboxNumItems"] = [=[Reports the number of messages in the client's inbox when the mailbox window is displayed.]=],
+	-- ["GetInboxNumItems"] = [=[Returns the number of messages in your inbox.]=],
+	-- ["GetInboxNumItems"] = [=[Reports the number of messages in the client's inbox when the mailbox window is displayed.]=],
+	["GetInboxNumItems"] = [=[Returns the number of messages in the mailbox.]=],
 
-	["GetInboxText"] = [=[Returns the message text of message at (index).]=],
-	["GetInboxText"] = [=[Returns information about a mailbox item.]=],
+	-- ["GetInboxText"] = [=[Returns the message text of message at (index).]=],
+	["GetInboxText"] = [=[Returns the text of a message in the mailbox.]=],
 
-	["GetInspectHonorData"] = [=[Returns honor information about the inspected player.]=],
-	["GetInspectHonorData"] = [=[Get the honor information about the inspected unit.]=],
+	-- ["GetInspectHonorData"] = [=[Returns honor information about the inspected player.]=],
+	-- ["GetInspectHonorData"] = [=[Get the honor information about the inspected unit.]=],
+	["GetInspectHonorData"] = [=[Returns honor info for the inspected player unit.]=],
 
-	["GetInspectSpecialization"] = [=[Returns a number representing the current active specialization of a given unit.]=],
-	["GetInspectSpecialization"] = [=[Returns the specialization of an inspected unit.]=],
+	-- ["GetInspectSpecialization"] = [=[Returns a number representing the current active specialization of a given unit.]=],
+	-- ["GetInspectSpecialization"] = [=[Returns the specialization of an inspected unit.]=],
+	["GetInspectSpecialization"] = [=[Returns the specialization for the inspected player unit.]=],
 
-	["GetInstanceInfo"] = [=[Gets informations about the current Instance.]=],
-	["GetInstanceInfo"] = [=[Returns information about the map instance the player is currently in.]=],
+	-- ["GetInstanceInfo"] = [=[Gets informations about the current Instance.]=],
+	-- ["GetInstanceInfo"] = [=[Returns information about the map instance the player is currently in.]=],
+	["GetInstanceInfo"] = [=[Returns info about the map instance the player is currently in.]=],
 
-	["GetInstanceLockTimeRemaining"] = [=[Returns information about the instance lock timer for the instance the player is currently entering.]=],
-	["GetInstanceLockTimeRemaining"] = [=[Returns information about the instance lock timer for the current instance.]=],
+	-- ["GetInstanceLockTimeRemaining"] = [=[Returns information about the instance lock timer for the instance the player is currently entering.]=],
+	["GetInstanceLockTimeRemaining"] = [=[Returns info about the instance lock timer for the current instance.]=],
 
-	["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item.]=],
-	["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item. The main use for this function is generalized durability checks.]=],
+	-- ["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item.]=],
+	-- ["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item. The main use for this function is generalized durability checks.]=],
+	["GetInventoryAlertStatus"] = [=[Returns the durability status of an equipped item.]=],
 
-	["GetInventoryItemBroken"] = [=[Determine if an inventory item is broken (no durability).]=],
-	["GetInventoryItemBroken"] = [=[Determine if an inventory item is broken (no durability)]=],
+	-- ["GetInventoryItemBroken"] = [=[Determine if an inventory item is broken (no durability).]=],
+	["GetInventoryItemBroken"] = [=[True if an inventory item has zero durability.]=],
 
 	-- ["GetInventoryItemDurability"] = [=[Returns the maximum and remaining durability points for an inventory item.]=],
 	-- ["GetInventoryItemDurability"] = [=[Returns current and maximum durability of an equipped item.]=],
 	["GetInventoryItemDurability"] = [=[Returns the durability of an equipped item.]=],
 
-	["GetInventoryItemID"] = [=[Returns the item id of the item in the specified inventory slot.]=],
-	["GetInventoryItemID"] = [=[Returns the item id of the item in the specified inventory slot]=],
+	-- ["GetInventoryItemID"] = [=[Returns the item id of the item in the specified inventory slot.]=],
+	["GetInventoryItemID"] = [=[Returns the item ID for an equipped item.]=],
 
-	["GetInventoryItemLink"] = [=[Returns an [[itemLink]] for an inventory (equipped) item.]=],
-	["GetInventoryItemLink"] = [=[Get the [[itemLink]] for the specified item.]=],
+	-- ["GetInventoryItemLink"] = [=[Returns an [[itemLink]] for an inventory (equipped) item.]=],
+	-- ["GetInventoryItemLink"] = [=[Get the [[itemLink]] for the specified item.]=],
+	["GetInventoryItemLink"] = [=[Returns the item link for an equipped item.]=],
 
-	["GetInventoryItemQuality"] = [=[Returns the quality of an inventory item.]=],
-	["GetInventoryItemQuality"] = [=[Return the quality of an inventory item.]=],
+	-- ["GetInventoryItemQuality"] = [=[Returns the quality of an inventory item.]=],
+	-- ["GetInventoryItemQuality"] = [=[Return the quality of an inventory item.]=],
+	["GetInventoryItemQuality"] = [=[Return the quality of an equipped item.]=],
 
-	["GetInventoryItemTexture"] = [=[Returns the texture for an inventory item.]=],
-	["GetInventoryItemTexture"] = [=[Return the texture for an inventory item.]=],
+	-- ["GetInventoryItemTexture"] = [=[Returns the texture for an inventory item.]=],
+	-- ["GetInventoryItemTexture"] = [=[Return the texture for an inventory item.]=],
+	["GetInventoryItemTexture"] = [=[Return the texture for an equipped item.]=],
 
-	["GetInventorySlotInfo"] = [=[Get the info for a named inventory slot (slot ID and texture)]=],
-	["GetInventorySlotInfo"] = [=[Return information about a specific inventory slot]=],
+	-- ["GetInventorySlotInfo"] = [=[Get the info for a named inventory slot (slot ID and texture)]=],
+	-- ["GetInventorySlotInfo"] = [=[Return information about a specific inventory slot]=],
+	["GetInventorySlotInfo"] = [=[Return info about an equipment slot.]=],
 
-	["GetItemCooldown"] = [=[Returns startTime, duration, enable.]=],
-	["GetItemCooldown"] = [=[Returns cooldown information for the item.]=],
+	-- ["GetItemCooldown"] = [=[Returns startTime, duration, enable.]=],
+	["GetItemCooldown"] = [=[Returns cooldown info for an item ID.]=],
 
-	["GetItemCount"] = [=[Returns number of such items in inventory, or charges instead if it has charges.]=],
-	["GetItemCount"] = [=[Counts an item.]=],
+	-- ["GetItemCount"] = [=[Returns number of such items in inventory, or charges instead if it has charges.]=],
+	-- ["GetItemCount"] = [=[Counts an item.]=],
+	["GetItemCount"] = [=[Returns the number (or available charges) of an item in the inventory.]=],
 
 	["GetItemFamily"] = [=[Returns the bag type that an item can go into, or for bags the type of items that it can contain.]=],
-	["GetItemFamily"] = [=[Gets the bitfield of what types of bags an item can go into or contain.]=],
+	-- ["GetItemFamily"] = [=[Gets the bitfield of what types of bags an item can go into or contain.]=],
 
-	["GetItemIcon"] = [=[Returns the icon for the item. Works for any valid item even if it's not in the cache.]=],
-	["GetItemIcon"] = [=[Returns an item's icon texture.]=],
+	-- ["GetItemIcon"] = [=[Returns the icon for the item. Works for any valid item even if it's not in the cache.]=],
+	["GetItemIcon"] = [=[Returns the icon texture for an item.]=],
 
-	["GetItemInfo"] = [=[Returns information about an item.]=],
-	["GetItemInfo"] = [=[Returns item info.]=],
+	["GetItemInfo"] = [=[Returns info about an item.]=],
+	-- ["GetItemInfo"] = [=[Returns item info.]=],
 
-	["GetItemInfoInstant"] = [=[Returns basic information about an item.]=],
-	["GetItemInfoInstant"] = [=[Returns readily available item info.]=],
+	-- ["GetItemInfoInstant"] = [=[Returns basic information about an item.]=],
+	["GetItemInfoInstant"] = [=[Returns readily available info for an item.]=],
 
-	["GetItemQualityColor"] = [=[Returns the RGB color codes for a quality.]=],
-	["GetItemQualityColor"] = [=[Returns RGB color codes for an item [[quality]].]=],
+	-- ["GetItemQualityColor"] = [=[Returns the RGB color codes for a quality.]=],
+	-- ["GetItemQualityColor"] = [=[Returns RGB color codes for an item [[quality]].]=],
+	["GetItemQualityColor"] = [=[Returns the RGB color code for an item quality.]=],
 
-	["GetItemSpell"] = [=[Returns name, rank.]=],
-	["GetItemSpell"] = [=[Return spell information about a specific item.]=],
+	-- ["GetItemSpell"] = [=[Returns name, rank.]=],
+	-- ["GetItemSpell"] = [=[Return spell information about a specific item.]=],
+	["GetItemSpell"] = [=[Return the spell effect for an item.]=],
 
 	["GetLFGBootProposal"] = [=[Returns info about a LFG Kick vote in progress.]=],
 	["GetLFGBootProposal"] = [=[Returns information about an LFG Kick vote currently in progress.]=],
@@ -2353,8 +2372,9 @@ local t = {
 	["SetGuildInfoText"] = [=[Sets the persistant Guild Information data. Limit is 500 letters (GuildInfoEditBox is limited to this number). Longer texts are possible, but will be reseted during the day.]=],
 	["SetGuildInfoText"] = [=[Changes the Guild Info to selected text.]=],
 
-	["SetGuildRosterSelection"] = [=[Selects/deselects a guild member according current sorting order.]=],
-	["SetGuildRosterSelection"] = [=[<p>Sets the the current selected guild member in the guild roster according the active sorting.</p>]=],
+	-- ["SetGuildRosterSelection"] = [=[Selects/deselects a guild member according current sorting order.]=],
+	-- ["SetGuildRosterSelection"] = [=[<p>Sets the the current selected guild member in the guild roster according the active sorting.</p>]=],
+	["SetGuildRosterSelection"] = [=[Selects a guild member in the roster.]=],
 
 	["SetGuildRosterShowOffline"] = [=[Sets/Resets the show offline members flag.]=],
 	["SetGuildRosterShowOffline"] = [=[Shows offline guild members in subsequent calls to the guild roster API.]=],
