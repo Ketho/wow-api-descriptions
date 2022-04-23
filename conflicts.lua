@@ -1925,29 +1925,36 @@ local t = {
 	["GuildUninvite"] = [=[Removes the member "name".]=],
 	["GuildUninvite"] = [=[Removes a member of the guild.]=],
 
-	["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
-	["HasAction"] = [=[Tests if an action slot is occupied.]=],
+	-- ["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
+	-- ["HasAction"] = [=[Tests if an action slot is occupied.]=],
+	["HasAction"] = [=[Returns 1 if ActionBar [[ActionSlot]] is assigned an action.]=],
 
-	["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
-	["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
+	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
+	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
+	["HasPetSpells"] = [=[True if the player has pet spells.]=],
 
-	["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
-	["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
+	-- ["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
+	-- ["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
+	["HasPetUI"] = [=[True if the player has a pet interface.]=],
 
-	["HasWandEquipped"] = [=[Returns 1 if a wand is equipped, false otherwise.]=],
-	["HasWandEquipped"] = [=[HasWandEquipped();]=],
+	-- ["HasWandEquipped"] = [=[Returns 1 if a wand is equipped, false otherwise.]=],
+	-- ["HasWandEquipped"] = [=[HasWandEquipped();]=],
+	["HasWandEquipped"] = [=[True if a wand is equipped.]=],
 
-	["HideRepairCursor"] = [=[Hides the repair cursor.]=],
+	-- ["HideRepairCursor"] = [=[Hides the repair cursor.]=],
 	["HideRepairCursor"] = [=[Takes the cursor out of repair mode.]=],
 
-	["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
-	["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
+	-- ["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
+	-- ["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
+	["InCombatLockdown"] = [=[True if the in-combat AddOn restrictions are active.]=],
 
-	["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
-	["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
+	-- ["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
+	-- ["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
+	["InRepairMode"] = [=[True if cursor is in repair mode.]=],
 
-	["InboxItemCanDelete"] = [=[Boolean check for whether a message is returnable to the sender.]=],
-	["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
+	-- ["InboxItemCanDelete"] = [=[Boolean check for whether a message is returnable to the sender.]=],
+	-- ["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
+	["InboxItemCanDelete"] = [=[False if a mailed item or money is returnable, true otherwise.]=],
 
 	["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
 	["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
