@@ -577,7 +577,8 @@ local t = {
 	-- ["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
-	["CallCompanion"] = [=[Summons a companion.]=],
+	["CallCompanion"] = [=[Depreciated. Summons a mount.]=],
+	-- ["CallCompanion"] = [=[Summons a companion.]=],
 	-- ["CallCompanion"] = [=[Summons the specified companion.]=],
 
 	-- ["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D world.]=],
@@ -791,7 +792,7 @@ local t = {
 
 	-- ["DismissCompanion"] = [=[Dismisses an active companion.]=],
 	-- ["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
-	["DismissCompanion"] = [=[Dismisses the current mount or companion pet.]=],
+	["DismissCompanion"] = [=[Depreciated. Dismisses the current mount.]=],
 
 	-- ["Dismount"] = [=[The player dismounts the current mount.]=],
 	-- ["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
@@ -1086,7 +1087,7 @@ local t = {
 
 	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
 	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
-	["GetCompanionInfo"] = [=[Returns info for a companion.]=],
+	["GetCompanionInfo"] = [=[Depreciated. No return.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
@@ -1472,7 +1473,7 @@ local t = {
 
 	-- ["GetNumCompanions"] = [=[Get the number of companions of the specified type.]=],
 	-- ["GetNumCompanions"] = [=[Returns the number of companions you have.]=],
-	["GetNumCompanions"] = [=[Returns the number of companions of the specified type.]=],
+	["GetNumCompanions"] = [=[Depreciated. Returns the number of mounts.]=],
 
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of Achievements, and number completed. ]=],
@@ -2227,8 +2228,9 @@ local t = {
 	["PickupAction"] = [=[Drags an action out of the specified quickbar slot and holds it on the cursor.]=],
 	["PickupAction"] = [=[Pick up an action for drag-and-drop.]=],
 
-	["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
-	["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
+	-- ["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
+	-- ["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
+	["PickupCompanion"] = [=[Places a mount onto the mouse cursor.]=],
 
 	["PickupInventoryItem"] = [=[Picks up an item from the player's worn inventory.]=],
 	["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
@@ -2513,8 +2515,9 @@ local t = {
 	["Stuck"] = [=[Informs the game engine that the player is Stuck.]=],
 	["Stuck"] = [=[Notifies the game engine that the player is stuck.]=],
 
-	["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
-	["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
+	-- ["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
+	-- ["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
+	["SummonRandomCritter"] = [=[Deprecated.]=],
 
 	["SwapRaidSubgroup"] = [=[Swaps raid members into different groups.]=],
 	["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
