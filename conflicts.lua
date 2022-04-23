@@ -905,7 +905,7 @@ local t = {
 
 	-- ["GetAddOnMetadata"] = [=[Retrieve metadata from addon's TOC file.]=],
 	-- ["GetAddOnMetadata"] = [=[Returns addon metadata.]=],
-	["GetAddOnMetadata"] = [=[Returns TOC metadata from an addon.]=],
+	["GetAddOnMetadata"] = [=[Returns TOC metadata for an addon.]=],
 
 	-- ["GetArchaeologyInfo"] = [=[Returns localized name of Archaeology skill.]=],
 	-- ["GetArchaeologyInfo"] = [=[Returns the localized name for Archaeology.]=],
@@ -1648,11 +1648,11 @@ local t = {
 	["GetQuestReward"] = [=[Completes the quest and chooses a quest reward, if applicable.]=],
 	-- ["GetQuestReward"] = [=[Completes the quest with the specified quest reward. Warning: Since making a choice here is irrevocable, use with caution.]=],
 
-	["GetRaidDifficultyID"] = [=[Returns the player's current Raid Difficulty setting (1-14).]=],
+	-- ["GetRaidDifficultyID"] = [=[Returns the player's current Raid Difficulty setting (1-14).]=],
 	["GetRaidDifficultyID"] = [=[Returns the player's currently selected raid difficulty.]=],
 
-	["GetRaidRosterInfo"] = [=[Returns info for the members of your raid.]=],
-	["GetRaidRosterInfo"] = [=[Gets info for a raid member.]=],
+	["GetRaidRosterInfo"] = [=[Returns info for a member of your raid.]=],
+	-- ["GetRaidRosterInfo"] = [=[Gets info for a raid member.]=],
 
 	["GetRaidTargetIndex"] = [=[Get the raid target index assigned to a unit.]=],
 	["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] index assigned to a unit.]=],
