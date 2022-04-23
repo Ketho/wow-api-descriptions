@@ -577,7 +577,7 @@ local t = {
 	-- ["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
-	["CallCompanion"] = [=[Depreciated. Summons a mount.]=],
+	["CallCompanion"] = [=[Summons a mount.]=],
 	-- ["CallCompanion"] = [=[Summons a companion.]=],
 	-- ["CallCompanion"] = [=[Summons the specified companion.]=],
 
@@ -792,7 +792,7 @@ local t = {
 
 	-- ["DismissCompanion"] = [=[Dismisses an active companion.]=],
 	-- ["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
-	["DismissCompanion"] = [=[Depreciated. Dismisses the current mount.]=],
+	["DismissCompanion"] = [=[Dismisses the current mount.]=],
 
 	-- ["Dismount"] = [=[The player dismounts the current mount.]=],
 	-- ["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
@@ -1087,7 +1087,7 @@ local t = {
 
 	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
 	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
-	["GetCompanionInfo"] = [=[Depreciated. No return.]=],
+	["GetCompanionInfo"] = [=[No return.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
@@ -1473,7 +1473,7 @@ local t = {
 
 	-- ["GetNumCompanions"] = [=[Get the number of companions of the specified type.]=],
 	-- ["GetNumCompanions"] = [=[Returns the number of companions you have.]=],
-	["GetNumCompanions"] = [=[Depreciated. Returns the number of mounts.]=],
+	["GetNumCompanions"] = [=[Returns the number of mounts.]=],
 
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of Achievements, and number completed. ]=],
