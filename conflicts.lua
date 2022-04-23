@@ -155,7 +155,7 @@ local t = {
 	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest, e.g. World PvP objectives.]=],
 
 	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
-	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area point of interest.]=],
+	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left in seconds for an area point of interest.]=],
 
 	-- ["C_ArtifactUI.Clear"] = [=[Clears artifact data of last opened artifact weapon.]=],
 	["C_ArtifactUI.Clear"] = [=[Clears data of the last opened artifact weapon.]=],
@@ -528,14 +528,14 @@ local t = {
 
 	-- ["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left before the pending summon expires.]=],
 	-- ["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the amount of time left for accepting a summon.]=],
-	["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the time left for accepting a summon.]=],
+	["C_SummonInfo.GetSummonConfirmTimeLeft"] = [=[Returns the time left in seconds for accepting a summon.]=],
 
 	-- ["C_Timer.After"] = [=[Runs callback after given duration.]=],
 	-- ["C_Timer.After"] = [=[Schedules a new timer.]=],
 	["C_Timer.After"] = [=[Schedules a timer.]=],
 
 	-- ["C_ToyBox.GetToyLink"] = [=[Returns item link.]=],
-	["C_ToyBox.GetToyLink"] = [=[Returns an item link for a toy.]=],
+	["C_ToyBox.GetToyLink"] = [=[Returns the item link for a toy.]=],
 
 	-- ["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns a table containing all the recipe IDs for the current trade skill.]=],
 	["C_TradeSkillUI.GetAllRecipeIDs"] = [=[Returns all recipes for the current profession.]=],
@@ -917,7 +917,7 @@ local t = {
 
 	-- ["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
 	-- ["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
-	["GetAreaSpiritHealerTime"] = [=[Returns the time until the next Spirit Healer resurrection in battlegrounds.]=],
+	["GetAreaSpiritHealerTime"] = [=[Returns the time left in seconds until the next Spirit Healer resurrection in battlegrounds.]=],
 
 	-- ["GetArtifactProgress"] = [=[Returns fragment-information about the [[API SetSelectedArtifact|selected]] artifact.]=],
 	-- ["GetArtifactProgress"] = [=[Returns info for current used fragments for the selected artifact.]=],
@@ -1184,7 +1184,7 @@ local t = {
 
 	-- ["GetGuildBankItemLink"] = [=[Returns itemLink.]=],
 	-- ["GetGuildBankItemLink"] = [=[Returns the item link for an item in the given Guild Bank tab and slot.]=],
-	["GetGuildBankItemLink"] = [=[Returns an item link for a guild bank slot.]=],
+	["GetGuildBankItemLink"] = [=[Returns the item link for a guild bank slot.]=],
 
 	-- ["GetGuildBankMoney"] = [=[Integer, funds available in copper.]=],
 	-- ["GetGuildBankMoney"] = [=[Returns the amount of money in the guild bank in copper.]=],
@@ -1399,7 +1399,7 @@ local t = {
 
 	-- ["GetMerchantItemLink"] = [=[Returns an [[itemLink]] for the given purchasable item.]=],
 	-- ["GetMerchantItemLink"] = [=[Returns a link to the indexed item in the merchant's inventory.]=],
-	["GetMerchantItemLink"] = [=[Returns an item link for a merchant item.]=],
+	["GetMerchantItemLink"] = [=[Returns the item link for a merchant item.]=],
 
 	-- ["GetMerchantItemMaxStack"] = [=[Returns the maximum number of items in a stack.]=],
 	-- ["GetMerchantItemMaxStack"] = [=[Gets the maximum stack size for an item from the active merchant.]=],
@@ -1554,7 +1554,7 @@ local t = {
 
 	-- ["GetPVPTimer"] = [=[Returns the amount of time until your PvP flag fades.]=],
 	-- ["GetPVPTimer"] = [=[Returns the amount of time left on your PVP flag.]=],
-	["GetPVPTimer"] = [=[Returns the time left until the player is unflagged for PvP.]=],
+	["GetPVPTimer"] = [=[Returns the time left in milliseconds until the player is unflagged for PvP.]=],
 
 	["GetPVPYesterdayStats"] = [=[Returns the player's Honor statistics for yesterday.]=],
 	-- ["GetPVPYesterdayStats"] = [=[Gets the player's PVP contribution statistics for the previous day.]=],
@@ -1609,38 +1609,44 @@ local t = {
 	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default "Parchment" texture.]=],
 	["GetQuestBackgroundMaterial"] = [=[Returns the background material for the current quest.]=],
 
-	["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
-	["GetQuestID"] = [=[Returns the quest ID of the quest being offered/discussed with an NPC.]=],
+	-- ["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
+	["GetQuestID"] = [=[Returns the ID of the displayed quest at a quest tiver.]=],
 
-	["GetQuestItemInfo"] = [=[Returns basic info for the reward/choice/required item for quest currently in gossip window.]=],
-	["GetQuestItemInfo"] = [=[Returns info for a quest's item rewards or requirements.]=],
+	-- ["GetQuestItemInfo"] = [=[Returns basic info for the reward/choice/required item for quest currently in gossip window.]=],
+	-- ["GetQuestItemInfo"] = [=[Returns info for a quest's item rewards or requirements.]=],
+	["GetQuestItemInfo"] = [=[Returns info for a required/reward/choice quest item.]=],
 
-	["GetQuestItemLink"] = [=[Returns an [[itemLink]] for a selected quest reward/choice/required item for quest currently in gossip window.]=],
-	["GetQuestItemLink"] = [=[Returns link to the quest item.]=],
+	-- ["GetQuestItemLink"] = [=[Returns an [[itemLink]] for a selected quest reward/choice/required item for quest currently in gossip window.]=],
+	["GetQuestItemLink"] = [=[Returns the item link for a required/reward/choice quest item.]=],
 
-	["GetQuestLogLeaderBoard"] = [=[Gets info for the objectives for a quest.]=],
-	["GetQuestLogLeaderBoard"] = [=[Returns info for a quest objective.]=],
+	-- ["GetQuestLogLeaderBoard"] = [=[Gets info for the objectives for a quest.]=],
+	["GetQuestLogLeaderBoard"] = [=[Returns info for a quest objective in the quest log.]=],
 
-	["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the specified quest.]=],
-	["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.]=],
+	-- ["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the specified quest.]=],
+	-- ["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.]=],
+	["GetQuestLogQuestText"] = [=[Returns the description and objective text in the quest log.]=],
 
-	["GetQuestLogRewardInfo"] = [=[Returns a pile of reward item info from the quest log.]=],
-	["GetQuestLogRewardInfo"] = [=['''GetQuestLogRewardInfo''' returns info for mandatory quest reward items.]=],
+	-- ["GetQuestLogRewardInfo"] = [=[Returns a pile of reward item info from the quest log.]=],
+	-- ["GetQuestLogRewardInfo"] = [=['''GetQuestLogRewardInfo''' returns info for mandatory quest reward items.]=],
+	["GetQuestLogRewardInfo"] = [=[Returns info for an unconditional quest reward item in the quest log.]=],
 
-	["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper returned by a particular quest.]=],
-	["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper rewarded by a particular quest in the quest log.]=],
+	-- ["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper returned by a particular quest.]=],
+	-- ["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper rewarded by a particular quest in the quest log.]=],
+	["GetQuestLogRewardMoney"] = [=[Returns the amount of money rewarded for a quest.]=],
 
-	["GetQuestLogRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion from quest log.]=],
-	["GetQuestLogRewardSpell"] = [=[Returns info for the spell reward of the current selected quest.]=],
+	-- ["GetQuestLogRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion from quest log.]=],
+	-- ["GetQuestLogRewardSpell"] = [=[Returns info for the spell reward of the current selected quest.]=],
+	["GetQuestLogRewardSpell"] = [=[Returns the spell reward for a quest.]=],
 
-	["GetQuestLogTimeLeft"] = [=[Returns the seconds remaining on the current quest timer.]=],
-	["GetQuestLogTimeLeft"] = [=[Gets the seconds left for the current quest that is being timed.]=],
+	-- ["GetQuestLogTimeLeft"] = [=[Returns the seconds remaining on the current quest timer.]=],
+	-- ["GetQuestLogTimeLeft"] = [=[Gets the seconds left for the current quest that is being timed.]=],
+	["GetQuestLogTimeLeft"] = [=[Returns the time left in seconds for the current quest.]=],
 
-	["GetQuestResetTime"] = [=[Returns number of seconds until quest reset.]=],
-	["GetQuestResetTime"] = [=[Returns the number of seconds until daily quests reset.]=],
+	-- ["GetQuestResetTime"] = [=[Returns number of seconds until quest reset.]=],
+	["GetQuestResetTime"] = [=[Returns the number of seconds until daily questsreset .]=],
 
-	["GetQuestReward"] = [=[Completes the quest with the specified quest reward.]=],
-	["GetQuestReward"] = [=[Completes the quest with the specified quest reward. Warning: Since making a choice here is irrevocable, use with caution.]=],
+	["GetQuestReward"] = [=[Completes the quest and chooses a quest reward, if applicable.]=],
+	-- ["GetQuestReward"] = [=[Completes the quest with the specified quest reward. Warning: Since making a choice here is irrevocable, use with caution.]=],
 
 	["GetRaidDifficultyID"] = [=[Returns the player's current Raid Difficulty setting (1-14).]=],
 	["GetRaidDifficultyID"] = [=[Returns the player's currently selected raid difficulty.]=],
