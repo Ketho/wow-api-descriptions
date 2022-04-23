@@ -95,19 +95,19 @@ local t = {
 	["BNConnected"] = [=[True if the WoW Client is connected to Battle.net.]=],
 
 	-- ["BNGetFOFInfo"] = [=[Returns presenceID, givenName, surname, isFriend.]=],
-	-- ["BNGetFOFInfo"] = [=[Returns information about the specified friend of a RealID friend]=],
-	["BNGetFOFInfo"] = [=[Returns info about the specified friend of a Battle.net friend.]=],
+	-- ["BNGetFOFInfo"] = [=[Returns info for the specified friend of a RealID friend]=],
+	["BNGetFOFInfo"] = [=[Returns info for the specified friend of a Battle.net friend.]=],
 
 	-- ["BNGetFriendInviteInfo"] = [=[Returns presenceID, givenName, surname.]=],
-	-- ["BNGetFriendInviteInfo"] = [=[Returns information about a Battle.net friend invite.]=],
-	["BNGetFriendInviteInfo"] = [=[Returns info about a Battle.net friend invite.]=],
+	-- ["BNGetFriendInviteInfo"] = [=[Returns info for a Battle.net friend invite.]=],
+	["BNGetFriendInviteInfo"] = [=[Returns info for a Battle.net friend invite.]=],
 
 	-- ["BNGetInfo"] = [=[Returns own battle.net data like battleTag.]=],
-	-- ["BNGetInfo"] = [=[Returns information about the player]=],
+	-- ["BNGetInfo"] = [=[Returns info for the player]=],
 	["BNGetInfo"] = [=[Returns the player's own Battle.net info.]=],
 
 	-- ["BNGetNumFriends"] = [=[Returns numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline.]=],
-	-- ["BNGetNumFriends"] = [=[Returns info about how much Battle.net friends are added to the friendslist and how much of them are currently online.]=],
+	-- ["BNGetNumFriends"] = [=[Returns info for how much Battle.net friends are added to the friendslist and how much of them are currently online.]=],
 	["BNGetNumFriends"] = [=[Returns the amount of (online) Battle.net friends.]=],
 
 	-- ["BNSendGameData"] = [=[BNet equivalent of SendAddonMessage.]=],
@@ -151,8 +151,8 @@ local t = {
 	["BuybackItem"] = [=[Buys back an item from the merchant.]=],
 
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns area point of interest info.]=],
-	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
-	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info about an area point of interest, e.g. World PvP objectives.]=],
+	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
+	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest, e.g. World PvP objectives.]=],
 
 	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area point of interest.]=],
@@ -167,9 +167,9 @@ local t = {
 	-- ["C_BlackMarket.Close"] = [=[Notifies the server that the [[Black Market]] UI was closed.]=],
 	["C_BlackMarket.Close"] = [=[Closes the [[Black Market]] window.]=],
 
-	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific black market auction.]=],
-	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns information about a specific [[Black Market Auction House|black market]] auction.]=],
-	["C_BlackMarket.GetItemInfoByID"] = [=[Returns info about a [[Black Market]] auction.]=],
+	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns info for a specific black market auction.]=],
+	-- ["C_BlackMarket.GetItemInfoByID"] = [=[Returns info for a specific [[Black Market Auction House|black market]] auction.]=],
+	["C_BlackMarket.GetItemInfoByID"] = [=[Returns info for a [[Black Market]] auction.]=],
 
 	["C_CVar.GetCVar"] = [=[Returns the current value of a console variable.]=],
 	-- ["C_CVar.GetCVar"] = [=[Returns the current value of a [[Console variables|console variable]].]=],
@@ -188,7 +188,7 @@ local t = {
 	-- ["C_ChatInfo.SendAddonMessage"] = [=[Sends a message to the hidden addon channel.]=],
 	["C_ChatInfo.SendAddonMessage"] = [=[Sends a message over an addon comm channel.]=],
 
-	-- ["C_ClassColor.GetClassColor"] = [=[ Returns information about a class' color.]=],
+	-- ["C_ClassColor.GetClassColor"] = [=[ Returns info for a class' color.]=],
 	-- ["C_ClassColor.GetClassColor"] = [=[Returns the class coloring for a class.]=],
 	["C_ClassColor.GetClassColor"] = [=[Returns a ColorMixin for a class.]=],
 
@@ -202,27 +202,27 @@ local t = {
 
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns both localized and locale-independent class names.]=],
 	-- ["C_CreatureInfo.GetClassInfo"] = [=[Returns class info.]=],
-	["C_CreatureInfo.GetClassInfo"] = [=[Returns info about a class by ID.]=],
+	["C_CreatureInfo.GetClassInfo"] = [=[Returns info for a class by ID.]=],
 
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Sets the expanded/collapsed state of a currency list header.]=],
 	-- ["C_CurrencyInfo.ExpandCurrencyList"] = [=[Alters the expanded state of a currency list header.]=],
 	["C_CurrencyInfo.ExpandCurrencyList"] = [=[Expands/collapses a currency list header.]=],
 
-	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a watched currency.]=],
-	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns information about a currency item currently being shown as part of the backpack.]=],
-	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info about a tracked currency in the backpack.]=],
+	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info for a watched currency.]=],
+	-- ["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info for a currency item currently being shown as part of the backpack.]=],
+	["C_CurrencyInfo.GetBackpackCurrencyInfo"] = [=[Returns info for a tracked currency in the backpack.]=],
 
-	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies.]=],
-	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns information about currencies in the [[currency tab]].]=],
-	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info about a currency by ID.]=],
+	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info for currencies.]=],
+	-- ["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info for currencies in the [[currency tab]].]=],
+	["C_CurrencyInfo.GetCurrencyInfo"] = [=[Returns info for a currency by ID.]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns the currencyLink for the specified currencyID.]=],
 	-- ["C_CurrencyInfo.GetCurrencyLink"] = [=[Get the currency link for the specified currency ID.]=],
 	["C_CurrencyInfo.GetCurrencyLink"] = [=[Returns a currency link.]=],
 
-	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns information about an element in the currency list.]=],
+	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info for an element in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info on an entry in the currency list.]=],
-	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info about a currency in the [[currency tab]].]=],
+	["C_CurrencyInfo.GetCurrencyListInfo"] = [=[Returns info for a currency in the [[currency tab]].]=],
 
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of elements (both headers and currencies) in the currency list.]=],
 	-- ["C_CurrencyInfo.GetCurrencyListSize"] = [=[Returns the number of entries in the currency list.]=],
@@ -251,7 +251,7 @@ local t = {
 
 	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns loot info for an encounter or instance.]=],
 	-- ["C_EncounterJournal.GetLootInfo"] = [=[Returns info on encounter journal loot items.]=],
-	["C_EncounterJournal.GetLootInfo"] = [=[Returns info about loot items available from an encounter.]=],
+	["C_EncounterJournal.GetLootInfo"] = [=[Returns info for loot items available from an encounter.]=],
 
 	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the current equipment type slot filter.]=],
 	-- ["C_EncounterJournal.GetSlotFilter"] = [=[Returns the currently active equipment slot filter.]=],
@@ -269,7 +269,7 @@ local t = {
 	["C_FogOfWar.GetFogOfWarForMap"] = [=[Returns the fog of war for an [[Island Expedition]] map.]=],
 
 	-- ["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns fog of war info for an ([[Island Expedition]]) map.]=],
-	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns info about the fog of war for an [[Island Expedition]] map.]=],
+	["C_FogOfWar.GetFogOfWarInfo"] = [=[Returns info for the fog of war for an [[Island Expedition]] map.]=],
 
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command /who or entering a query in the entry field of the Who List.]=],
 	-- ["C_FriendList.SendWho"] = [=[Sends a Who request, much like using the slash command [[MACRO_who|/who]] or entering a query in the entry field of the [[Who List]].]=],
@@ -305,7 +305,7 @@ local t = {
 	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns any gossip point of interest on the map.]=],
 
 	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns info about a gossip point of interest, e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiInfo"] = [=[Returns info for a gossip point of interest, e.g. the red flags when asking city guards for directions.]=],
 
 	-- ["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
 	["C_GossipInfo.GetText"] = [=[Returns the gossip text.]=],
@@ -330,15 +330,15 @@ local t = {
 	-- ["C_GuildInfo.CanViewOfficerNote"] = [=[Returns if the player can view guild officer notes.]=],
 	["C_GuildInfo.CanViewOfficerNote"] = [=[True if the player can view guild officer notes.]=],
 
-	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group.]=],
-	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns information about an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info about a activity group.]=],
+	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for an activity group.]=],
+	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
+	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for a activity group.]=],
 
 	-- ["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
 	["C_LFGList.GetActivityInfoExpensive"] = [=[Returns the zone associated with an activity.]=],
 
 	-- ["C_LFGList.GetApplicantMemberInfo"] = [=[Returns name, class, level and more about an applicant group member.]=],
-	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns info about an applicant.]=],
+	["C_LFGList.GetApplicantMemberInfo"] = [=[Returns info for an applicant.]=],
 
 	-- ["C_LFGList.GetApplicantMemberStats"] = [=[Returns stats about an applicant group member.]=],
 	["C_LFGList.GetApplicantMemberStats"] = [=[Returns the [[Proving Grounds]] stats of an applicant.]=],
@@ -347,19 +347,19 @@ local t = {
 	["C_LFGList.GetApplicants"] = [=[Returns the list of applicants to your group.]=],
 
 	-- ["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs.]=],
-	-- ["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs. For information about an activity use [[API_C_LFGList.GetActivityInfo|C_LFGList.GetActivityInfo]]().]=],
+	-- ["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available activityIDs. For info for an activity use [[API_C_LFGList.GetActivityInfo|C_LFGList.GetActivityInfo]]().]=],
 	["C_LFGList.GetAvailableActivities"] = [=[Returns a list of available LFG activities.]=],
 
 	-- ["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs.]=],
-	-- ["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs. For information about a group use [[API_C_LFGList.GetActivityGroupInfo|C_LFGList.GetActivityGroupInfo]](groupID).]=],
+	-- ["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available groupIDs. For info for a group use [[API_C_LFGList.GetActivityGroupInfo|C_LFGList.GetActivityGroupInfo]](groupID).]=],
 	["C_LFGList.GetAvailableActivityGroups"] = [=[Returns a list of available LFG groups.]=],
 
 	-- ["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs.]=],
-	-- ["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs. For information about a category use [[API_C_LFGList.GetCategoryInfo|C_LFGList.GetCategoryInfo]](categoryID).]=],
+	-- ["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available categoryIDs. For info for a category use [[API_C_LFGList.GetCategoryInfo|C_LFGList.GetCategoryInfo]](categoryID).]=],
 	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available LFG categories.]=],
 
-	-- ["C_Map.GetMapChildrenInfo"] = [=[Returns information on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
-	["C_Map.GetMapChildrenInfo"] = [=[Returns info about the submaps of a map.]=],
+	-- ["C_Map.GetMapChildrenInfo"] = [=[Returns info on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
+	["C_Map.GetMapChildrenInfo"] = [=[Returns info for the submaps of a map.]=],
 
 	-- ["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map.]=],
 	["C_Map.GetMapInfoAtPosition"] = [=[Returns info for any child or adjacent maps at a position on the map.]=],
@@ -454,12 +454,12 @@ local t = {
 	-- ["C_QuestLog.GetNumQuestWatches"] = [=[Replaces `GetNumQuestWatches`.]=],
 	["C_QuestLog.GetNumQuestWatches"] = [=[Returns the number of tracked quests.]=],
 
-	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns information about objective status for a quest.]=],
-	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns information about the objective status of a quest.]=],
-	["C_QuestLog.GetQuestObjectives"] = [=[Returns info about the objectives of a quest.]=],
+	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns info for objective status for a quest.]=],
+	-- ["C_QuestLog.GetQuestObjectives"] = [=[Returns info for the objective status of a quest.]=],
+	["C_QuestLog.GetQuestObjectives"] = [=[Returns info for the objectives of a quest.]=],
 
-	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag information about the specified quest.]=],
-	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag information about the quest.]=],
+	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag info for the specified quest.]=],
+	-- ["C_QuestLog.GetQuestTagInfo"] = [=[Returns tag info for the quest.]=],
 	["C_QuestLog.GetQuestTagInfo"] = [=[Returns metadata for a quest.]=],
 
 	-- ["C_QuestLog.GetRequiredMoney"] = [=[Returns amount of money required for quest completion from quest log.]=],
@@ -502,16 +502,16 @@ local t = {
 	-- ["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting other player's violations of the [[End-User License Agreement]]]=],
 
 	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Gets Paragon information.]=],
-	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] information about a faction.]=],
+	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] info for a faction.]=],
 	["C_Reputation.GetFactionParagonInfo"] = [=[Returns [[Emissary system|Paragon]] info on a faction.]=],
 
 	-- ["C_Reputation.IsFactionParagon"] = [=[Returns true/false if a factionID is a Paragon.]=],
 	-- ["C_Reputation.IsFactionParagon"] = [=[One line summary description of function.]=],
 	["C_Reputation.IsFactionParagon"] = [=[True if a faction is a paragon reputation.]=],
 
-	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current Proving Grounds trial.]=],
-	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns information about the current [[Proving Grounds]] trial.]=],
-	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info about the current [[Proving Grounds]] trial.]=],
+	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info for the current Proving Grounds trial.]=],
+	-- ["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info for the current [[Proving Grounds]] trial.]=],
+	["C_Scenario.GetProvingGroundsInfo"] = [=[Returns info for the current [[Proving Grounds]] trial.]=],
 
 	-- ["C_SummonInfo.CancelSummon"] = [=[Rejects a summon request.]=],
 	-- ["C_SummonInfo.CancelSummon"] = [=[Declines a pending summon.]=],
@@ -552,11 +552,11 @@ local t = {
 	-- ["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Get the number of items made in each use of a tradeskill.]=],
 	["C_TradeSkillUI.GetRecipeNumItemsProduced"] = [=[Returns the number of items produced for a recipe.]=],
 
-	-- ["C_TradeSkillUI.GetRecipeTools"] = [=[Returns information about the tools needed for a tradeskill.]=],
+	-- ["C_TradeSkillUI.GetRecipeTools"] = [=[Returns info for the tools needed for a tradeskill.]=],
 	-- ["C_TradeSkillUI.GetRecipeTools"] = [=[Returns the required tools for a specific trade skill.]=],
 	["C_TradeSkillUI.GetRecipeTools"] = [=[Returns the required tools for a recipe.]=],
 
-	-- ["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns information about the selected skill line.]=],
+	-- ["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns info for the selected skill line.]=],
 	-- ["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns the profession displayed in the trade skill frame, or nil when it is closed.]=],
 	["C_TradeSkillUI.GetTradeSkillLine"] = [=[Returns the current profession displayed in the trade skill window.]=],
 
@@ -852,11 +852,11 @@ local t = {
 	-- ["ForceQuit"] = [=[Instantly quits the game, bypassing the usual 20 seconds countdown.]=],
 	["ForceQuit"] = [=[Instantly quits the game, ignoring the 20 seconds timer.]=],
 
-	["GetAchievementCriteriaInfo"] = [=[Returns info about the specified achievement criteria.]=],
-	-- ["GetAchievementCriteriaInfo"] = [=[Returns information about the given Achievement's specified criteria.]=],
+	["GetAchievementCriteriaInfo"] = [=[Returns info for the specified achievement criteria.]=],
+	-- ["GetAchievementCriteriaInfo"] = [=[Returns info for the given Achievement's specified criteria.]=],
 
-	-- ["GetAchievementInfo"] = [=[Returns information about the requested achievement.]=],
-	["GetAchievementInfo"] = [=[Returns info about an achievement.]=],
+	-- ["GetAchievementInfo"] = [=[Returns info for the requested achievement.]=],
+	["GetAchievementInfo"] = [=[Returns info for an achievement.]=],
 
 	-- ["GetAchievementLink"] = [=[Returns a [[achievementLink]] for the specified achievement.]=],
 	["GetAchievementLink"] = [=[Returns an achievement link.]=],
@@ -882,7 +882,7 @@ local t = {
 	["GetActionCount"] = [=[Returns the available number of uses for an action.]=],
 
 	-- ["GetActionInfo"] = [=[Returns type, id, subtype.]=],
-	["GetActionInfo"] = [=[Returns info about an action.]=],
+	["GetActionInfo"] = [=[Returns info for an action.]=],
 
 	-- ["GetActionText"] = [=[Get the text label (macros, etc) for an action, returns nil if none.]=],
 	-- ["GetActionText"] = [=[Gets the text label for an action.]=],
@@ -892,8 +892,8 @@ local t = {
 	-- ["GetActionTexture"] = [=[Returns the filepath for an action's texture.]=],
 	["GetActionTexture"] = [=[Returns the texture icon for an action.]=],
 
-	-- ["GetActiveArtifactByRace"] = [=[Returns the information for the active artifact of raceIndex.]=],
-	-- ["GetActiveArtifactByRace"] = [=[Returns the information for a specific race's active artifact.]=],
+	-- ["GetActiveArtifactByRace"] = [=[Returns the info for the active artifact of raceIndex.]=],
+	-- ["GetActiveArtifactByRace"] = [=[Returns the info for a specific race's active artifact.]=],
 	["GetActiveArtifactByRace"] = [=[Returns the active Archaeology artifact for a race.]=],
 
 	-- ["GetAddOnCPUUsage"] = [=[Returns the total time used by the specified AddOn. This returns a cached value calculated by UpdateAddOnCPUUsage().]=],
@@ -912,15 +912,15 @@ local t = {
 	["GetArchaeologyInfo"] = [=[Returns the localized name for the Archaeology profession.]=],
 
 	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns Racename and texture.]=],
-	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns information about a branch of Archaeology.]=],
-	["GetArchaeologyRaceInfoByID"] = [=[Returns info about an Archaeology race.]=],
+	-- ["GetArchaeologyRaceInfoByID"] = [=[Returns info for a branch of Archaeology.]=],
+	["GetArchaeologyRaceInfoByID"] = [=[Returns info for an Archaeology race.]=],
 
 	-- ["GetAreaSpiritHealerTime"] = [=[Returns the time left until the next resurrection by the Sprit Guide.]=],
 	-- ["GetAreaSpiritHealerTime"] = [=[Gets the time left until the next resurrection cast.]=],
 	["GetAreaSpiritHealerTime"] = [=[Returns the time until the next Spirit Healer resurrection in battlegrounds.]=],
 
 	-- ["GetArtifactProgress"] = [=[Returns fragment-information about the [[API SetSelectedArtifact|selected]] artifact.]=],
-	-- ["GetArtifactProgress"] = [=[Returns information about current used fragments for the selected artifact.]=],
+	-- ["GetArtifactProgress"] = [=[Returns info for current used fragments for the selected artifact.]=],
 	["GetArtifactProgress"] = [=[Returns progress info for the selected Archaeology artifact.]=],
 
 	["GetAttackPowerForStat"] = [=[Returns the amount of attack power contributed by a specific amount of a stat.]=],
@@ -931,10 +931,10 @@ local t = {
 	["GetAutoDeclineGuildInvites"] = [=[True if guild invites are being automatically declined.]=],
 
 	-- ["GetAutoQuestPopUp"] = [=[Retrieves quest info by index that added using [[API AddAutoQuestPopUp|AddAutoQuestPopUp]].]=],
-	["GetAutoQuestPopUp"] = [=[Returns info about a popup quest notification.]=],
+	["GetAutoQuestPopUp"] = [=[Returns info for a popup quest notification.]=],
 
 	-- ["GetAvailableQuestInfo"] = [=[Returns metadata (quest type) about an available quest.]=],
-	["GetAvailableQuestInfo"] = [=[Returns info about an available quest.]=],
+	["GetAvailableQuestInfo"] = [=[Returns info for an available quest.]=],
 
 	-- ["GetAverageItemLevel"] = [=[Returns the character's current average iLevel and current average iLevel equipped.]=],
 	-- ["GetAverageItemLevel"] = [=[Returns the average item level of the player's character and average item level equipped.]=],
@@ -958,11 +958,11 @@ local t = {
 	-- ["GetBattlefieldPortExpiration"] = [=[Returns the remaining seconds of a battlefield port.]=],
 	["GetBattlefieldPortExpiration"] = [=[Returns the remaining seconds before the battlefield port expires.]=],
 
-	-- ["GetBattlefieldScore"] = [=[Get score information about a player.]=],
-	-- ["GetBattlefieldScore"] = [=[Returns information about a player's score in battlegrounds.]=],
-	["GetBattlefieldScore"] = [=[Returns info about a player's score in battlefields.]=],
+	-- ["GetBattlefieldScore"] = [=[Get score info for a player.]=],
+	-- ["GetBattlefieldScore"] = [=[Returns info for a player's score in battlegrounds.]=],
+	["GetBattlefieldScore"] = [=[Returns info for a player's score in battlefields.]=],
 
-	-- ["GetBattlefieldStatData"] = [=[Get information for a player from a column thats specific to a battleground (like Warsong Gulch flag captures).]=],
+	-- ["GetBattlefieldStatData"] = [=[Get info for a player from a column thats specific to a battleground (like Warsong Gulch flag captures).]=],
 	-- ["GetBattlefieldStatData"] = [=[Get data from the custom battlefield scoreboard columns.]=],
 	["GetBattlefieldStatData"] = [=[Returns battlefield-specific info for a player, e.g. Warsong Gulch flag captures.]=],
 
@@ -970,9 +970,9 @@ local t = {
 	-- ["GetBattlefieldStatus"] = [=[Get the status of the arena, battleground, or wargame that the player is either queued for or inside.]=],
 	["GetBattlefieldStatus"] = [=[Returns the status of the battlefield the player is either queued for or inside.]=],
 
-	-- ["GetBattlefieldTeamInfo"] = [=[Gets info about a registered Arena Team at the end of an arena match.]=],
-	-- ["GetBattlefieldTeamInfo"] = [=[Returns information regarding an Arena team]=],
-	["GetBattlefieldTeamInfo"] = [=[Returns info about an Arena team at the end of the match.]=],
+	-- ["GetBattlefieldTeamInfo"] = [=[Gets info for a registered Arena Team at the end of an arena match.]=],
+	-- ["GetBattlefieldTeamInfo"] = [=[Returns info regarding an Arena team]=],
+	["GetBattlefieldTeamInfo"] = [=[Returns info for an Arena team at the end of the match.]=],
 
 	-- ["GetBattlefieldTimeWaited"] = [=[Get time waited in queue in milliseconds.]=],
 	-- ["GetBattlefieldTimeWaited"] = [=[Get time this player's been in the queue in milliseconds]=],
@@ -1016,19 +1016,19 @@ local t = {
 	-- ["GetBonusBarOffset"] = [=[Returns the current bonus action bar index.]=],
 	["GetBonusBarOffset"] = [=[Returns the current bonus action bar index, e.g. for the Rogue stealth bar.]=],
 
-	-- ["GetBuildInfo"] = [=[Returns information about current client build.]=],
-	-- ["GetBuildInfo"] = [=[Returns information about the current client build.]=],
-	["GetBuildInfo"] = [=[Returns info about the current client build.]=],
+	-- ["GetBuildInfo"] = [=[Returns info for current client build.]=],
+	-- ["GetBuildInfo"] = [=[Returns info for the current client build.]=],
+	["GetBuildInfo"] = [=[Returns info for the current client build.]=],
 
-	-- ["GetBuybackItemInfo"] = [=[Returns information about the buyback item.]=],
-	["GetBuybackItemInfo"] = [=[Returns info about an item that can be bought back from a merchant.]=],
+	-- ["GetBuybackItemInfo"] = [=[Returns info for the buyback item.]=],
+	["GetBuybackItemInfo"] = [=[Returns info for an item that can be bought back from a merchant.]=],
 
 	-- ["GetCameraZoom"] = [=[Returns the current zoom level, ignoring camera collisions.]=],
 	["GetCameraZoom"] = [=[Returns the current zoom level of the camera.]=],
 
-	-- ["GetCategoryInfo"] = [=[Returns information about the requested achievement category.]=],
-	-- ["GetCategoryInfo"] = [=[Returns information about the given category.]=],
-	["GetCategoryInfo"] = [=[Returns info about an achievement category.]=],
+	-- ["GetCategoryInfo"] = [=[Returns info for the requested achievement category.]=],
+	-- ["GetCategoryInfo"] = [=[Returns info for the given category.]=],
+	["GetCategoryInfo"] = [=[Returns info for an achievement category.]=],
 
 	["GetCategoryList"] = [=[Returns the list of achievement categories.]=],
 
@@ -1038,27 +1038,27 @@ local t = {
 
 	-- ["GetChannelDisplayInfo"] = [=[ Returns the name of the channel according to the given id.]=],
 	-- ["GetChannelDisplayInfo"] = [=[Retrieves channels (and category headers) that would be displayed in Blizzards ChannelFrame.]=],
-	["GetChannelDisplayInfo"] = [=[Returns info about chat channels and headers in the Chat Pane.]=],
+	["GetChannelDisplayInfo"] = [=[Returns info for chat channels and headers in the Chat Pane.]=],
 
 	-- ["GetChannelList"] = [=[Retrieves joined channels.]=],
 	-- ["GetChannelList"] = [=[Retrieves joined channels, the return list can be of variable length so the 4th return is id2 and so on. (see Blizzard_TradeSkillUI.lua TradeSkillUIMixin:InitLinkToMenu())]=],
 	["GetChannelList"] = [=[Returns the list of joined chat channels.]=],
 
 	-- ["GetChannelName"] = [=[Retrieves the name from a specific channel.]=],
-	-- ["GetChannelName"] = [=[Returns information about the specified channel.]=],
-	["GetChannelName"] = [=[Returns info about a chat channel.]=],
+	-- ["GetChannelName"] = [=[Returns info for the specified channel.]=],
+	["GetChannelName"] = [=[Returns info for a chat channel.]=],
 
 	-- ["GetChatTypeIndex"] = [=[Get the numeric ID of a type of chat message.]=],
-	-- ["GetChatTypeIndex"] = [=[Return the numeric type index for a specific chat type.]=],
+	-- ["GetChatTypeIndex"] = [=[Returns the numeric type index for a specific chat type.]=],
 	["GetChatTypeIndex"] = [=[Returns the index for a chat type.]=],
 
 	-- ["GetChatWindowChannels"] = [=[Get the chat channels received by a chat window.]=],
 	-- ["GetChatWindowChannels"] = [=[Get the channels received by a chat window.]=],
 	["GetChatWindowChannels"] = [=[Returns subscribed channels for a chat window.]=],
 
-	-- ["GetChatWindowInfo"] = [=[Get setup information about a chat window.]=],
-	-- ["GetChatWindowInfo"] = [=[Retrieves configuration information about a chat window.]=],
-	["GetChatWindowInfo"] = [=[Returns info about a chat window.]=],
+	-- ["GetChatWindowInfo"] = [=[Get setup info for a chat window.]=],
+	-- ["GetChatWindowInfo"] = [=[Retrieves configuration info for a chat window.]=],
+	["GetChatWindowInfo"] = [=[Returns info for a chat window.]=],
 
 	-- ["GetChatWindowMessages"] = [=[Get the chat message types received by a chat window.]=],
 	-- ["GetChatWindowMessages"] = [=[Returns chat types received by a chat window.]=],
@@ -1084,12 +1084,12 @@ local t = {
 	-- ["GetComboPoints"] = [=[Retrieves the number of combo points gained by a player.]=],
 	["GetComboPoints"] = [=[Returns the amount of current combo points.]=],
 
-	-- ["GetCompanionInfo"] = [=[Returns info about a selected companion.]=],
-	-- ["GetCompanionInfo"] = [=[Returns information about the companions you have.]=],
-	["GetCompanionInfo"] = [=[Returns info about a companion.]=],
+	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
+	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
+	["GetCompanionInfo"] = [=[Returns info for a companion.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
-	-- ["GetComparisonStatistic"] = [=[Return the value of the requested Statistic from the comparison unit.]=],
+	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
 	["GetComparisonStatistic"] = [=[Returns the specified statistic from the comparison player unit.]=],
 
 	-- ["GetContainerItemDurability"] = [=[Get current and maximum durability of an item in the character's bags.]=],
@@ -1100,12 +1100,12 @@ local t = {
 	-- ["GetContainerItemID"] = [=[Returns the item id of the item in a particular container slot.]=],
 
 	-- ["GetContainerItemInfo"] = [=[Get the info for an item in one of the player's bags.]=],
-	-- ["GetContainerItemInfo"] = [=[Returns information about an item in a container slot.]=],
-	["GetContainerItemInfo"] = [=[Returns info about an item in a container slot.]=],
+	-- ["GetContainerItemInfo"] = [=[Returns info for an item in a container slot.]=],
+	["GetContainerItemInfo"] = [=[Returns info for an item in a container slot.]=],
 
-	-- ["GetContainerItemQuestInfo"] = [=[Returns information about quest and quest-starting items in your bags.]=],
+	-- ["GetContainerItemQuestInfo"] = [=[Returns info for quest and quest-starting items in your bags.]=],
 	-- ["GetContainerItemQuestInfo"] = [=[Returns whether the item in the slot is a quest item.]=],
-	["GetContainerItemQuestInfo"] = [=[Returns info about a quest item in a container slot.]=],
+	["GetContainerItemQuestInfo"] = [=[Returns info for a quest item in a container slot.]=],
 
 	-- ["GetContainerNumFreeSlots"] = [=[Returns the number of free slots and type of slots in the bag specified by the index.]=],
 	-- ["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
@@ -1127,8 +1127,8 @@ local t = {
 	-- ["GetCurrentTitle"] = [=[Returns the player's current [[titleId]].]=],
 	["GetCurrentTitle"] = [=[Returns the current [[title]].]=],
 
-	-- ["GetCursorInfo"] = [=[Returns information about what the cursor is holding.]=],
-	-- ["GetCursorInfo"] = [=[Returns information about what the mouse cursor is holding.]=],
+	-- ["GetCursorInfo"] = [=[Returns info for what the cursor is holding.]=],
+	-- ["GetCursorInfo"] = [=[Returns info for what the mouse cursor is holding.]=],
 	["GetCursorInfo"] = [=[Returns what the mouse cursor is holding.]=],
 
 	["GetCursorMoney"] = [=[Returns the amount of money held by the cursor.]=],
@@ -1148,8 +1148,8 @@ local t = {
 	["GetDungeonDifficultyID"] = [=[Returns selected dungeon difficulty.]=],
 
 	-- ["GetFactionInfo"] = [=[Gets details for a specific faction/faction header.]=],
-	-- ["GetFactionInfo"] = [=[Returns information about the specified faction or faction header in the player's reputation pane.]=],
-	["GetFactionInfo"] = [=[Returns info about a faction.]=],
+	-- ["GetFactionInfo"] = [=[Returns info for the specified faction or faction header in the player's reputation pane.]=],
+	["GetFactionInfo"] = [=[Returns info for a faction.]=],
 
 	-- ["GetFileIDFromPath"] = [=[Returns the fileID corresponding to the given game file path (texture, sound, model, etc.).]=],
 	-- ["GetFileIDFromPath"] = [=[Returns the FileDataID corresponding to the given game file path (texture, sound, model, etc.).]=],
@@ -1172,14 +1172,14 @@ local t = {
 	["GetFramesRegisteredForEvent"] = [=[Returns all frames registered for the specified event, in dispatch order.]=],
 
 	-- ["GetFriendshipReputation"] = [=[Gets details about an NPC friend.]=],
-	["GetFriendshipReputation"] = [=[Returns info about a friendship reputation.]=],
+	["GetFriendshipReputation"] = [=[Returns info for a friendship reputation.]=],
 
 	-- ["GetFriendshipReputationRanks"] = [=[Gets rank data about an NPC friend.]=],
 	-- ["GetFriendshipReputationRanks"] = [=[Returns friendship rank indices.]=],
 	["GetFriendshipReputationRanks"] = [=[Returns the (max) rank for a friendship reputation.]=],
 
 	-- ["GetGuildBankItemInfo"] = [=[Returns texture, amount and integer 1 or nil depending on locked state.]=],
-	-- ["GetGuildBankItemInfo"] = [=[Gets information about an item slot from the guild bank.]=],
+	-- ["GetGuildBankItemInfo"] = [=[Gets info for an item slot from the guild bank.]=],
 	["GetGuildBankItemInfo"] = [=[Returns item info for a guild bank slot.]=],
 
 	-- ["GetGuildBankItemLink"] = [=[Returns itemLink.]=],
@@ -1192,23 +1192,23 @@ local t = {
 
 	-- ["GetGuildBankMoneyTransaction"] = [=[No bank proximity required, however QueryGuildBankLog function requires proximity.]=],
 	-- ["GetGuildBankMoneyTransaction"] = [=[gets a specific money transaction from the guild bank]=],
-	["GetGuildBankMoneyTransaction"] = [=[Returns info about a money transaction from the guild bank.]=],
+	["GetGuildBankMoneyTransaction"] = [=[Returns info for a money transaction from the guild bank.]=],
 
 	-- ["GetGuildBankTabInfo"] = [=[Returns the name and icon of the guild bank tab queried.]=],
-	-- ["GetGuildBankTabInfo"] = [=[Gets display / player's access information regarding a guild bank tab.]=],
-	["GetGuildBankTabInfo"] = [=[Returns info about a guild bank tab.]=],
+	-- ["GetGuildBankTabInfo"] = [=[Gets display / player's access info regarding a guild bank tab.]=],
+	["GetGuildBankTabInfo"] = [=[Returns info for a guild bank tab.]=],
 
 	-- ["GetGuildBankTransaction"] = [=[Requires Guild Bank Proximity.]=],
-	-- ["GetGuildBankTransaction"] = [=[Get information for specific item transaction from Guild Bank.]=],
-	["GetGuildBankTransaction"] = [=[Returns info about an item transaction from the guild bank.]=],
+	-- ["GetGuildBankTransaction"] = [=[Get info for specific item transaction from Guild Bank.]=],
+	["GetGuildBankTransaction"] = [=[Returns info for an item transaction from the guild bank.]=],
 
 	-- ["GetGuildInfo"] = [=[This function returns the name of the guild ''unit'' belongs to.]=],
-	-- ["GetGuildInfo"] = [=[Returns guild-related information about a unit.]=],
+	-- ["GetGuildInfo"] = [=[Returns guild-related info for a unit.]=],
 	["GetGuildInfo"] = [=[Returns guild info for a player unit.]=],
 
 	-- ["GetGuildRosterInfo"] = [=[This function is used to get info on members in the guild.]=],
-	-- ["GetGuildRosterInfo"] = [=[Returns information about a character in your current guild.]=],
-	["GetGuildRosterInfo"] = [=[Returns info about a guild member.]=],
+	-- ["GetGuildRosterInfo"] = [=[Returns info for a character in your current guild.]=],
+	["GetGuildRosterInfo"] = [=[Returns info for a guild member.]=],
 
 	-- ["GetGuildRosterLastOnline"] = [=[Returns time since last online for indexth member in current sort order.]=],
 	-- ["GetGuildRosterLastOnline"] = [=[Returns a specific guild member's last seen time.]=],
@@ -1227,17 +1227,17 @@ local t = {
 	["GetGuildRosterShowOffline"] = [=[True if the guild roster is showing offline members.]=],
 
 	-- ["GetGuildTradeSkillInfo"] = [=[Returns the tradeskill index for a guild tradeskill using the index from GetNumGuildTradeSkill.]=],
-	["GetGuildTradeSkillInfo"] = [=[Returns info about a profession in the guild roster.]=],
+	["GetGuildTradeSkillInfo"] = [=[Returns info for a profession in the guild roster.]=],
 
-	-- ["GetInboxHeaderInfo"] = [=[Returns information about a message in the inbox.]=],
-	["GetInboxHeaderInfo"] = [=[Returns info about a message in the mailbox.]=],
+	-- ["GetInboxHeaderInfo"] = [=[Returns info for a message in the inbox.]=],
+	["GetInboxHeaderInfo"] = [=[Returns info for a message in the mailbox.]=],
 
 	-- ["GetInboxInvoiceInfo"] = [=[Returns informations about an auction house invoice.]=],
-	["GetInboxInvoiceInfo"] = [=[Returns info about an auction house invoice.]=],
+	["GetInboxInvoiceInfo"] = [=[Returns info for an auction house invoice.]=],
 
 	-- ["GetInboxItem"] = [=[Returns description of the attachment attached to message at (index).]=],
-	-- ["GetInboxItem"] = [=[Provides information about an item attached to a message in the player's mailbox.]=],
-	["GetInboxItem"] = [=[Returns info about an item attached to a message in the mailbox.]=],
+	-- ["GetInboxItem"] = [=[Provides info for an item attached to a message in the player's mailbox.]=],
+	["GetInboxItem"] = [=[Returns info for an item attached to a message in the mailbox.]=],
 
 	-- ["GetInboxItemLink"] = [=[Returns link of the attachment attached to message at (index).]=],
 	-- ["GetInboxItemLink"] = [=[Returns the [[itemLink]] of an item attached to a message in the player's mailbox.]=],
@@ -1250,8 +1250,8 @@ local t = {
 	-- ["GetInboxText"] = [=[Returns the message text of message at (index).]=],
 	["GetInboxText"] = [=[Returns the text of a message in the mailbox.]=],
 
-	-- ["GetInspectHonorData"] = [=[Returns honor information about the inspected player.]=],
-	-- ["GetInspectHonorData"] = [=[Get the honor information about the inspected unit.]=],
+	-- ["GetInspectHonorData"] = [=[Returns honor info for the inspected player.]=],
+	-- ["GetInspectHonorData"] = [=[Get the honor info for the inspected unit.]=],
 	["GetInspectHonorData"] = [=[Returns honor info for the inspected player unit.]=],
 
 	-- ["GetInspectSpecialization"] = [=[Returns a number representing the current active specialization of a given unit.]=],
@@ -1259,11 +1259,11 @@ local t = {
 	["GetInspectSpecialization"] = [=[Returns the specialization for the inspected player unit.]=],
 
 	-- ["GetInstanceInfo"] = [=[Gets informations about the current Instance.]=],
-	-- ["GetInstanceInfo"] = [=[Returns information about the map instance the player is currently in.]=],
-	["GetInstanceInfo"] = [=[Returns info about the map instance the player is currently in.]=],
+	-- ["GetInstanceInfo"] = [=[Returns info for the map instance the player is currently in.]=],
+	["GetInstanceInfo"] = [=[Returns info for the map instance the player is currently in.]=],
 
-	-- ["GetInstanceLockTimeRemaining"] = [=[Returns information about the instance lock timer for the instance the player is currently entering.]=],
-	["GetInstanceLockTimeRemaining"] = [=[Returns info about the instance lock timer for the current instance.]=],
+	-- ["GetInstanceLockTimeRemaining"] = [=[Returns info for the instance lock timer for the instance the player is currently entering.]=],
+	["GetInstanceLockTimeRemaining"] = [=[Returns info for the instance lock timer for the current instance.]=],
 
 	-- ["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item.]=],
 	-- ["GetInventoryAlertStatus"] = [=[Returns one of several codes describing the "status" of an equipped item. The main use for this function is generalized durability checks.]=],
@@ -1284,16 +1284,16 @@ local t = {
 	["GetInventoryItemLink"] = [=[Returns the item link for an equipped item.]=],
 
 	-- ["GetInventoryItemQuality"] = [=[Returns the quality of an inventory item.]=],
-	-- ["GetInventoryItemQuality"] = [=[Return the quality of an inventory item.]=],
+	-- ["GetInventoryItemQuality"] = [=[Returns the quality of an inventory item.]=],
 	["GetInventoryItemQuality"] = [=[Returns the quality of an equipped item.]=],
 
 	-- ["GetInventoryItemTexture"] = [=[Returns the texture for an inventory item.]=],
-	-- ["GetInventoryItemTexture"] = [=[Return the texture for an inventory item.]=],
+	-- ["GetInventoryItemTexture"] = [=[Returns the texture for an inventory item.]=],
 	["GetInventoryItemTexture"] = [=[Returns the texture for an equipped item.]=],
 
 	-- ["GetInventorySlotInfo"] = [=[Get the info for a named inventory slot (slot ID and texture)]=],
-	-- ["GetInventorySlotInfo"] = [=[Return information about a specific inventory slot]=],
-	["GetInventorySlotInfo"] = [=[Returns info about an equipment slot.]=],
+	-- ["GetInventorySlotInfo"] = [=[Returns info for a specific inventory slot]=],
+	["GetInventorySlotInfo"] = [=[Returns info for an equipment slot.]=],
 
 	-- ["GetItemCooldown"] = [=[Returns startTime, duration, enable.]=],
 	["GetItemCooldown"] = [=[Returns cooldown info for an item ID.]=],
@@ -1308,10 +1308,10 @@ local t = {
 	-- ["GetItemIcon"] = [=[Returns the icon for the item. Works for any valid item even if it's not in the cache.]=],
 	["GetItemIcon"] = [=[Returns the icon texture for an item.]=],
 
-	["GetItemInfo"] = [=[Returns info about an item.]=],
+	["GetItemInfo"] = [=[Returns info for an item.]=],
 	-- ["GetItemInfo"] = [=[Returns item info.]=],
 
-	-- ["GetItemInfoInstant"] = [=[Returns basic information about an item.]=],
+	-- ["GetItemInfoInstant"] = [=[Returns basic info for an item.]=],
 	["GetItemInfoInstant"] = [=[Returns readily available info for an item.]=],
 
 	-- ["GetItemQualityColor"] = [=[Returns the RGB color codes for a quality.]=],
@@ -1319,26 +1319,26 @@ local t = {
 	["GetItemQualityColor"] = [=[Returns the RGB color code for an item quality.]=],
 
 	-- ["GetItemSpell"] = [=[Returns name, rank.]=],
-	-- ["GetItemSpell"] = [=[Return spell information about a specific item.]=],
+	-- ["GetItemSpell"] = [=[Returns spell info for a specific item.]=],
 	["GetItemSpell"] = [=[Returns the spell effect for an item.]=],
 
-	-- ["GetLFGBootProposal"] = [=[Returns info about a LFG Kick vote in progress.]=],
-	-- ["GetLFGBootProposal"] = [=[Returns information about an LFG Kick vote currently in progress.]=],
-	["GetLFGBootProposal"] = [=[Returns info about a LFG votekick in progress.]=],
+	-- ["GetLFGBootProposal"] = [=[Returns info for a LFG Kick vote in progress.]=],
+	-- ["GetLFGBootProposal"] = [=[Returns info for an LFG Kick vote currently in progress.]=],
+	["GetLFGBootProposal"] = [=[Returns info for a LFG votekick in progress.]=],
 
 	-- ["GetLFGDungeonInfo"] = [=[Returns dungeon information.]=],
 	-- ["GetLFGDungeonInfo"] = [=[Retrieves specific dungeon information, not limited by player level and all dungeons can be looked up.]=],
-	["GetLFGDungeonInfo"] = [=[Returns info about a LFG dungeon.]=],
+	["GetLFGDungeonInfo"] = [=[Returns info for a LFG dungeon.]=],
 
-	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Returns information on the weekly point limits.]=],
-	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Retrieves information on the weekly limits for currency rewards from the dungeon system (i.e. Valor Point Cap)]=],
+	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Returns info on the weekly point limits.]=],
+	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Retrieves info on the weekly limits for currency rewards from the dungeon system (i.e. Valor Point Cap)]=],
 	["GetLFGDungeonRewardCapBarInfo"] = [=[Returns the weekly limits reward for a currency, e.g. Valor Point Cap.]=],
 
 	-- ["GetLFGQueueStats"] = [=[Returns current state and wait times for being in queue.]=],
-	["GetLFGQueueStats"] = [=[Returns info about the current LFG queue.]=],
+	["GetLFGQueueStats"] = [=[Returns info for the current LFG queue.]=],
 
-	-- ["GetLFGRoleShortageRewards"] = [=[Returns information about the LFG Call to Arms rewards.]=],
-	["GetLFGRoleShortageRewards"] = [=[Returns info about the LFG [[Call_to_Arms_(dungeon)|Call to Arms]] rewards.]=],
+	-- ["GetLFGRoleShortageRewards"] = [=[Returns info for the LFG Call to Arms rewards.]=],
+	["GetLFGRoleShortageRewards"] = [=[Returns info for the LFG [[Call_to_Arms_(dungeon)|Call to Arms]] rewards.]=],
 
 	-- ["GetLFGRoles"] = [=[Returns the roles you signed up as, not the role you were assigned.]=],
 	-- ["GetLFGRoles"] = [=[Returns what roles you signed up as in the Dungeon Finder.]=],
@@ -1358,7 +1358,7 @@ local t = {
 	-- ["GetLootMethod"] = [=[Retrieves the Loot Method and (if applicable) Master Looter idenity.]=],
 
 	-- ["GetLootSlotInfo"] = [=[Returns icon path, item name, and item quantity for the item in the given loot window slot.]=],
-	["GetLootSlotInfo"] = [=[Returns info about a loot slot.]=],
+	["GetLootSlotInfo"] = [=[Returns info for a loot slot.]=],
 
 	-- ["GetLootSlotLink"] = [=[Returns an [[itemLink]] for the item in the given loot window slot.]=],
 	-- ["GetLootSlotLink"] = [=[Retrieves the [[itemLink]] of one item in the current loot window.]=],
@@ -1372,7 +1372,7 @@ local t = {
 	["GetMacroIndexByName"] = [=[Returns the index for a macro byname.]=],
 
 	-- ["GetMacroInfo"] = [=[Returns "name", "iconTexture", "body", isLocal.]=],
-	["GetMacroInfo"] = [=[Returns info about a macro.]=],
+	["GetMacroInfo"] = [=[Returns info for a macro.]=],
 
 	-- ["GetManaRegen"] = [=[Returns the player's mana regeneration rates.]=],
 	-- ["GetManaRegen"] = [=[Gets the player's current mana regeneration rates (in mana per 1 seconds).]=],
@@ -1390,12 +1390,12 @@ local t = {
 	-- ["GetMasteryEffect"] = [=[Returns the effect of player's current Mastery.]=],
 	["GetMasteryEffect"] = [=[Returns the player's effective mastery percentage.]=],
 
-	-- ["GetMerchantItemCostItem"] = [=[Returns information about an "alternative currency" component of the price for a purchasable item.]=],
-	-- ["GetMerchantItemCostItem"] = [=[Returns information about an item's token/currency cost.]=],
-	["GetMerchantItemCostItem"] = [=[Returns info about the currency cost for a merchant item.]=],
+	-- ["GetMerchantItemCostItem"] = [=[Returns info for an "alternative currency" component of the price for a purchasable item.]=],
+	-- ["GetMerchantItemCostItem"] = [=[Returns info for an item's token/currency cost.]=],
+	["GetMerchantItemCostItem"] = [=[Returns info for the currency cost for a merchant item.]=],
 
-	-- ["GetMerchantItemInfo"] = [=[Returns information about the given purchasable item.]=],
-	["GetMerchantItemInfo"] = [=[Returns info about a merchant item.]=],
+	-- ["GetMerchantItemInfo"] = [=[Returns info for the given purchasable item.]=],
+	["GetMerchantItemInfo"] = [=[Returns info for a merchant item.]=],
 
 	-- ["GetMerchantItemLink"] = [=[Returns an [[itemLink]] for the given purchasable item.]=],
 	-- ["GetMerchantItemLink"] = [=[Returns a link to the indexed item in the merchant's inventory.]=],
@@ -1412,8 +1412,8 @@ local t = {
 	-- ["GetMinimapZoneText"] = [=[Returns the zone text, that is displayed over the minimap.]=],
 	["GetMinimapZoneText"] = [=[Returns the zone text that is displayed over the minimap.]=],
 
-	["GetMirrorTimerInfo"] = [=[Returns info about the mirror timer, e.g. fatigue, breath and feign death.]=],
-	-- ["GetMirrorTimerInfo"] = [=[Gives information about the mirror bar. (Spirit release, exhaustion/fatigue, etc)]=],
+	["GetMirrorTimerInfo"] = [=[Returns info for the mirror timer, e.g. fatigue, breath and feign death.]=],
+	-- ["GetMirrorTimerInfo"] = [=[Gives info for the mirror bar. (Spirit release, exhaustion/fatigue, etc)]=],
 
 	["GetMirrorTimerProgress"] = [=[Returns the current value of the mirror timer.]=],
 	-- ["GetMirrorTimerProgress"] = [=[Returns the current value of a mirror timer (fatigue, breath, feign death etc).]=],
@@ -1438,7 +1438,7 @@ local t = {
 	-- ["GetNetStats"] = [=[Returns various network statistics.]=],
 
 	["GetNextAchievement"] = [=[Returns the next achievement in a chain.]=],
-	-- ["GetNextAchievement"] = [=[Return the next achievement in a chain.]=],
+	-- ["GetNextAchievement"] = [=[Returns the next achievement in a chain.]=],
 
 	-- ["GetNumActiveQuests"] = [=[Gets the number of currently active quests from this NPC (only available after QUEST_GREETING event).]=],
 	-- ["GetNumActiveQuests"] = [=[Returns the number of active quests from a non-gossip quest NPC.]=],
@@ -1456,7 +1456,7 @@ local t = {
 	["GetNumAvailableQuests"] = [=[Returns the number of available quests at a non-gossip quest giver.]=],
 
 	-- ["GetNumBankSlots"] = [=[Returns total purchased bank bag slots, and a flag indicating if it's full.]=],
-	-- ["GetNumBankSlots"] = [=[Returns information about the number of purchased bank bag slots.]=],
+	-- ["GetNumBankSlots"] = [=[Returns info for the number of purchased bank bag slots.]=],
 	["GetNumBankSlots"] = [=[Returns the number of purchased bank bag slots.]=],
 
 	-- ["GetNumBattlefieldScores"] = [=[Returns the number of scores(players) listed in the battlefield scoreboard.]=],
@@ -1475,7 +1475,7 @@ local t = {
 	["GetNumCompanions"] = [=[Returns the number of companions of the specified type.]=],
 
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
-	-- ["GetNumCompletedAchievements"] = [=[Return the total number of Achievements, and number completed. ]=],
+	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of Achievements, and number completed. ]=],
 	["GetNumCompletedAchievements"] = [=[Returns the total and completed number of achievements.]=],
 
 	-- ["GetNumFilteredAchievements"] = [=[Returns the number of achievements that matches search text.]=],
@@ -1493,7 +1493,7 @@ local t = {
 	["GetNumLootItems"] = [=[Returns the number of items in the loot window.]=],
 
 	-- ["GetNumMacros"] = [=[Returns the number of macros the user has.]=],
-	-- ["GetNumMacros"] = [=[Return the number of macros the player has.]=],
+	-- ["GetNumMacros"] = [=[Returns the number of macros the player has.]=],
 	["GetNumMacros"] = [=[Returns the number of account and character macros.]=],
 
 	["GetNumPetitionNames"] = [=[Returns the number of signatures on the current petition.]=],
@@ -1566,12 +1566,12 @@ local t = {
 	-- ["GetPartyAssignment"] = [=[Returns a list of raidmembers with a [[Main_tank|main tank]] or [[Main_assist|main assist]] role.]=],
 	["GetPartyAssignment"] = [=[True if a group member is assigned the main tank/assist role.]=],
 
-	-- ["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action at the specificed pet action bar slot.]=],
-	["GetPetActionCooldown"] = [=[Returns cooldown info for a pet action in the pet action bar slot.]=],
+	-- ["GetPetActionCooldown"] = [=[Returns cooldown info for the pet action at the specificed pet action bar slot.]=],
+	["GetPetActionCooldown"] = [=[Returns cooldown info for an action on the pet action bar.]=],
 
-	-- ["GetPetActionInfo"] = [=[Returns information on the pet action at the specified pet action bar slot.]=],
-	-- ["GetPetActionInfo"] = [=[Returns information on the specified pet action.]=],
-	["GetPetActionInfo"] = [=[Returns info for a pet action in the pet action bar slot.]=],
+	-- ["GetPetActionInfo"] = [=[Returns info on the pet action at the specified pet action bar slot.]=],
+	-- ["GetPetActionInfo"] = [=[Returns info on the specified pet action.]=],
+	["GetPetActionInfo"] = [=[Returns info for an action on the pet action bar.]=],
 
 	["GetPetExperience"] = [=[Returns the pet's current and total XP required for next level.]=],
 	-- ["GetPetExperience"] = [=[Returns the pet's current XP total, and the XP total required for the next level.]=],
@@ -1579,25 +1579,25 @@ local t = {
 	-- ["GetPetFoodTypes"] = [=[Returns a list of the food types the player's pet can eat.]=],
 	["GetPetFoodTypes"] = [=[Returns the food types the pet can eat.]=],
 
-	-- ["GetPetitionInfo"] = [=[Retrieves information about the current petition.]=],
-	-- ["GetPetitionInfo"] = [=[Gets the information for a petition being viewed.]=],
+	-- ["GetPetitionInfo"] = [=[Retrieves info for the current petition.]=],
+	-- ["GetPetitionInfo"] = [=[Gets the info for a petition being viewed.]=],
 	["GetPetitionInfo"] = [=[Returns info for the petition being viewed.]=],
 
 	["GetPlayerFacing"] = [=[Returns the direction the player is facing in radians.]=],
 	-- ["GetPlayerFacing"] = [=[Returns the direction the player character is currently facing.]=],
 
 	-- ["GetPlayerInfoByGUID"] = [=[Returns race, class, sex about the guid (client must have seen the guid)]=],
-	-- ["GetPlayerInfoByGUID"] = [=[Returns basic information about another player from their [[GUID]].]=],
-	["GetPlayerInfoByGUID"] = [=[Returns character info about another player from their GUID.]=],
+	-- ["GetPlayerInfoByGUID"] = [=[Returns basic info for another player from their [[GUID]].]=],
+	["GetPlayerInfoByGUID"] = [=[Returns character info for another player from their GUID.]=],
 
 	["GetPlayerTradeMoney"] = [=[Returns the amount of money the player has in the trade window.]=],
 	-- ["GetPlayerTradeMoney"] = [=[Gets the amount of money in the trade window for the current user.]=],
 
 	-- ["GetPossessInfo"] = [=[Returns texture, name, enabled.]=],
-	["GetPossessInfo"] = [=[Returns info about an action on the possession bar.]=],
+	["GetPossessInfo"] = [=[Returns info for an action on the possession bar.]=],
 
-	["GetPreviousAchievement"] = [=[Returns previous related achievements.]=],
-	["GetPreviousAchievement"] = [=[Return the previous achievement in a chain.]=],
+	-- ["GetPreviousAchievement"] = [=[Returns previous related achievements.]=],
+	["GetPreviousAchievement"] = [=[Returns the previous achievement in a chain.]=],
 
 	["GetProfessions"] = [=[Gives all of the current character's professions.]=],
 	["GetProfessions"] = [=[Returns spell tab indices of the player's current professions]=],
@@ -1611,26 +1611,26 @@ local t = {
 	["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
 	["GetQuestID"] = [=[Returns the quest ID of the quest being offered/discussed with an NPC.]=],
 
-	["GetQuestItemInfo"] = [=[Returns basic information about the reward/choice/required item for quest currently in gossip window.]=],
-	["GetQuestItemInfo"] = [=[Returns information about a quest's item rewards or requirements.]=],
+	["GetQuestItemInfo"] = [=[Returns basic info for the reward/choice/required item for quest currently in gossip window.]=],
+	["GetQuestItemInfo"] = [=[Returns info for a quest's item rewards or requirements.]=],
 
 	["GetQuestItemLink"] = [=[Returns an [[itemLink]] for a selected quest reward/choice/required item for quest currently in gossip window.]=],
 	["GetQuestItemLink"] = [=[Returns link to the quest item.]=],
 
-	["GetQuestLogLeaderBoard"] = [=[Gets information about the objectives for a quest.]=],
-	["GetQuestLogLeaderBoard"] = [=[Returns information about a quest objective.]=],
+	["GetQuestLogLeaderBoard"] = [=[Gets info for the objectives for a quest.]=],
+	["GetQuestLogLeaderBoard"] = [=[Returns info for a quest objective.]=],
 
 	["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the specified quest.]=],
 	["GetQuestLogQuestText"] = [=[Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.]=],
 
 	["GetQuestLogRewardInfo"] = [=[Returns a pile of reward item info from the quest log.]=],
-	["GetQuestLogRewardInfo"] = [=['''GetQuestLogRewardInfo''' returns information about mandatory quest reward items.]=],
+	["GetQuestLogRewardInfo"] = [=['''GetQuestLogRewardInfo''' returns info for mandatory quest reward items.]=],
 
 	["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper returned by a particular quest.]=],
 	["GetQuestLogRewardMoney"] = [=[Returns a number representing the amount of copper rewarded by a particular quest in the quest log.]=],
 
 	["GetQuestLogRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion from quest log.]=],
-	["GetQuestLogRewardSpell"] = [=[Returns information about the spell reward of the current selected quest.]=],
+	["GetQuestLogRewardSpell"] = [=[Returns info for the spell reward of the current selected quest.]=],
 
 	["GetQuestLogTimeLeft"] = [=[Returns the seconds remaining on the current quest timer.]=],
 	["GetQuestLogTimeLeft"] = [=[Gets the seconds left for the current quest that is being timed.]=],
@@ -1644,8 +1644,8 @@ local t = {
 	["GetRaidDifficultyID"] = [=[Returns the player's current Raid Difficulty setting (1-14).]=],
 	["GetRaidDifficultyID"] = [=[Returns the player's currently selected raid difficulty.]=],
 
-	["GetRaidRosterInfo"] = [=[Returns information about the members of your raid.]=],
-	["GetRaidRosterInfo"] = [=[Gets information about a raid member.]=],
+	["GetRaidRosterInfo"] = [=[Returns info for the members of your raid.]=],
+	["GetRaidRosterInfo"] = [=[Gets info for a raid member.]=],
 
 	["GetRaidTargetIndex"] = [=[Get the raid target index assigned to a unit.]=],
 	["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] index assigned to a unit.]=],
@@ -1659,26 +1659,26 @@ local t = {
 	["GetRealmName"] = [=[Returns the name of the server a user is logged in to.]=],
 	["GetRealmName"] = [=[Returns the realm name.]=],
 
-	["GetRestState"] = [=[Returns information about a player's rest state. (saved up experience bonus)]=],
+	["GetRestState"] = [=[Returns info for a player's rest state. (saved up experience bonus)]=],
 	["GetRestState"] = [=[Returns whether the player is in a [[Rest|rested]] (earning double XP for kills) or normal state.]=],
 
 	["GetRestrictedAccountData"] = [=[Returns the cap on trial character level, money and profession skill.]=],
 	["GetRestrictedAccountData"] = [=[Returns the cap on trial character level, money and profession skill for [[Starter Edition]] accounts.]=],
 
 	["GetRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion for quest currently in gossip window.]=],
-	["GetRewardSpell"] = [=[Returns information about spell that you get as reward for completing quest currently in gossip frame.]=],
+	["GetRewardSpell"] = [=[Returns info for spell that you get as reward for completing quest currently in gossip frame.]=],
 
 	["GetRewardXP"] = [=[Returns the amount of experience awarded by the currently displayed text.]=],
 	["GetRewardXP"] = [=[Returns the [[experience]] reward of the quest most recently discussed with an NPC.]=],
 
-	["GetRuneCooldown"] = [=[Returns cooldown information about a given rune.]=],
-	["GetRuneCooldown"] = [=[Gets the cooldown information about a Death Knight's Rune]=],
+	["GetRuneCooldown"] = [=[Returns cooldown info for a given rune.]=],
+	["GetRuneCooldown"] = [=[Gets the cooldown info for a Death Knight's Rune]=],
 
 	["GetRuneCount"] = [=[Returns the number of Runes in the given slot. (Death Knight)]=],
 	["GetRuneCount"] = [=[Returns the rune count for the given slot.]=],
 
-	["GetSavedInstanceInfo"] = [=[Gets information about an instance for which the player has saved lockout data.]=],
-	["GetSavedInstanceInfo"] = [=[Returns information about an instance for which the player has saved lockout data.]=],
+	["GetSavedInstanceInfo"] = [=[Gets info for an instance for which the player has saved lockout data.]=],
+	["GetSavedInstanceInfo"] = [=[Returns info for an instance for which the player has saved lockout data.]=],
 
 	["GetScreenHeight"] = [=[Returns the height of the window in pixels.]=],
 	["GetScreenHeight"] = [=[Returns the height of the window in pixels. This value is affected by the UI's scale.]=],
@@ -1686,14 +1686,14 @@ local t = {
 	["GetScreenWidth"] = [=[Returns the width of the window in pixels.]=],
 	["GetScreenWidth"] = [=[Returns the width of the window in pixels. This value is affected by the UI's scale.]=],
 
-	["GetSelectedArtifactInfo"] = [=[Returns the information for the [[API SetSelectedArtifact|selected]] race.]=],
-	["GetSelectedArtifactInfo"] = [=[Returns the information for the selected race's current archaeology artifact.]=],
+	["GetSelectedArtifactInfo"] = [=[Returns the info for the [[API SetSelectedArtifact|selected]] race.]=],
+	["GetSelectedArtifactInfo"] = [=[Returns the info for the selected race's current archaeology artifact.]=],
 
 	["GetSendMailCOD"] = [=[Determine amount of gold entered in COD box in mail frame when mail is sent.]=],
 	["GetSendMailCOD"] = [=[Returns the Cash-On-Delivery cost of the outgoing message set via {{api|SetSendMailCOD}}().]=],
 
-	["GetSendMailItem"] = [=[Get information about an item attached on the send mail frame.]=],
-	["GetSendMailItem"] = [=[Returns information about an item attached in the send mail frame.]=],
+	["GetSendMailItem"] = [=[Get info for an item attached on the send mail frame.]=],
+	["GetSendMailItem"] = [=[Returns info for an item attached in the send mail frame.]=],
 
 	["GetSendMailItemLink"] = [=[Get link for an item attached on the send mail frame.]=],
 	["GetSendMailItemLink"] = [=[Returns the [[itemLink]] of an item attached to the mail message the player is sending.]=],
@@ -1704,8 +1704,8 @@ local t = {
 	["GetShapeshiftFormID"] = [=[Returns the current shapeshift form as a constant. If the player is not shapeshifted it returns nil.]=],
 	["GetShapeshiftFormID"] = [=[Returns the ID of the form or stance the player is currently in.]=],
 
-	["GetShapeshiftFormInfo"] = [=[Retrieves information about an available ShapeshiftForm or Stance.]=],
-	["GetShapeshiftFormInfo"] = [=[Retrieves information about an available shapeshift form or similar ability.]=],
+	["GetShapeshiftFormInfo"] = [=[Retrieves info for an available ShapeshiftForm or Stance.]=],
+	["GetShapeshiftFormInfo"] = [=[Retrieves info for an available shapeshift form or similar ability.]=],
 
 	["GetSheathState"] = [=[Returns the sheath state of the player's weapons.]=],
 	["GetSheathState"] = [=[Returns which type of weapon the player currently has unsheathed, if any.]=],
@@ -1713,8 +1713,8 @@ local t = {
 	["GetSocketItemBoundTradeable"] = [=[Returns whether the item currently being socketed is temporarily tradable (BoP boss loot).]=],
 	["GetSocketItemBoundTradeable"] = [=[Returns whether the item currently selected for socketing can be traded to other eligible players.]=],
 
-	["GetSocketItemInfo"] = [=[Returns information about the item currently being socketed.]=],
-	["GetSocketItemInfo"] = [=[Returns various information about the inventory item currently being socketed (i.e. socket UI is open for the item).]=],
+	["GetSocketItemInfo"] = [=[Returns info for the item currently being socketed.]=],
+	["GetSocketItemInfo"] = [=[Returns various info for the inventory item currently being socketed (i.e. socket UI is open for the item).]=],
 
 	["GetSocketItemRefundable"] = [=[Returns whether the item currently being socketed is refundable.]=],
 	["GetSocketItemRefundable"] = [=[Returns whether the item currently selected for socketing can be refunded.]=],
@@ -1722,8 +1722,8 @@ local t = {
 	["GetSocketTypes"] = [=[Returns the type (color) of a socket in the item.]=],
 	["GetSocketTypes"] = [=[Returns the type of one of the sockets in the item currently in the item socketing window.]=],
 
-	["GetSpecializationInfo"] = [=[Returns information about the player's specializations.]=],
-	["GetSpecializationInfo"] = [=[Returns information about the specified specialization.]=],
+	["GetSpecializationInfo"] = [=[Returns info for the player's specializations.]=],
+	["GetSpecializationInfo"] = [=[Returns info for the specified specialization.]=],
 
 	["GetSpecializationMasterySpells"] = [=[Returns the mastery spellID of the current player's specialization.]=],
 	["GetSpecializationMasterySpells"] = [=[Returns the mastery spellID of the current player's specializiation.]=],
@@ -1732,7 +1732,7 @@ local t = {
 	["GetSpecializationSpells"] = [=[Returns spells learned as part of a specific specialization.]=],
 
 	["GetSpellAutocast"] = [=[Check whether the specified spell autocasts or not.]=],
-	["GetSpellAutocast"] = [=[Get information about a spell's Autocast.]=],
+	["GetSpellAutocast"] = [=[Get info for a spell's Autocast.]=],
 
 	["GetSpellBonusDamage"] = [=[Returns the raw spell damage of the player for a given spell tree.]=],
 	["GetSpellBonusDamage"] = [=[Returns the raw spell damage bonus of the player for a given spell tree.]=],
@@ -1741,7 +1741,7 @@ local t = {
 	["GetSpellBonusHealing"] = [=[Returns the spell power value used for healing spell coefficients. This includes your bonus from Versatility.]=],
 
 	["GetSpellBookItemInfo"] = [=[Returns the spell's type and spellID for a spell in the player's spellbook.]=],
-	["GetSpellBookItemInfo"] = [=[Retrieves information about a specific [[spellbook]] item.]=],
+	["GetSpellBookItemInfo"] = [=[Retrieves info for a specific [[spellbook]] item.]=],
 
 	["GetSpellBookItemName"] = [=[Returns the spell name and spell rank for a spell in the player's spellbook.]=],
 	["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spellbook.]=],
@@ -1758,11 +1758,11 @@ local t = {
 	["GetSpellLink"] = [=[Returns the spell's link.]=],
 	["GetSpellLink"] = [=[Returns a hyperlink for a spell.]=],
 
-	["GetSpellPowerCost"] = [=[Returns information about a spell's resource cost.]=],
+	["GetSpellPowerCost"] = [=[Returns info for a spell's resource cost.]=],
 	["GetSpellPowerCost"] = [=[Returns a table describing the resource cost of a spell.]=],
 
-	["GetSpellTabInfo"] = [=[Returns information about the specified spellbook tab.]=],
-	["GetSpellTabInfo"] = [=[Retrieves information about the specified line of spells]=],
+	["GetSpellTabInfo"] = [=[Returns info for the specified spellbook tab.]=],
+	["GetSpellTabInfo"] = [=[Retrieves info for the specified line of spells]=],
 
 	["GetSpellTexture"] = [=[Returns the fileId used for the spell's icon.]=],
 	["GetSpellTexture"] = [=[Returns the icon of the specified spell.]=],
@@ -1771,7 +1771,7 @@ local t = {
 	["GetStablePetFoodTypes"] = [=[Returns a list of the food types a pet in the stable can eat.]=],
 
 	["GetStatistic"] = [=[Returns the value of the requested statistic.]=],
-	["GetStatistic"] = [=[Return the value of the requested Statistic.]=],
+	["GetStatistic"] = [=[Returns the value of the requested Statistic.]=],
 
 	["GetStatisticsCategoryList"] = [=[Returns the list of statistic categories.]=],
 	["GetStatisticsCategoryList"] = [=[Returns a table of achievement categories.]=],
@@ -1780,9 +1780,9 @@ local t = {
 	["GetSubZoneText"] = [=[Returns the subzone name.]=],
 
 	["GetSummonFriendCooldown"] = [=[Returns the cooldown (start, duration) of the RaF Summon Friend ability.]=],
-	["GetSummonFriendCooldown"] = [=[Returns information about the cooldown time of the RaF Summon Friend ability.]=],
+	["GetSummonFriendCooldown"] = [=[Returns info for the cooldown time of the RaF Summon Friend ability.]=],
 
-	["GetTalentInfo"] = [=[Returns information about a talent.]=],
+	["GetTalentInfo"] = [=[Returns info for a talent.]=],
 	["GetTalentInfo"] = [=[ talentID, name, texture, selected, available, spellID, unknown, row, column, known, grantedByAura]=],
 
 	["GetTargetTradeMoney"] = [=[Returns the amount of money in the trade frame of the target player.]=],
@@ -1806,20 +1806,20 @@ local t = {
 	["GetTotalAchievementPoints"] = [=[Returns the total number of achievement points earned.]=],
 	["GetTotalAchievementPoints"] = [=[Returns the total number of Achievement Points earned.]=],
 
-	["GetTotemInfo"] = [=[Returns information about a totem.]=],
-	["GetTotemInfo"] = [=[Returns information about totems]=],
+	["GetTotemInfo"] = [=[Returns info for a totem.]=],
+	["GetTotemInfo"] = [=[Returns info for totems]=],
 
 	["GetTrackedAchievements"] = [=[Returns the achievementID of the currently tracked achievements.]=],
 	["GetTrackedAchievements"] = [=[Returns a list of (up to 10) currently tracked achievements.]=],
 
-	["GetTrackingInfo"] = [=[Retrieves tracking information from specified id.]=],
-	["GetTrackingInfo"] = [=[Returns information regarding the specified tracking id.]=],
+	["GetTrackingInfo"] = [=[Retrieves tracking info from specified id.]=],
+	["GetTrackingInfo"] = [=[Returns info regarding the specified tracking id.]=],
 
 	["GetTradePlayerItemLink"] = [=[Returns an [[itemLink]] for the given item in your side of the trade window (if open)]=],
 	["GetTradePlayerItemLink"] = [=[Returns a single value: chat-ready item link.]=],
 
-	["GetTradeTargetItemInfo"] = [=[Returns information about a trade item.]=],
-	["GetTradeTargetItemInfo"] = [=[Returns information about items in the target's trade window.]=],
+	["GetTradeTargetItemInfo"] = [=[Returns info for a trade item.]=],
+	["GetTradeTargetItemInfo"] = [=[Returns info for items in the target's trade window.]=],
 
 	["GetTradeTargetItemLink"] = [=[Returns an [[itemLink]] for the given item in the other player's side of the trade window (if open)]=],
 	["GetTradeTargetItemLink"] = [=[Simply view, except this function is for your trading partner, ie, the other side of the trade window.]=],
@@ -1849,22 +1849,22 @@ local t = {
 	["GetUnitSpeed"] = [=[Returns a value representing the moving speed of a unit. Added in [[Patch 3.0.1]].]=],
 
 	["GetVoidItemInfo"] = [=[Returns <code>itemID, textureName, locked, recentDeposit, isFiltered</code>.]=],
-	["GetVoidItemInfo"] = [=[Returns info about a Void Storage slot]=],
+	["GetVoidItemInfo"] = [=[Returns info for a Void Storage slot]=],
 
 	["GetVoidTransferDepositInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
-	["GetVoidTransferDepositInfo"] = [=[Returns info about the item being deposited into the Void Storage.]=],
+	["GetVoidTransferDepositInfo"] = [=[Returns info for the item being deposited into the Void Storage.]=],
 
 	["GetVoidTransferWithdrawalInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
-	["GetVoidTransferWithdrawalInfo"] = [=[Returns info about the item being withdrawed from the Void Storage.]=],
+	["GetVoidTransferWithdrawalInfo"] = [=[Returns info for the item being withdrawed from the Void Storage.]=],
 
-	["GetWatchedFactionInfo"] = [=[Returns information about the currently watched faction.]=],
-	["GetWatchedFactionInfo"] = [=[Returns information about the faction that is currently being watched.]=],
+	["GetWatchedFactionInfo"] = [=[Returns info for the currently watched faction.]=],
+	["GetWatchedFactionInfo"] = [=[Returns info for the faction that is currently being watched.]=],
 
-	["GetWeaponEnchantInfo"] = [=[Returns information about main and offhand weapon enchantments.]=],
-	["GetWeaponEnchantInfo"] = [=[Returns information about the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.]=],
+	["GetWeaponEnchantInfo"] = [=[Returns info for main and offhand weapon enchantments.]=],
+	["GetWeaponEnchantInfo"] = [=[Returns info for the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.]=],
 
-	["GetWorldPVPAreaInfo"] = [=[Returns information about a world PvP zone.]=],
-	["GetWorldPVPAreaInfo"] = [=[Get information regarding a world PvP zone (e.g. Wintergrasp or Tol Barad).]=],
+	["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone.]=],
+	["GetWorldPVPAreaInfo"] = [=[Get info regarding a world PvP zone (e.g. Wintergrasp or Tol Barad).]=],
 
 	["GetXPExhaustion"] = [=[Returns your character's current rested XP, nil if character is not rested.]=],
 	["GetXPExhaustion"] = [=[Returns the number of XP gained from killing mobs until "player" goes from rest state to normal state.]=],
@@ -1882,7 +1882,7 @@ local t = {
 	["GuildControlSaveRank"] = [=[ GuildControlSaveRank(name)]=],
 
 	["GuildControlSetRank"] = [=[Sets the currently selected rank to view.]=],
-	["GuildControlSetRank"] = [=[Selects a guild rank to modify or return information about.]=],
+	["GuildControlSetRank"] = [=[Selects a guild rank to modify or return info for.]=],
 
 	["GuildControlSetRankFlag"] = [=[Enable/disable permission for an action at index. Only Guildmaster.]=],
 	["GuildControlSetRankFlag"] = [=[Sets the current ranks property at index to enabled.]=],
@@ -1893,8 +1893,8 @@ local t = {
 	["GuildDisband"] = [=[Disbands at once your guild. You must be the guild's leader to do so. Be careful, no warning is given prior disbanding.]=],
 	["GuildDisband"] = [=[Disbands your guild.]=],
 
-	["GuildInfo"] = [=[Displays information about the guild you are a member of.]=],
-	["GuildInfo"] = [=[Prints information about the Guild you belong to in the following format:<br>]=],
+	["GuildInfo"] = [=[Displays info for the guild you are a member of.]=],
+	["GuildInfo"] = [=[Prints info for the Guild you belong to in the following format:<br>]=],
 
 	["GuildInvite"] = [=[Invites a player to your guild.]=],
 	["GuildInvite"] = [=[Invites a player or your target to your guild if you have that privilege.]=],
@@ -2190,8 +2190,8 @@ local t = {
 	["NoPlayTime"] = [=[Returns whether the account is considered "unhealthy". This function is only relevant on Chinese realms.]=],
 	["NoPlayTime"] = [=[Returns if the account is considered "unhealthy". This is only relevant on Chinese realms.]=],
 
-	["NotifyInspect"] = [=[Requests information about a unit's inventory and talents from the server.]=],
-	["NotifyInspect"] = [=[Requests a unit's inventory and talent information to inspect it.]=],
+	["NotifyInspect"] = [=[Requests info for a unit's inventory and talents from the server.]=],
+	["NotifyInspect"] = [=[Requests a unit's inventory and talent info to inspect it.]=],
 
 	["NumTaxiNodes"] = [=[Returns the number of nodes (flight paths) on an open taxi map.]=],
 	["NumTaxiNodes"] = [=[Returns the total number of flight points on the taxi map.]=],
@@ -2308,10 +2308,10 @@ local t = {
 	["RequestBattlefieldScoreData"] = [=[Requests the latest battlefield score data from the server.]=],
 
 	["RequestBattlegroundInstanceInfo"] = [=[Requests data about the available instances of a battleground.]=],
-	["RequestBattlegroundInstanceInfo"] = [=[Requests information about the available instances of a particular battleground.]=],
+	["RequestBattlegroundInstanceInfo"] = [=[Requests info for the available instances of a particular battleground.]=],
 
-	["RequestRaidInfo"] = [=[Returns information about which instances you are saved to.]=],
-	["RequestRaidInfo"] = [=[Sends a request to the server to send back information about the instance.]=],
+	["RequestRaidInfo"] = [=[Returns info for which instances you are saved to.]=],
+	["RequestRaidInfo"] = [=[Sends a request to the server to send back info for the instance.]=],
 
 	["RequestTimePlayed"] = [=[Request a summary of time played from the server.]=],
 	["RequestTimePlayed"] = [=[Send a request to the server to get an update of the time played.]=],
@@ -2465,7 +2465,7 @@ local t = {
 	["SetWatchedFactionIndex"] = [=[Sets the faction to be watched.]=],
 
 	["SetupFullscreenScale"] = [=[Configures scale of full-screen views, such as the world map, to best fill screen.]=],
-	["SetupFullscreenScale"] = [=[The purpose of this function isn't exactly clear, but from the way it's used it would appear to be a function that appropriately scales a frame for full-screen views, such as the world map frame, to fit on the screen maximally depending on the aspect ratio. Why this wasn't implemented in lua isn't entirely clear, though it may require information about the screen geometry which isn't exposed through the standard UI.]=],
+	["SetupFullscreenScale"] = [=[The purpose of this function isn't exactly clear, but from the way it's used it would appear to be a function that appropriately scales a frame for full-screen views, such as the world map frame, to fit on the screen maximally depending on the aspect ratio. Why this wasn't implemented in lua isn't entirely clear, though it may require info for the screen geometry which isn't exposed through the standard UI.]=],
 
 	["SignPetition"] = [=[Signs the current petition.]=],
 	["SignPetition"] = [=[Adds the player's signature to the currently viewed petition.]=],
@@ -2563,7 +2563,7 @@ local t = {
 	["UnitArmor"] = [=[Returns the armor statistics relevant to the specified unit.]=],
 	["UnitArmor"] = [=[Returns the armor statistics relevant to the specified target.<syntaxhighlight lang="lua">]=],
 
-	["UnitAura"] = [=[Returns info about buffs and debuffs of a unit.]=],
+	["UnitAura"] = [=[Returns info for buffs and debuffs of a unit.]=],
 	["UnitAura"] = [=[Returns the buffs/debuffs on a unit.]=],
 
 	["UnitClass"] = [=[Returns the class name of the specified unit (e.g., "Warrior" or "Shaman").]=],
@@ -2576,10 +2576,10 @@ local t = {
 	["UnitCreatureType"] = [=[Returns the creature type of the specified unit.]=],
 
 	["UnitDamage"] = [=[Returns the damage statistics relevant to the specified unit.]=],
-	["UnitDamage"] = [=[Unit damage returns information about your current damage stats. Doesn't seem to return usable values for mobs, NPCs, or other players. The method returns 7 values, only some of which appear to be useful.]=],
+	["UnitDamage"] = [=[Unit damage returns info for your current damage stats. Doesn't seem to return usable values for mobs, NPCs, or other players. The method returns 7 values, only some of which appear to be useful.]=],
 
-	["UnitDetailedThreatSituation"] = [=[Returns detailed information about the specified unit's threat on a mob.]=],
-	["UnitDetailedThreatSituation"] = [=[Returns detailed information about the threat status of one unit against another.]=],
+	["UnitDetailedThreatSituation"] = [=[Returns detailed info for the specified unit's threat on a mob.]=],
+	["UnitDetailedThreatSituation"] = [=[Returns detailed info for the threat status of one unit against another.]=],
 
 	["UnitDistanceSquared"] = [=[Returns the squared distance to a unit in your group.]=],
 	["UnitDistanceSquared"] = [=[Returns the squared distance to a unit in your group]=],
@@ -2690,7 +2690,7 @@ local t = {
 	["UnitPVPName"] = [=[Returns the unit's conjoined title and name.]=],
 
 	["UnitPlayerControlled"] = [=[Returns true if the specified unit is controlled by a player, false otherwise.]=],
-	["UnitPlayerControlled"] = [=[Return whether the "unit" is controlled by a player or an NPC.]=],
+	["UnitPlayerControlled"] = [=[Returns whether the "unit" is controlled by a player or an NPC.]=],
 
 	["UnitPlayerOrPetInParty"] = [=[Returns 1 if the specified unit/pet is a member of the player's party, nil otherwise (returns nil for "player" and "pet")]=],
 	["UnitPlayerOrPetInParty"] = [=[Returns whether a unit is another player in your party or the pet of another player in your party.]=],
@@ -2729,7 +2729,7 @@ local t = {
 	["UnitSex"] = [=[Returns the gender of the specified unit.]=],
 
 	["UnitStat"] = [=[Returns the statistics relevant to the specified unit and basic attribute (e.g., strength or intellect).]=],
-	["UnitStat"] = [=[Returns info about one of the unit's stats (strength, agility, stamina, intellect, spirit).]=],
+	["UnitStat"] = [=[Returns info for one of the unit's stats (strength, agility, stamina, intellect, spirit).]=],
 
 	["UnitThreatSituation"] = [=[Returns the specified unit's threat status on a mob.]=],
 	["UnitThreatSituation"] = [=[Returns the threat status of one unit against another.]=],
@@ -2738,10 +2738,10 @@ local t = {
 	["UnitUsingVehicle"] = [=[Checks if a specified unit is currently in a vehicle, including transitioning between seats.]=],
 
 	["UnitXP"] = [=[Returns the number of experience points the specified unit has in their current level. (only works on your player)]=],
-	["UnitXP"] = [=[Return the current XP of a unit - only works if the unit is the player.]=],
+	["UnitXP"] = [=[Returns the current XP of a unit - only works if the unit is the player.]=],
 
 	["UnitXPMax"] = [=[Returns the number of experience points the specified unit needs to reach their next level. (only works on your player)]=],
-	["UnitXPMax"] = [=[Return the max XP of a "unit" - only works if the unit is the player.]=],
+	["UnitXPMax"] = [=[Returns the max XP of a "unit" - only works if the unit is the player.]=],
 
 	["UnlockVoidStorage"] = [=[Pays for and activates the Void Storage.]=],
 	["UnlockVoidStorage"] = [=[Pays for, and unlocks the Void Storage.]=],
