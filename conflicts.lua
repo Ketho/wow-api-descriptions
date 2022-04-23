@@ -1599,14 +1599,15 @@ local t = {
 	-- ["GetPreviousAchievement"] = [=[Returns previous related achievements.]=],
 	["GetPreviousAchievement"] = [=[Returns the previous achievement in a chain.]=],
 
-	["GetProfessions"] = [=[Gives all of the current character's professions.]=],
-	["GetProfessions"] = [=[Returns spell tab indices of the player's current professions]=],
+	-- ["GetProfessions"] = [=[Gives all of the current character's professions.]=],
+	["GetProfessions"] = [=[Returns the spell tab indices of the player's current professions.]=],
 
-	["GetProgressText"] = [=[Returns quest progress text, displayed by the NPC before the player pressed "Continue".]=],
-	["GetProgressText"] = [=[Returns quest progress text, displayed by the NPC before the player hits "Continue".]=],
+	-- ["GetProgressText"] = [=[Returns quest progress text, displayed by the NPC before the player pressed "Continue".]=],
+	["GetProgressText"] = [=[Returns quest progress text at a quest giver.]=],
 
-	["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest.]=],
-	["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default "Parchment" texture.]=],
+	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest.]=],
+	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default "Parchment" texture.]=],
+	["GetQuestBackgroundMaterial"] = [=[Returns the background material for the current quest.]=],
 
 	["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
 	["GetQuestID"] = [=[Returns the quest ID of the quest being offered/discussed with an NPC.]=],
