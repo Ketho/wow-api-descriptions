@@ -287,7 +287,7 @@ local t = {
 
 	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text ''must'' be displayed.]=],
 	-- ["C_GossipInfo.ForceGossip"] = [=[Returns whether the gossip text must be displayed.]=],
-	["C_GossipInfo.ForceGossip"] = [=[True if gossip text must be displayed, e.g. making this return true shows the Banker gossip.]=],
+	["C_GossipInfo.ForceGossip"] = [=[True if gossip text must be displayed. For example making this return true shows the Banker gossip.]=],
 
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Retrieves a list of quests which can be turned in on the NPC you are talking to.]=],
 	-- ["C_GossipInfo.GetActiveQuests"] = [=[Gets the list of active quests from an NPC.]=],
@@ -1021,7 +1021,7 @@ local t = {
 	["GetBuildInfo"] = [=[Returns info about the current client build.]=],
 
 	-- ["GetBuybackItemInfo"] = [=[Returns information about the buyback item.]=],
-	["GetBuybackItemInfo"] = [=[Return info about an item that can be bought back from a merchant.]=],
+	["GetBuybackItemInfo"] = [=[Returns info about an item that can be bought back from a merchant.]=],
 
 	-- ["GetCameraZoom"] = [=[Returns the current zoom level, ignoring camera collisions.]=],
 	["GetCameraZoom"] = [=[Returns the current zoom level of the camera.]=],
@@ -1050,7 +1050,7 @@ local t = {
 
 	-- ["GetChatTypeIndex"] = [=[Get the numeric ID of a type of chat message.]=],
 	-- ["GetChatTypeIndex"] = [=[Return the numeric type index for a specific chat type.]=],
-	["GetChatTypeIndex"] = [=[Return the index for a chat type.]=],
+	["GetChatTypeIndex"] = [=[Returns the index for a chat type.]=],
 
 	-- ["GetChatWindowChannels"] = [=[Get the chat channels received by a chat window.]=],
 	-- ["GetChatWindowChannels"] = [=[Get the channels received by a chat window.]=],
@@ -1285,15 +1285,15 @@ local t = {
 
 	-- ["GetInventoryItemQuality"] = [=[Returns the quality of an inventory item.]=],
 	-- ["GetInventoryItemQuality"] = [=[Return the quality of an inventory item.]=],
-	["GetInventoryItemQuality"] = [=[Return the quality of an equipped item.]=],
+	["GetInventoryItemQuality"] = [=[Returns the quality of an equipped item.]=],
 
 	-- ["GetInventoryItemTexture"] = [=[Returns the texture for an inventory item.]=],
 	-- ["GetInventoryItemTexture"] = [=[Return the texture for an inventory item.]=],
-	["GetInventoryItemTexture"] = [=[Return the texture for an equipped item.]=],
+	["GetInventoryItemTexture"] = [=[Returns the texture for an equipped item.]=],
 
 	-- ["GetInventorySlotInfo"] = [=[Get the info for a named inventory slot (slot ID and texture)]=],
 	-- ["GetInventorySlotInfo"] = [=[Return information about a specific inventory slot]=],
-	["GetInventorySlotInfo"] = [=[Return info about an equipment slot.]=],
+	["GetInventorySlotInfo"] = [=[Returns info about an equipment slot.]=],
 
 	-- ["GetItemCooldown"] = [=[Returns startTime, duration, enable.]=],
 	["GetItemCooldown"] = [=[Returns cooldown info for an item ID.]=],
@@ -1338,7 +1338,7 @@ local t = {
 	["GetLFGQueueStats"] = [=[Returns info about the current LFG queue.]=],
 
 	-- ["GetLFGRoleShortageRewards"] = [=[Returns information about the LFG Call to Arms rewards.]=],
-	["GetLFGRoleShortageRewards"] = [=[Return info about the LFG [[Call_to_Arms_(dungeon)|Call to Arms]] rewards.]=],
+	["GetLFGRoleShortageRewards"] = [=[Returns info about the LFG [[Call_to_Arms_(dungeon)|Call to Arms]] rewards.]=],
 
 	-- ["GetLFGRoles"] = [=[Returns the roles you signed up as, not the role you were assigned.]=],
 	-- ["GetLFGRoles"] = [=[Returns what roles you signed up as in the Dungeon Finder.]=],
@@ -1372,7 +1372,7 @@ local t = {
 	["GetMacroIndexByName"] = [=[Returns the index for a macro byname.]=],
 
 	-- ["GetMacroInfo"] = [=[Returns "name", "iconTexture", "body", isLocal.]=],
-	["GetMacroInfo"] = [=[Return info about a macro.]=],
+	["GetMacroInfo"] = [=[Returns info about a macro.]=],
 
 	-- ["GetManaRegen"] = [=[Returns the player's mana regeneration rates.]=],
 	-- ["GetManaRegen"] = [=[Gets the player's current mana regeneration rates (in mana per 1 seconds).]=],
@@ -1420,7 +1420,7 @@ local t = {
 
 	-- ["GetMoney"] = [=[Returns an integer value of your held money in copper.]=],
 	-- ["GetMoney"] = [=[Returns an integer value of your held money.]=],
-	["GetMoney"] = [=[Returns the amount of money of the player.]=],
+	["GetMoney"] = [=[Returns the amount of money the player owns.]=],
 
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
@@ -1494,7 +1494,7 @@ local t = {
 
 	-- ["GetNumMacros"] = [=[Returns the number of macros the user has.]=],
 	-- ["GetNumMacros"] = [=[Return the number of macros the player has.]=],
-	["GetNumMacros"] = [=[Return the number of account and character macros.]=],
+	["GetNumMacros"] = [=[Returns the number of account and character macros.]=],
 
 	["GetNumPetitionNames"] = [=[Returns the number of signatures on the current petition.]=],
 	-- ["GetNumPetitionNames"] = [=[Gets the number of names that have signed the open petition.]=],
@@ -1566,32 +1566,35 @@ local t = {
 	-- ["GetPartyAssignment"] = [=[Returns a list of raidmembers with a [[Main_tank|main tank]] or [[Main_assist|main assist]] role.]=],
 	["GetPartyAssignment"] = [=[True if a group member is assigned the main tank/assist role.]=],
 
-	["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action at the specificed pet action bar slot.]=],
-	["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action in the specified pet action bar slot.]=],
+	-- ["GetPetActionCooldown"] = [=[Returns cooldown information for the pet action at the specificed pet action bar slot.]=],
+	["GetPetActionCooldown"] = [=[Returns cooldown info for a pet action in the pet action bar slot.]=],
 
-	["GetPetActionInfo"] = [=[Returns information on the pet action at the specified pet action bar slot.]=],
-	["GetPetActionInfo"] = [=[Returns information on the specified pet action.]=],
+	-- ["GetPetActionInfo"] = [=[Returns information on the pet action at the specified pet action bar slot.]=],
+	-- ["GetPetActionInfo"] = [=[Returns information on the specified pet action.]=],
+	["GetPetActionInfo"] = [=[Returns info for a pet action in the pet action bar slot.]=],
 
-	["GetPetExperience"] = [=[Returns the pet's current xp, and total xp required for next level.]=],
-	["GetPetExperience"] = [=[Returns the pet's current XP total, and the XP total required for the next level.]=],
+	["GetPetExperience"] = [=[Returns the pet's current and total XP required for next level.]=],
+	-- ["GetPetExperience"] = [=[Returns the pet's current XP total, and the XP total required for the next level.]=],
 
-	["GetPetFoodTypes"] = [=[Returns a list of the food types the player's pet can eat.]=],
-	["GetPetFoodTypes"] = [=[Returns the food types the current pet can eat.]=],
+	-- ["GetPetFoodTypes"] = [=[Returns a list of the food types the player's pet can eat.]=],
+	["GetPetFoodTypes"] = [=[Returns the food types the pet can eat.]=],
 
-	["GetPetitionInfo"] = [=[Retrieves information about the current petition.]=],
-	["GetPetitionInfo"] = [=[Gets the information for a petition being viewed.]=],
+	-- ["GetPetitionInfo"] = [=[Retrieves information about the current petition.]=],
+	-- ["GetPetitionInfo"] = [=[Gets the information for a petition being viewed.]=],
+	["GetPetitionInfo"] = [=[Returns info for the petition being viewed.]=],
 
-	["GetPlayerFacing"] = [=[Returns the direction the player is facing.]=],
-	["GetPlayerFacing"] = [=[Returns the direction the player character is currently facing.]=],
+	["GetPlayerFacing"] = [=[Returns the direction the player is facing in radians.]=],
+	-- ["GetPlayerFacing"] = [=[Returns the direction the player character is currently facing.]=],
 
-	["GetPlayerInfoByGUID"] = [=[Returns race, class, sex about the guid (client must have seen the guid)]=],
-	["GetPlayerInfoByGUID"] = [=[Returns basic information about another player from their [[GUID]].]=],
+	-- ["GetPlayerInfoByGUID"] = [=[Returns race, class, sex about the guid (client must have seen the guid)]=],
+	-- ["GetPlayerInfoByGUID"] = [=[Returns basic information about another player from their [[GUID]].]=],
+	["GetPlayerInfoByGUID"] = [=[Returns character info about another player from their GUID.]=],
 
 	["GetPlayerTradeMoney"] = [=[Returns the amount of money the player has in the trade window.]=],
-	["GetPlayerTradeMoney"] = [=[Gets the amount of money in the trade window for the current user.]=],
+	-- ["GetPlayerTradeMoney"] = [=[Gets the amount of money in the trade window for the current user.]=],
 
-	["GetPossessInfo"] = [=[Returns texture, name, enabled.]=],
-	["GetPossessInfo"] = [=[Returns information about a spell on the possession bar.]=],
+	-- ["GetPossessInfo"] = [=[Returns texture, name, enabled.]=],
+	["GetPossessInfo"] = [=[Returns info about an action on the possession bar.]=],
 
 	["GetPreviousAchievement"] = [=[Returns previous related achievements.]=],
 	["GetPreviousAchievement"] = [=[Return the previous achievement in a chain.]=],
