@@ -1926,7 +1926,7 @@ local t = {
 
 	-- ["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
 	-- ["HasAction"] = [=[Tests if an action slot is occupied.]=],
-	["HasAction"] = [=[Returns true if an action slot is occupied.]=],
+	["HasAction"] = [=[True if an action slot is occupied.]=],
 
 	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
 	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
