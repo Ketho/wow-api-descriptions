@@ -1087,7 +1087,7 @@ local t = {
 
 	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
 	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
-	["GetCompanionInfo"] = [=[No return.]=],
+	["GetCompanionInfo"] = [=[No longer returns anything.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
@@ -1927,15 +1927,15 @@ local t = {
 
 	-- ["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
 	-- ["HasAction"] = [=[Tests if an action slot is occupied.]=],
-	["HasAction"] = [=[Returns 1 if ActionBar [[ActionSlot]] is assigned an action.]=],
+	["HasAction"] = [=[Returns true if an action slot is occupied.]=],
 
 	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
 	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
-	["HasPetSpells"] = [=[True if the player has pet spells.]=],
+	["HasPetSpells"] = [=[Returns the number of abilities the player's pet has available.]=],
 
 	-- ["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
 	-- ["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
-	["HasPetUI"] = [=[True if the player has a pet interface.]=],
+	["HasPetUI"] = [=[True if the player currently has an active (hunter) pet out.]=],
 
 	-- ["HasWandEquipped"] = [=[Returns 1 if a wand is equipped, false otherwise.]=],
 	-- ["HasWandEquipped"] = [=[HasWandEquipped();]=],
@@ -1946,15 +1946,15 @@ local t = {
 
 	-- ["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
 	-- ["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
-	["InCombatLockdown"] = [=[True if the in-combat AddOn restrictions are active.]=],
+	["InCombatLockdown"] = [=[True if the in-combat restrictions are active.]=],
 
 	-- ["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
 	-- ["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
-	["InRepairMode"] = [=[True if cursor is in repair mode.]=],
+	["InRepairMode"] = [=[True if the cursor is in repair mode.]=],
 
 	-- ["InboxItemCanDelete"] = [=[Boolean check for whether a message is returnable to the sender.]=],
 	-- ["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
-	["InboxItemCanDelete"] = [=[False if a mailed item or money is returnable, true otherwise.]=],
+	["InboxItemCanDelete"] = [=[True if a message can be deleted, false if it can be returned to sender.]=],
 
 	["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
 	["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
@@ -2237,7 +2237,7 @@ local t = {
 
 	-- ["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
 	-- ["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
-	["PickupCompanion"] = [=[Places a mount onto the mouse cursor.]=],
+	["PickupCompanion"] = [=[Picks up a mount onto the cursor.]=],
 
 	["PickupInventoryItem"] = [=[Picks up an item from the player's worn inventory.]=],
 	["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
@@ -2524,7 +2524,7 @@ local t = {
 
 	-- ["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
 	-- ["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
-	["SummonRandomCritter"] = [=[Deprecated.]=],
+	["SummonRandomCritter"] = [=[No longer does anything.]=],
 
 	["SwapRaidSubgroup"] = [=[Swaps raid members into different groups.]=],
 	["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
