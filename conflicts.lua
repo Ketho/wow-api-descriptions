@@ -1955,50 +1955,66 @@ local t = {
 	-- ["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
 	["InboxItemCanDelete"] = [=[True if a message can be deleted, false if it can be returned to sender.]=],
 
-	["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
-	["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
+	-- ["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
+	-- ["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
+	["InitiateTrade"] = [=[Opens the Trade window with specified unit.]=],
 
-	["IsActionInRange"] = [=[Test if an action is in range (1=yes, 0=no, nil=not applicable).]=],
-	["IsActionInRange"] = [=[Returns whether an action is in range for use.]=],
+	-- ["IsActionInRange"] = [=[Test if an action is in range (1=yes, 0=no, nil=not applicable).]=],
+	-- ["IsActionInRange"] = [=[Returns whether an action is in range for use.]=],
+	["IsActionInRange"] = [=[True if the action is in range for use.]=],
 
-	["IsActiveBattlefieldArena"] = [=[Returns true if in an Arena Match, also Returns true for the second argument if it's a registered match.]=],
-	["IsActiveBattlefieldArena"] = [=[Returns if the player is inside an arena and if it's a rated match.]=],
+	-- ["IsActiveBattlefieldArena"] = [=[Returns true if in an Arena Match, also Returns true for the second argument if it's a registered match.]=],
+	-- ["IsActiveBattlefieldArena"] = [=[Returns if the player is inside an arena and if it's a rated match.]=],
+	["IsActiveBattlefieldArena"] = [=[True if player is inside an arena, also True if the player is in a rated arena match.]=],
 
-	["IsAddOnLoadOnDemand"] = [=[Test whether an AddOn is load-on-demand.]=],
-	["IsAddOnLoadOnDemand"] = [=[Determine if an AddOn is loaded on demand (via [[The TOC Format|.toc file]] dependencies or [[API LoadAddOn|LoadAddOn]]) rather than at startup]=],
+	-- ["IsAddOnLoadOnDemand"] = [=[Test whether an AddOn is load-on-demand.]=],
+	-- ["IsAddOnLoadOnDemand"] = [=[Determine if an AddOn is loaded on demand (via [[The TOC Format|.toc file]] dependencies or [[API LoadAddOn|LoadAddOn]]) rather than at startup]=],
+	["IsAddOnLoadOnDemand"] = [=[True if the specified addon is loaded on demand.]=],
 
-	["IsAddOnLoaded"] = [=[Returns true if the specified AddOn is loaded.]=],
-	["IsAddOnLoaded"] = [=[Returns whether an addon has been loaded.]=],
+	-- ["IsAddOnLoaded"] = [=[Returns true if the specified AddOn is loaded.]=],
+	-- ["IsAddOnLoaded"] = [=[Returns whether an addon has been loaded.]=],
+	["IsAddOnLoaded"] = [=[True if the specified addon has been, or is being loaded. Second True return indicates if the event ADDON_LOADED has been triggered.]=],
 
-	["IsAttackAction"] = [=[Returns 1 if an action is an 'attack' action (flashes during combat), nil otherwise.]=],
-	["IsAttackAction"] = [=[Determine whether action slot is an attack action.]=],
+	-- ["IsAttackAction"] = [=[Returns 1 if an action is an 'attack' action (flashes during combat), nil otherwise.]=],
+	-- ["IsAttackAction"] = [=[Determine whether action slot is an attack action.]=],
+	["IsAttackAction"] = [=[True if the action slot is an attack action.]=],
 
 	["IsAttackSpell"] = [=[Returns 1 if the spell is the "Attack" spell.]=],
 	["IsAttackSpell"] = [=[Determine whether spell is the "Attack" spell.]=],
+	---TODO: Depreciated? More Testing Needed - Only returning False or nil for me in any test I did on a druid.
 
 	["IsAutoRepeatAction"] = [=[Returns 1 if an action is auto-repeating, nil otherwise.]=],
 	["IsAutoRepeatAction"] = [=[Returns whether action slot is auto repeating.]=],
+	---TODO: Depreciated? More Testing Needed - Only returning false for any actions, including auto attack.
+	---Test code: /run for i = 1, 120 do print(i) print(IsAutoRepeatAction(i))print(IsAttackSpell(i)) end
 
-	["IsConsumableAction"] = [=[Returns 1 if an action is consumable (i.e. has a count), nil otherwise.]=],
-	["IsConsumableAction"] = [=[Tests if the action is linked to a consumable item.]=],
+	-- ["IsConsumableAction"] = [=[Returns 1 if an action is consumable (i.e. has a count), nil otherwise.]=],
+	-- ["IsConsumableAction"] = [=[Tests if the action is linked to a consumable item.]=],
+	["IsConsumableAction"] = [=[True if the action is a consumable.]=],
 
 	["IsCurrentAction"] = [=[Returns 1 if an action is the one currently underway, nil otherwise.]=],
 	["IsCurrentAction"] = [=[Determine whether an action is currently executing.]=],
+	---TODO: More Testing Needed - Only returning False
 
 	["IsCurrentSpell"] = [=[Returns true if the spell is currently being casted by the player or is placed in the queue to be casted next. False otherwise.]=],
 	["IsCurrentSpell"] = [=[Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next.]=],
+	---TODO: More Testing Needed - Only returning False
 
-	["IsEquippableItem"] = [=[Returns whether an item can be equipped.]=],
-	["IsEquippableItem"] = [=[Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.]=],
+	-- ["IsEquippableItem"] = [=[Returns whether an item can be equipped.]=],
+	-- ["IsEquippableItem"] = [=[Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.]=],
+	["IsEquippableItem"] = [=[True if item is equipable by the player.]=],
 
-	["IsEquippedAction"] = [=[Returns 1 if an action is equipped (i.e. connected to an item that must be equipped), nil otherwise.]=],
-	["IsEquippedAction"] = [=[Returns whether the specified action slot contains a currently equipped item.]=],
+	-- ["IsEquippedAction"] = [=[Returns 1 if an action is equipped (i.e. connected to an item that must be equipped), nil otherwise.]=],
+	-- ["IsEquippedAction"] = [=[Returns whether the specified action slot contains a currently equipped item.]=],
+	["IsEquippedAction"] = [=[True if the specified action slot is an equipped item.]=],
 
-	["IsEquippedItemType"] = [=[Where "type" is any valid inventory type, item class, or item subclass.]=],
-	["IsEquippedItemType"] = [=[Determines if an item of a given type is equipped.]=],
+	-- ["IsEquippedItemType"] = [=[Where "type" is any valid inventory type, item class, or item subclass.]=],
+	-- ["IsEquippedItemType"] = [=[Determines if an item of a given type is equipped.]=],
+	["IsEquippedItemType"] = [=[True if an item of a given type is equipped.]=],
 
-	["IsFactionInactive"] = [=[Returns true if the faction is marked inactive.]=],
-	["IsFactionInactive"] = [=[Returns whether the player has flagged the specified faction as an inactive.]=],
+	-- ["IsFactionInactive"] = [=[Returns true if the faction is marked inactive.]=],
+	-- ["IsFactionInactive"] = [=[Returns whether the player has flagged the specified faction as an inactive.]=],
+	["IsFactionInactive"] = [=[True if the specified faction is marked inactive.]=],
 
 	["IsFalling"] = [=[Returns 1 if your character is currently plummeting to their doom.]=],
 	["IsFalling"] = [=[Checks if the character is currently falling.]=],
