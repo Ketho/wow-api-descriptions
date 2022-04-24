@@ -1476,7 +1476,6 @@ local t = {
 	["GetNumCompanions"] = [=[Returns the number of mounts.]=],
 
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
-	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of Achievements, and number completed. ]=],
 	["GetNumCompletedAchievements"] = [=[Returns the total and completed number of achievements.]=],
 
 	-- ["GetNumFilteredAchievements"] = [=[Returns the number of achievements that matches search text.]=],
@@ -1611,7 +1610,7 @@ local t = {
 	["GetQuestBackgroundMaterial"] = [=[Returns the background material for the current quest.]=],
 
 	-- ["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
-	["GetQuestID"] = [=[Returns the ID of the displayed quest at a quest tiver.]=],
+	["GetQuestID"] = [=[Returns the ID of the displayed quest at a quest giver.]=],
 
 	-- ["GetQuestItemInfo"] = [=[Returns basic info for the reward/choice/required item for quest currently in gossip window.]=],
 	-- ["GetQuestItemInfo"] = [=[Returns info for a quest's item rewards or requirements.]=],
@@ -1644,7 +1643,7 @@ local t = {
 	["GetQuestLogTimeLeft"] = [=[Returns the time left in seconds for the current quest.]=],
 
 	-- ["GetQuestResetTime"] = [=[Returns number of seconds until quest reset.]=],
-	["GetQuestResetTime"] = [=[Returns the number of seconds until daily questsreset .]=],
+	["GetQuestResetTime"] = [=[Returns the number of seconds until daily quests reset.]=],
 
 	["GetQuestReward"] = [=[Completes the quest and chooses a quest reward, if applicable.]=],
 	-- ["GetQuestReward"] = [=[Completes the quest with the specified quest reward. Warning: Since making a choice here is irrevocable, use with caution.]=],
@@ -2140,7 +2139,6 @@ local t = {
 	["LeaveBattlefield"] = [=[Leaves the current battlefield]=],
 
 	["ListChannelByName"] = [=[Lists members in the given channel to the chat window.]=],
-	["ListChannelByName"] = [=[Lists members in the given channel to the chat window. ]=],
 
 	["ListChannels"] = [=[Lists all of the channels into the chat window.]=],
 	["ListChannels"] = [=[Lists all of the channels.]=],
@@ -2396,7 +2394,6 @@ local t = {
 	["SetBindingSpell"] = [=[Sets a binding to cast the specified spell.]=],
 
 	["SetChannelOwner"] = [=[Sets the channel owner.]=],
-	["SetChannelOwner"] = [=[Sets the channel owner. ]=],
 
 	["SetConsoleKey"] = [=[Sets the console key (normally ~ ).]=],
 	["SetConsoleKey"] = [=[Sets the key used to open the console overlay for the current session.]=],
@@ -2466,13 +2463,12 @@ local t = {
 	["SetRaidTarget"] = [=[Set which [[Target marker|raid target]] will be shown over a mob or raid member.]=],
 
 	["SetSelectedArtifact"] = [=[Sets the selected artifact to raceIndex.]=],
-	["SetSelectedArtifact"] = [=[Set the artifact-pointer to raceIndex. ]=],
+	["SetSelectedArtifact"] = [=[Set the artifact-pointer to raceIndex.]=],
 
 	["SetTracking"] = [=[Enables or disables a tracking method.]=],
 	["SetTracking"] = [=[Enables or disables a tracking method with a specified id.]=],
 
 	["SetTrainerServiceTypeFilter"] = [=[Sets the status of a skill filter in the trainer window.]=],
-	["SetTrainerServiceTypeFilter"] = [=[Sets the status of a skill filter in the trainer window. ]=],
 
 	["SetView"] = [=[Sets camera position to a specified (1-5) predefined camera position.]=],
 	["SetView"] = [=[Sets a camera perspective from one previously saved with [[API SaveView|SaveView]]. The last position loaded is stored in the [[CVar cameraView]].]=],
@@ -2647,7 +2643,7 @@ local t = {
 	["UnitIsCharmed"] = [=[Checks if a specified unit is currently charmed.]=],
 
 	["UnitIsConnected"] = [=[Returns 1 if the specified unit is connected or npc, nil if offline or not a valid unit.]=],
-	["UnitIsConnected"] = [=[Returns true if the unit is connected to the game (i.e. not offline), false otherwise. ]=],
+	["UnitIsConnected"] = [=[Returns true if the unit is connected to the game (i.e. not offline), false otherwise.]=],
 
 	["UnitIsDND"] = [=[Only works for friendly units.]=],
 	["UnitIsDND"] = [=[Checks if a unit is DND (Do Not Disturb).]=],
@@ -2659,7 +2655,7 @@ local t = {
 	["UnitIsDeadOrGhost"] = [=[Returns a value indicating whether the specified unit is dead or in ghost form.]=],
 
 	["UnitIsEnemy"] = [=[Returns true if the specified units are enemies, false otherwise.]=],
-	["UnitIsEnemy"] = [=[This function will determine if the target is hostile towards you. ]=],
+	["UnitIsEnemy"] = [=[This function will determine if the target is hostile towards you.]=],
 
 	["UnitIsFeignDeath"] = [=[Returns true if the specified unit (must be a member of your group) is feigning death.]=],
 	["UnitIsFeignDeath"] = [=[Returns whether a unit is feigning death.]=],
@@ -2716,7 +2712,7 @@ local t = {
 	["UnitPlayerOrPetInRaid"] = [=[Returns 1 if the unit is in your raid group, nil otherwise.]=],
 
 	["UnitPosition"] = [=[Returns the position of a unit within the current world area.]=],
-	["UnitPosition"] = [=[Returns the position of a unit within the current world area. Does not work in raids, dungeons and competitive instances. ]=],
+	["UnitPosition"] = [=[Returns the position of a unit within the current world area. Does not work in raids, dungeons and competitive instances.]=],
 
 	["UnitPower"] = [=[Returns current power of the specified unit (Replaces [[API UnitMana|UnitMana]])]=],
 	["UnitPower"] = [=[Returns the current power of the specified unit.]=],
@@ -2767,7 +2763,7 @@ local t = {
 	["UseAction"] = [=[Perform the action in the specified action slot.]=],
 
 	["UseContainerItem"] = [=[Performs a "right click" action on, or targeted use of, on an item in bags.]=],
-	["UseContainerItem"] = [=[Use an item from a container. If Merchant window is open, this will sell the item. ]=],
+	["UseContainerItem"] = [=[Use an item from a container. If Merchant window is open, this will sell the item.]=],
 
 	["UseItemByName"] = [=[Use an item on the unit specified.]=],
 	["UseItemByName"] = [=[Uses an item, optionally on a specified target.]=],
