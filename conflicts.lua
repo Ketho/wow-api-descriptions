@@ -577,7 +577,8 @@ local t = {
 	-- ["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
-	["CallCompanion"] = [=[Summons a companion.]=],
+	["CallCompanion"] = [=[Summons a mount.]=],
+	-- ["CallCompanion"] = [=[Summons a companion.]=],
 	-- ["CallCompanion"] = [=[Summons the specified companion.]=],
 
 	-- ["CameraOrSelectOrMoveStop"] = [=[End "Left click" in the 3D world.]=],
@@ -791,7 +792,7 @@ local t = {
 
 	-- ["DismissCompanion"] = [=[Dismisses an active companion.]=],
 	-- ["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
-	["DismissCompanion"] = [=[Dismisses the current mount or companion pet.]=],
+	["DismissCompanion"] = [=[Dismisses the current mount.]=],
 
 	-- ["Dismount"] = [=[The player dismounts the current mount.]=],
 	-- ["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
@@ -1086,7 +1087,7 @@ local t = {
 
 	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
 	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
-	["GetCompanionInfo"] = [=[Returns info for a companion.]=],
+	["GetCompanionInfo"] = [=[No longer returns anything.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
@@ -1472,7 +1473,7 @@ local t = {
 
 	-- ["GetNumCompanions"] = [=[Get the number of companions of the specified type.]=],
 	-- ["GetNumCompanions"] = [=[Returns the number of companions you have.]=],
-	["GetNumCompanions"] = [=[Returns the number of companions of the specified type.]=],
+	["GetNumCompanions"] = [=[Returns the number of mounts.]=],
 
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of achievements, and number completed.]=],
 	-- ["GetNumCompletedAchievements"] = [=[Returns the total number of Achievements, and number completed. ]=],
@@ -1924,29 +1925,36 @@ local t = {
 	["GuildUninvite"] = [=[Removes the member "name".]=],
 	["GuildUninvite"] = [=[Removes a member of the guild.]=],
 
-	["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
-	["HasAction"] = [=[Tests if an action slot is occupied.]=],
+	-- ["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
+	-- ["HasAction"] = [=[Tests if an action slot is occupied.]=],
+	["HasAction"] = [=[Returns true if an action slot is occupied.]=],
 
-	["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
-	["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
+	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
+	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
+	["HasPetSpells"] = [=[Returns the number of abilities the player's pet has available.]=],
 
-	["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
-	["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
+	-- ["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
+	-- ["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
+	["HasPetUI"] = [=[True if the player currently has an active (hunter) pet out.]=],
 
-	["HasWandEquipped"] = [=[Returns 1 if a wand is equipped, false otherwise.]=],
-	["HasWandEquipped"] = [=[HasWandEquipped();]=],
+	-- ["HasWandEquipped"] = [=[Returns 1 if a wand is equipped, false otherwise.]=],
+	-- ["HasWandEquipped"] = [=[HasWandEquipped();]=],
+	["HasWandEquipped"] = [=[True if a wand is equipped.]=],
 
-	["HideRepairCursor"] = [=[Hides the repair cursor.]=],
+	-- ["HideRepairCursor"] = [=[Hides the repair cursor.]=],
 	["HideRepairCursor"] = [=[Takes the cursor out of repair mode.]=],
 
-	["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
-	["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
+	-- ["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
+	-- ["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
+	["InCombatLockdown"] = [=[True if the in-combat restrictions are active.]=],
 
-	["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
-	["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
+	-- ["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
+	-- ["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
+	["InRepairMode"] = [=[True if the cursor is in repair mode.]=],
 
-	["InboxItemCanDelete"] = [=[Boolean check for whether a message is returnable to the sender.]=],
-	["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
+	-- ["InboxItemCanDelete"] = [=[Boolean check for whether a message is returnable to the sender.]=],
+	-- ["InboxItemCanDelete"] = [=[Boolean function for determining whether a message is returnable.]=],
+	["InboxItemCanDelete"] = [=[True if a message can be deleted, false if it can be returned to sender.]=],
 
 	["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
 	["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
@@ -2227,8 +2235,9 @@ local t = {
 	["PickupAction"] = [=[Drags an action out of the specified quickbar slot and holds it on the cursor.]=],
 	["PickupAction"] = [=[Pick up an action for drag-and-drop.]=],
 
-	["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
-	["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
+	-- ["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
+	-- ["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
+	["PickupCompanion"] = [=[Picks up a mount onto the cursor.]=],
 
 	["PickupInventoryItem"] = [=[Picks up an item from the player's worn inventory.]=],
 	["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
@@ -2513,8 +2522,9 @@ local t = {
 	["Stuck"] = [=[Informs the game engine that the player is Stuck.]=],
 	["Stuck"] = [=[Notifies the game engine that the player is stuck.]=],
 
-	["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
-	["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
+	-- ["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
+	-- ["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
+	["SummonRandomCritter"] = [=[No longer does anything.]=],
 
 	["SwapRaidSubgroup"] = [=[Swaps raid members into different groups.]=],
 	["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
