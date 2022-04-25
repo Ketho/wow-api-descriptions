@@ -1979,26 +1979,25 @@ local t = {
 	-- ["IsAttackAction"] = [=[Determine whether action slot is an attack action.]=],
 	["IsAttackAction"] = [=[True if the action slot is an attack action.]=],
 
-	["IsAttackSpell"] = [=[Returns 1 if the spell is the "Attack" spell.]=],
-	["IsAttackSpell"] = [=[Determine whether spell is the "Attack" spell.]=],
-	---TODO: Depreciated? More Testing Needed - Only returning False or nil for me in any test I did on a druid.
+	-- ["IsAttackSpell"] = [=[Returns 1 if the spell is the "Attack" spell.]=],
+	-- ["IsAttackSpell"] = [=[Determine whether spell is the "Attack" spell.]=],
+	["IsAttackSpell"] = [=[True if the spell is a Attack spell.]=],
 
-	["IsAutoRepeatAction"] = [=[Returns 1 if an action is auto-repeating, nil otherwise.]=],
-	["IsAutoRepeatAction"] = [=[Returns whether action slot is auto repeating.]=],
-	---TODO: Depreciated? More Testing Needed - Only returning false for any actions, including auto attack.
-	---Test code: /run for i = 1, 120 do print(i) print(IsAutoRepeatAction(i))print(IsAttackSpell(i)) end
+	-- ["IsAutoRepeatAction"] = [=[Returns 1 if an action is auto-repeating, nil otherwise.]=],
+	-- ["IsAutoRepeatAction"] = [=[Returns whether action slot is auto repeating.]=],
+	["IsAutoRepeatAction"] = [=[True if the action repeats automatically.]=],
 
 	-- ["IsConsumableAction"] = [=[Returns 1 if an action is consumable (i.e. has a count), nil otherwise.]=],
 	-- ["IsConsumableAction"] = [=[Tests if the action is linked to a consumable item.]=],
 	["IsConsumableAction"] = [=[True if the action is a consumable.]=],
 
-	["IsCurrentAction"] = [=[Returns 1 if an action is the one currently underway, nil otherwise.]=],
-	["IsCurrentAction"] = [=[Determine whether an action is currently executing.]=],
-	---TODO: More Testing Needed - Only returning False
+	-- ["IsCurrentAction"] = [=[Returns 1 if an action is the one currently underway, nil otherwise.]=],
+	-- ["IsCurrentAction"] = [=[Determine whether an action is currently executing.]=],
+	["IsCurrentAction"] = [=[True if the action is currently executing.]=],
 
-	["IsCurrentSpell"] = [=[Returns true if the spell is currently being casted by the player or is placed in the queue to be casted next. False otherwise.]=],
-	["IsCurrentSpell"] = [=[Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next.]=],
-	---TODO: More Testing Needed - Only returning False
+	-- ["IsCurrentSpell"] = [=[Returns true if the spell is currently being casted by the player or is placed in the queue to be casted next. False otherwise.]=],
+	-- ["IsCurrentSpell"] = [=[Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next.]=],
+	["IsCurrentSpell"] = [=[True if the spell is in queue to be cast next.]=],
 
 	-- ["IsEquippableItem"] = [=[Returns whether an item can be equipped.]=],
 	-- ["IsEquippableItem"] = [=[Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.]=],
