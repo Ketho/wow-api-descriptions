@@ -55,11 +55,11 @@ local t = {
 
 	-- ["AddChatWindowChannel"] = [=[Make a chat channel visible in a specific ChatFrame.]=],
 	-- ["AddChatWindowChannel"] = [=[Makes messages from a specified chat channel output in a specific chat frame.]=],
-	["AddChatWindowChannel"] = [=[Enables messages from a chat channel index for a ChatFrame.]=],
+	["AddChatWindowChannel"] = [=[Enables messages from a chat channel index for a chat window.]=],
 
 	-- ["AddChatWindowMessages"] = [=[Adds a messaging group to the specified chat window.]=],
 	-- ["AddChatWindowMessages"] = [=[Sets a chat frame to receive and show messages of the given message group.]=],
-	["AddChatWindowMessages"] = [=[Enables messages from the chat message type (e.g. "SAY") for a ChatFrame.]=],
+	["AddChatWindowMessages"] = [=[Enables messages from the chat message type (e.g. "SAY") for a chat window.]=],
 
 	-- ["AddTrackedAchievement"] = [=[Add an achievement to tracking.]=],
 	-- ["AddTrackedAchievement"] = [=[Marks an achievement for tracking in the WatchFrame.]=],
@@ -72,15 +72,15 @@ local t = {
 	-- ["ArchaeologyMapUpdateAll"] = [=[Returns how many [[digsite]]s are in a zone like [[Azsuna]] or [[Elwynn Forest]].]=],
 	["ArchaeologyMapUpdateAll"] = [=[Updates and returns the amount of [[digsite]]s in a zone.]=],
 
-	["AscendStop"] = [=[Called when you release the jump key.]=],
+	["AscendStop"] = [=[Called when the player releases the jump key.]=],
 	-- ["AscendStop"] = [=[Apparent null function that performs {{api|nop|no operation}}.]=],
 
 	-- ["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
-	["AssistUnit"] = [=[Assists the specified unit, setting the player's target to theirs.]=],
+	["AssistUnit"] = [=[Assists the specified unit by targeting the same target.]=],
 
 	-- ["AttackTarget"] = [=[Attacks the targetted unit.]=],
 	-- ["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
-	["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
+	["AttackTarget"] = [=[Toggles auto-attacking of the current target.]=],
 
 	-- ["AutoEquipCursorItem"] = [=[Causes the equipment on the cursor to be equipped.]=],
 	-- ["AutoEquipCursorItem"] = [=[Automatically equips the item currently held on the cursor.]=],
@@ -88,7 +88,7 @@ local t = {
 
 	-- ["AutoStoreGuildBankItem"] = [=[Withdraws an item from the bank, and automatically stores it in the player's inventory.]=],
 	-- ["AutoStoreGuildBankItem"] = [=[Allows you to withdraw an item and automatically store it in your inventory.]=],
-	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to the player's inventory.]=],
+	["AutoStoreGuildBankItem"] = [=[Withdraws an item from the Guild Bank to the character's inventory.]=],
 
 	-- ["BNConnected"] = [=[Returns whether your battle.net state is connected.]=],
 	-- ["BNConnected"] = [=[Returns info whether the WoW Client is connected to the Battle.net.]=],
@@ -332,7 +332,7 @@ local t = {
 
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for an activity group.]=],
 	-- ["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for an activity group for [[Premade_Groups|premade groups]]. Each group can contain many [[API_C_LFGList.GetActivityInfo|activities]] and is part of a [[API_C_LFGList.GetCategoryInfo|category]].]=],
-	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for a activity group.]=],
+	["C_LFGList.GetActivityGroupInfo"] = [=[Returns info for an activity group.]=],
 
 	-- ["C_LFGList.GetActivityInfoExpensive"] = [=[Checks if you are in the zone associated with an [[API_C_LFGList.GetActivityInfo|activity]].]=],
 	["C_LFGList.GetActivityInfoExpensive"] = [=[Returns the zone associated with an activity.]=],
@@ -359,7 +359,7 @@ local t = {
 	["C_LFGList.GetAvailableCategories"] = [=[Returns a list of available LFG categories.]=],
 
 	-- ["C_Map.GetMapChildrenInfo"] = [=[Returns info on the sub-maps of the given uiMapID, optionally restricted to a specific "map type", and/or recursive.]=],
-	["C_Map.GetMapChildrenInfo"] = [=[Returns info for the submaps of a map.]=],
+	["C_Map.GetMapChildrenInfo"] = [=[Returns info for the children of a map.]=],
 
 	-- ["C_Map.GetMapInfoAtPosition"] = [=[Returns map info for a location on the map.]=],
 	["C_Map.GetMapInfoAtPosition"] = [=[Returns info for any child or adjacent maps at a position on the map.]=],
@@ -401,7 +401,7 @@ local t = {
 
 	-- ["C_PetJournal.GetOwnedBattlePetString"] = [=[Returns string about numbers of battle pets in journal.]=],
 	-- ["C_PetJournal.GetOwnedBattlePetString"] = [=[Returns a string describing how many battle pets of a specific species you've collected.]=],
-	["C_PetJournal.GetOwnedBattlePetString"] = [=[Returns a formatted string how many of a species you've collected.]=],
+	["C_PetJournal.GetOwnedBattlePetString"] = [=[Returns a formatted string how many of a battle pet species the player has collected.]=],
 
 	-- ["C_PetJournal.GetPetStats"] = [=[Returns a pet's stats from the Pet Journal.]=],
 	["C_PetJournal.GetPetStats"] = [=[Returns the stats of a collected battle pet.]=],
@@ -444,7 +444,7 @@ local t = {
 
 	-- ["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns all completed quests for a character.]=],
 	-- ["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns a list of quests the character has completed in its lifetime.]=],
-	["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns all completed quests for the player.]=],
+	["C_QuestLog.GetAllCompletedQuestIDs"] = [=[Returns all completed quests for the character.]=],
 
 	-- ["C_QuestLog.GetLogIndexForQuestID"] = [=[Returns the index of the specified questID in the quest log.]=],
 	-- ["C_QuestLog.GetLogIndexForQuestID"] = [=[Returns the current quest log index of a quest by its ID.]=],
@@ -498,7 +498,7 @@ local t = {
 	-- ["C_QuestLog.SetSelectedQuest"] = [=[Makes a quest in the quest log the currently selected quest.]=],
 	["C_QuestLog.SetSelectedQuest"] = [=[Selects a quest in the quest log.]=],
 
-	["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting a player.]=],
+	["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens the dialog for reporting a player.]=],
 	-- ["C_ReportSystem.OpenReportPlayerDialog"] = [=[Opens a dialog for reporting other player's violations of the [[End-User License Agreement]]]=],
 
 	-- ["C_Reputation.GetFactionParagonInfo"] = [=[Gets Paragon information.]=],
@@ -562,7 +562,7 @@ local t = {
 
 	-- ["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns the [[TradeSkillLink]] for a trade skill.]=],
 	-- ["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a hyperlink to the player's list of recipes for the current trade skill]=],
-	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a link for the player's current profession.]=],
+	["C_TradeSkillUI.GetTradeSkillListLink"] = [=[Returns a link for the currently displayed profession.]=],
 
 	-- ["C_TradeSkillUI.IsNPCCrafting"] = [=[Checks if the Trade Skill UI is open for crafting by an NPC.]=],
 	["C_TradeSkillUI.IsNPCCrafting"] = [=[True if the trade skill window is displayed for an NPC.]=],
@@ -577,7 +577,7 @@ local t = {
 	-- ["C_UI.Reload"] = [=[Reloads the UI from source files.]=],
 	["C_UI.Reload"] = [=[Reloads the User Interface.]=],
 
-	["CallCompanion"] = [=[Summons a mount.]=],
+	["CallCompanion"] = [=[Summons a companion.]=],
 	-- ["CallCompanion"] = [=[Summons a companion.]=],
 	-- ["CallCompanion"] = [=[Summons the specified companion.]=],
 
@@ -599,7 +599,7 @@ local t = {
 
 	-- ["CanEditMOTD"] = [=[Returns true if you are allowed to edit the guild motd.]=],
 	-- ["CanEditMOTD"] = [=[Checks if the player can edit the guild MOTD.]=],
-	["CanEditMOTD"] = [=[True if the player can edit the guild MOTD.]=],
+	["CanEditMOTD"] = [=[True if the player can edit the guild Message of the Day.]=],
 
 	-- ["CanGuildDemote"] = [=[Returns true if you are allowed to demote a guild member.]=],
 	-- ["CanGuildDemote"] = [=[Checks if the player can demote guild members.]=],
@@ -626,11 +626,11 @@ local t = {
 	["CanMerchantRepair"] = [=[True if the merchant can repair items.]=],
 
 	-- ["CanScanResearchSite"] = [=[Returns whether the player is currently on a [[digsite]].]=],
-	["CanScanResearchSite"] = [=[True if the player is on a [[digsite]].]=],
+	["CanScanResearchSite"] = [=[True if the character is on a [[digsite]].]=],
 
 	-- ["CanShowResetInstances"] = [=[Determine if player can reset instances at the moment.]=],
 	-- ["CanShowResetInstances"] = [=[Returns true if the player can reset instances now.]=],
-	["CanShowResetInstances"] = [=[True if the player can currently reset their instances.]=],
+	["CanShowResetInstances"] = [=[True if the character can currently reset their instances.]=],
 
 	-- ["CancelAreaSpiritHeal"] = [=[Cancel a spirit heal.]=],
 	-- ["CancelAreaSpiritHeal"] = [=[Cancels the area Spirit Healer's resurrection in battlegrounds.]=],
@@ -656,7 +656,7 @@ local t = {
 	-- ["CancelTrade"] = [=[Cancels the currently open trade.]=],
 	["CancelTrade"] = [=[Declines the current trade offer.]=],
 
-	["CancelUnitBuff"] = [=[Removes a specific buff from the player.]=],
+	["CancelUnitBuff"] = [=[Removes a specific buff from the character.]=],
 	-- ["CancelUnitBuff"] = [=[Removes a specific buff from the unit.]=],
 
 	["CastSpell"] = [=[Casts a spell from the spellbook.]=],
@@ -684,7 +684,7 @@ local t = {
 
 	-- ["CheckInteractDistance"] = [=[Returns whether you're in range to perform various interactions with the specified unit.]=],
 	-- ["CheckInteractDistance"] = [=[Checks whether you are in range to perform a specific interaction with a specified unit.]=],
-	["CheckInteractDistance"] = [=[True if the player is in range to perform a specific interaction with the specified unit.]=],
+	["CheckInteractDistance"] = [=[True if the player is in range to perform a specific interaction with the unit.]=],
 
 	-- ["ClearCursor"] = [=[Clears whatever item the cursor is dragging from the cursor.]=],
 	-- ["ClearCursor"] = [=[Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).]=],
@@ -696,7 +696,7 @@ local t = {
 
 	-- ["ClearOverrideBindings"] = [=[Reset all overrides belonging to an owner.]=],
 	-- ["ClearOverrideBindings"] = [=[Removes all override bindings owned by a particular frame.]=],
-	["ClearOverrideBindings"] = [=[Removes all override bindings owned by a particular frame.]=],
+	["ClearOverrideBindings"] = [=[Removes all override bindings owned by a specific frame.]=],
 
 	-- ["ClearSendMail"] = [=[This clears the text in the send mail tab and places the COD item in the inventory.]=],
 	-- ["ClearSendMail"] = [=[Clears everything that has been typed into the 'Send Mail' window.]=],
@@ -764,7 +764,7 @@ local t = {
 
 	-- ["CursorCanGoInSlot"] = [=[Returns true if the item currently held by the cursor can go into the given inventory (equipment) slot.]=],
 	-- ["CursorCanGoInSlot"] = [=[Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.]=],
-	["CursorCanGoInSlot"] = [=[True if the item held by the cursor can be equipped in the specified inventory slot.]=],
+	["CursorCanGoInSlot"] = [=[True if the item held by the cursor can be equipped in the specified (equipment) inventory slot.]=],
 
 	-- ["CursorHasItem"] = [=[Returns true if the cursor currently holds an item.]=],
 	-- ["CursorHasItem"] = [=[Returns 1 if the cursor currently holds an item, nil otherwise.]=],
@@ -792,11 +792,11 @@ local t = {
 
 	-- ["DismissCompanion"] = [=[Dismisses an active companion.]=],
 	-- ["DismissCompanion"] = [=[Dismisses a currently-summoned mount or non-combat pet.]=],
-	["DismissCompanion"] = [=[Dismisses the current mount.]=],
+	["DismissCompanion"] = [=[Dismisses the current companion.]=],
 
 	-- ["Dismount"] = [=[The player dismounts the current mount.]=],
 	-- ["Dismount"] = [=[Dismounts the player if the player was mounted.]=],
-	["Dismount"] = [=[Dismounts the player.]=],
+	["Dismount"] = [=[Dismounts the character.]=],
 
 	-- ["DisplayChannelOwner"] = [=[Displays the owner of the specified channel in the default chat.]=],
 	-- ["DisplayChannelOwner"] = [=[Displays the name of the owner of the specified channel in the Default Chat Frame. Same as typing "/owner <channel>" in chat.]=],
@@ -820,14 +820,13 @@ local t = {
 	["EditMacro"] = [=[Modifies an existing macro.]=],
 
 	-- ["EnableAddOn"] = [=[Enable the specified AddOn for subsequent sessions.]=],
-	-- ["EnableAddOn"] = [=[Enables an AddOn for subsequent sessions.]=],
 	["EnableAddOn"] = [=[Enables an addon for subsequent sessions.]=],
 
 	-- ["EnumerateFrames"] = [=[Get the Frame which follows currentFrame.]=],
 	-- ["EnumerateFrames"] = [=[Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.]=],
 	["EnumerateFrames"] = [=[Returns the frame which follows the current frame.]=],
 
-	["EnumerateServerChannels"] = [=[Retrieves all available server channels (zone dependent).]=],
+	["EnumerateServerChannels"] = [=[Returns all available server channels (zone dependent).]=],
 
 	-- ["ExpandQuestHeader"] = [=[Expands a quest header.]=],
 	["ExpandQuestHeader"] = [=[Expands/collapses a quest log header.]=],
@@ -939,11 +938,11 @@ local t = {
 
 	-- ["GetAverageItemLevel"] = [=[Returns the character's current average iLevel and current average iLevel equipped.]=],
 	-- ["GetAverageItemLevel"] = [=[Returns the average item level of the player's character and average item level equipped.]=],
-	["GetAverageItemLevel"] = [=[Returns the average item level of the player.]=],
+	["GetAverageItemLevel"] = [=[Returns the character's average item level.]=],
 
 	-- ["GetBagName"] = [=[Get the name of one of the player's bags.]=],
 	-- ["GetBagName"] = [=[Returns the name of the bag for the selected index.]=],
-	["GetBagName"] = [=[Returns the item name of the specified bag of the player.]=],
+	["GetBagName"] = [=[Returns the item name of the specified player bag.]=],
 
 	["GetBankSlotCost"] = [=[Returns the cost of the next bank bag slot.]=],
 	-- ["GetBankSlotCost"] = [=[Returns the price of a particular bank slot.]=],
@@ -985,7 +984,7 @@ local t = {
 
 	-- ["GetBestRFChoice"] = [=[Returns the suggested/default dungeonId for the Raid Finder.]=],
 	-- ["GetBestRFChoice"] = [=[Returns the suggested/default Dungeon Id for the Raid Finder.]=],
-	["GetBestRFChoice"] = [=[Returns the suggested LfgDungeonID for the Raid Finder.]=],
+	["GetBestRFChoice"] = [=[Returns the suggested raid for the Raid Finder.]=],
 
 	-- ["GetBillingTimeRested"] = [=[Returns the account rested time left. This function is only relevant on Chinese realms.]=],
 	-- ["GetBillingTimeRested"] = [=[Returns the time spent logged in in current billing unit.]=],
@@ -993,7 +992,7 @@ local t = {
 
 	-- ["GetBindLocation"] = [=[Get the name of the location for your Hearthstone.]=],
 	-- ["GetBindLocation"] = [=[Finds the subzone the player's Hearthstone is set to.]=],
-	["GetBindLocation"] = [=[Returns the subzone the player's Hearthstone is set to.]=],
+	["GetBindLocation"] = [=[Returns the subzone the character's Hearthstone is set to.]=],
 
 	-- ["GetBinding"] = [=[Get action and key bindings for that index.]=],
 	-- ["GetBinding"] = [=[Returns the command name and all keys currently bound to the specified binding.]=],
@@ -1008,10 +1007,10 @@ local t = {
 	["GetBindingKey"] = [=[[Returns the binding name for a key (combination). Discards key modifiers until it finds a binding.]=],
 
 	-- ["GetBindingText"] = [=[Gets the string value for the key.]=],
-	["GetBindingText"] = [=[Returns the string for the given key and prefix. Essentially a constrained getglobal() for bindings.]=],
+	["GetBindingText"] = [=[Returns the string for the given key and prefix. Essentially a specialized getglobal() for bindings.]=],
 
 	-- ["GetBlockChance"] = [=[Returns the player's percentage block chance.]=],
-	["GetBlockChance"] = [=[Returns the player's block chance percentage.]=],
+	["GetBlockChance"] = [=[Returns the block chance percentage.]=],
 
 	-- ["GetBonusBarOffset"] = [=[Determine which page of bonus actions to show.]=],
 	-- ["GetBonusBarOffset"] = [=[Returns the current bonus action bar index.]=],
@@ -1087,7 +1086,7 @@ local t = {
 
 	-- ["GetCompanionInfo"] = [=[Returns info for a selected companion.]=],
 	-- ["GetCompanionInfo"] = [=[Returns info for the companions you have.]=],
-	["GetCompanionInfo"] = [=[No longer returns anything.]=],
+	["GetCompanionInfo"] = [=[Returns info for a companion.]=],
 
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested statistic for the comparison player.]=],
 	-- ["GetComparisonStatistic"] = [=[Returns the value of the requested Statistic from the comparison unit.]=],
@@ -1112,7 +1111,7 @@ local t = {
 	-- ["GetContainerNumFreeSlots"] = [=[Returns the total number of free slots in the bag an the type of items that can go into it specified by the index.]=],
 	["GetContainerNumFreeSlots"] = [=[Returns the number of free slots in a bag.]=],
 
-	["GetCritChance"] = [=[Returns the player's melee critical hit chance percentage.]=],
+	["GetCritChance"] = [=[Returns the melee critical hit chance percentage.]=],
 	-- ["GetCritChance"] = [=[Returns the player's critical hit chance.]=],
 
 	-- ["GetCurrentArenaSeason"] = [=[Gets the current Arena season.]=],
@@ -1136,17 +1135,17 @@ local t = {
 	-- ["GetCursorMoney"] = [=[Returns the amount of copper held on the cursor.]=],
 
 	-- ["GetDefaultLanguage"] = [=[Returns the default language that the unit is speaking after logon.]=],
-	["GetDefaultLanguage"] = [=[Returns the player's default language.]=],
+	["GetDefaultLanguage"] = [=[Returns the character's default language.]=],
 
 	-- ["GetDetailedItemLevelInfo"] = [=[Returns an item's item level.]=],
 	["GetDetailedItemLevelInfo"] = [=[Returns detailed item level info.]=],
 
 	-- ["GetDodgeChance"] = [=[Returns the player's percentage dodge chance.]=],
-	["GetDodgeChance"] = [=[Returns the player's dodge chance percentage.]=],
+	["GetDodgeChance"] = [=[Returns the dodge chance percentage.]=],
 
 	-- ["GetDungeonDifficultyID"] = [=[Returns the player's current Dungeon Difficulty setting (1, 2, 8).]=],
 	-- ["GetDungeonDifficultyID"] = [=[Returns the player's currently selected dungeon difficulty.]=],
-	["GetDungeonDifficultyID"] = [=[Returns selected dungeon difficulty.]=],
+	["GetDungeonDifficultyID"] = [=[Returns the selected dungeon difficulty.]=],
 
 	-- ["GetFactionInfo"] = [=[Gets details for a specific faction/faction header.]=],
 	-- ["GetFactionInfo"] = [=[Returns info for the specified faction or faction header in the player's reputation pane.]=],
@@ -1154,7 +1153,7 @@ local t = {
 
 	-- ["GetFileIDFromPath"] = [=[Returns the fileID corresponding to the given game file path (texture, sound, model, etc.).]=],
 	-- ["GetFileIDFromPath"] = [=[Returns the FileDataID corresponding to the given game file path (texture, sound, model, etc.).]=],
-	["GetFileIDFromPath"] = [=[Returns the FileID for an Interface/ file path.]=],
+	["GetFileIDFromPath"] = [=[Returns the FileID for an Interface file path.]=],
 
 	["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement by index.]=],
 	-- ["GetFilteredAchievementID"] = [=[Returns the ID of a filtered achievement, resulting from a call to {{api|SetAchievementSearchString}}.]=],
@@ -1261,7 +1260,7 @@ local t = {
 
 	-- ["GetInstanceInfo"] = [=[Gets informations about the current Instance.]=],
 	-- ["GetInstanceInfo"] = [=[Returns info for the map instance the player is currently in.]=],
-	["GetInstanceInfo"] = [=[Returns info for the map instance the player is currently in.]=],
+	["GetInstanceInfo"] = [=[Returns info for the map instance the character is currently in.]=],
 
 	-- ["GetInstanceLockTimeRemaining"] = [=[Returns info for the instance lock timer for the instance the player is currently entering.]=],
 	["GetInstanceLockTimeRemaining"] = [=[Returns info for the instance lock timer for the current instance.]=],
@@ -1343,11 +1342,11 @@ local t = {
 
 	-- ["GetLFGRoles"] = [=[Returns the roles you signed up as, not the role you were assigned.]=],
 	-- ["GetLFGRoles"] = [=[Returns what roles you signed up as in the Dungeon Finder.]=],
-	["GetLFGRoles"] = [=[Returns the roles you signed up for in the Dungeon Finder.]=],
+	["GetLFGRoles"] = [=[Returns the roles the player signed up for in the Dungeon Finder.]=],
 
 	-- ["GetLanguageByIndex"] = [=[Returns the language specified by the index.]=],
 	-- ["GetLanguageByIndex"] = [=[Returns the language specified by the index that your character can speak.]=],
-	["GetLanguageByIndex"] = [=[Returns the languages that your character can speak by index.]=],
+	["GetLanguageByIndex"] = [=[Returns the languages that the character can speak by index.]=],
 
 	-- ["GetLatestThreeSenders"] = [=[Returns the senders of the most recent unread mail.]=],
 	["GetLatestThreeSenders"] = [=[Returns up to three senders of unread mail.]=],
@@ -1370,14 +1369,14 @@ local t = {
 
 	-- ["GetMacroIndexByName"] = [=[Returns macro index.]=],
 	-- ["GetMacroIndexByName"] = [=[Returns macro slot index containing a macro with the specified name.]=],
-	["GetMacroIndexByName"] = [=[Returns the index for a macro byname.]=],
+	["GetMacroIndexByName"] = [=[Returns the index for a macro by name.]=],
 
 	-- ["GetMacroInfo"] = [=[Returns "name", "iconTexture", "body", isLocal.]=],
 	["GetMacroInfo"] = [=[Returns info for a macro.]=],
 
 	-- ["GetManaRegen"] = [=[Returns the player's mana regeneration rates.]=],
 	-- ["GetManaRegen"] = [=[Gets the player's current mana regeneration rates (in mana per 1 seconds).]=],
-	["GetManaRegen"] = [=[Returns the player's mana regeneration per second.]=],
+	["GetManaRegen"] = [=[Returns the mana regeneration per second.]=],
 
 	-- ["GetMasterLootCandidate"] = [=[Returns the name of a player who is eligible to receive loot in master mode.]=],
 	-- ["GetMasterLootCandidate"] = [=[Returns the name of the player at the specified index, who would receive an item assigned by [[API GiveMasterLoot|GiveMasterLoot(slot, index)]] using the same index.]=],
@@ -1385,11 +1384,11 @@ local t = {
 
 	-- ["GetMastery"] = [=[Returns the player's mastery before mastery rating.]=],
 	-- ["GetMastery"] = [=[Returns the (raw) mastery of the player.]=],
-	["GetMastery"] = [=[Returns the player's base mastery percentage.]=],
+	["GetMastery"] = [=[Returns the base mastery percentage.]=],
 
 	-- ["GetMasteryEffect"] = [=[Returns the player's buffed mastery in percentage and (unknown number value).]=],
 	-- ["GetMasteryEffect"] = [=[Returns the effect of player's current Mastery.]=],
-	["GetMasteryEffect"] = [=[Returns the player's effective mastery percentage.]=],
+	["GetMasteryEffect"] = [=[Returns the effective mastery percentage.]=],
 
 	-- ["GetMerchantItemCostItem"] = [=[Returns info for an "alternative currency" component of the price for a purchasable item.]=],
 	-- ["GetMerchantItemCostItem"] = [=[Returns info for an item's token/currency cost.]=],
@@ -1421,7 +1420,7 @@ local t = {
 
 	-- ["GetMoney"] = [=[Returns an integer value of your held money in copper.]=],
 	-- ["GetMoney"] = [=[Returns an integer value of your held money.]=],
-	["GetMoney"] = [=[Returns the amount of money the player owns.]=],
+	["GetMoney"] = [=[Returns the amount of money the player character owns.]=],
 
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
@@ -1483,7 +1482,7 @@ local t = {
 	["GetNumFilteredAchievements"] = [=[Returns the number of achievements after filtering.]=],
 
 	-- ["GetNumGroupMembers"] = [=[Returns the total number of players in your group/raid.]=],
-	["GetNumGroupMembers"] = [=[Returns the number of players in a group.]=],
+	["GetNumGroupMembers"] = [=[Returns the number of players in the group.]=],
 
 	["GetNumGuildMembers"] = [=[Returns the number of total and online guild members.]=],
 	-- ["GetNumGuildMembers"] = [=[Returns the number of guild members.]=],
@@ -1517,7 +1516,7 @@ local t = {
 	["GetNumQuestRewards"] = [=[Returns the number of unconditional rewards at a quest giver.]=],
 
 	-- ["GetNumSavedInstances"] = [=[Gets the number of instances for which the player currently has lockout data saved.]=],
-	["GetNumSavedInstances"] = [=[Returns the number of instances for which the player is locked out.]=],
+	["GetNumSavedInstances"] = [=[Returns the number of instances for which the character is locked out.]=],
 
 	-- ["GetNumSockets"] = [=[Returns the number of sockets in the item currently being socketed.]=],
 	-- ["GetNumSockets"] = [=[Returns the number of sockets in the item currently in the item socketing window.]=],
@@ -1547,20 +1546,20 @@ local t = {
 	["GetOptOutOfLoot"] = [=[True if the player is automatically passing on all loot.]=],
 
 	-- ["GetPVPLifetimeStats"] = [=[Get your PvP/Honor statistics for your lifetime.]=],
-	["GetPVPLifetimeStats"] = [=[Returns the player's lifetime PvP statistics.]=],
+	["GetPVPLifetimeStats"] = [=[Returns the character's lifetime PvP statistics.]=],
 
-	["GetPVPSessionStats"] = [=[Returns the player's Honor statistics for this session.]=],
+	["GetPVPSessionStats"] = [=[Returns the character's Honor statistics for this session.]=],
 	-- ["GetPVPSessionStats"] = [=[Gets the amount of honorable kills and honor points you have for the current session ( today ).]=],
 
 	-- ["GetPVPTimer"] = [=[Returns the amount of time until your PvP flag fades.]=],
 	-- ["GetPVPTimer"] = [=[Returns the amount of time left on your PVP flag.]=],
 	["GetPVPTimer"] = [=[Returns the time left in milliseconds until the player is unflagged for PvP.]=],
 
-	["GetPVPYesterdayStats"] = [=[Returns the player's Honor statistics for yesterday.]=],
+	["GetPVPYesterdayStats"] = [=[Returns the character's Honor statistics for yesterday.]=],
 	-- ["GetPVPYesterdayStats"] = [=[Gets the player's PVP contribution statistics for the previous day.]=],
 
 	-- ["GetParryChance"] = [=[Returns the player's percentage parry chance.]=],
-	["GetParryChance"] = [=[Returns the player's parry chance percentage.]=],
+	["GetParryChance"] = [=[Returns the parry chance percentage.]=],
 
 	-- ["GetPartyAssignment"] = [=[Returns a value based on whether the unit is assigned to given role.]=],
 	-- ["GetPartyAssignment"] = [=[Returns a list of raidmembers with a [[Main_tank|main tank]] or [[Main_assist|main assist]] role.]=],
@@ -1573,7 +1572,7 @@ local t = {
 	-- ["GetPetActionInfo"] = [=[Returns info on the specified pet action.]=],
 	["GetPetActionInfo"] = [=[Returns info for an action on the pet action bar.]=],
 
-	["GetPetExperience"] = [=[Returns the pet's current and total XP required for next level.]=],
+	["GetPetExperience"] = [=[Returns the pet's current and total XP required for the next level.]=],
 	-- ["GetPetExperience"] = [=[Returns the pet's current XP total, and the XP total required for the next level.]=],
 
 	-- ["GetPetFoodTypes"] = [=[Returns a list of the food types the player's pet can eat.]=],
@@ -1583,7 +1582,7 @@ local t = {
 	-- ["GetPetitionInfo"] = [=[Gets the info for a petition being viewed.]=],
 	["GetPetitionInfo"] = [=[Returns info for the petition being viewed.]=],
 
-	["GetPlayerFacing"] = [=[Returns the direction the player is facing in radians.]=],
+	["GetPlayerFacing"] = [=[Returns the direction the character is facing in radians.]=],
 	-- ["GetPlayerFacing"] = [=[Returns the direction the player character is currently facing.]=],
 
 	-- ["GetPlayerInfoByGUID"] = [=[Returns race, class, sex about the guid (client must have seen the guid)]=],
@@ -1600,14 +1599,14 @@ local t = {
 	["GetPreviousAchievement"] = [=[Returns the previous achievement in a chain.]=],
 
 	-- ["GetProfessions"] = [=[Gives all of the current character's professions.]=],
-	["GetProfessions"] = [=[Returns the spell tab indices of the player's current professions.]=],
+	["GetProfessions"] = [=[Returns the spell tab indices of the character's current professions.]=],
 
 	-- ["GetProgressText"] = [=[Returns quest progress text, displayed by the NPC before the player pressed "Continue".]=],
 	["GetProgressText"] = [=[Returns quest progress text at a quest giver.]=],
 
 	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest.]=],
 	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default "Parchment" texture.]=],
-	["GetQuestBackgroundMaterial"] = [=[Returns the background material for the current quest.]=],
+	["GetQuestBackgroundMaterial"] = [=[Returns the background texture for the currently displayed quest.]=],
 
 	-- ["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
 	["GetQuestID"] = [=[Returns the ID of the displayed quest at a quest giver.]=],
@@ -1930,7 +1929,7 @@ local t = {
 
 	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
 	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
-	["HasPetSpells"] = [=[Returns the number of abilities the player's pet has available.]=],
+	["HasPetSpells"] = [=[Returns the number of abilities the character's's pet has available.]=],
 
 	-- ["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
 	-- ["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
@@ -1957,7 +1956,7 @@ local t = {
 
 	-- ["InitiateTrade"] = [=[Asks the specified unit to trade.]=],
 	-- ["InitiateTrade"] = [=[Opens the Trade window with selected target.]=],
-	["InitiateTrade"] = [=[Opens the Trade window with specified unit.]=],
+	["InitiateTrade"] = [=[Opens a trade with the specified unit.]=],
 
 	-- ["IsActionInRange"] = [=[Test if an action is in range (1=yes, 0=no, nil=not applicable).]=],
 	-- ["IsActionInRange"] = [=[Returns whether an action is in range for use.]=],
