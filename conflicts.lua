@@ -1653,58 +1653,62 @@ local t = {
 	["GetRaidRosterInfo"] = [=[Returns info for a member of your raid.]=],
 	-- ["GetRaidRosterInfo"] = [=[Gets info for a raid member.]=],
 
-	["GetRaidTargetIndex"] = [=[Get the raid target index assigned to a unit.]=],
-	["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] index assigned to a unit.]=],
+	-- ["GetRaidTargetIndex"] = [=[Get the raid target index assigned to a unit.]=],
+	-- ["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] index assigned to a unit.]=],
+	["GetRaidTargetIndex"] = [=[Returns the [[Target marker|raid target]] of a unit.]=],
 
-	["GetRangedCritChance"] = [=[Returns the players ranged critical strike chance.]=],
-	["GetRangedCritChance"] = [=[Returns the player's ranged critical hit chance.]=],
+	-- ["GetRangedCritChance"] = [=[Returns the players ranged critical strike chance.]=],
+	-- ["GetRangedCritChance"] = [=[Returns the player's ranged critical hit chance.]=],
+	["GetRangedCritChance"] = [=[Returns the ranged critical hit chance.]=],
 
-	["GetRealZoneText"] = [=[Returns either instance name or zone name.]=],
+	-- ["GetRealZoneText"] = [=[Returns either instance name or zone name.]=],
 	["GetRealZoneText"] = [=[Returns the map instance name.]=],
 
-	["GetRealmName"] = [=[Returns the name of the server a user is logged in to.]=],
+	-- ["GetRealmName"] = [=[Returns the name of the server a user is logged in to.]=],
+	-- ["GetRealmName"] = [=[Returns the realm name.]=],
 	["GetRealmName"] = [=[Returns the realm name.]=],
 
-	["GetRestState"] = [=[Returns info for a player's rest state. (saved up experience bonus)]=],
-	["GetRestState"] = [=[Returns whether the player is in a [[Rest|rested]] (earning double XP for kills) or normal state.]=],
+	-- ["GetRestState"] = [=[Returns info for a player's rest state. (saved up experience bonus)]=],
+	-- ["GetRestState"] = [=[Returns whether the player is in a [[Rest|rested]] (earning double XP for kills) or normal state.]=],
+	["GetRestState"] = [=[Returns if the character is in a [[Rest|rested]] or normal state.]=],
 
 	["GetRestrictedAccountData"] = [=[Returns the cap on trial character level, money and profession skill.]=],
-	["GetRestrictedAccountData"] = [=[Returns the cap on trial character level, money and profession skill for [[Starter Edition]] accounts.]=],
+	-- ["GetRestrictedAccountData"] = [=[Returns the cap on trial character level, money and profession skill for [[Starter Edition]] accounts.]=],
 
-	["GetRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion for quest currently in gossip window.]=],
-	["GetRewardSpell"] = [=[Returns info for spell that you get as reward for completing quest currently in gossip frame.]=],
+	-- ["GetRewardSpell"] = [=[Returns name and texture of spell awarded for quest completion for quest currently in gossip window.]=],
+	["GetRewardSpell"] = [=[Returns the spell reward for the quest in the gossip window.]=],
 
-	["GetRewardXP"] = [=[Returns the amount of experience awarded by the currently displayed text.]=],
-	["GetRewardXP"] = [=[Returns the [[experience]] reward of the quest most recently discussed with an NPC.]=],
+	-- ["GetRewardXP"] = [=[Returns the amount of experience awarded by the currently displayed text.]=],
+	["GetRewardXP"] = [=[Returns the [[experience]] reward for the quest in the gossip window.]=],
 
-	["GetRuneCooldown"] = [=[Returns cooldown info for a given rune.]=],
-	["GetRuneCooldown"] = [=[Gets the cooldown info for a Death Knight's Rune]=],
+	-- ["GetRuneCooldown"] = [=[Returns cooldown info for a given rune.]=],
+	["GetRuneCooldown"] = [=[Death Knight: Returns cooldown info for a rune.]=],
 
-	["GetRuneCount"] = [=[Returns the number of Runes in the given slot. (Death Knight)]=],
-	["GetRuneCount"] = [=[Returns the rune count for the given slot.]=],
+	["GetRuneCount"] = [=[Death Knight: Returns the number of runes for a slot.]=],
+	-- ["GetRuneCount"] = [=[Returns the rune count for the given slot.]=],
 
-	["GetSavedInstanceInfo"] = [=[Gets info for an instance for which the player has saved lockout data.]=],
-	["GetSavedInstanceInfo"] = [=[Returns info for an instance for which the player has saved lockout data.]=],
+	-- ["GetSavedInstanceInfo"] = [=[Gets info for an instance for which the player has saved lockout data.]=],
+	["GetSavedInstanceInfo"] = [=[Returns instance lock info.]=],
 
-	["GetScreenHeight"] = [=[Returns the height of the window in pixels.]=],
-	["GetScreenHeight"] = [=[Returns the height of the window in pixels. This value is affected by the UI's scale.]=],
+	-- ["GetScreenHeight"] = [=[Returns the height of the window in pixels.]=],
+	["GetScreenHeight"] = [=[Returns the height of the window in pixels, affected by UI scale.]=],
 
-	["GetScreenWidth"] = [=[Returns the width of the window in pixels.]=],
-	["GetScreenWidth"] = [=[Returns the width of the window in pixels. This value is affected by the UI's scale.]=],
+	-- ["GetScreenWidth"] = [=[Returns the width of the window in pixels.]=],
+	["GetScreenWidth"] = [=[Returns the width of the window in pixels, affected by UI scale.]=],
 
-	["GetSelectedArtifactInfo"] = [=[Returns the info for the [[API SetSelectedArtifact|selected]] race.]=],
-	["GetSelectedArtifactInfo"] = [=[Returns the info for the selected race's current archaeology artifact.]=],
+	-- ["GetSelectedArtifactInfo"] = [=[Returns the info for the [[API SetSelectedArtifact|selected]] race.]=],
+	["GetSelectedArtifactInfo"] = [=[Returns info for the selected race's Archaeology artifact.]=],
 
-	["GetSendMailCOD"] = [=[Determine amount of gold entered in COD box in mail frame when mail is sent.]=],
-	["GetSendMailCOD"] = [=[Returns the Cash-On-Delivery cost of the outgoing message set via {{api|SetSendMailCOD}}().]=],
+	-- ["GetSendMailCOD"] = [=[Determine amount of gold entered in COD box in mail frame when mail is sent.]=],
+	["GetSendMailCOD"] = [=[Returns the Cash-On-Delivery cost of the outgoing message.]=],
 
-	["GetSendMailItem"] = [=[Get info for an item attached on the send mail frame.]=],
-	["GetSendMailItem"] = [=[Returns info for an item attached in the send mail frame.]=],
+	-- ["GetSendMailItem"] = [=[Get info for an item attached on the send mail frame.]=],
+	["GetSendMailItem"] = [=[Returns info for an item attached in the outgoing message.]=],
 
-	["GetSendMailItemLink"] = [=[Get link for an item attached on the send mail frame.]=],
-	["GetSendMailItemLink"] = [=[Returns the [[itemLink]] of an item attached to the mail message the player is sending.]=],
+	-- ["GetSendMailItemLink"] = [=[Get link for an item attached on the send mail frame.]=],
+	["GetSendMailItemLink"] = [=[Returns the item link of an item attached in the outgoing message.]=],
 
-	["GetServerTime"] = [=[Returns the server's Unix time.]=],
+	-- ["GetServerTime"] = [=[Returns the server's Unix time.]=],
 	["GetServerTime"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]].]=],
 
 	["GetShapeshiftFormID"] = [=[Returns the current shapeshift form as a constant. If the player is not shapeshifted it returns nil.]=],
