@@ -1711,113 +1711,121 @@ local t = {
 	-- ["GetServerTime"] = [=[Returns the server's Unix time.]=],
 	["GetServerTime"] = [=[Returns the server's [[Wikipedia:Unix_time|Unix time]].]=],
 
-	["GetShapeshiftFormID"] = [=[Returns the current shapeshift form as a constant. If the player is not shapeshifted it returns nil.]=],
+	-- ["GetShapeshiftFormID"] = [=[Returns the current shapeshift form as a constant. If the player is not shapeshifted it returns nil.]=],
 	["GetShapeshiftFormID"] = [=[Returns the ID of the form or stance the player is currently in.]=],
 
-	["GetShapeshiftFormInfo"] = [=[Retrieves info for an available ShapeshiftForm or Stance.]=],
-	["GetShapeshiftFormInfo"] = [=[Retrieves info for an available shapeshift form or similar ability.]=],
+	-- ["GetShapeshiftFormInfo"] = [=[Retrieves info for an available ShapeshiftForm or Stance.]=],
+	["GetShapeshiftFormInfo"] = [=[Returns info for an available form or stance.]=],
 
-	["GetSheathState"] = [=[Returns the sheath state of the player's weapons.]=],
-	["GetSheathState"] = [=[Returns which type of weapon the player currently has unsheathed, if any.]=],
+	-- ["GetSheathState"] = [=[Returns the sheath state of the player's weapons.]=],
+	["GetSheathState"] = [=[Returns which type of weapon the player currently has unsheathed.]=],
 
-	["GetSocketItemBoundTradeable"] = [=[Returns whether the item currently being socketed is temporarily tradable (BoP boss loot).]=],
-	["GetSocketItemBoundTradeable"] = [=[Returns whether the item currently selected for socketing can be traded to other eligible players.]=],
+	-- ["GetSocketItemBoundTradeable"] = [=[Returns whether the item currently being socketed is temporarily tradable (BoP boss loot).]=],
+	["GetSocketItemBoundTradeable"] = [=[True if the item currently being socketed can be traded to other eligible players (BoP boss loot).]=],
 
 	["GetSocketItemInfo"] = [=[Returns info for the item currently being socketed.]=],
-	["GetSocketItemInfo"] = [=[Returns various info for the inventory item currently being socketed (i.e. socket UI is open for the item).]=],
+	-- ["GetSocketItemInfo"] = [=[Returns various info for the inventory item currently being socketed (i.e. socket UI is open for the item).]=],
 
 	["GetSocketItemRefundable"] = [=[Returns whether the item currently being socketed is refundable.]=],
-	["GetSocketItemRefundable"] = [=[Returns whether the item currently selected for socketing can be refunded.]=],
+	-- ["GetSocketItemRefundable"] = [=[Returns whether the item currently selected for socketing can be refunded.]=],
 
 	["GetSocketTypes"] = [=[Returns the type (color) of a socket in the item.]=],
-	["GetSocketTypes"] = [=[Returns the type of one of the sockets in the item currently in the item socketing window.]=],
+	-- ["GetSocketTypes"] = [=[Returns the type of one of the sockets in the item currently in the item socketing window.]=],
 
-	["GetSpecializationInfo"] = [=[Returns info for the player's specializations.]=],
-	["GetSpecializationInfo"] = [=[Returns info for the specified specialization.]=],
+	-- ["GetSpecializationInfo"] = [=[Returns info for the player's specializations.]=],
+	["GetSpecializationInfo"] = [=[Returns info for a specialization.]=],
 
-	["GetSpecializationMasterySpells"] = [=[Returns the mastery spellID of the current player's specialization.]=],
-	["GetSpecializationMasterySpells"] = [=[Returns the mastery spellID of the current player's specializiation.]=],
+	["GetSpecializationMasterySpells"] = [=[Returns the mastery spell ID of the specified specialization.]=],
+	-- ["GetSpecializationMasterySpells"] = [=[Returns the mastery spellID of the current player's specializiation.]=],
 
-	["GetSpecializationSpells"] = [=[Returns the spellID of key abilities used by the specified specialization.]=],
-	["GetSpecializationSpells"] = [=[Returns spells learned as part of a specific specialization.]=],
+	-- ["GetSpecializationSpells"] = [=[Returns the spellID of key abilities used by the specified specialization.]=],
+	["GetSpecializationSpells"] = [=[Returns the spells learned as part of the specified specialization.]=],
 
-	["GetSpellAutocast"] = [=[Check whether the specified spell autocasts or not.]=],
-	["GetSpellAutocast"] = [=[Get info for a spell's Autocast.]=],
+	-- ["GetSpellAutocast"] = [=[Check whether the specified spell autocasts or not.]=],
+	-- ["GetSpellAutocast"] = [=[Get info for a spell's Autocast.]=],
+	["GetSpellAutocast"] = [=[True if a (pet) spell is autocastable.]=],
 
-	["GetSpellBonusDamage"] = [=[Returns the raw spell damage of the player for a given spell tree.]=],
-	["GetSpellBonusDamage"] = [=[Returns the raw spell damage bonus of the player for a given spell tree.]=],
+	-- ["GetSpellBonusDamage"] = [=[Returns the raw spell damage of the player for a given spell tree.]=],
+	["GetSpellBonusDamage"] = [=[Returns the raw spell damage bonus for the specified spell tree.]=],
 
-	["GetSpellBonusHealing"] = [=[Returns the raw bonus healing of the player.]=],
-	["GetSpellBonusHealing"] = [=[Returns the spell power value used for healing spell coefficients. This includes your bonus from Versatility.]=],
+	-- ["GetSpellBonusHealing"] = [=[Returns the raw bonus healing of the player.]=],
+	-- ["GetSpellBonusHealing"] = [=[Returns the spell power value used for healing spell coefficients. This includes your bonus from Versatility.]=],
+	["GetSpellBonusHealing"] = [=[Returns the raw spell healing bonus.]=],
 
-	["GetSpellBookItemInfo"] = [=[Returns the spell's type and spellID for a spell in the player's spellbook.]=],
-	["GetSpellBookItemInfo"] = [=[Retrieves info for a specific [[spellbook]] item.]=],
+	-- ["GetSpellBookItemInfo"] = [=[Returns the spell's type and spellID for a spell in the player's spellbook.]=],
+	-- ["GetSpellBookItemInfo"] = [=[Retrieves info for a specific [[spellbook]] item.]=],
+	["GetSpellBookItemInfo"] = [=[Returns info for a [[spellbook]] item.]=],
 
-	["GetSpellBookItemName"] = [=[Returns the spell name and spell rank for a spell in the player's spellbook.]=],
-	["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spellbook.]=],
+	["GetSpellBookItemName"] = [=[Returns the name of a [[spellbook]] item.]=],
+	-- ["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spellbook.]=],
 
-	["GetSpellBookItemTexture"] = [=[Returns the spell icon fileId for a spell in the player's spellbook.]=],
-	["GetSpellBookItemTexture"] = [=[Returns the icon of a spellbook entry.]=],
+	-- ["GetSpellBookItemTexture"] = [=[Returns the spell icon fileId for a spell in the player's spellbook.]=],
+	["GetSpellBookItemTexture"] = [=[Returns the icon of a spellbook item.]=],
 
-	["GetSpellCooldown"] = [=[Retrieves data on the cooldown of a specific spell.]=],
-	["GetSpellCooldown"] = [=[Retrieves the cooldown data of the spell specified.]=],
+	-- ["GetSpellCooldown"] = [=[Retrieves data on the cooldown of a specific spell.]=],
+	-- ["GetSpellCooldown"] = [=[Retrieves the cooldown data of the spell specified.]=],
+	["GetSpellCooldown"] = [=[Returns the cooldown info of a spell.]=],
 
-	["GetSpellCritChance"] = [=[Returns the players critical hit chance with a particular spell school.]=],
-	["GetSpellCritChance"] = [=[Returns a players critical hit chance with spells for a certain school.]=],
+	-- ["GetSpellCritChance"] = [=[Returns the players critical hit chance with a particular spell school.]=],
+	-- ["GetSpellCritChance"] = [=[Returns a players critical hit chance with spells for a certain school.]=],
+	["GetSpellCritChance"] = [=[Returns the critical hit chance for the specified spell school.]=],
 
-	["GetSpellLink"] = [=[Returns the spell's link.]=],
-	["GetSpellLink"] = [=[Returns a hyperlink for a spell.]=],
+	-- ["GetSpellLink"] = [=[Returns the spell's link.]=],
+	["GetSpellLink"] = [=[Returns the hyperlink for a spell.]=],
 
-	["GetSpellPowerCost"] = [=[Returns info for a spell's resource cost.]=],
-	["GetSpellPowerCost"] = [=[Returns a table describing the resource cost of a spell.]=],
+	["GetSpellPowerCost"] = [=[Returns resource cost info for a spell.]=],
+	-- ["GetSpellPowerCost"] = [=[Returns a table describing the resource cost of a spell.]=],
 
 	["GetSpellTabInfo"] = [=[Returns info for the specified spellbook tab.]=],
-	["GetSpellTabInfo"] = [=[Retrieves info for the specified line of spells]=],
+	-- ["GetSpellTabInfo"] = [=[Retrieves info for the specified line of spells]=],
 
-	["GetSpellTexture"] = [=[Returns the fileId used for the spell's icon.]=],
-	["GetSpellTexture"] = [=[Returns the icon of the specified spell.]=],
+	-- ["GetSpellTexture"] = [=[Returns the fileId used for the spell's icon.]=],
+	["GetSpellTexture"] = [=[Returns the icon of a spell.]=],
 
-	["GetStablePetFoodTypes"] = [=[Returns a list of the food types a specific stabled pet can eat.]=],
-	["GetStablePetFoodTypes"] = [=[Returns a list of the food types a pet in the stable can eat.]=],
+	["GetStablePetFoodTypes"] = [=[Returns the food types a specific stabled pet can eat.]=],
+	-- ["GetStablePetFoodTypes"] = [=[Returns a list of the food types a pet in the stable can eat.]=],
 
-	["GetStatistic"] = [=[Returns the value of the requested statistic.]=],
-	["GetStatistic"] = [=[Returns the value of the requested Statistic.]=],
+	["GetStatistic"] = [=[Returns a character statistic.]=],
+	-- ["GetStatistic"] = [=[Returns the value of the requested Statistic.]=],
 
 	["GetStatisticsCategoryList"] = [=[Returns the list of statistic categories.]=],
-	["GetStatisticsCategoryList"] = [=[Returns a table of achievement categories.]=],
+	-- ["GetStatisticsCategoryList"] = [=[Returns a table of achievement categories.]=],
 
-	["GetSubZoneText"] = [=[Returns the subzone text (e.g. "The Canals").]=],
+	-- ["GetSubZoneText"] = [=[Returns the subzone text (e.g. "The Canals").]=],
 	["GetSubZoneText"] = [=[Returns the subzone name.]=],
 
-	["GetSummonFriendCooldown"] = [=[Returns the cooldown (start, duration) of the RaF Summon Friend ability.]=],
-	["GetSummonFriendCooldown"] = [=[Returns info for the cooldown time of the RaF Summon Friend ability.]=],
+	["GetSummonFriendCooldown"] = [=[Returns the cooldown info of the RaF Summon Friend ability.]=],
+	-- ["GetSummonFriendCooldown"] = [=[Returns info for the cooldown time of the RaF Summon Friend ability.]=],
 
-	["GetTalentInfo"] = [=[Returns info for a talent.]=],
-	["GetTalentInfo"] = [=[ talentID, name, texture, selected, available, spellID, unknown, row, column, known, grantedByAura]=],
+	["GetTalentInfo"] = [=[Returns info for a specific talent.]=],
+	-- ["GetTalentInfo"] = [=[ talentID, name, texture, selected, available, spellID, unknown, row, column, known, grantedByAura]=],
 
-	["GetTargetTradeMoney"] = [=[Returns the amount of money in the trade frame of the target player.]=],
-	["GetTargetTradeMoney"] = [=[Gets the amount of money in the trade window for the target user.]=],
+	["GetTargetTradeMoney"] = [=[Returns the amount of money in the trade window of the other player.]=],
+	-- ["GetTargetTradeMoney"] = [=[Gets the amount of money in the trade window for the target user.]=],
 
-	["GetText"] = [=[Used to localize some client text.]=],
-	["GetText"] = [=[GetText is used to localize some game text. Currently only for the FACTION_STANDING_LABEL..N globalstring.]=],
+	-- ["GetText"] = [=[Used to localize some client text.]=],
+	-- ["GetText"] = [=[GetText is used to localize some game text. Currently only for the FACTION_STANDING_LABEL..N globalstring.]=],
+	["GetText"] = [=[Returns localized text depending on the specified gender.]=],
 
-	["GetThreatStatusColor"] = [=[Returns RGB values for a given UnitThreatSituation return value.]=],
-	["GetThreatStatusColor"] = [=[Returns RGB color values corresponding to a threat status returned by [[API UnitThreatSituation|UnitThreatSituation]].]=],
+	-- ["GetThreatStatusColor"] = [=[Returns RGB values for a given UnitThreatSituation return value.]=],
+	-- ["GetThreatStatusColor"] = [=[Returns RGB color values corresponding to a threat status returned by [[API UnitThreatSituation|UnitThreatSituation]].]=],
+	["GetThreatStatusColor"] = [=[Returns the color for a threat status.]=],
 
-	["GetTime"] = [=[Returns the system uptime in seconds (millisecond precision).]=],
-	["GetTime"] = [=[Returns the system uptime '''of your computer''' in seconds, with millisecond precision.]=],
+	-- ["GetTime"] = [=[Returns the system uptime in seconds (millisecond precision).]=],
+	["GetTime"] = [=[Returns the system uptime of your computer in seconds, with millisecond precision.]=],
 
-	["GetTitleName"] = [=[Returns the player's current title name.]=],
-	["GetTitleName"] = [=[Returns the name of a Title ID.]=],
+	-- ["GetTitleName"] = [=[Returns the player's current title name.]=],
+	["GetTitleName"] = [=[Returns the name of a player title.]=],
 
-	["GetTitleText"] = [=[Retrieves the title of the quest while talking to the NPC about it.]=],
-	["GetTitleText"] = [=[Returns the name of the last-offered quest.]=],
+	-- ["GetTitleText"] = [=[Retrieves the title of the quest while talking to the NPC about it.]=],
+	-- ["GetTitleText"] = [=[Returns the name of the last-offered quest.]=],
+	["GetTitleText"] = [=[Returns the name of the quest at the quest giver.]=],
 
 	["GetTotalAchievementPoints"] = [=[Returns the total number of achievement points earned.]=],
-	["GetTotalAchievementPoints"] = [=[Returns the total number of Achievement Points earned.]=],
+	-- ["GetTotalAchievementPoints"] = [=[Returns the total number of Achievement Points earned.]=],
 
-	["GetTotemInfo"] = [=[Returns info for a totem.]=],
-	["GetTotemInfo"] = [=[Returns info for totems]=],
+	["GetTotemInfo"] = [=[Returns info for a specific totem.]=],
+	-- ["GetTotemInfo"] = [=[Returns info for totems]=],
 
 	["GetTrackedAchievements"] = [=[Returns the achievementID of the currently tracked achievements.]=],
 	["GetTrackedAchievements"] = [=[Returns a list of (up to 10) currently tracked achievements.]=],
