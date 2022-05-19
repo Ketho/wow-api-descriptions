@@ -599,7 +599,7 @@ local t = {
 
 	-- ["CanEditMOTD"] = [=[Returns true if you are allowed to edit the guild motd.]=],
 	-- ["CanEditMOTD"] = [=[Checks if the player can edit the guild MOTD.]=],
-	["CanEditMOTD"] = [=[True if the player can edit the guild Message of the Day.]=],
+	["CanEditMOTD"] = [=[True if the player can edit the guild message of the day.]=],
 
 	-- ["CanGuildDemote"] = [=[Returns true if you are allowed to demote a guild member.]=],
 	-- ["CanGuildDemote"] = [=[Checks if the player can demote guild members.]=],
@@ -890,7 +890,7 @@ local t = {
 
 	-- ["GetActionTexture"] = [=[Gets the texture path for the specified action.]=],
 	-- ["GetActionTexture"] = [=[Returns the filepath for an action's texture.]=],
-	["GetActionTexture"] = [=[Returns the texture icon for an action.]=],
+	["GetActionTexture"] = [=[Returns the icon texture for an action.]=],
 
 	-- ["GetActiveArtifactByRace"] = [=[Returns the info for the active artifact of raceIndex.]=],
 	-- ["GetActiveArtifactByRace"] = [=[Returns the info for a specific race's active artifact.]=],
@@ -1216,7 +1216,7 @@ local t = {
 
 	-- ["GetGuildRosterMOTD"] = [=[Returns guild's MOTD.]=],
 	-- ["GetGuildRosterMOTD"] = [=[Retrieves the guild's ''Message of the Day''.]=],
-	["GetGuildRosterMOTD"] = [=[Returns the guild Message of the Day.]=],
+	["GetGuildRosterMOTD"] = [=[Returns the guild message of the day.]=],
 
 	-- ["GetGuildRosterSelection"] = [=[Returns the index of the current selected guild member.]=],
 	-- ["GetGuildRosterSelection"] = [=[<p>Returns index of the current selected guild member in the guild roster according the active sorting. If none is selected, the return value is 0 (zero).</p>]=],
@@ -1682,9 +1682,9 @@ local t = {
 	["GetRewardXP"] = [=[Returns the [[experience]] reward for the quest in the gossip window.]=],
 
 	-- ["GetRuneCooldown"] = [=[Returns cooldown info for a given rune.]=],
-	["GetRuneCooldown"] = [=[Death Knight: Returns cooldown info for a rune.]=],
+	["GetRuneCooldown"] = [=[Returns the Death Knight's cooldown info for the specified rune.]=],
 
-	["GetRuneCount"] = [=[Death Knight: Returns the number of runes for a slot.]=],
+	["GetRuneCount"] = [=[Returns the Death Knight's number of runes for a slot.]=],
 	-- ["GetRuneCount"] = [=[Returns the rune count for the given slot.]=],
 
 	-- ["GetSavedInstanceInfo"] = [=[Gets info for an instance for which the player has saved lockout data.]=],
@@ -1760,7 +1760,7 @@ local t = {
 	-- ["GetSpellBookItemName"] = [=[Retrieves the spell name and spell rank for a spell in the player's spellbook.]=],
 
 	-- ["GetSpellBookItemTexture"] = [=[Returns the spell icon fileId for a spell in the player's spellbook.]=],
-	["GetSpellBookItemTexture"] = [=[Returns the icon of a spellbook item.]=],
+	["GetSpellBookItemTexture"] = [=[Returns the icon texture of a spellbook item.]=],
 
 	-- ["GetSpellCooldown"] = [=[Retrieves data on the cooldown of a specific spell.]=],
 	-- ["GetSpellCooldown"] = [=[Retrieves the cooldown data of the spell specified.]=],
@@ -1780,9 +1780,9 @@ local t = {
 	-- ["GetSpellTabInfo"] = [=[Retrieves info for the specified line of spells]=],
 
 	-- ["GetSpellTexture"] = [=[Returns the fileId used for the spell's icon.]=],
-	["GetSpellTexture"] = [=[Returns the icon of a spell.]=],
+	["GetSpellTexture"] = [=[Returns the icon texture of a spell.]=],
 
-	["GetStablePetFoodTypes"] = [=[Returns the food types a specific stabled pet can eat.]=],
+	["GetStablePetFoodTypes"] = [=[Returns the food types the specified stabled pet can eat.]=],
 	-- ["GetStablePetFoodTypes"] = [=[Returns a list of the food types a pet in the stable can eat.]=],
 
 	["GetStatistic"] = [=[Returns a character statistic.]=],
@@ -1797,10 +1797,10 @@ local t = {
 	["GetSummonFriendCooldown"] = [=[Returns the cooldown info of the RaF Summon Friend ability.]=],
 	-- ["GetSummonFriendCooldown"] = [=[Returns info for the cooldown time of the RaF Summon Friend ability.]=],
 
-	["GetTalentInfo"] = [=[Returns info for a specific talent.]=],
+	["GetTalentInfo"] = [=[Returns info for the specified talent.]=],
 	-- ["GetTalentInfo"] = [=[ talentID, name, texture, selected, available, spellID, unknown, row, column, known, grantedByAura]=],
 
-	["GetTargetTradeMoney"] = [=[Returns the amount of money in the trade window of the other player.]=],
+	["GetTargetTradeMoney"] = [=[Returns the amount of money in the trade window for the other player.]=],
 	-- ["GetTargetTradeMoney"] = [=[Gets the amount of money in the trade window for the target user.]=],
 
 	-- ["GetText"] = [=[Used to localize some client text.]=],
@@ -1824,116 +1824,128 @@ local t = {
 	["GetTotalAchievementPoints"] = [=[Returns the total number of achievement points earned.]=],
 	-- ["GetTotalAchievementPoints"] = [=[Returns the total number of Achievement Points earned.]=],
 
-	["GetTotemInfo"] = [=[Returns info for a specific totem.]=],
+	["GetTotemInfo"] = [=[Returns info for the specified totem.]=],
 	-- ["GetTotemInfo"] = [=[Returns info for totems]=],
 
-	["GetTrackedAchievements"] = [=[Returns the achievementID of the currently tracked achievements.]=],
-	["GetTrackedAchievements"] = [=[Returns a list of (up to 10) currently tracked achievements.]=],
+	-- ["GetTrackedAchievements"] = [=[Returns the achievementID of the currently tracked achievements.]=],
+	-- ["GetTrackedAchievements"] = [=[Returns a list of (up to 10) currently tracked achievements.]=],
+	["GetTrackedAchievements"] = [=[Returns the currently tracked achievements.]=],
 
-	["GetTrackingInfo"] = [=[Retrieves tracking info from specified id.]=],
-	["GetTrackingInfo"] = [=[Returns info regarding the specified tracking id.]=],
+	-- ["GetTrackingInfo"] = [=[Retrieves tracking info from specified id.]=],
+	-- ["GetTrackingInfo"] = [=[Returns info regarding the specified tracking id.]=],
+	["GetTrackingInfo"] = [=[Returns tracking info by index.]=],
 
-	["GetTradePlayerItemLink"] = [=[Returns an [[itemLink]] for the given item in your side of the trade window (if open)]=],
-	["GetTradePlayerItemLink"] = [=[Returns a single value: chat-ready item link.]=],
+	-- ["GetTradePlayerItemLink"] = [=[Returns an [[itemLink]] for the given item in your side of the trade window (if open)]=],
+	-- ["GetTradePlayerItemLink"] = [=[Returns a single value: chat-ready item link.]=],
+	["GetTradePlayerItemLink"] = [=[Returns the item link for an item in the trade window.]=],
 
-	["GetTradeTargetItemInfo"] = [=[Returns info for a trade item.]=],
-	["GetTradeTargetItemInfo"] = [=[Returns info for items in the target's trade window.]=],
+	-- ["GetTradeTargetItemInfo"] = [=[Returns info for a trade item.]=],
+	-- ["GetTradeTargetItemInfo"] = [=[Returns info for items in the target's trade window.]=],
+	["GetTradeTargetItemInfo"] = [=[Returns item info for the other player in the trade window.]=],
 
-	["GetTradeTargetItemLink"] = [=[Returns an [[itemLink]] for the given item in the other player's side of the trade window (if open)]=],
-	["GetTradeTargetItemLink"] = [=[Simply view, except this function is for your trading partner, ie, the other side of the trade window.]=],
+	-- ["GetTradeTargetItemLink"] = [=[Returns an [[itemLink]] for the given item in the other player's side of the trade window (if open)]=],
+	-- ["GetTradeTargetItemLink"] = [=[Simply view, except this function is for your trading partner, ie, the other side of the trade window.]=],
+	["GetTradeTargetItemLink"] = [=[Returns the item link for an item from the other player in the trade window.]=],
 
-	["GetTrainerGreetingText"] = [=[Get the trainer's greeting text.]=],
-	["GetTrainerGreetingText"] = [=[Returns the trainer greeting text.]=],
+	["GetTrainerGreetingText"] = [=[Returns the trainer's greeting text.]=],
+	-- ["GetTrainerGreetingText"] = [=[Returns the trainer greeting text.]=],
 
-	["GetTrainerSelectionIndex"] = [=[Get the index of the selected trainer service.]=],
+	-- ["GetTrainerSelectionIndex"] = [=[Get the index of the selected trainer service.]=],
 	["GetTrainerSelectionIndex"] = [=[Returns the index of the selected trainer service.]=],
 
-	["GetTrainerServiceAbilityReq"] = [=[Used for displaying the requirements to learn a new profession, profession skill or class skill.]=],
-	["GetTrainerServiceAbilityReq"] = [=[Gets the name of a requirement for training a skill and whether the player meets the requirement.]=],
+	-- ["GetTrainerServiceAbilityReq"] = [=[Used for displaying the requirements to learn a new profession, profession skill or class skill.]=],
+	-- ["GetTrainerServiceAbilityReq"] = [=[Gets the name of a requirement for training a skill and whether the player meets the requirement.]=],
+	["GetTrainerServiceAbilityReq"] = [=[Returns the name of a requirement for training a skill and if the player meets the requirement.]=],
 
-	["GetTrainerServiceCost"] = [=[Returns the cost of a specific trainer service.]=],
-	["GetTrainerServiceCost"] = [=[Returns the cost of the selected trainer service.]=],
+	["GetTrainerServiceCost"] = [=[Returns the cost of the specified trainer service.]=],
+	-- ["GetTrainerServiceCost"] = [=[Returns the cost of the selected trainer service.]=],
 
-	["GetTrainerServiceIcon"] = [=[Returns icon texture for a trainer service.]=],
-	["GetTrainerServiceIcon"] = [=[Returns the icon texture for a particular trainer service.]=],
+	-- ["GetTrainerServiceIcon"] = [=[Returns icon texture for a trainer service.]=],
+	["GetTrainerServiceIcon"] = [=[Returns the icon texture for a specific trainer service.]=],
 
-	["GetTrainerServiceLevelReq"] = [=[Get the required level to learn the skill.]=],
-	["GetTrainerServiceLevelReq"] = [=[Gets the required level to learn a skill from the trainer.]=],
+	-- ["GetTrainerServiceLevelReq"] = [=[Get the required level to learn the skill.]=],
+	-- ["GetTrainerServiceLevelReq"] = [=[Gets the required level to learn a skill from the trainer.]=],
+	["GetTrainerServiceLevelReq"] = [=[Returns the required level to learn a skill from the trainer.]=],
 
-	["GetTrainerServiceSkillReq"] = [=[Returns a String and Variable for the requirements of a specific trainer service.]=],
-	["GetTrainerServiceSkillReq"] = [=[Returns the name of the skill required, and the amount needed in that skill.  Index is the selection index obtained by [[API GetTrainerSelectionIndex|GetTrainerSelectionIndex()]].]=],
+	-- ["GetTrainerServiceSkillReq"] = [=[Returns a String and Variable for the requirements of a specific trainer service.]=],
+	["GetTrainerServiceSkillReq"] = [=[Returns the name of the required skill and the amount needed in that skill.]=],
 
-	["GetUnitSpeed"] = [=[Returns the moving speed of the unit.]=],
-	["GetUnitSpeed"] = [=[Returns a value representing the moving speed of a unit. Added in [[Patch 3.0.1]].]=],
+	["GetUnitSpeed"] = [=[Returns the movement speed of the unit.]=],
+	-- ["GetUnitSpeed"] = [=[Returns a value representing the moving speed of a unit. Added in [[Patch 3.0.1]].]=],
 
-	["GetVoidItemInfo"] = [=[Returns <code>itemID, textureName, locked, recentDeposit, isFiltered</code>.]=],
+	-- ["GetVoidItemInfo"] = [=[Returns <code>itemID, textureName, locked, recentDeposit, isFiltered</code>.]=],
 	["GetVoidItemInfo"] = [=[Returns info for a Void Storage slot]=],
 
-	["GetVoidTransferDepositInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
+	-- ["GetVoidTransferDepositInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
 	["GetVoidTransferDepositInfo"] = [=[Returns info for the item being deposited into the Void Storage.]=],
 
-	["GetVoidTransferWithdrawalInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
-	["GetVoidTransferWithdrawalInfo"] = [=[Returns info for the item being withdrawed from the Void Storage.]=],
+	-- ["GetVoidTransferWithdrawalInfo"] = [=[Returns <code>itemID, textureName</code>.]=],
+	["GetVoidTransferWithdrawalInfo"] = [=[Returns info for the item being withdrawn from the Void Storage.]=],
 
 	["GetWatchedFactionInfo"] = [=[Returns info for the currently watched faction.]=],
-	["GetWatchedFactionInfo"] = [=[Returns info for the faction that is currently being watched.]=],
+	-- ["GetWatchedFactionInfo"] = [=[Returns info for the faction that is currently being watched.]=],
 
-	["GetWeaponEnchantInfo"] = [=[Returns info for main and offhand weapon enchantments.]=],
-	["GetWeaponEnchantInfo"] = [=[Returns info for the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.]=],
+	["GetWeaponEnchantInfo"] = [=[Returns info for temporary weapon enchantments, e.g. sharpening stones.]=],
+	-- ["GetWeaponEnchantInfo"] = [=[Returns info for the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.]=],
 
-	["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone.]=],
-	["GetWorldPVPAreaInfo"] = [=[Get info regarding a world PvP zone (e.g. Wintergrasp or Tol Barad).]=],
+	-- ["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone.]=],
+	["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone, e.g. Wintergrasp or Tol Barad.]=],
 
-	["GetXPExhaustion"] = [=[Returns your character's current rested XP, nil if character is not rested.]=],
-	["GetXPExhaustion"] = [=[Returns the number of XP gained from killing mobs until "player" goes from rest state to normal state.]=],
+	-- ["GetXPExhaustion"] = [=[Returns your character's current rested XP, nil if character is not rested.]=],
+	-- ["GetXPExhaustion"] = [=[Returns the number of XP gained from killing mobs until "player" goes from rest state to normal state.]=],
+	["GetXPExhaustion"] = [=[Returns the amount of current rested XP for the character.]=],
 
-	["GetZoneText"] = [=[Returns the zone text (e.g. "Stormwind City").]=],
-	["GetZoneText"] = [=[Returns the localized name of the zone the player is in.]=],
+	-- ["GetZoneText"] = [=[Returns the zone text (e.g. "Stormwind City").]=],
+	["GetZoneText"] = [=[Returns the name of the zone the player is in.]=],
 
-	["GuildControlDelRank"] = [=[Delete rank "name". Only Guildmaster.]=],
-	["GuildControlDelRank"] = [=[ GuildControlDelRank(index)]=],
+	-- ["GuildControlDelRank"] = [=[Delete rank "name". Only Guildmaster.]=],
+	-- ["GuildControlDelRank"] = [=[ GuildControlDelRank(index)]=],
+	["GuildControlDelRank"] = [=[Deletes a guild rank, requires guild master.]=],
 
-	["GuildControlGetRankName"] = [=[Returns name of the rank at index. Any guild member can use this.]=],
-	["GuildControlGetRankName"] = [=[ GuildControlGetRankName(index)]=],
+	-- ["GuildControlGetRankName"] = [=[Returns name of the rank at index. Any guild member can use this.]=],
+	-- ["GuildControlGetRankName"] = [=[ GuildControlGetRankName(index)]=],
+	["GuildControlGetRankName"] = [=[Returns a guild rank name by index.]=],
 
-	["GuildControlSaveRank"] = [=[Saves the permissions for rank "name". Only Guildmaster.]=],
-	["GuildControlSaveRank"] = [=[ GuildControlSaveRank(name)]=],
+	-- ["GuildControlSaveRank"] = [=[Saves the permissions for rank "name". Only Guildmaster.]=],
+	-- ["GuildControlSaveRank"] = [=[ GuildControlSaveRank(name)]=],
+	["GuildControlSaveRank"] = [=[Saves the current rank name, requires guild master.]=],
 
-	["GuildControlSetRank"] = [=[Sets the currently selected rank to view.]=],
-	["GuildControlSetRank"] = [=[Selects a guild rank to modify or return info for.]=],
+	-- ["GuildControlSetRank"] = [=[Sets the currently selected rank to view.]=],
+	["GuildControlSetRank"] = [=[Selects a guild rank.]=],
 
-	["GuildControlSetRankFlag"] = [=[Enable/disable permission for an action at index. Only Guildmaster.]=],
-	["GuildControlSetRankFlag"] = [=[Sets the current ranks property at index to enabled.]=],
+	["GuildControlSetRankFlag"] = [=[Sets guild rank permissions, requires guild master.]=],
+	-- ["GuildControlSetRankFlag"] = [=[Sets the current ranks property at index to enabled.]=],
 
-	["GuildDemote"] = [=[Demotes a player "name".]=],
-	["GuildDemote"] = [=[Demotes a specified player if you have that privilege.]=],
+	-- ["GuildDemote"] = [=[Demotes a player "name".]=],
+	["GuildDemote"] = [=[Demotes the specified player in the guild.]=],
 
-	["GuildDisband"] = [=[Disbands at once your guild. You must be the guild's leader to do so. Be careful, no warning is given prior disbanding.]=],
-	["GuildDisband"] = [=[Disbands your guild.]=],
+	-- ["GuildDisband"] = [=[Disbands at once your guild. You must be the guild's leader to do so. Be careful, no warning is given prior disbanding.]=],
+	["GuildDisband"] = [=[Disbands the guild, requires guild master. No warning is given.]=],
 
-	["GuildInfo"] = [=[Displays info for the guild you are a member of.]=],
-	["GuildInfo"] = [=[Prints info for the Guild you belong to in the following format:<br>]=],
+	-- ["GuildInfo"] = [=[Displays info for the guild you are a member of.]=],
+	-- ["GuildInfo"] = [=[Prints info for the Guild you belong to in the following format:<br>]=],
+	["GuildInfo"] = [=[Prints info for the guild the player belongs to.]=],
 
-	["GuildInvite"] = [=[Invites a player to your guild.]=],
-	["GuildInvite"] = [=[Invites a player or your target to your guild if you have that privilege.]=],
+	["GuildInvite"] = [=[Invites a player to the guild.]=],
+	-- ["GuildInvite"] = [=[Invites a player or your target to your guild if you have that privilege.]=],
 
-	["GuildPromote"] = [=[Promotes a player "name".]=],
-	["GuildPromote"] = [=[Promotes a specified player if you have that privilege.]=],
+	-- ["GuildPromote"] = [=[Promotes a player "name".]=],
+	["GuildPromote"] = [=[Promotes the specified player in the guild.]=],
 
-	["GuildRosterSetOfficerNote"] = [=[Sets the officer note at index to "note".]=],
-	["GuildRosterSetOfficerNote"] = [=[Sets the public note of a guild member.]=],
+	-- ["GuildRosterSetOfficerNote"] = [=[Sets the officer note at index to "note".]=],
+	["GuildRosterSetOfficerNote"] = [=[Sets the officer note of a guild member.]=],
 
-	["GuildRosterSetPublicNote"] = [=[Sets the public note at index to "note".]=],
+	-- ["GuildRosterSetPublicNote"] = [=[Sets the public note at index to "note".]=],
 	["GuildRosterSetPublicNote"] = [=[Sets the public note of a guild member.]=],
 
-	["GuildSetLeader"] = [=[Transfers guild leadership to another character.]=],
-	["GuildSetLeader"] = [=[Promotes a character to guild leader.]=],
+	["GuildSetLeader"] = [=[Transfers guild leadership to another player.]=],
+	-- ["GuildSetLeader"] = [=[Promotes a character to guild leader.]=],
 
-	["GuildSetMOTD"] = [=[Set Guild Message of the Day to "note".]=],
+	-- ["GuildSetMOTD"] = [=[Set Guild Message of the Day to "note".]=],
 	["GuildSetMOTD"] = [=[Sets the guild message of the day.]=],
 
-	["GuildUninvite"] = [=[Removes the member "name".]=],
-	["GuildUninvite"] = [=[Removes a member of the guild.]=],
+	-- ["GuildUninvite"] = [=[Removes the member "name".]=],
+	["GuildUninvite"] = [=[Removes a player from the guild.]=],
 
 	-- ["HasAction"] = [=[Returns 1 if the player has an action in the specified slot, nil otherwise.]=],
 	-- ["HasAction"] = [=[Tests if an action slot is occupied.]=],
@@ -1941,7 +1953,7 @@ local t = {
 
 	-- ["HasPetSpells"] = [=[Returns true if the player has pet spells.]=],
 	-- ["HasPetSpells"] = [=[Returns how many abilities your pet has available.]=],
-	["HasPetSpells"] = [=[Returns the number of abilities the character's's pet has available.]=],
+	["HasPetSpells"] = [=[Returns the number of available abilities for the player's combat pet.]=],
 
 	-- ["HasPetUI"] = [=[Returns 1 if the player has a pet User Interface.]=],
 	-- ["HasPetUI"] = [=[Returns <code>True</code> if the player has a pet User Interface.]=],
@@ -1956,7 +1968,7 @@ local t = {
 
 	-- ["InCombatLockdown"] = [=[Returns true if the in-combat AddOn restrictions are active.]=],
 	-- ["InCombatLockdown"] = [=[Determines whether in-combat lockdown restrictions are active.]=],
-	["InCombatLockdown"] = [=[True if the in-combat restrictions are active.]=],
+	["InCombatLockdown"] = [=[True if the combat lockdown restrictions are active.]=],
 
 	-- ["InRepairMode"] = [=[Returns true if your cursor is in repair mode.]=],
 	-- ["InRepairMode"] = [=[Lets you know if your cursor is in repair mode. When your cursor is in repair mode, you can click on equipped items as well as items in your inventory to repair them.]=],
@@ -1972,11 +1984,11 @@ local t = {
 
 	-- ["IsActionInRange"] = [=[Test if an action is in range (1=yes, 0=no, nil=not applicable).]=],
 	-- ["IsActionInRange"] = [=[Returns whether an action is in range for use.]=],
-	["IsActionInRange"] = [=[True if the action is in range for use.]=],
+	["IsActionInRange"] = [=[True if the specified action is in range.]=],
 
 	-- ["IsActiveBattlefieldArena"] = [=[Returns true if in an Arena Match, also Returns true for the second argument if it's a registered match.]=],
 	-- ["IsActiveBattlefieldArena"] = [=[Returns if the player is inside an arena and if it's a rated match.]=],
-	["IsActiveBattlefieldArena"] = [=[True if player is inside an arena, also True if the player is in a rated arena match.]=],
+	["IsActiveBattlefieldArena"] = [=[True if player is inside a (rated) arena.]=],
 
 	-- ["IsAddOnLoadOnDemand"] = [=[Test whether an AddOn is load-on-demand.]=],
 	-- ["IsAddOnLoadOnDemand"] = [=[Determine if an AddOn is loaded on demand (via [[The TOC Format|.toc file]] dependencies or [[API LoadAddOn|LoadAddOn]]) rather than at startup]=],
@@ -1984,7 +1996,7 @@ local t = {
 
 	-- ["IsAddOnLoaded"] = [=[Returns true if the specified AddOn is loaded.]=],
 	-- ["IsAddOnLoaded"] = [=[Returns whether an addon has been loaded.]=],
-	["IsAddOnLoaded"] = [=[True if the specified addon has been, or is being loaded. Second True return indicates if the event ADDON_LOADED has been triggered.]=],
+	["IsAddOnLoaded"] = [=[True if the specified addon is loaded.]=],
 
 	-- ["IsAttackAction"] = [=[Returns 1 if an action is an 'attack' action (flashes during combat), nil otherwise.]=],
 	-- ["IsAttackAction"] = [=[Determine whether action slot is an attack action.]=],
