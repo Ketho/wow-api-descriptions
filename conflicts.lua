@@ -1992,7 +1992,7 @@ local t = {
 
 	-- ["IsAddOnLoadOnDemand"] = [=[Test whether an AddOn is load-on-demand.]=],
 	-- ["IsAddOnLoadOnDemand"] = [=[Determine if an AddOn is loaded on demand (via [[The TOC Format|.toc file]] dependencies or [[API LoadAddOn|LoadAddOn]]) rather than at startup]=],
-	["IsAddOnLoadOnDemand"] = [=[True if the specified addon is loaded on demand.]=],
+	["IsAddOnLoadOnDemand"] = [=[True if the specified addon is load-on-demand.]=],
 
 	-- ["IsAddOnLoaded"] = [=[Returns true if the specified AddOn is loaded.]=],
 	-- ["IsAddOnLoaded"] = [=[Returns whether an addon has been loaded.]=],
@@ -2000,27 +2000,27 @@ local t = {
 
 	-- ["IsAttackAction"] = [=[Returns 1 if an action is an 'attack' action (flashes during combat), nil otherwise.]=],
 	-- ["IsAttackAction"] = [=[Determine whether action slot is an attack action.]=],
-	["IsAttackAction"] = [=[True if the action slot is an attack action.]=],
+	["IsAttackAction"] = [=[True if an action is the "Auto Attack" action.]=],
 
 	-- ["IsAttackSpell"] = [=[Returns 1 if the spell is the "Attack" spell.]=],
 	-- ["IsAttackSpell"] = [=[Determine whether spell is the "Attack" spell.]=],
-	["IsAttackSpell"] = [=[True if the spell is a Attack spell.]=],
+	["IsAttackSpell"] = [=[True if a spellbook item is the "Auto Attack" spell.]=],
 
 	-- ["IsAutoRepeatAction"] = [=[Returns 1 if an action is auto-repeating, nil otherwise.]=],
 	-- ["IsAutoRepeatAction"] = [=[Returns whether action slot is auto repeating.]=],
-	["IsAutoRepeatAction"] = [=[True if the action repeats automatically.]=],
+	["IsAutoRepeatAction"] = [=[True if an action is currently auto-repeating, e.g. Shoot for wand and Auto Shot for Hunters.]=],
 
 	-- ["IsConsumableAction"] = [=[Returns 1 if an action is consumable (i.e. has a count), nil otherwise.]=],
 	-- ["IsConsumableAction"] = [=[Tests if the action is linked to a consumable item.]=],
-	["IsConsumableAction"] = [=[True if the action is a consumable.]=],
+	["IsConsumableAction"] = [=[True if an action is a consumable, i.e. it has a count.]=],
 
 	-- ["IsCurrentAction"] = [=[Returns 1 if an action is the one currently underway, nil otherwise.]=],
 	-- ["IsCurrentAction"] = [=[Determine whether an action is currently executing.]=],
-	["IsCurrentAction"] = [=[True if the action is currently executing.]=],
+	["IsCurrentAction"] = [=[True if the specified action is currently being used.]=],
 
 	-- ["IsCurrentSpell"] = [=[Returns true if the spell is currently being casted by the player or is placed in the queue to be casted next. False otherwise.]=],
 	-- ["IsCurrentSpell"] = [=[Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next.]=],
-	["IsCurrentSpell"] = [=[True if the spell is in queue to be cast next.]=],
+	["IsCurrentSpell"] = [=[True if the specified spell ID is currently being casted or queued.]=],
 
 	-- ["IsEquippableItem"] = [=[Returns whether an item can be equipped.]=],
 	-- ["IsEquippableItem"] = [=[Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.]=],
