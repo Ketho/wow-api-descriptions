@@ -1352,7 +1352,7 @@ local t = {
 	["GetLatestThreeSenders"] = [=[Returns up to three senders of unread mail.]=],
 
 	-- ["GetLocale"] = [=[Returns client locale, example 'enUS'.]=],
-	["GetLocale"] = [=[Returns the client locale.]=],
+	["GetLocale"] = [=[Returns the game client locale.]=],
 
 	["GetLootMethod"] = [=[Returns the current loot method.]=],
 	-- ["GetLootMethod"] = [=[Retrieves the Loot Method and (if applicable) Master Looter idenity.]=],
@@ -1606,7 +1606,7 @@ local t = {
 
 	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest.]=],
 	-- ["GetQuestBackgroundMaterial"] = [=[Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default "Parchment" texture.]=],
-	["GetQuestBackgroundMaterial"] = [=[Returns the background texture for the currently displayed quest.]=],
+	["GetQuestBackgroundMaterial"] = [=[Returns the background texture for the displayed quest.]=],
 
 	-- ["GetQuestID"] = [=[Returns the ID of the quest most recently displayed in a gossip frame, even after that frame is closed.]=],
 	["GetQuestID"] = [=[Returns the ID of the displayed quest at a quest giver.]=],
@@ -1988,7 +1988,7 @@ local t = {
 
 	-- ["IsActiveBattlefieldArena"] = [=[Returns true if in an Arena Match, also Returns true for the second argument if it's a registered match.]=],
 	-- ["IsActiveBattlefieldArena"] = [=[Returns if the player is inside an arena and if it's a rated match.]=],
-	["IsActiveBattlefieldArena"] = [=[True if player is inside a (rated) arena.]=],
+	["IsActiveBattlefieldArena"] = [=[True if the player is inside a (rated) arena.]=],
 
 	-- ["IsAddOnLoadOnDemand"] = [=[Test whether an AddOn is load-on-demand.]=],
 	-- ["IsAddOnLoadOnDemand"] = [=[Determine if an AddOn is loaded on demand (via [[The TOC Format|.toc file]] dependencies or [[API LoadAddOn|LoadAddOn]]) rather than at startup]=],
@@ -2024,7 +2024,7 @@ local t = {
 
 	-- ["IsEquippableItem"] = [=[Returns whether an item can be equipped.]=],
 	-- ["IsEquippableItem"] = [=[Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.]=],
-	["IsEquippableItem"] = [=[True if item is equipable by the player.]=],
+	["IsEquippableItem"] = [=[True if an item is equipable by the player.]=],
 
 	-- ["IsEquippedAction"] = [=[Returns 1 if an action is equipped (i.e. connected to an item that must be equipped), nil otherwise.]=],
 	-- ["IsEquippedAction"] = [=[Returns whether the specified action slot contains a currently equipped item.]=],
@@ -2052,19 +2052,19 @@ local t = {
 
 	-- ["IsGuildLeader"] = [=[Determine if player "name" is a guild master.]=],
 	-- ["IsGuildLeader"] = [=[This function checks if you are the guild master or not.]=],
-	["IsGuildLeader"] = [=[True if the character is the guild master.]=],
+	["IsGuildLeader"] = [=[True if the player is the guild master.]=],
 
 	-- ["IsInGroup"] = [=[Returns true if in a group.]=],
 	-- ["IsInGroup"] = [=[Returns whether the player is in a group.]=],
-	["IsInGroup"] = [=[True if in a group.]=],
+	["IsInGroup"] = [=[True if the player is in a group.]=],
 
 	-- ["IsInInstance"] = [=[Returns 1 if the player is in an instance, as well as the type of instance (pvp, raid, etc.).]=],
 	-- ["IsInInstance"] = [=[Checks whether the player is in an instance and the type of instance.]=],
-	["IsInInstance"] = [=[True if player is in an instance also returns the instance type.]=],
+	["IsInInstance"] = [=[Returns true if the player is in an instance, and the type of instance.]=],
 
-	-- ["IsInRaid"] = [=[Returns true if in a raid.]=],
+	-- ["IsInRaid"] = [=[Returns true if in a raid.]=],---------------------------------------------------------
 	-- ["IsInRaid"] = [=[Indicates whether the player is in a [specific type of] raid group.]=],
-	["IsInRaid"] = [=[True if in a raid.]=],
+	["IsInRaid"] = [=[True if the player is in a raid.]=],
 
 	-- ["IsIndoors"] = [=[Returns 1 if you are indoors, otherwise nil. Returns nil for indoor areas where you can still mount.]=],
 	-- ["IsIndoors"] = [=[Returns whether the player's character is currently indoors. Most mounts are not usable indoors.]=],
@@ -2072,19 +2072,19 @@ local t = {
 
 	-- ["IsLinuxClient"] = [=[Boolean - Returns true if WoW is being run on Linux.]=],
 	-- ["IsLinuxClient"] = [=[This is a boolean function which returns true if World of Warcraft is being run using the Linux client, it will return false with the Windows client under wine or OS X client run on other operating systems. Although there is no current official Linux client, the beta version of WoW had a Linux client, and the code retains a function to test for it.]=],
-	["IsLinuxClient"] = [=[True if player is using the Linux client.]=],
+	["IsLinuxClient"] = [=[True if on a Linux client.]=],
 
 	-- ["IsMacClient"] = [=[Returns true if WoW is being run on Mac.]=],
 	-- ["IsMacClient"] = [=[Checks to see if client is running on a Macintosh.]=],
-	["IsMacClient"] = [=[True if player is using the Mac client.]=],
+	["IsMacClient"] = [=[True if on a Mac client.]=],
 
 	-- ["IsModifiedClick"] = [=[Returns 1 if the keys for the specified action are down, nil otherwise.]=],
 	-- ["IsModifiedClick"] = [=[Indicates whether the modifier keys for the selected action are pressed.]=],
-	["IsModifiedClick"] = [=[True if the modifier key needed to activate an action is being held.]=],
+	["IsModifiedClick"] = [=[True if the modifier key needed for an an action is pressed.]=],
 
 	-- ["IsModifierKeyDown"] = [=[Equivalent to (IsShiftKeyDown() or IsControlKeyDown() or IsAltKeyDown()).]=],
 	-- ["IsModifierKeyDown"] = [=[There are three seperate levels of IsModifierKeyDown() type API functions but they all do the same basic function and return true if the specified key is currently pressed down.]=],
-	["IsModifierKeyDown"] = [=[True if any modifier key is currently down.]=],
+	["IsModifierKeyDown"] = [=[True if any modifier key is currently pressed.]=],
 
 	-- ["IsMounted"] = [=[Returns 1 if mounted, otherwise nil.]=],
 	-- ["IsMounted"] = [=[Checks to see if the player is mounted or not.]=],
@@ -2100,7 +2100,7 @@ local t = {
 
 	-- ["IsOutOfBounds"] = [=[Returns 1 if you fell off the map.]=],
 	-- ["IsOutOfBounds"] = [=[Returns whether the player's character is currently outside of the map.]=],
-	["IsOutOfBounds"] = [=[True if the character is currently outside of the map boundaries.]=],
+	["IsOutOfBounds"] = [=[True if the player is currently outside of map boundaries.]=],
 
 	-- ["IsOutdoors"] = [=[Returns 1 if you are outdoors, otherwise nil. Returns 1 for indoor areas where you can still mount.]=],
 	-- ["IsOutdoors"] = [=[Returns whether the player's character is currently outdoors.]=],
@@ -2108,15 +2108,15 @@ local t = {
 
 	-- ["IsPassiveSpell"] = [=[Returns whether the icon in your spellbook is a Passive ability. Formerly IsSpellPassive(spell).]=],
 	-- ["IsPassiveSpell"] = [=[Returns whether the icon in your spellbook is a Passive ability (not necessarily a spell). (And actually noted as so in spellbook)]=],
-	["IsPassiveSpell"] = [=[True if the spell specified is a passive ability.]=],
+	["IsPassiveSpell"] = [=[True if the specified spell is a passive ability.]=],
 
 	-- ["IsPetAttackActive"] = [=[Returns true if the pet is currently attacking.]=],
 	-- ["IsPetAttackActive"] = [=[Returns if the pet's attack action is currently active.]=],
-	["IsPetAttackActive"] = [=[True if the pet's attack action is currently active.]=],
+	["IsPetAttackActive"] = [=[True if the pet is currently auto attacking.]=],
 
 	-- ["IsQuestCompletable"] = [=[Returns true if a quest is possible to complete.]=],
 	-- ["IsQuestCompletable"] = [=[Returns true if the currently loaded quest in the quest window is completable.]=],
-	["IsQuestCompletable"] = [=[True if the currently displayed quest is completable.]=],
+	["IsQuestCompletable"] = [=[True if the displayed quest at a quest giver can be completed.]=],
 
 	-- ["IsResting"] = [=[Returns 1 if your character is currently resting.]=],
 	-- ["IsResting"] = [=[Checks to see if Player is resting.]=],
@@ -2124,11 +2124,11 @@ local t = {
 
 	-- ["IsSpellInRange"] = [=[Is nil for no valid target, 0 for out of range, 1 for in range.]=],
 	-- ["IsSpellInRange"] = [=[Returns whether a given spell is in range.]=],
-	["IsSpellInRange"] = [=[True if the user is in range to use the specified spell on the target indicated.]=],
+	["IsSpellInRange"] = [=[True if the player is in range to use the specified spell on the target unit.]=],
 
 	-- ["IsSpellOverlayed"] = [=[Returns whether the spell is currently affected by a proc (glow highlighting).]=],
 	-- ["IsSpellOverlayed"] = [=[Returns whether spellID is using SpellActivationAlert (glowing-circle around it) currently, or not.]=],
-	["IsSpellOverlayed"] = [=[True if the specified spell has a activation alert active.]=],
+	["IsSpellOverlayed"] = [=[True if the specified spell currently has a proc / spell activation alert (glowing border).]=],
 
 	-- ["IsStealthed"] = [=[Returns 1 if stealthed or shadowmeld, otherwise nil.]=],
 	-- ["IsStealthed"] = [=[Indicates whether the player is stealthed.]=],
@@ -2148,19 +2148,19 @@ local t = {
 
 	-- ["IsTitleKnown"] = [=[Returns 1 if the title is valid for the player, otherwise 0.]=],
 	-- ["IsTitleKnown"] = [=[Returns whether the player can use a title.]=],
-	["IsTitleKnown"] = [=[True if the character can use a title.]=],
+	["IsTitleKnown"] = [=[True if the character can use a player title.]=],
 
 	-- ["IsTradeskillTrainer"] = [=[Returns 1 if trainer is for a tradeskill.]=],
 	-- ["IsTradeskillTrainer"] = [=[Determine whether last opened trainer window offered trade skill (profession) abilities.]=],
-	["IsTradeskillTrainer"] = [=[True if the last opened training window offered trade skill abilities.]=],
+	["IsTradeskillTrainer"] = [=[True if the training window is used for a profession trainer.]=],
 
 	-- ["IsUsableAction"] = [=[Returns 1 if an action can be used at present, nil otherwise.]=],
 	-- ["IsUsableAction"] = [=[Determine if an action can be used (you have sufficient mana, reagents and the action is not on cooldown).]=],
-	["IsUsableAction"] = [=[True if the character can use the action.]=],
+	["IsUsableAction"] = [=[True if the character can currently use the specified action (sufficient mana, reagents and not on cooldown).]=],
 
 	-- ["IsWindowsClient"] = [=[Returns true if WoW is being run on Windows.]=],
 	-- ["IsWindowsClient"] = [=[Checks to see if client is running on Windows.]=],
-	["IsWindowsClient"] = [=[True if player is using the Windows client.]=],
+	["IsWindowsClient"] = [=[True if on a Windows client.]=],
 
 	-- ["ItemTextGetCreator"] = [=[Get the creator of the current text (if player-created).]=],
 	-- ["ItemTextGetCreator"] = [=[Get the creator of an item text.]=],
@@ -2172,157 +2172,157 @@ local t = {
 
 	-- ["ItemTextGetMaterial"] = [=[Get the material on which the text is printed.]=],
 	-- ["ItemTextGetMaterial"] = [=[Get the material which an item text is written on.]=],
-	["ItemTextGetMaterial"] = [=[Returns the material that the item text is displayed on.]=],
+	["ItemTextGetMaterial"] = [=[Returns the material texture for the item text.]=],
 
 	-- ["ItemTextGetPage"] = [=[Get the page number of the currently viewed page.]=],
 	-- ["ItemTextGetPage"] = [=[Get the number of the current item text page.]=],
-	["ItemTextGetPage"] = [=[The page number of the currently displayed page of item text, starting at 1.]=],
+	["ItemTextGetPage"] = [=[Returns the page number of the currently displayed page.]=],
 
 	-- ["ItemTextGetText"] = [=[Get the page contents of the currently viewed page.]=],
 	-- ["ItemTextGetText"] = [=[Get the page contents of the current item text.]=],
-	["ItemTextGetText"] = [=[Returns the page contents of the current item text.]=],
+	["ItemTextGetText"] = [=[Returns the contents of the currently displayed page.]=],
 
 	-- ["ItemTextHasNextPage"] = [=[Determine if there is another page after the current one.]=],
 	-- ["ItemTextHasNextPage"] = [=[Determine if there is a page after the current page.]=],
-	["ItemTextHasNextPage"] = [=[Determines if there is a page of item text after the current page.]=],
+	["ItemTextHasNextPage"] = [=[True if there is a page after the current page.]=],
 
 	-- ["ItemTextNextPage"] = [=[Request the next page of the text.]=],
-	["ItemTextNextPage"] = [=[Request the next page of an Item Text]=],
+	["ItemTextNextPage"] = [=[Moves to the next page of the item text.]=],
 
 	-- ["ItemTextPrevPage"] = [=[Request the previous page of the text.]=],
-	["ItemTextPrevPage"] = [=[Request the previous page of an Item Text.]=],
+	["ItemTextPrevPage"] = [=[Moves to the previous page of the item text.]=],
 
 	-- ["JoinBattlefield"] = [=[Queue for a battleground either solo or as a group.]=],
-	["JoinBattlefield"] = [=[Queues the player, or the player's group, for a battlefield instance.]=],
+	["JoinBattlefield"] = [=[Joins the battleground queue solo or as a group.]=],
 
 	-- ["JoinChannelByName"] = [=[Join the specified chat channel (with optional password, and register for specified frame).]=],
 	-- ["JoinChannelByName"] = [=[Joins the channel with the specified name. A player can be in a maximum of 10 chat channels.]=],
-	["JoinChannelByName"] = [=[Joins the channel with the specified name.]=],
+	["JoinChannelByName"] = [=[Joins the specified chat channel.]=],
 
 	-- ["JoinPermanentChannel"] = [=[Permanently join the specified chat channel (with optional password, and register for specified frame)]=],
 	-- ["JoinPermanentChannel"] = [=[Seems to have the same effect as [[API_JoinChannelByName]].]=],
-	["JoinPermanentChannel"] = [=[Joins the channel with the specified name.]=],
+	["JoinPermanentChannel"] = [=[Joins the specified chat channel; the channel will be rejoined after relogging.]=],
 
 	-- ["JoinTemporaryChannel"] = [=[Temporary join the specified chat channel (with optional password, and register for specified frame)]=],
 	-- ["JoinTemporaryChannel"] = [=[Seems to have the same effect as [[API_JoinChannelByName]] (except that a channel joined by JoinTemporaryChannel is left at logout).]=],
-	["JoinTemporaryChannel"] = [=[Joins the channel with the specified name and is left at logout.]=],
+	["JoinTemporaryChannel"] = [=[Joins the specified chat channel; the channel will be left on logout.]=],
 
 	-- ["JumpOrAscendStart"] = [=[Makes the player jump.]=],
-	["JumpOrAscendStart"] = [=[Makes the player jump, or travel upward when swimming or flying.]=],
+	["JumpOrAscendStart"] = [=[Makes the character jump or swim/fly upwards.]=],
 
 	-- ["LFGTeleport"] = [=[Teleports the player to or from a dungeon.]=],
-	["LFGTeleport"] = [=[Teleports the player to or from an LFG dungeon.]=],
+	["LFGTeleport"] = [=[Teleports the player to or from a LFG dungeon.]=],
 
 	-- ["LeaveBattlefield"] = [=[Leave the current battlefield.]=],
-	["LeaveBattlefield"] = [=[Leaves the current battlefield]=],
+	["LeaveBattlefield"] = [=[Leaves the current battleground.]=],
 
 	-- ["ListChannelByName"] = [=[Lists members in the given channel to the chat window.]=],
-	["ListChannelByName"] = [=[Lists members in the specified channel to the chat window.]=],
+	["ListChannelByName"] = [=[Prints the list of members in the specified channel.]=],
 
 	-- ["ListChannels"] = [=[Lists all of the channels into the chat window.]=],
 	-- ["ListChannels"] = [=[Lists all of the channels.]=],
-	["ListChannels"] = [=[Lists all of the custom chat channels into the chat window.]=],
+	["ListChannels"] = [=[Prints the list of currently joined chat channel.]=],
 
 	-- ["LoadAddOn"] = [=[Request loading of a Load-On-Demand AddOn.]=],
-	["LoadAddOn"] = [=[Loads a LoadOnDemand addon.]=],
+	["LoadAddOn"] = [=[Loads the specified LoadOnDemand addon.]=],
 
 	-- ["LoadBindings"] = [=[Loads default, account or character specific key binding set into memory from disk.]=],
-	["LoadBindings"] = [=[Loads a binding set into memory, activating those bindings.]=],
+	["LoadBindings"] = [=[Loads default, account or character specific key bindings.]=],
 
-	-- ["LoggingChat"] = [=[Gets or sets whether logging chat to Logs\WoWChatLog.txt is enabled.]=],
 	-- ["LoggingChat"] = [=[Toggles the chat logging and returns the current state.]=],
-	["LoggingChat"] = [=[Toggles chat log file writing and returns the current state.]=],
+	["LoggingChat"] = [=[Gets or sets whether logging chat to Logs\WoWChatLog.txt is enabled.]=],
 
-	-- ["LoggingCombat"] = [=[Gets or sets whether logging combat to Logs\WoWCombatLog.txt is enabled.]=],
 	-- ["LoggingCombat"] = [=[Toggles logging for the combat log and returns the current state.]=],
-	["LoggingCombat"] = [=[Toggles combat log file writing and returns the current state.]=],
+	["LoggingCombat"] = [=[Gets or sets whether logging combat to Logs\WoWCombatLog.txt is enabled.]=],
 
 	-- ["Logout"] = [=[Logs the user out of the game.]=],
 	-- ["Logout"] = [=[Logs the player character out of the game.]=],
-	["Logout"] = [=[Logs the character out of the game.]=],
+	["Logout"] = [=[Logs the player out of the game.]=],
 
 	-- ["LootSlot"] = [=[Used to loot the specified slot.]=],
 	-- ["LootSlot"] = [=[This will attempt to loot the specified slot. If you must confirm that you want to loot the slot (BoP, loot rolls, etc), then a follow-up call to [[API ConfirmLootSlot|ConfirmLootSlot]] is needed.]=],
-	["LootSlot"] = [=[Attempt to loot the specified slot.]=],
+	["LootSlot"] = [=[Loots the specified slot; can require confirmation with [[API ConfirmLootSlot|ConfirmLootSlot]].]=],
 
-	["MouselookStart"] = [=[Enters mouse look mode; mouse movement is used to adjust movement/facing direction.]=],
-	["MouselookStart"] = [=[Enters mouse look mode, during which mouse movement is used to alter the character's movement/facing direction.]=],
+	-- ["MouselookStart"] = [=[Enters mouse look mode; mouse movement is used to adjust movement/facing direction.]=],
+	["MouselookStart"] = [=[Enters mouse look mode; alters the character's movement/facing direction.]=],
 
-	["MouselookStop"] = [=[Exits mouse look mode; mouse movement is used to move the mouse cursor.]=],
-	["MouselookStop"] = [=[Exits mouse look mode; allows mouse input to move the mouse cursor.]=],
+	-- ["MouselookStop"] = [=[Exits mouse look mode; mouse movement is used to move the mouse cursor.]=],
+	["MouselookStop"] = [=[Exits mouse look mode.]=],
 
-	["MoveViewDownStart"] = [=[Begins rotating the camera downward.]=],
-	["MoveViewDownStart"] = [=[Begins rotating the camera down around your character.]=],
+	-- ["MoveViewDownStart"] = [=[Begins rotating the camera downward.]=],
+	["MoveViewDownStart"] = [=[Starts rotating the camera downward.]=],
 
-	["MoveViewDownStop"] = [=[Stops rotating the camera after [[API MoveViewDownStart|MoveViewDownStart]]() is called.]=],
-	["MoveViewDownStop"] = [=[Stops rotating the camera Down.]=],
+	-- ["MoveViewDownStop"] = [=[Stops rotating the camera after [[API MoveViewDownStart|MoveViewDownStart]]() is called.]=],
+	["MoveViewDownStop"] = [=[Stops rotating the camera downward.]=],
 
-	["MoveViewInStop"] = [=[Stops zooming the camera in after [[API MoveViewInStart|MoveViewInStart]]() is called.]=],
-	["MoveViewInStop"] = [=[Stops moving the camera In.]=],
+	-- ["MoveViewInStop"] = [=[Stops zooming the camera in after [[API MoveViewInStart|MoveViewInStart]]() is called.]=],
+	["MoveViewInStop"] = [=[Stops zooming the camera in.]=],
 
-	["MoveViewLeftStart"] = [=[Begins rotating the camera to the Left.]=],
-	["MoveViewLeftStart"] = [=[Begins rotating the camera to the left around your character.]=],
+	-- ["MoveViewLeftStart"] = [=[Begins rotating the camera to the Left.]=],
+	["MoveViewLeftStart"] = [=[Starts rotating the camera to the left.]=],
 
-	["MoveViewLeftStop"] = [=[Stops rotating the camera after [[API MoveViewLeftStart|MoveViewLeftStart]]() is called.]=],
-	["MoveViewLeftStop"] = [=[Stops rotating the camera to the Left.]=],
+	-- ["MoveViewLeftStop"] = [=[Stops rotating the camera after [[API MoveViewLeftStart|MoveViewLeftStart]]() is called.]=],
+	["MoveViewLeftStop"] = [=[Stops rotating the camera to the left.]=],
 
-	["MoveViewOutStop"] = [=[Stops zooming the camera out after [[API MoveViewOutStart|MoveViewOutStart]]() is called.]=],
-	["MoveViewOutStop"] = [=[Stops moving the camera out.]=],
+	-- ["MoveViewOutStop"] = [=[Stops zooming the camera out after [[API MoveViewOutStart|MoveViewOutStart]]() is called.]=],
+	["MoveViewOutStop"] = [=[Stops zooming the camera out.]=],
 
-	["MoveViewRightStart"] = [=[Begins rotating the camera to the Right.]=],
-	["MoveViewRightStart"] = [=[Begins rotating the camera to the right around your character.]=],
+	-- ["MoveViewRightStart"] = [=[Begins rotating the camera to the Right.]=],
+	["MoveViewRightStart"] = [=[Starts rotating the camera to the right.]=],
 
-	["MoveViewRightStop"] = [=[Stops rotating the camera after [[API MoveViewRightStart|MoveViewRightStart]]() is called.]=],
-	["MoveViewRightStop"] = [=[Stops rotating the camera to the Right.]=],
+	-- ["MoveViewRightStop"] = [=[Stops rotating the camera after [[API MoveViewRightStart|MoveViewRightStart]]() is called.]=],
+	["MoveViewRightStop"] = [=[Stops rotating the camera to the right.]=],
 
-	["MoveViewUpStart"] = [=[Begins rotating the camera upward.]=],
-	["MoveViewUpStart"] = [=[Begins rotating the camera up around your character.]=],
+	-- ["MoveViewUpStart"] = [=[Begins rotating the camera up around your character.]=],
+	["MoveViewUpStart"] = [=[Starts rotating the camera upward.]=],
 
-	["MoveViewUpStop"] = [=[Stops rotating the camera after [[API MoveViewUpStart|MoveViewUpStart]]() is called.]=],
-	["MoveViewUpStop"] = [=[Stops rotating the camera Up.]=],
+	-- ["MoveViewUpStop"] = [=[Stops rotating the camera after [[API MoveViewUpStart|MoveViewUpStart]]() is called.]=],
+	["MoveViewUpStop"] = [=[Stops rotating the camera upward.]=],
 
-	["NeutralPlayerSelectFaction"] = [=[Allows Pandaren to choose a faction.]=],
-	["NeutralPlayerSelectFaction"] = [=[Aligns a Neutral player character with the Horde/Alliance.]=],
+	-- ["NeutralPlayerSelectFaction"] = [=[Aligns a Neutral player character with the Horde/Alliance.]=],
+	["NeutralPlayerSelectFaction"] = [=[Allows a Pandaren to choose a faction.]=],
 
-	["NoPlayTime"] = [=[Returns whether the account is considered "unhealthy". This function is only relevant on Chinese realms.]=],
-	["NoPlayTime"] = [=[Returns if the account is considered "unhealthy". This is only relevant on Chinese realms.]=],
+	-- ["NoPlayTime"] = [=[Returns whether the account is considered "unhealthy". This function is only relevant on Chinese realms.]=],
+	["NoPlayTime"] = [=[True if the account is considered "unhealthy"; only relevant on Chinese realms.]=],
 
-	["NotifyInspect"] = [=[Requests info for a unit's inventory and talents from the server.]=],
-	["NotifyInspect"] = [=[Requests a unit's inventory and talent info to inspect it.]=],
+	-- ["NotifyInspect"] = [=[Requests info for a unit's inventory and talents from the server.]=],
+	-- ["NotifyInspect"] = [=[Requests a unit's inventory and talent info to inspect it.]=],
+	["NotifyInspect"] = [=[Requests another player's inventory and talent info before inspecting.]=],
 
-	["NumTaxiNodes"] = [=[Returns the number of nodes (flight paths) on an open taxi map.]=],
-	["NumTaxiNodes"] = [=[Returns the total number of flight points on the taxi map.]=],
+	-- ["NumTaxiNodes"] = [=[Returns the total number of flight points on the taxi map.]=],
+	["NumTaxiNodes"] = [=[Returns the number of flight paths on the taxi map.]=],
 
-	["OfferPetition"] = [=[Offers a petition to your target, inviting them to join your would-be guild/arena team.]=],
-	["OfferPetition"] = [=[Offer the target to sign your petition (only if the petition frame is visible)]=],
+	-- ["OfferPetition"] = [=[Offers a petition to your target, inviting them to join your would-be guild/arena team.]=],
+	-- ["OfferPetition"] = [=[Offer the target to sign your petition (only if the petition frame is visible)]=],
+	["OfferPetition"] = [=[Offers a petition to your target.]=],
 
-	["PartialPlayTime"] = [=[Returns whether the account is considered "tired". This function is only relevant on Chinese realms.]=],
-	["PartialPlayTime"] = [=[Returns whether the current billing unit is considered "tired" or not.]=],
+	-- ["PartialPlayTime"] = [=[Returns whether the current billing unit is considered "tired" or not.]=],
+	["PartialPlayTime"] = [=[Trye if the account is considered "tired"; only relevant on Chinese realms.]=],
 
+	-- ["PetAssistMode"] = [=[Switches pet to Assist mode.]=],
 	["PetAssistMode"] = [=[Set your pet to Assist mode.]=],
-	["PetAssistMode"] = [=[Switches pet to Assist mode.]=],
 
-	["PetCanBeAbandoned"] = [=[Returns true if the pet is abandonable.]=],
-	["PetCanBeAbandoned"] = [=[Retuns true if the pet is abandonable.]=],
+	-- ["PetCanBeAbandoned"] = [=[Returns true if the pet is abandonable.]=],
+	["PetCanBeAbandoned"] = [=[True if the pet can be abandoned.]=],
 
-	["PetCanBeRenamed"] = [=[Returns true if the pet can be renamed.]=],
-	["PetCanBeRenamed"] = [=[Retuns true if the pet can be renamed.]=],
+	-- ["PetCanBeRenamed"] = [=[Returns true if the pet can be renamed.]=],
+	["PetCanBeRenamed"] = [=[True if the pet can be renamed.]=],
 
-	["PetRename"] = [=[Renames the pet.]=],
+	-- ["PetRename"] = [=[Renames the pet.]=],
 	["PetRename"] = [=[Renames your pet.]=],
 
-	["PetStopAttack"] = [=[Stop the attack of the pet.]=],
-	["PetStopAttack"] = [=[Stops pet from attacking.]=],
+	-- ["PetStopAttack"] = [=[Stop the attack of the pet.]=],
+	["PetStopAttack"] = [=[Stops the pet from attacking.]=],
 
-	["PickupAction"] = [=[Drags an action out of the specified quickbar slot and holds it on the cursor.]=],
-	["PickupAction"] = [=[Pick up an action for drag-and-drop.]=],
+	-- ["PickupAction"] = [=[Drags an action out of the specified quickbar slot and holds it on the cursor.]=],
+	["PickupAction"] = [=[Pick up an action onto the cursor.]=],
 
 	-- ["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
 	-- ["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
 	["PickupCompanion"] = [=[Picks up a mount onto the cursor.]=],
 
-	["PickupInventoryItem"] = [=[Picks up an item from the player's worn inventory.]=],
-	["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
+	-- ["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
+	["PickupInventoryItem"] = [=[Picks up / interacts with an equipment slot.]=],
 
 	["PickupMacro"] = [=[Places the specified macro onto the cursor.]=],
 	["PickupMacro"] = [=[Pick up a macro from the macro frame and place it on the cursor]=],
