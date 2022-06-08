@@ -44,7 +44,7 @@ local t = {
 	["C_ArtifactUI.Clear"] = [=[Clears data of the last opened artifact weapon.]=],
 	["C_AuctionHouse.CalculateCommodityDeposit"] = [=[Returns required deposit for posting a commodity and quantity.]=],
 	["C_AuctionHouse.CalculateItemDeposit"] = [=[Returns required deposit for posting a specific item and quantity.]=],
-	["C_AuctionHouse.CanCancelAuction"] = [=[Returns if if the auction can be cancelled. If it can't, load it with [[API C_AuctionHouse.QueryOwnedAuctions|QueryOwnedAuctions]].]=],
+	["C_AuctionHouse.CanCancelAuction"] = [=[Returns if the auction can be cancelled. If it can't, load it with [[API C_AuctionHouse.QueryOwnedAuctions|QueryOwnedAuctions]].]=],
 	["C_AuctionHouse.CancelCommoditiesPurchase"] = [=[Abort an incomplete commodity purchase to avoid it conflicting with another purchase.]=],
 	["C_AuctionHouse.CancelSell"] = [=[Stop posting auctions for an non-commodity item.]=],
 	["C_AuctionHouse.CloseAuctionHouse"] = [=[Close the auction house window.]=],
