@@ -76,7 +76,7 @@ local t = {
 	-- ["AscendStop"] = [=[Apparent null function that performs {{api|nop|no operation}}.]=],
 
 	-- ["AssistUnit"] = [=[Instructs your character to assist the specified unit.]=],
-	["AssistUnit"] = [=[Assists the specified unit by targeting the same target.]=],
+	["AssistUnit"] = [=[Assists the unit by targeting the same target.]=],
 
 	-- ["AttackTarget"] = [=[Attacks the targetted unit.]=],
 	-- ["AttackTarget"] = [=[Toggles auto-attacking of the player's current target.]=],
@@ -615,7 +615,7 @@ local t = {
 
 	-- ["CanInspect"] = [=[Returns whether you can inspect the specified unit.]=],
 	-- ["CanInspect"] = [=[Returns whether you can inspect a particular unit.]=],
-	["CanInspect"] = [=[True if the player can inspect the specified unit.]=],
+	["CanInspect"] = [=[True if the player can inspect the unit.]=],
 
 	-- ["CanJoinBattlefieldAsGroup"] = [=[Returns nil if the player can not do a group join for a battlefield.]=],
 	-- ["CanJoinBattlefieldAsGroup"] = [=[Returns, whether the player can join a battlefield as group or not.]=],
@@ -2578,7 +2578,7 @@ local t = {
 	["SortGuildRoster"] = [=[Sorts the guild roster on a certain column.]=],
 	-- ["SortGuildRoster"] = [=[<p>Sorts the guild roster on a certain column. Sorts by name by default. Repeating the same sort will revert sorting.</p>]=],
 
-	["SpellCanTargetUnit"] = [=[True if the spell awaiting target selection can be cast on the specified unit.]=],
+	["SpellCanTargetUnit"] = [=[True if the spell awaiting target selection can be cast on the unit.]=],
 	-- ["SpellCanTargetUnit"] = [=[Checks if the spell awaiting target selection can be cast on a specified unit.]=],
 
 	["SpellIsTargeting"] = [=[True if a spell is about to be cast and is waiting for the player to select a target.]=],
@@ -2590,7 +2590,7 @@ local t = {
 	["SpellStopTargeting"] = [=[Cancels the spell awaiting target selection.]=],
 	-- ["SpellStopTargeting"] = [=[Cancels the spell awaiting target selection.  ]=],
 
-	["SpellTargetUnit"] = [=[Casts the spell awaiting target selection on the specified unit.]=],
+	["SpellTargetUnit"] = [=[Casts the spell awaiting target selection on the unit.]=],
 	-- ["SpellTargetUnit"] = [=[This specifies the target that the spell should use without needing you to click the target or make it your main target.]=],
 
 	-- ["SplitContainerItem"] = [=[Picks up part of a stack.]=],
@@ -2612,152 +2612,152 @@ local t = {
 	["SwapRaidSubgroup"] = [=[Swaps two raid members into different groups.]=],
 	-- ["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
 
-	["TakeInboxItem"] = [=[Take the attached item from the mailbox message at index.]=],
-	["TakeInboxItem"] = [=[Take all money attached in a given letter in your inbox.]=],
+	["TakeInboxItem"] = [=[Takes the attached item from the mailbox message.]=],
+	-- ["TakeInboxItem"] = [=[Take all money attached in a given letter in your inbox.]=],
 
 	["TakeInboxMoney"] = [=[Take the attached money from the mailbox message at index.]=],
-	["TakeInboxMoney"] = [=[Take all money attached in a given letter in your inbox]=],
+	-- ["TakeInboxMoney"] = [=[Take all money attached in a given letter in your inbox]=],
 
-	["TakeTaxiNode"] = [=[Takes the named taxi node.]=],
-	["TakeTaxiNode"] = [=[Begins travelling to the specified taxi map node, if possible.]=],
+	-- ["TakeTaxiNode"] = [=[Takes the named taxi node.]=],
+	["TakeTaxiNode"] = [=[Travels to the specified flight path node.]=],
 
-	["TargetLastEnemy"] = [=[Selects the last targetted enemy as the current target.]=],
-	["TargetLastEnemy"] = [=[Selects the last targeted enemy as the current target.]=],
+	-- ["TargetLastEnemy"] = [=[Selects the last targetted enemy as the current target.]=],
+	["TargetLastEnemy"] = [=[Targets the previously targeted enemy.]=],
 
-	["TargetNearestFriend"] = [=[Selects the nearest friendly unit as the current target.]=],
-	["TargetNearestFriend"] = [=[This function will select the nearest friendly unit.]=],
+	["TargetNearestFriend"] = [=[Targets the nearest friendly unit.]=],
+	-- ["TargetNearestFriend"] = [=[This function will select the nearest friendly unit.]=],
 
-	["TargetUnit"] = [=[Selects the specified unit as the current target.]=],
+	-- ["TargetUnit"] = [=[Selects the specified unit as the current target.]=],
 	["TargetUnit"] = [=[Targets the specified unit.]=],
 
-	["TaxiNodeCost"] = [=[Returns the cost in copper of a node.]=],
-	["TaxiNodeCost"] = [=[Returns the cost of a flight point in copper, unconfirmed if it is before faction cost reductions.]=],
+	-- ["TaxiNodeCost"] = [=[Returns the cost in copper of a node.]=],
+	["TaxiNodeCost"] = [=[Returns the cost of the flight path in copper.]=],
 
-	["TaxiNodeGetType"] = [=[Returns the status of a node.]=],
-	["TaxiNodeGetType"] = [=[Returns the type of a taxi map node.]=],
+	-- ["TaxiNodeGetType"] = [=[Returns the status of a node.]=],
+	["TaxiNodeGetType"] = [=[Returns the type of a flight path node.]=],
 
-	["TaxiNodeName"] = [=[Returns the name of a node.]=],
-	["TaxiNodeName"] = [=[Returns the name of a node on the taxi map.]=],
+	["TaxiNodeName"] = [=[Returns the name of a flight path node.]=],
+	-- ["TaxiNodeName"] = [=[Returns the name of a node on the taxi map.]=],
 
-	["TaxiNodePosition"] = [=[Returns position (x,y) of node on the map.]=],
+	-- ["TaxiNodePosition"] = [=[Returns position (x,y) of node on the map.]=],
 	["TaxiNodePosition"] = [=[Returns the position of a flight point on the taxi map.]=],
 
-	["TurnLeftStart"] = [=[The player starts turning left at the specified time.]=],
-	["TurnLeftStart"] = [=[The player begins turning left at the specified time.]=],
+	-- ["TurnLeftStart"] = [=[The player starts turning left at the specified time.]=],
+	["TurnLeftStart"] = [=[Turns the player left at the specified time.]=],
 
-	["TurnOrActionStart"] = [=[Begin "Right Click" in the 3D world.]=],
-	["TurnOrActionStart"] = [=[Begin "Right click" in the 3D game world.]=],
+	-- ["TurnOrActionStart"] = [=[Begin "Right Click" in the 3D world.]=],
+	["TurnOrActionStart"] = [=[Starts a "right click" in the 3D game world.]=],
 
-	["TurnOrActionStop"] = [=[End "Right Click" in the 3D world.]=],
-	["TurnOrActionStop"] = [=[End "Right click" in the 3D game world.]=],
+	-- ["TurnOrActionStop"] = [=[End "Right Click" in the 3D world.]=],
+	["TurnOrActionStop"] = [=[Stops a "right click" in the 3D game world.]=],
 
-	["TurnRightStart"] = [=[The player starts turning right at the specified time.]=],
-	["TurnRightStart"] = [=[The player begins turning right at the specified time.]=],
+	-- ["TurnRightStart"] = [=[The player starts turning right at the specified time.]=],
+	["TurnRightStart"] = [=[Turns the player right at the specified time.]=],
 
-	["UninviteUnit"] = [=[Kick a unit from the party if player is group leader; or initiate a kick vote in an LFD group.]=],
-	["UninviteUnit"] = [=[Removes a player from the party/raid group if you're the party leader, or initiates a vote to kick a player from a Dungeon Finder group.]=],
+	-- ["UninviteUnit"] = [=[Kick a unit from the party if player is group leader; or initiate a kick vote in an LFD group.]=],
+	["UninviteUnit"] = [=[Removes a player from the group if you're the leader, or initiates a vote to kick.]=],
 
-	["UnitAffectingCombat"] = [=[Determine if the unit is in combat or has aggro. (returns nil if "false" and 1 if "true")]=],
-	["UnitAffectingCombat"] = [=[Determine whether a unit is in combat or has aggro.]=],
+	-- ["UnitAffectingCombat"] = [=[Determine if the unit is in combat or has aggro. (returns nil if "false" and 1 if "true")]=],
+	["UnitAffectingCombat"] = [=[True if the unit is in combat.]=],
 
-	["UnitArmor"] = [=[Returns the armor statistics relevant to the specified unit.]=],
-	["UnitArmor"] = [=[Returns the armor statistics relevant to the specified target.<syntaxhighlight lang="lua">]=],
+	["UnitArmor"] = [=[Returns the armor stats for the unit.]=],
+	-- ["UnitArmor"] = [=[Returns the armor statistics relevant to the specified target.<syntaxhighlight lang="lua">]=],
 
-	["UnitAura"] = [=[Returns info for buffs and debuffs of a unit.]=],
-	["UnitAura"] = [=[Returns the buffs/debuffs on a unit.]=],
+	-- ["UnitAura"] = [=[Returns info for buffs and debuffs of a unit.]=],
+	["UnitAura"] = [=[Returns the buffs/debuffs for the unit.]=],
 
-	["UnitClass"] = [=[Returns the class name of the specified unit (e.g., "Warrior" or "Shaman").]=],
-	["UnitClass"] = [=[Returns the class of the specified unit.]=],
+	-- ["UnitClass"] = [=[Returns the class name of the specified unit (e.g., "Warrior" or "Shaman").]=],
+	["UnitClass"] = [=[Returns the class of the unit.]=],
 
-	["UnitCreatureFamily"] = [=[Returns the type of creature of the specified unit (e.g., "Crab").]=],
-	["UnitCreatureFamily"] = [=[Returns the creature family of the specified unit (e.g., "Crab" or "Wolf"). Only works on Beasts and Demons, since the family's only function is to determine what abilities the unit will have if a hunter or warlock tames it; however, works on most currently untameable Beasts for reasons of backward and forward compatibility. Returns nil if the creature isn't a Beast or doesn't belong to a family that includes a tameable creature.]=],
+	["UnitCreatureFamily"] = [=[Returns the creature type of the unit (e.g. Crab).]=],
+	-- ["UnitCreatureFamily"] = [=[Returns the creature family of the specified unit (e.g., "Crab" or "Wolf"). Only works on Beasts and Demons, since the family's only function is to determine what abilities the unit will have if a hunter or warlock tames it; however, works on most currently untameable Beasts for reasons of backward and forward compatibility. Returns nil if the creature isn't a Beast or doesn't belong to a family that includes a tameable creature.]=],
 
-	["UnitCreatureType"] = [=[Returns the classification type of creature of the specified unit (e.g., "Beast").]=],
-	["UnitCreatureType"] = [=[Returns the creature type of the specified unit.]=],
+	["UnitCreatureType"] = [=[Returns the creature classification type of the unit (e.g. Beast).]=],
+	-- ["UnitCreatureType"] = [=[Returns the creature type of the specified unit.]=],
 
-	["UnitDamage"] = [=[Returns the damage statistics relevant to the specified unit.]=],
-	["UnitDamage"] = [=[Unit damage returns info for your current damage stats. Doesn't seem to return usable values for mobs, NPCs, or other players. The method returns 7 values, only some of which appear to be useful.]=],
+	["UnitDamage"] = [=[Returns the damage stats for the unit.]=],
+	-- ["UnitDamage"] = [=[Unit damage returns info for your current damage stats. Doesn't seem to return usable values for mobs, NPCs, or other players. The method returns 7 values, only some of which appear to be useful.]=],
 
-	["UnitDetailedThreatSituation"] = [=[Returns detailed info for the specified unit's threat on a mob.]=],
+	-- ["UnitDetailedThreatSituation"] = [=[Returns detailed info for the specified unit's threat on a mob.]=],
 	["UnitDetailedThreatSituation"] = [=[Returns detailed info for the threat status of one unit against another.]=],
 
 	["UnitDistanceSquared"] = [=[Returns the squared distance to a unit in your group.]=],
-	["UnitDistanceSquared"] = [=[Returns the squared distance to a unit in your group]=],
+	-- ["UnitDistanceSquared"] = [=[Returns the squared distance to a unit in your group]=],
 
-	["UnitExists"] = [=[Returns 1 if the specified unit exists, nil otherwise.]=],
-	["UnitExists"] = [=[Determines if the unit exists.]=],
+	-- ["UnitExists"] = [=[Returns 1 if the specified unit exists, nil otherwise.]=],
+	["UnitExists"] = [=[True if the unit exists.]=],
 
-	["UnitFactionGroup"] = [=[Returns the faction group id and name of the specified unit. (eg. "Alliance") - string returned is localization-independent (used in filepath)]=],
-	["UnitFactionGroup"] = [=[Get the name of the faction (Horde/Alliance) a unit belongs to.]=],
+	-- ["UnitFactionGroup"] = [=[Returns the faction group id and name of the specified unit. (eg. "Alliance") - string returned is localization-independent (used in filepath)]=],
+	["UnitFactionGroup"] = [=[Returns the faction (Horde/Alliance) a unit belongs to.]=],
 
-	["UnitGUID"] = [=[Returns the GUID as a string for the specified unit matching the GUIDs used by the new combat logs.]=],
+	-- ["UnitGUID"] = [=[Returns the GUID as a string for the specified unit matching the GUIDs used by the new combat logs.]=],
 	["UnitGUID"] = [=[Returns the GUID of the unit.]=],
 
-	["UnitHasIncomingResurrection"] = [=[Returns whether the unit is currently being resurrected.]=],
-	["UnitHasIncomingResurrection"] = [=[Checks if the unit is currently being resurrected.]=],
+	-- ["UnitHasIncomingResurrection"] = [=[Returns whether the unit is currently being resurrected.]=],
+	["UnitHasIncomingResurrection"] = [=[True if the unit is currently being resurrected.]=],
 
-	["UnitHealth"] = [=[Returns the current health, in points, of the specified unit.]=],
-	["UnitHealth"] = [=[Returns the current health of the specified unit.]=],
+	-- ["UnitHealth"] = [=[Returns the current health, in points, of the specified unit.]=],
+	["UnitHealth"] = [=[Returns the current health of the unit.]=],
 
-	["UnitHealthMax"] = [=[Returns the maximum health, in points, of the specified unit.]=],
-	["UnitHealthMax"] = [=[Returns the maximum health of the specified unit.]=],
+	-- ["UnitHealthMax"] = [=[Returns the maximum health, in points, of the specified unit.]=],
+	["UnitHealthMax"] = [=[Returns the maximum health of the unit.]=],
 
-	["UnitHonor"] = [=[Returns the amount of honor the unit has for the current rank.]=],
-	["UnitHonor"] = [=[Returns  the current amount of honor the unit has for the current rank.]=],
+	-- ["UnitHonor"] = [=[Returns the amount of honor the unit has for the current rank.]=],
+	["UnitHonor"] = [=[Returns the current amount of honor the unit has for the current rank.]=],
 
-	["UnitHonorLevel"] = [=[Returns the current honor rank for the unit.]=],
-	["UnitHonorLevel"] = [=[Returns the current honor level of a unit.]=],
+	["UnitHonorLevel"] = [=[Returns the current honor rank of the unit.]=],
+	-- ["UnitHonorLevel"] = [=[Returns the current honor level of a unit.]=],
 
 	["UnitHonorMax"] = [=[Returns the maximum amount of honor for the current rank.]=],
-	["UnitHonorMax"] = [=[Returns the amount of honor the current rank maxes out.]=],
+	-- ["UnitHonorMax"] = [=[Returns the amount of honor the current rank maxes out.]=],
 
-	["UnitInBattleground"] = [=[Returns the unit index if the unit is in your battleground, nil otherwise.]=],
-	["UnitInBattleground"] = [=[Used to determine the position number of the specified unit in the battleground raid.]=],
+	["UnitInBattleground"] = [=[Returns the unit index if the unit is in your battleground.]=],
+	-- ["UnitInBattleground"] = [=[Used to determine the position number of the specified unit in the battleground raid.]=],
 
-	["UnitInParty"] = [=[Returns true if the unit is a member of your party.]=],
-	["UnitInParty"] = [=[Returns 1 if the unit is a player in your party, nil otherwise.]=],
+	["UnitInParty"] = [=[True if the unit is a member of your party.]=],
+	-- ["UnitInParty"] = [=[Returns 1 if the unit is a player in your party, nil otherwise.]=],
 
-	["UnitInRaid"] = [=[Returns 1 if unit is in your raid, nil if not.]=],
-	["UnitInRaid"] = [=[Returns a number if the unit is in your raid group.]=],
+	-- ["UnitInRaid"] = [=[Returns 1 if unit is in your raid, nil if not.]=],
+	["UnitInRaid"] = [=[Returns the index if the unit is in your raid group.]=],
 
-	["UnitInRange"] = [=[Returns true if the unit (party or raid only) is in range of a typical spell such as flash heal.]=],
-	["UnitInRange"] = [=[Returns whether a unit is close to the player.]=],
+	["UnitInRange"] = [=[True if the unit (party or raid only) is in 40 yards range.]=],
+	-- ["UnitInRange"] = [=[Returns whether a unit is close to the player.]=],
 
-	["UnitIsAFK"] = [=[Only works for friendly units.]=],
-	["UnitIsAFK"] = [=[Checks if a unit is AFK.]=],
+	-- ["UnitIsAFK"] = [=[Only works for friendly units.]=],
+	["UnitIsAFK"] = [=[True if a friendly unit is AFK (Away from keyboard).]=],
 
-	["UnitIsCharmed"] = [=[Returns true if the specified unit is charmed, false otherwise.]=],
-	["UnitIsCharmed"] = [=[Checks if a specified unit is currently charmed.]=],
+	["UnitIsCharmed"] = [=[True if the unit is charmed.]=],
+	-- ["UnitIsCharmed"] = [=[Checks if a specified unit is currently charmed.]=],
 
-	["UnitIsConnected"] = [=[Returns 1 if the specified unit is connected or npc, nil if offline or not a valid unit.]=],
-	["UnitIsConnected"] = [=[Returns true if the unit is connected to the game (i.e. not offline), false otherwise.]=],
+	-- ["UnitIsConnected"] = [=[Returns 1 if the specified unit is connected or npc, nil if offline or not a valid unit.]=],
+	["UnitIsConnected"] = [=[True if the unit is connected to the game (i.e. not offline).]=],
 
-	["UnitIsDND"] = [=[Only works for friendly units.]=],
-	["UnitIsDND"] = [=[Checks if a unit is DND (Do Not Disturb).]=],
+	-- ["UnitIsDND"] = [=[Only works for friendly units.]=],
+	["UnitIsDND"] = [=[True if a unit is DND (Do not disturb).]=],
 
-	["UnitIsDead"] = [=[Returns true if the specified unit is dead, nil otherwise.]=],
-	["UnitIsDead"] = [=[Returns a value indicating whether the specified unit is dead.]=],
+	["UnitIsDead"] = [=[True if the unit is dead.]=],
+	-- ["UnitIsDead"] = [=[Returns a value indicating whether the specified unit is dead.]=],
 
-	["UnitIsDeadOrGhost"] = [=[Returns true if the specified unit is dead or a ghost, nil otherwise.]=],
-	["UnitIsDeadOrGhost"] = [=[Returns a value indicating whether the specified unit is dead or in ghost form.]=],
+	["UnitIsDeadOrGhost"] = [=[True if the unit is dead or in ghost form.]=],
+	-- ["UnitIsDeadOrGhost"] = [=[Returns a value indicating whether the specified unit is dead or in ghost form.]=],
 
-	["UnitIsEnemy"] = [=[Returns true if the specified units are enemies, false otherwise.]=],
-	["UnitIsEnemy"] = [=[This function will determine if the target is hostile towards you.]=],
+	["UnitIsEnemy"] = [=[True if the specified units are hostile to each other.]=],
+	-- ["UnitIsEnemy"] = [=[This function will determine if the target is hostile towards you.]=],
 
-	["UnitIsFeignDeath"] = [=[Returns true if the specified unit (must be a member of your group) is feigning death.]=],
-	["UnitIsFeignDeath"] = [=[Returns whether a unit is feigning death.]=],
+	["UnitIsFeignDeath"] = [=[True if the unit (must be a group member) is feigning death.]=],
+	-- ["UnitIsFeignDeath"] = [=[Returns whether a unit is feigning death.]=],
 
-	["UnitIsFriend"] = [=[Returns true if the specified units are friends (PC of same faction or friendly NPC), false otherwise.]=],
-	["UnitIsFriend"] = [=[This function will determine whether two units are friendly to each other (i.e. able to help each other in combat).]=],
+	-- ["UnitIsFriend"] = [=[Returns true if the specified units are friends (PC of same faction or friendly NPC), false otherwise.]=],
+	["UnitIsFriend"] = [=[True if the specified units are friendly to each other.]=],
 
-	["UnitIsGhost"] = [=[Returns true if the specified unit is a ghost, false otherwise.]=],
-	["UnitIsGhost"] = [=[Returns a value indicating whether the specified unit is in ghost form.]=],
+	["UnitIsGhost"] = [=[True if the unit is in ghost form.]=],
+	-- ["UnitIsGhost"] = [=[Returns a value indicating whether the specified unit is in ghost form.]=],
 
-	["UnitIsPVP"] = [=[Returns true if the specified unit is flagged for PVP, false otherwise.]=],
-	["UnitIsPVP"] = [=[Checks to see if a unit is flagged for PvP or not.]=],
+	["UnitIsPVP"] = [=[True if the unit is flagged for PVP.]=],
+	-- ["UnitIsPVP"] = [=[Checks to see if a unit is flagged for PvP or not.]=],
 
-	["UnitIsPVPFreeForAll"] = [=[Returns true if the specified unit is flagged for free-for-all PVP, false otherwise.]=],
-	["UnitIsPVPFreeForAll"] = [=[Checks if a unit is flagged for free-for-all PVP. (ex. from being in a world arena)]=],
+	["UnitIsPVPFreeForAll"] = [=[True if the unit is flagged for free-for-all PVP (e.g. in a world arena).]=],
+	-- ["UnitIsPVPFreeForAll"] = [=[Checks if a unit is flagged for free-for-all PVP. (ex. from being in a world arena)]=],
 
 	["UnitIsPlayer"] = [=[Returns true if the specified unit is a player character, false otherwise.]=],
 	["UnitIsPlayer"] = [=[Checks if a specified unit is a player.]=],
