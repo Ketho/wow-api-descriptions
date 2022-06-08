@@ -144,7 +144,7 @@ local t = {
 
 	-- ["BuyTrainerService"] = [=[Used for buying new/upgrading professions, profession items and class skills.]=],
 	-- ["BuyTrainerService"] = [=[Buys a service available at the current trainer.]=],
-	["BuyTrainerService"] = [=[Buys a trainer service, e.g. class skills and profession recipes.]=],
+	["BuyTrainerService"] = [=[Buys a trainer service (e.g. class skills and profession recipes).]=],
 
 	-- ["BuybackItem"] = [=[Buys back a sold item.]=],
 	-- ["BuybackItem"] = [=[Buyback an item from a merchant if you have the merchant window open.]=],
@@ -152,7 +152,7 @@ local t = {
 
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns area point of interest info.]=],
 	-- ["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest that normally appears on the world map while one is inside the zone, such as World PvP objectives.]=],
-	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest, e.g. World PvP objectives.]=],
+	["C_AreaPoiInfo.GetAreaPOIInfo"] = [=[Returns info for an area point of interest (e.g. World PvP objectives).]=],
 
 	-- ["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left for an area POI.]=],
 	["C_AreaPoiInfo.GetAreaPOISecondsLeft"] = [=[Returns the time left in seconds for an area point of interest.]=],
@@ -194,7 +194,7 @@ local t = {
 
 	-- ["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided when a building is active.]=],
 	-- ["C_ContributionCollector.GetBuffs"] = [=[Retrieve the [[buff]]s provided by a building on the [[Broken Shore]] or from a Warfront.]=],
-	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided by a building, e.g. in a [[Warfront]].]=],
+	["C_ContributionCollector.GetBuffs"] = [=[Returns the buffs provided by a building (e.g. in a [[Warfront]]).]=],
 
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data.]=],
 	-- ["C_ContributionCollector.IsAwaitingRewardQuestData"] = [=[Returns whether the contribution API is waiting for quest data. Unused in the FrameXML.]=],
@@ -305,7 +305,7 @@ local t = {
 	["C_GossipInfo.GetPoiForUiMapID"] = [=[Returns any gossip point of interest on the map.]=],
 
 	-- ["C_GossipInfo.GetPoiInfo"] = [=[Returns gossip poi info.]=],
-	["C_GossipInfo.GetPoiInfo"] = [=[Returns info for a gossip point of interest, e.g. the red flags when asking city guards for directions.]=],
+	["C_GossipInfo.GetPoiInfo"] = [=[Returns info for a gossip point of interest (e.g. the red flags when asking city guards for directions).]=],
 
 	-- ["C_GossipInfo.GetText"] = [=[Retrieves the gossip text.]=],
 	["C_GossipInfo.GetText"] = [=[Returns the gossip text.]=],
@@ -642,7 +642,7 @@ local t = {
 
 	-- ["CancelItemTempEnchantment"] = [=[Cancels a temporary weapon enchant on ''weaponHand'' (1 for Main hand, 2 for Off hand).]=],
 	-- ["CancelItemTempEnchantment"] = [=[Removes temporary item buffs, such as Rogue poisons, Shaman weapon buffs, and sharpening stones from either the Main Hand or Off Hand equipment slots.]=],
-	["CancelItemTempEnchantment"] = [=[Removes temporary weapon enchants, e.g. Rogue poisons and sharpening stones.]=],
+	["CancelItemTempEnchantment"] = [=[Removes temporary weapon enchants (e.g. Rogue poisons and sharpening stones).]=],
 
 	-- ["CancelPendingEquip"] = [=[This function is used to cancel a pending equip.]=],
 	-- ["CancelPendingEquip"] = [=[Cancels a pending equip operation.]=],
@@ -742,7 +742,7 @@ local t = {
 
 	-- ["ConfirmAcceptQuest"] = [=[Accepts an offered quest that has been started by a party member; usually escort quests. (Might only be available after QUEST_ACCEPT_CONFIRM event.)]=],
 	-- ["ConfirmAcceptQuest"] = [=[Accept an escort quest being started by a player nearby.  ]=],
-	["ConfirmAcceptQuest"] = [=[Accepts a quest started by a group member, e.g. escort quests.]=],
+	["ConfirmAcceptQuest"] = [=[Accepts a quest started by a group member (e.g. escort quests).]=],
 
 	["ConfirmLootRoll"] = [=[Confirms a loot roll.]=],
 	-- ["ConfirmLootRoll"] = [=[Confirm your loot roll after either {{api|t=e|CONFIRM_LOOT_ROLL}} or {{api|t=e|CONFIRM_DISENCHANT_ROLL}} fires.]=],
@@ -964,7 +964,7 @@ local t = {
 
 	-- ["GetBattlefieldStatData"] = [=[Get info for a player from a column thats specific to a battleground (like Warsong Gulch flag captures).]=],
 	-- ["GetBattlefieldStatData"] = [=[Get data from the custom battlefield scoreboard columns.]=],
-	["GetBattlefieldStatData"] = [=[Returns battlefield-specific info for a player, e.g. Warsong Gulch flag captures.]=],
+	["GetBattlefieldStatData"] = [=[Returns battlefield-specific info for a player (e.g. Warsong Gulch flag captures).]=],
 
 	-- ["GetBattlefieldStatus"] = [=[Get the battlefield's current status.]=],
 	-- ["GetBattlefieldStatus"] = [=[Get the status of the arena, battleground, or wargame that the player is either queued for or inside.]=],
@@ -1014,7 +1014,7 @@ local t = {
 
 	-- ["GetBonusBarOffset"] = [=[Determine which page of bonus actions to show.]=],
 	-- ["GetBonusBarOffset"] = [=[Returns the current bonus action bar index.]=],
-	["GetBonusBarOffset"] = [=[Returns the current bonus action bar index, e.g. for the Rogue stealth bar.]=],
+	["GetBonusBarOffset"] = [=[Returns the current bonus action bar index (e.g. for the Rogue stealth bar).]=],
 
 	-- ["GetBuildInfo"] = [=[Returns info for current client build.]=],
 	-- ["GetBuildInfo"] = [=[Returns info for the current client build.]=],
@@ -1316,7 +1316,7 @@ local t = {
 
 	-- ["GetItemQualityColor"] = [=[Returns the RGB color codes for a quality.]=],
 	-- ["GetItemQualityColor"] = [=[Returns RGB color codes for an item [[quality]].]=],
-	["GetItemQualityColor"] = [=[Returns the RGB color code for an item quality.]=],
+	["GetItemQualityColor"] = [=[Returns the color for an item quality.]=],
 
 	-- ["GetItemSpell"] = [=[Returns name, rank.]=],
 	-- ["GetItemSpell"] = [=[Returns spell info for a specific item.]=],
@@ -1332,7 +1332,7 @@ local t = {
 
 	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Returns info on the weekly point limits.]=],
 	-- ["GetLFGDungeonRewardCapBarInfo"] = [=[Retrieves info on the weekly limits for currency rewards from the dungeon system (i.e. Valor Point Cap)]=],
-	["GetLFGDungeonRewardCapBarInfo"] = [=[Returns the weekly limits reward for a currency, e.g. Valor Point Cap.]=],
+	["GetLFGDungeonRewardCapBarInfo"] = [=[Returns the weekly limits reward for a currency (e.g. Valor Point Cap).]=],
 
 	-- ["GetLFGQueueStats"] = [=[Returns current state and wait times for being in queue.]=],
 	["GetLFGQueueStats"] = [=[Returns info for the current LFG queue.]=],
@@ -1424,7 +1424,7 @@ local t = {
 
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button that triggered a mouse down/up/click/doubleclick event.]=],
 	-- ["GetMouseButtonClicked"] = [=[Returns the name of the button responsible causing the OnClick handler to fire.]=],
-	["GetMouseButtonClicked"] = [=[Returns the mouse button responsible during an OnClick event, e.g. "RightButton".]=],
+	["GetMouseButtonClicked"] = [=[Returns the mouse button responsible during an OnClick event (e.g. "RightButton").]=],
 
 	-- ["GetMouseFocus"] = [=[Returns the frame that currently has the mouse focus.]=],
 	-- ["GetMouseFocus"] = [=[Returns the frame that is currently receiving mouse events.  The frame must have enableMouse="true"]=],
@@ -1885,11 +1885,11 @@ local t = {
 	["GetWatchedFactionInfo"] = [=[Returns info for the currently watched faction.]=],
 	-- ["GetWatchedFactionInfo"] = [=[Returns info for the faction that is currently being watched.]=],
 
-	["GetWeaponEnchantInfo"] = [=[Returns info for temporary weapon enchantments, e.g. sharpening stones.]=],
+	["GetWeaponEnchantInfo"] = [=[Returns info for temporary weapon enchantments (e.g. sharpening stones).]=],
 	-- ["GetWeaponEnchantInfo"] = [=[Returns info for the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.]=],
 
 	-- ["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone.]=],
-	["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone, e.g. Wintergrasp or Tol Barad.]=],
+	["GetWorldPVPAreaInfo"] = [=[Returns info for a world PvP zone (e.g. Wintergrasp or Tol Barad).]=],
 
 	-- ["GetXPExhaustion"] = [=[Returns your character's current rested XP, nil if character is not rested.]=],
 	-- ["GetXPExhaustion"] = [=[Returns the number of XP gained from killing mobs until "player" goes from rest state to normal state.]=],
@@ -1900,7 +1900,7 @@ local t = {
 
 	-- ["GuildControlDelRank"] = [=[Delete rank "name". Only Guildmaster.]=],
 	-- ["GuildControlDelRank"] = [=[ GuildControlDelRank(index)]=],
-	["GuildControlDelRank"] = [=[Deletes a guild rank, requires guild master.]=],
+	["GuildControlDelRank"] = [=[Deletes a guild rank.]=],
 
 	-- ["GuildControlGetRankName"] = [=[Returns name of the rank at index. Any guild member can use this.]=],
 	-- ["GuildControlGetRankName"] = [=[ GuildControlGetRankName(index)]=],
@@ -1908,19 +1908,19 @@ local t = {
 
 	-- ["GuildControlSaveRank"] = [=[Saves the permissions for rank "name". Only Guildmaster.]=],
 	-- ["GuildControlSaveRank"] = [=[ GuildControlSaveRank(name)]=],
-	["GuildControlSaveRank"] = [=[Saves the current rank name, requires guild master.]=],
+	["GuildControlSaveRank"] = [=[Saves the current rank name.]=],
 
 	-- ["GuildControlSetRank"] = [=[Sets the currently selected rank to view.]=],
 	["GuildControlSetRank"] = [=[Selects a guild rank.]=],
 
-	["GuildControlSetRankFlag"] = [=[Sets guild rank permissions, requires guild master.]=],
+	["GuildControlSetRankFlag"] = [=[Sets guild rank permissions.]=],
 	-- ["GuildControlSetRankFlag"] = [=[Sets the current ranks property at index to enabled.]=],
 
 	-- ["GuildDemote"] = [=[Demotes a player "name".]=],
 	["GuildDemote"] = [=[Demotes the specified player in the guild.]=],
 
 	-- ["GuildDisband"] = [=[Disbands at once your guild. You must be the guild's leader to do so. Be careful, no warning is given prior disbanding.]=],
-	["GuildDisband"] = [=[Disbands the guild, requires guild master. No warning is given.]=],
+	["GuildDisband"] = [=[Disbands the guild; no warning is given.]=],
 
 	-- ["GuildInfo"] = [=[Displays info for the guild you are a member of.]=],
 	-- ["GuildInfo"] = [=[Prints info for the Guild you belong to in the following format:<br>]=],
@@ -2008,7 +2008,7 @@ local t = {
 
 	-- ["IsAutoRepeatAction"] = [=[Returns 1 if an action is auto-repeating, nil otherwise.]=],
 	-- ["IsAutoRepeatAction"] = [=[Returns whether action slot is auto repeating.]=],
-	["IsAutoRepeatAction"] = [=[True if an action is currently auto-repeating, e.g. Shoot for wand and Auto Shot for Hunters.]=],
+	["IsAutoRepeatAction"] = [=[True if an action is currently auto-repeating (e.g. Shoot for wand and Auto Shot for Hunters).]=],
 
 	-- ["IsConsumableAction"] = [=[Returns 1 if an action is consumable (i.e. has a count), nil otherwise.]=],
 	-- ["IsConsumableAction"] = [=[Tests if the action is linked to a consumable item.]=],
@@ -2759,128 +2759,128 @@ local t = {
 	["UnitIsPVPFreeForAll"] = [=[True if the unit is flagged for free-for-all PVP (e.g. in a world arena).]=],
 	-- ["UnitIsPVPFreeForAll"] = [=[Checks if a unit is flagged for free-for-all PVP. (ex. from being in a world arena)]=],
 
-	["UnitIsPlayer"] = [=[Returns true if the specified unit is a player character, false otherwise.]=],
-	["UnitIsPlayer"] = [=[Checks if a specified unit is a player.]=],
+	["UnitIsPlayer"] = [=[True if the unit is a player character.]=],
+	-- ["UnitIsPlayer"] = [=[Checks if a specified unit is a player.]=],
 
-	["UnitIsPossessed"] = [=[Returns whether the specified unit is currently under control of another (i.e. "pet" when casting Mind Control).]=],
-	["UnitIsPossessed"] = [=[Checks if a specified unit is possessed.]=],
+	["UnitIsPossessed"] = [=[True if the unit is currently under control of another (e.g. Mind Control).]=],
+	-- ["UnitIsPossessed"] = [=[Checks if a specified unit is possessed.]=],
 
-	["UnitIsSameServer"] = [=[Returns whether the specified unit is from the same server as the player's character.]=],
-	["UnitIsSameServer"] = [=[Returns whether the specified unit is from the player's own realm (or, equivalently, a linked [[Connected Realm]]).]=],
+	-- ["UnitIsSameServer"] = [=[Returns whether the specified unit is from the same server as the player's character.]=],
+	["UnitIsSameServer"] = [=[True if the unit is from the same (connected) realm.]=],
 
-	["UnitIsTrivial"] = [=[Returns true if the specified unit is trivial (Trivial means the unit is "grey" to the player. false otherwise.]=],
-	["UnitIsTrivial"] = [=[Indicates whether a unit is trivial.]=],
+	["UnitIsTrivial"] = [=[Ttrue if the unit is trivial (i.e. "grey" to the player).]=],
+	-- ["UnitIsTrivial"] = [=[Indicates whether a unit is trivial.]=],
 
-	["UnitIsUnit"] = [=[Determine if two units are the same unit.]=],
-	["UnitIsUnit"] = [=[Returns true if the two specified units are the same, false otherwise.]=],
+	-- ["UnitIsUnit"] = [=[Determine if two units are the same unit.]=],
+	["UnitIsUnit"] = [=[True if the specified units are the same unit.]=],
 
-	["UnitIsVisible"] = [=[1 if visible, nil if not.]=],
-	["UnitIsVisible"] = [=[Indicates whether the game client (rather than the player) can see unit.]=],
+	-- ["UnitIsVisible"] = [=[1 if visible, nil if not.]=],
+	["UnitIsVisible"] = [=[True if the game client can see the unit.]=],
 
-	["UnitLevel"] = [=[Returns the level of a unit.]=],
-	["UnitLevel"] = [=[Returns the unit's level.]=],
+	["UnitLevel"] = [=[Returns the level of the unit.]=],
+	-- ["UnitLevel"] = [=[Returns the unit's level.]=],
 
-	["UnitName"] = [=[Returns the name (and realm name) of a unit.]=],
+	-- ["UnitName"] = [=[Returns the name (and realm name) of a unit.]=],
 	["UnitName"] = [=[Returns the name and realm of the unit.]=],
 
-	["UnitOnTaxi"] = [=[Returns 1 if unit is on a taxi.]=],
-	["UnitOnTaxi"] = [=[Returns 1 if unit is on a taxi, nil otherwise.]=],
+	-- ["UnitOnTaxi"] = [=[Returns 1 if unit is on a taxi.]=],
+	["UnitOnTaxi"] = [=[True if the unit is on a flight path.]=],
 
-	["UnitPVPName"] = [=[Returns unit's name with PvP rank prefix (e.g., "Corporal Allianceguy").]=],
-	["UnitPVPName"] = [=[Returns the unit's conjoined title and name.]=],
+	["UnitPVPName"] = [=[Returns the unit's name with title (e.g. "Bob the Explorer").]=],
+	-- ["UnitPVPName"] = [=[Returns the unit's conjoined title and name.]=],
 
-	["UnitPlayerControlled"] = [=[Returns true if the specified unit is controlled by a player, false otherwise.]=],
-	["UnitPlayerControlled"] = [=[Returns whether the "unit" is controlled by a player or an NPC.]=],
+	["UnitPlayerControlled"] = [=[True if the unit is controlled by a player.]=],
+	-- ["UnitPlayerControlled"] = [=[Returns whether the "unit" is controlled by a player or an NPC.]=],
 
-	["UnitPlayerOrPetInParty"] = [=[Returns 1 if the specified unit/pet is a member of the player's party, nil otherwise (returns nil for "player" and "pet")]=],
-	["UnitPlayerOrPetInParty"] = [=[Returns whether a unit is another player in your party or the pet of another player in your party.]=],
+	["UnitPlayerOrPetInParty"] = [=[True if different unit or pet is a member of the party.]=],
+	-- ["UnitPlayerOrPetInParty"] = [=[Returns whether a unit is another player in your party or the pet of another player in your party.]=],
 
-	["UnitPlayerOrPetInRaid"] = [=[Returns 1 if the specified unit/pet is a member of the player's raid, nil otherwise (returns nil for "player" and "pet")]=],
-	["UnitPlayerOrPetInRaid"] = [=[Returns 1 if the unit is in your raid group, nil otherwise.]=],
+	-- ["UnitPlayerOrPetInRaid"] = [=[Returns 1 if the specified unit/pet is a member of the player's raid, nil otherwise (returns nil for "player" and "pet")]=],
+	["UnitPlayerOrPetInRaid"] = [=[True if different unit or pet is a member of the raid.]=],
 
-	["UnitPosition"] = [=[Returns the position of a unit within the current world area.]=],
-	["UnitPosition"] = [=[Returns the position of a unit within the current world area. Does not work in raids, dungeons and competitive instances.]=],
+	["UnitPosition"] = [=[Returns the position of a unit in the current world area.]=],
+	-- ["UnitPosition"] = [=[Returns the position of a unit within the current world area. Does not work in raids, dungeons and competitive instances.]=],
 
-	["UnitPower"] = [=[Returns current power of the specified unit (Replaces [[API UnitMana|UnitMana]])]=],
-	["UnitPower"] = [=[Returns the current power of the specified unit.]=],
+	-- ["UnitPower"] = [=[Returns current power of the specified unit (Replaces [[API UnitMana|UnitMana]])]=],
+	["UnitPower"] = [=[Returns the current power resource of the unit.]=],
 
-	["UnitPowerMax"] = [=[Returns max power of the specified unit (Replaces [[API UnitManaMax|UnitManaMax]])]=],
-	["UnitPowerMax"] = [=[Returns the maximum power of the specified unit.]=],
+	-- ["UnitPowerMax"] = [=[Returns max power of the specified unit (Replaces [[API UnitManaMax|UnitManaMax]])]=],
+	["UnitPowerMax"] = [=[Returns the maximum power resource of the unit.]=],
 
-	["UnitRace"] = [=[Returns the race name of the specified unit (e.g., "Human" or "Troll").]=],
-	["UnitRace"] = [=[Returns the race of the specified unit.]=],
+	-- ["UnitRace"] = [=[Returns the race name of the specified unit (e.g., "Human" or "Troll").]=],
+	["UnitRace"] = [=[Returns the race of the unit.]=],
 
 	["UnitRangedAttackPower"] = [=[Returns the ranged attack power of the unit.]=],
-	["UnitRangedAttackPower"] = [=[Returns the unit's ranged attack power and modifiers.]=],
+	-- ["UnitRangedAttackPower"] = [=[Returns the unit's ranged attack power and modifiers.]=],
 
 	["UnitRangedDamage"] = [=[Returns the ranged attack speed and damage of the unit.]=],
-	["UnitRangedDamage"] = [=[Returns the unit's ranged damage and speed.]=],
+	-- ["UnitRangedDamage"] = [=[Returns the unit's ranged damage and speed.]=],
 
-	["UnitReaction"] = [=[Returns a number corresponding to the reaction (aggressive, neutral or friendly) of the first unit towards the second unit.]=],
-	["UnitReaction"] = [=[Determine the reaction of the specified unit to the other specified unit.]=],
+	-- ["UnitReaction"] = [=[Returns a number corresponding to the reaction (aggressive, neutral or friendly) of the first unit towards the second unit.]=],
+	["UnitReaction"] = [=[Returns the reaction of the specified unit to another unit.]=],
 
-	["UnitSelectionColor"] = [=[Returns RGBA values for the color of a unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
-	["UnitSelectionColor"] = [=[Returns RGBA values for the color of the unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
+	-- ["UnitSelectionColor"] = [=[Returns RGBA values for the color of a unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
+	["UnitSelectionColor"] = [=[Returns the color of the outline and circle underneath the unit.]=],
 
-	["UnitSelectionType"] = [=[Returns a number corresponding to the type of a unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
-	["UnitSelectionType"] = [=[Returns a number corresponding to the type of the unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
+	-- ["UnitSelectionType"] = [=[Returns a number corresponding to the type of a unit's selection (the outline around and the circle underneath a player character or an NPC).]=],
+	["UnitSelectionType"] = [=[Returns the selection type of the outline and circle underneath the unit.]=],
 
-	["UnitSex"] = [=[Returns a code indicating the gender of the specified unit, if known. (1=unknown, 2=male, 3=female)]=],
-	["UnitSex"] = [=[Returns the gender of the specified unit.]=],
+	-- ["UnitSex"] = [=[Returns a code indicating the gender of the specified unit, if known. (1=unknown, 2=male, 3=female)]=],
+	["UnitSex"] = [=[Returns the gender of the unit.]=],
 
-	["UnitStat"] = [=[Returns the statistics relevant to the specified unit and basic attribute (e.g., strength or intellect).]=],
-	["UnitStat"] = [=[Returns info for one of the unit's stats (strength, agility, stamina, intellect, spirit).]=],
+	-- ["UnitStat"] = [=[Returns the statistics relevant to the specified unit and basic attribute (e.g., strength or intellect).]=],
+	["UnitStat"] = [=[Returns the basic attributes for a unit (strength, agility, stamina, intellect).]=],
 
-	["UnitThreatSituation"] = [=[Returns the specified unit's threat status on a mob.]=],
-	["UnitThreatSituation"] = [=[Returns the threat status of one unit against another.]=],
+	-- ["UnitThreatSituation"] = [=[Returns the specified unit's threat status on a mob.]=],
+	["UnitThreatSituation"] = [=[Returns the threat status of the specified unit to another unit.]=],
 
-	["UnitUsingVehicle"] = [=[Returns whether the specified unit is currently using a vehicle (including transitioning between seats).]=],
-	["UnitUsingVehicle"] = [=[Checks if a specified unit is currently in a vehicle, including transitioning between seats.]=],
+	-- ["UnitUsingVehicle"] = [=[Returns whether the specified unit is currently using a vehicle (including transitioning between seats).]=],
+	["UnitUsingVehicle"] = [=[True if the unit is currently in a vehicle.]=],
 
-	["UnitXP"] = [=[Returns the number of experience points the specified unit has in their current level. (only works on your player)]=],
-	["UnitXP"] = [=[Returns the current XP of a unit - only works if the unit is the player.]=],
+	-- ["UnitXP"] = [=[Returns the number of experience points the specified unit has in their current level. (only works on your player)]=],
+	["UnitXP"] = [=[Returns the current XP of the unit; only works on the player.]=],
 
-	["UnitXPMax"] = [=[Returns the number of experience points the specified unit needs to reach their next level. (only works on your player)]=],
-	["UnitXPMax"] = [=[Returns the max XP of a "unit" - only works if the unit is the player.]=],
+	-- ["UnitXPMax"] = [=[Returns the number of experience points the specified unit needs to reach their next level. (only works on your player)]=],
+	["UnitXPMax"] = [=[Returns the maximum XP of the unit; only works on the player.]=],
 
-	["UnlockVoidStorage"] = [=[Pays for and activates the Void Storage.]=],
-	["UnlockVoidStorage"] = [=[Pays for, and unlocks the Void Storage.]=],
+	-- ["UnlockVoidStorage"] = [=[Pays for and activates the Void Storage.]=],
+	["UnlockVoidStorage"] = [=[Purchases the Void Storage.]=],
 
-	["UseAction"] = [=[This instructs the interface to use the action associated with the specified ID, optionally on the player (regardless of target).]=],
+	-- ["UseAction"] = [=[This instructs the interface to use the action associated with the specified ID, optionally on the player (regardless of target).]=],
 	["UseAction"] = [=[Perform the action in the specified action slot.]=],
 
-	["UseContainerItem"] = [=[Performs a "right click" action on, or targeted use of, on an item in bags.]=],
-	["UseContainerItem"] = [=[Use an item from a container. If Merchant window is open, this will sell the item.]=],
+	-- ["UseContainerItem"] = [=[Performs a "right click" action on, or targeted use of, on an item in bags.]=],
+	["UseContainerItem"] = [=[Uses an item from a container depending on the situation.]=],
 
-	["UseItemByName"] = [=[Use an item on the unit specified.]=],
-	["UseItemByName"] = [=[Uses an item, optionally on a specified target.]=],
+	-- ["UseItemByName"] = [=[Use an item on the unit specified.]=],
+	["UseItemByName"] = [=[Uses the specified item.]=],
 
 	["debugprofilestart"] = [=[Starts a timer for profiling during debugging.]=],
-	["debugprofilestart"] = [=[Starts the profiling timer.]=],
+	-- ["debugprofilestart"] = [=[Starts the profiling timer.]=],
 
-	["debugprofilestop"] = [=[Returns the time in milliseconds since the last call to debugprofilestart()]=],
-	["debugprofilestop"] = [=[Returns the amount of time since profiling was started.]=],
+	["debugprofilestop"] = [=[Returns the time in milliseconds since the last call to debugprofilestart().]=],
+	-- ["debugprofilestop"] = [=[Returns the amount of time since profiling was started.]=],
 
 	["debugstack"] = [=[Returns a string representation of the current calling stack.]=],
-	["debugstack"] = [=[Output a string representation of the current calling stack, similar to the standard Lua debug.traceback() call, which is not present in WoW.]=],
+	-- ["debugstack"] = [=[Output a string representation of the current calling stack, similar to the standard Lua debug.traceback() call, which is not present in WoW.]=],
 
-	["forceinsecure"] = [=[Taint the current execution path.]=],
+	-- ["forceinsecure"] = [=[Taint the current execution path.]=],
 	["forceinsecure"] = [=[Taints the current execution path.]=],
 
-	["hooksecurefunc"] = [=[Creates a secure 'post hook' for the named function. The hookfunc is invoked after the original function, and receives the same parameters. Return values from hookfunc are discarded. This is the only safe way to hook functions that execute protected functionality.]=],
-	["hooksecurefunc"] = [=[Creates a secure "post hook" for the specified function. Your hook will be called with the same arguments after the original call is performed.]=],
+	-- ["hooksecurefunc"] = [=[Creates a secure 'post hook' for the named function. The hookfunc is invoked after the original function, and receives the same parameters. Return values from hookfunc are discarded. This is the only safe way to hook functions that execute protected functionality.]=],
+	["hooksecurefunc"] = [=[Securely posthooks the specified function. The hook will be called with the same arguments after the original call is performed.]=],
 
-	["issecure"] = [=[Determine if the current environment is secure.]=],
-	["issecure"] = [=[Determines whether the current execution path is [[Secure Execution and Tainting|secure]].]=],
+	["issecure"] = [=[True if the current execution path is secure.]=],
+	-- ["issecure"] = [=[Determines whether the current execution path is [[Secure Execution and Tainting|secure]].]=],
 
-	["issecurevariable"] = [=[Determine if the specified variable is secure.]=],
-	["issecurevariable"] = [=[Determines whether the given globally-accessible variable is [[Secure Execution and Tainting|secure]].  A variable in this context could be any of the [[API Types#Basic_Types|basic lua types]] such as functions or userdata.]=],
+	["issecurevariable"] = [=[True if the specified variable is secure.]=],
+	-- ["issecurevariable"] = [=[Determines whether the given globally-accessible variable is [[Secure Execution and Tainting|secure]].  A variable in this context could be any of the [[API Types#Basic_Types|basic lua types]] such as functions or userdata.]=],
 
-	["securecall"] = [=[Call a function from a secure environment without risking secure status.]=],
+	-- ["securecall"] = [=[Call a function from a secure environment without risking secure status.]=],
 	["securecall"] = [=[Calls the specified function without propagating taint to the caller.]=],
 
-	["seterrorhandler"] = [=[Set the error handler to the given parameter.]=],
-	["seterrorhandler"] = [=[Sets the function to be called when WoW encounters an error.]=],
+	["seterrorhandler"] = [=[Sets the error handler to the given function.]=],
+	-- ["seterrorhandler"] = [=[Sets the function to be called when WoW encounters an error.]=],
 }
 
 return t
