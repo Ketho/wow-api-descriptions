@@ -2315,299 +2315,302 @@ local t = {
 	["PetStopAttack"] = [=[Stops the pet from attacking.]=],
 
 	-- ["PickupAction"] = [=[Drags an action out of the specified quickbar slot and holds it on the cursor.]=],
-	["PickupAction"] = [=[Pick up an action onto the cursor.]=],
+	["PickupAction"] = [=[Places an action onto the cursor.]=],
 
 	-- ["PickupCompanion"] = [=[Picks up the indexed companion onto the mouse cursor.]=],
 	-- ["PickupCompanion"] = [=[Places a companion onto the mouse cursor.]=],
-	["PickupCompanion"] = [=[Picks up a mount onto the cursor.]=],
+	["PickupCompanion"] = [=[Places a mount onto the cursor.]=],
 
 	-- ["PickupInventoryItem"] = [=["Picks up" an item from the player's worn inventory. This appears to be a kind of catch-all "pick up/activate" function.]=],
 	["PickupInventoryItem"] = [=[Picks up / interacts with an equipment slot.]=],
 
-	["PickupMacro"] = [=[Places the specified macro onto the cursor.]=],
-	["PickupMacro"] = [=[Pick up a macro from the macro frame and place it on the cursor]=],
+	-- ["PickupMacro"] = [=[Pick up a macro from the macro frame and place it on the cursor]=],
+	["PickupMacro"] = [=[Places a macro onto the cursor.]=],
 
-	["PickupMerchantItem"] = [=[Places the item onto the cursor. If the cursor already has an item, the item in the cursor will be sold.]=],
-	["PickupMerchantItem"] = [=[Places the specified merchant item on the cursor.]=],
+	-- ["PickupMerchantItem"] = [=[Places the specified merchant item on the cursor.]=],
+	["PickupMerchantItem"] = [=[Places a merchant item onto the cursor. If the cursor already has an item, it will be sold.]=],
 
-	["PickupPetAction"] = [=[Drags an action from the specified pet action bar slot into the cursor.]=],
-	["PickupPetAction"] = [=[Pick up a pet action for drag-and-drop.]=],
+	-- ["PickupPetAction"] = [=[Drags an action from the specified pet action bar slot into the cursor.]=],
+	-- ["PickupPetAction"] = [=[Pick up a pet action for drag-and-drop.]=],
+	["PickupPetAction"] = [=[Places a pet action onto the cursor.]=],
 
-	["PickupPlayerMoney"] = [=[Picks up an amount of money from the player.]=],
-	["PickupPlayerMoney"] = [=[Picks up an amount of money from the player's bags, placing it on the cursor.]=],
+	-- ["PickupPlayerMoney"] = [=[Picks up an amount of money from the player's bags, placing it on the cursor.]=],
+	["PickupPlayerMoney"] = [=[Picks up an amount of money from the player onto the cursor.]=],
 
-	["PickupSpell"] = [=[Places the specified spell onto the cursor.]=],
-	["PickupSpell"] = [=[Puts the specified spell onto the mouse cursor.]=],
+	-- ["PickupSpell"] = [=[Places the specified spell onto the cursor.]=],
+	["PickupSpell"] = [=[Places a spell onto the cursor.]=],
 
-	["PickupTradeMoney"] = [=[Picks up an amount of money from the player's trade offer.]=],
-	["PickupTradeMoney"] = [=[Picks up an amount of money from the player's trading offer, placing it on the cursor.]=],
+	-- ["PickupTradeMoney"] = [=[Picks up an amount of money from the player's trading offer, placing it on the cursor.]=],
+	["PickupTradeMoney"] = [=[Places an amount of money from the player's trade offer onto the cursor.]=],
 
-	["PlaceAction"] = [=[Drops an action from the cursor into the specified quickbar slot.]=],
-	["PlaceAction"] = [=[Place the drag-and-drop item as an action.]=],
+	-- ["PlaceAction"] = [=[Drops an action from the cursor into the specified quickbar slot.]=],
+	-- ["PlaceAction"] = [=[Place the drag-and-drop item as an action.]=],
+	["PlaceAction"] = [=[Places an action onto into the specified action slot.]=],
 
+	-- ["PlaySound"] = [=[Play one of a set of built-in sounds.  Other players will not hear the sound.]=],
 	["PlaySound"] = [=[Plays the specified sound by SoundKitID.]=],
-	["PlaySound"] = [=[Play one of a set of built-in sounds.  Other players will not hear the sound.]=],
 
-	["PlaySoundFile"] = [=[Plays the specified sound by [[FileDataID]] or by addon file path.]=],
-	["PlaySoundFile"] = [=[Plays the specified audio file once.]=],
+	-- ["PlaySoundFile"] = [=[Plays the specified audio file once.]=],
+	["PlaySoundFile"] = [=[Plays the specified sound by [[FileDataID]] or addon file path.]=],
 
-	["PromoteToLeader"] = [=[Promote a unit to party leader.]=],
-	["PromoteToLeader"] = [=[Promotes a unit to party leader.]=],
+	-- ["PromoteToLeader"] = [=[Promote a unit to party leader.]=],
+	["PromoteToLeader"] = [=[Promotes a unit to group leader.]=],
 
-	["PutItemInBackpack"] = [=[Attempts to place item in backpack (bag slot 0).]=],
-	["PutItemInBackpack"] = [=[Places the item currently on the cursor into the player's backpack otherwise it has no effect. If there is already a partial stack of the item in the backpack, it will attempt to stack them together.]=],
+	-- ["PutItemInBackpack"] = [=[Attempts to place item in backpack (bag slot 0).]=],
+	["PutItemInBackpack"] = [=[Places the item on the cursor into the player's backpack.]=],
 
-	["PutItemInBag"] = [=[Attempts to place item in a specific bag.]=],
-	["PutItemInBag"] = [=[Puts the item on the cursor into the specified bag slot on the main bar, if it's a bag. Otherwise, attempts to place the item inside the bag in that slot. Note that to place an item in the backpack, you must use [[API_PutItemInBackpack|PutItemInBackpack]].]=],
+	-- ["PutItemInBag"] = [=[Attempts to place item in a specific bag.]=],
+	-- ["PutItemInBag"] = [=[Puts the item on the cursor into the specified bag slot on the main bar, if it's a bag. Otherwise, attempts to place the item inside the bag in that slot. Note that to place an item in the backpack, you must use [[API_PutItemInBackpack|PutItemInBackpack]].]=],
+	["PutItemInBag"] = [=[Places the item on the cursor into the specified bag slot.]=],
 
-	["QuestChooseRewardError"] = [=[Throws an error when the quest choose reward method doesn't work.]=],
-	["QuestChooseRewardError"] = [=[Throws an error when the choose reward method doesn't work.]=],
+	-- ["QuestChooseRewardError"] = [=[Throws an error when the quest choose reward method doesn't work.]=],
+	["QuestChooseRewardError"] = [=[Throws an error when the quest reward method doesn't work.]=],
 
-	["QuestIsDaily"] = [=[Returns whether the offered quest is a daily quest.]=],
-	["QuestIsDaily"] = [=[Returns whether the currently offered quest is a daily quest.]=],
+	-- ["QuestIsDaily"] = [=[Returns whether the offered quest is a daily quest.]=],
+	["QuestIsDaily"] = [=[True if the offered quest is a daily quest.]=],
 
-	["QuestIsWeekly"] = [=[Returns whether the offered quest is a weekly quest.]=],
-	["QuestIsWeekly"] = [=[Returns whether the currently offered quest is a weekly quest.]=],
+	-- ["QuestIsWeekly"] = [=[Returns whether the offered quest is a weekly quest.]=],
+	["QuestIsWeekly"] = [=[True if the offered quest is a weekly quest.]=],
 
-	["QuestLogPushQuest"] = [=[Initiates the sharing of the currently viewed quest in the quest log.]=],
-	["QuestLogPushQuest"] = [=[Initiates the sharing of the currently viewed quest in the quest log with other players.]=],
+	-- ["QuestLogPushQuest"] = [=[Initiates the sharing of the currently viewed quest in the quest log.]=],
+	["QuestLogPushQuest"] = [=[Shares the current quest in the quest log with other players.]=],
 
-	["RandomRoll"] = [=[Does a random roll between the two values.]=],
-	["RandomRoll"] = [=[Performs a random roll between two numbers.]=],
+	-- ["RandomRoll"] = [=[Does a random roll between the two values.]=],
+	["RandomRoll"] = [=[Performs a random roll between two values.]=],
 
-	["RejectProposal"] = [=[Rejects an LFG group invite and exits the queue.]=],
-	["RejectProposal"] = [=[Rejects an Dungeon Finder group invitation and leaves the queue.]=],
+	-- ["RejectProposal"] = [=[Rejects an LFG group invite and exits the queue.]=],
+	["RejectProposal"] = [=[Declines a LFG invite and leaves the queue.]=],
 
-	["RemoveChatWindowChannel"] = [=[Make a chat channel invisible (hidden) in a specific ChatFrame.]=],
-	["RemoveChatWindowChannel"] = [=[Blocks further messages from a specified chat channel from appearing in a specific chat frame.]=],
+	-- ["RemoveChatWindowChannel"] = [=[Make a chat channel invisible (hidden) in a specific ChatFrame.]=],
+	["RemoveChatWindowChannel"] = [=[Removes the specified chat channel from a chat window.]=],
 
-	["RemoveChatWindowMessages"] = [=[Remove a set of chat messages from this window.]=],
-	["RemoveChatWindowMessages"] = [=[Stops the specified chat window from displaying a specified type of messages.]=],
+	-- ["RemoveChatWindowMessages"] = [=[Stops the specified chat window from displaying a specified type of messages.]=],
+	["RemoveChatWindowMessages"] = [=[Removes the specified chat message type from a chat window.]=],
 
-	["RemoveItemFromArtifact"] = [=[Remove a keystone from the [[API SetSelectedArtifact|selected]] artifact.]=],
-	["RemoveItemFromArtifact"] = [=[Remove a [[Keystone]] from the selected artifact.]=],
+	-- ["RemoveItemFromArtifact"] = [=[Remove a keystone from the [[API SetSelectedArtifact|selected]] artifact.]=],
+	["RemoveItemFromArtifact"] = [=[Removes a [[Keystone]] from the selected artifact.]=],
 
-	["RemoveTrackedAchievement"] = [=[Stops an achievement from being tracked.]=],
-	["RemoveTrackedAchievement"] = [=[Un-marks an achievement for tracking in the WatchFrame.]=],
+	-- ["RemoveTrackedAchievement"] = [=[Stops an achievement from being tracked.]=],
+	["RemoveTrackedAchievement"] = [=[Untracks an achievement from the WatchFrame.]=],
 
 	["RenamePetition"] = [=[Renames the current petition.]=],
-	["RenamePetition"] = [=[Renames the group being created by the current petition.]=],
+	-- ["RenamePetition"] = [=[Renames the group being created by the current petition.]=],
 
-	["ReplaceEnchant"] = [=[Confirm the replacement of an enchantment.]=],
+	-- ["ReplaceEnchant"] = [=[Confirm the replacement of an enchantment.]=],
 	["ReplaceEnchant"] = [=[Confirms the "Replace Enchant" dialog.]=],
 
-	["ReplaceTradeEnchant"] = [=[Confirm the replacement of an enchantment via trade.]=],
+	-- ["ReplaceTradeEnchant"] = [=[Confirm the replacement of an enchantment via trade.]=],
 	["ReplaceTradeEnchant"] = [=[Confirms that an enchant applied to the trade frame should replace an existing enchant.]=],
 
-	["RepopMe"] = [=[The "Release Spirit" button. Sends you to the graveyard when dead.]=],
+	-- ["RepopMe"] = [=[The "Release Spirit" button. Sends you to the graveyard when dead.]=],
 	["RepopMe"] = [=[Releases your ghost to the graveyard when dead.]=],
 
-	["RequestBattlefieldScoreData"] = [=[Request new data for GetBattlefieldScore().]=],
+	-- ["RequestBattlefieldScoreData"] = [=[Request new data for GetBattlefieldScore().]=],
 	["RequestBattlefieldScoreData"] = [=[Requests the latest battlefield score data from the server.]=],
 
-	["RequestBattlegroundInstanceInfo"] = [=[Requests data about the available instances of a battleground.]=],
-	["RequestBattlegroundInstanceInfo"] = [=[Requests info for the available instances of a particular battleground.]=],
+	["RequestBattlegroundInstanceInfo"] = [=[Requests the available instances of a battleground.]=],
+	-- ["RequestBattlegroundInstanceInfo"] = [=[Requests info for the available instances of a particular battleground.]=],
 
-	["RequestRaidInfo"] = [=[Returns info for which instances you are saved to.]=],
-	["RequestRaidInfo"] = [=[Sends a request to the server to send back info for the instance.]=],
+	["RequestRaidInfo"] = [=[Requests which instances the player is saved to.]=],
+	-- ["RequestRaidInfo"] = [=[Sends a request to the server to send back info for the instance.]=],
 
-	["RequestTimePlayed"] = [=[Request a summary of time played from the server.]=],
-	["RequestTimePlayed"] = [=[Send a request to the server to get an update of the time played.]=],
+	["RequestTimePlayed"] = [=[Requests a summary of time played.]=],
+	-- ["RequestTimePlayed"] = [=[Send a request to the server to get an update of the time played.]=],
 
-	["ResetInstances"] = [=[Reset instances.]=],
-	["ResetInstances"] = [=[Resets all instances the currently playing character is associated with.]=],
+	-- ["ResetInstances"] = [=[Reset instances.]=],
+	["ResetInstances"] = [=[Resets all instances for the character.]=],
 
-	["RestartGx"] = [=[Restarts the graphical engine. Needed for things such as resolution changes to take effect.]=],
-	["RestartGx"] = [=[Requests the graphics engine to restart.]=],
+	["RestartGx"] = [=[Restarts the graphics engine.]=],
+	-- ["RestartGx"] = [=[Requests the graphics engine to restart.]=],
 
-	["RetrieveCorpse"] = [=[Resurrects when near corpse. e.g., The "Accept" button one sees after running back to your body.]=],
+	-- ["RetrieveCorpse"] = [=[Resurrects when near corpse. e.g., The "Accept" button one sees after running back to your body.]=],
 	["RetrieveCorpse"] = [=[Resurrects when the player is standing near its corpse.]=],
 
-	["RollOnLoot"] = [=[Roll or pass on a loot event started by the game engine.]=],
-	["RollOnLoot"] = [=[Roll on the Loot roll identified by rollID; rollType is <code>nil</code> when passing, otherwise it uses <code>1</code> to roll on loot.]=],
+	["RollOnLoot"] = [=[Rolls or passes on loot.]=],
+	-- ["RollOnLoot"] = [=[Roll on the Loot roll identified by rollID; rollType is <code>nil</code> when passing, otherwise it uses <code>1</code> to roll on loot.]=],
 
-	["RunBinding"] = [=[Executes the key binding named "command".]=],
-	["RunBinding"] = [=[Executes a key binding as if a key was pressed.]=],
+	-- ["RunBinding"] = [=[Executes the key binding named "command".]=],
+	["RunBinding"] = [=[Executes a key binding.]=],
 
-	["RunMacro"] = [=[Runs a macro.]=],
-	["RunMacro"] = [=[Execute a macro from the macro frame.]=],
+	-- ["RunMacro"] = [=[Runs a macro.]=],
+	["RunMacro"] = [=[Executes a macro.]=],
 
-	["RunMacroText"] = [=[Interpret the given string as a macro and run it.]=],
-	["RunMacroText"] = [=[Execute a string as if it was a macro.]=],
+	-- ["RunMacroText"] = [=[Interpret the given string as a macro and run it.]=],
+	["RunMacroText"] = [=[Executes a string as if it was a macro.]=],
 
-	["RunScript"] = [=[Execute "script" as a block of Lua code.]=],
-	["RunScript"] = [=[Execute a string as LUA code.]=],
+	-- ["RunScript"] = [=[Execute "script" as a block of Lua code.]=],
+	["RunScript"] = [=[Executes a string of Lua code.]=],
 
-	["SaveBindings"] = [=[Saves account or character specific key bindings from memory to disk.]=],
-	["SaveBindings"] = [=[Writes the current in-memory key bindings to disk.]=],
+	["SaveBindings"] = [=[Saves account or character specific key bindings.]=],
+	-- ["SaveBindings"] = [=[Writes the current in-memory key bindings to disk.]=],
 
-	["SaveView"] = [=[Replaces the specified (1-5) predefined camera positions with the current camera position.]=],
-	["SaveView"] = [=[Saves a camera angle for later retrieval with [[API SetView|SetView]]. The last position loaded is stored in the [[CVar cameraView]].]=],
+	-- ["SaveView"] = [=[Replaces the specified (1-5) predefined camera positions with the current camera position.]=],
+	["SaveView"] = [=[Saves a camera angle. The last position loaded is stored in the [[CVar cameraView]].]=],
 
 	["Screenshot"] = [=[Takes a screenshot.]=],
-	["Screenshot"] = [=[This function will take a screenshot.]=],
+	-- ["Screenshot"] = [=[This function will take a screenshot.]=],
 
-	["SecureCmdOptionParse"] = [=[Used for evaluating conditionals in macros, returning the appropriate choice.]=],
-	["SecureCmdOptionParse"] = [=[Evaluates macro options in the string and returns the appropriate sub-string or nil]=],
+	["SecureCmdOptionParse"] = [=[Evaluates macro conditionals without the need of a macro.]=],
+	-- ["SecureCmdOptionParse"] = [=[Evaluates macro options in the string and returns the appropriate sub-string or nil]=],
 
-	["SendMail"] = [=[If the mailbox is open, this sends mail.]=],
-	["SendMail"] = [=[Sends in-game mail, if your mailbox is open.]=],
+	-- ["SendMail"] = [=[If the mailbox is open, this sends mail.]=],
+	["SendMail"] = [=[Sends in-game mail.]=],
 
-	["SendSystemMessage"] = [=[Fires a CHAT_MSG_SYSTEM event for yourself.]=],
-	["SendSystemMessage"] = [=[Prints a yellow system message to the chat window.]=],
+	-- ["SendSystemMessage"] = [=[Fires a CHAT_MSG_SYSTEM event for yourself.]=],
+	["SendSystemMessage"] = [=[Prints a yellow CHAT_MSG_SYSTEM message.]=],
 
-	["SetAchievementComparisonUnit"] = [=[Set the unit to be compared to.]=],
+	-- ["SetAchievementComparisonUnit"] = [=[Set the unit to be compared to.]=],
 	["SetAchievementComparisonUnit"] = [=[Sets the unit to be compared to.]=],
 
-	["SetActionBarToggles"] = [=[Set show toggle for each action bar.]=],
-	["SetActionBarToggles"] = [=[Set the desired state of the extra action bars.]=],
+	-- ["SetActionBarToggles"] = [=[Set show toggle for each action bar.]=],
+	["SetActionBarToggles"] = [=[Sets the visible state for each action bar.]=],
 
-	["SetAutoDeclineGuildInvites"] = [=[Blocks guild invites automatically.]=],
-	["SetAutoDeclineGuildInvites"] = [=[Sets whether guild invitations should be automatically declined.]=],
+	-- ["SetAutoDeclineGuildInvites"] = [=[Blocks guild invites automatically.]=],
+	["SetAutoDeclineGuildInvites"] = [=[Sets whether guild invites should be automatically declined.]=],
 
-	["SetBattlefieldScoreFaction"] = [=[Set the faction to show on the battlefield scoreboard.]=],
-	["SetBattlefieldScoreFaction"] = [=[Set the faction to show on the battlefield scoreboard]=],
+	-- ["SetBattlefieldScoreFaction"] = [=[Set the faction to show on the battlefield scoreboard.]=],
+	["SetBattlefieldScoreFaction"] = [=[Sets the faction to show on the battlefield scoreboard]=],
 
-	["SetBinding"] = [=[Sets or unsets key bindings. (Can not be used in combat.)]=],
-	["SetBinding"] = [=[Alters the action performed by a binding.]=],
+	["SetBinding"] = [=[Sets a key binding to an action.)]=],
+	-- ["SetBinding"] = [=[Alters the action performed by a binding.]=],
 
-	["SetBindingClick"] = [=[Set a key binding directly to a Button object. The click sends a mouse down when the key is pressed, and a mouse up when it is released.]=],
-	["SetBindingClick"] = [=[Sets a binding to click the specified button widget.]=],
+	-- ["SetBindingClick"] = [=[Set a key binding directly to a Button object. The click sends a mouse down when the key is pressed, and a mouse up when it is released.]=],
+	["SetBindingClick"] = [=[Sets a binding to click the specified Button widget.]=],
 
-	["SetBindingSpell"] = [=[Set a key binding directly to a spell, uses the same spell name syntax as /cast.]=],
+	-- ["SetBindingSpell"] = [=[Set a key binding directly to a spell, uses the same spell name syntax as /cast.]=],
 	["SetBindingSpell"] = [=[Sets a binding to cast the specified spell.]=],
 
 	["SetChannelOwner"] = [=[Sets the channel owner.]=],
 
-	["SetConsoleKey"] = [=[Sets the console key (normally ~ ).]=],
-	["SetConsoleKey"] = [=[Sets the key used to open the console overlay for the current session.]=],
+	["SetConsoleKey"] = [=[Sets the console key (normally ~).]=],
+	-- ["SetConsoleKey"] = [=[Sets the key used to open the console overlay for the current session.]=],
 
-	["SetCurrentTitle"] = [=[Sets the player's current title by id.]=],
-	["SetCurrentTitle"] = [=[Changes your character's displayed title.]=],
+	["SetCurrentTitle"] = [=[Sets the player's displayed title.]=],
+	-- ["SetCurrentTitle"] = [=[Changes your character's displayed title.]=],
 
-	["SetCursor"] = [=[Path to a texture to use as the cursor image (must be 32x32 pixels) or one of the built-in cursor tokens or nil.]=],
-	["SetCursor"] = [=[Changes the current cursor graphic.]=],
+	-- ["SetCursor"] = [=[Path to a texture to use as the cursor image (must be 32x32 pixels) or one of the built-in cursor tokens or nil.]=],
+	["SetCursor"] = [=[Sets the current cursor texture.]=],
 
-	["SetDungeonDifficultyID"] = [=[Sets the player's Dungeon Difficulty setting (for the 5-man instances). See [[difficultyID]].]=],
-	["SetDungeonDifficultyID"] = [=[Changes the player's current dungeon difficulty.]=],
+	["SetDungeonDifficultyID"] = [=[Sets the player's dungeon difficulty.]=],
+	-- ["SetDungeonDifficultyID"] = [=[Changes the player's current dungeon difficulty.]=],
 
-	["SetFactionActive"] = [=[Remove a faction from inactive group.]=],
-	["SetFactionActive"] = [=[Clears the inactive flag on the specified faction.]=],
+	-- ["SetFactionActive"] = [=[Remove a faction from inactive group.]=],
+	["SetFactionActive"] = [=[Flags the specified faction as active in the reputation window.]=],
 
-	["SetFactionInactive"] = [=[Move a faction to inactive group.]=],
-	["SetFactionInactive"] = [=[Flags the specified faction as inactive.]=],
+	-- ["SetFactionInactive"] = [=[Move a faction to inactive group.]=],
+	["SetFactionInactive"] = [=[Flags the specified faction as inactive in the reputation window.]=],
 
-	["SetGuildBankTabInfo"] = [=[Modifies name and icon for tab.]=],
-	["SetGuildBankTabInfo"] = [=[Sets a guild bank tab's name and icon.]=],
+	-- ["SetGuildBankTabInfo"] = [=[Modifies name and icon for tab.]=],
+	["SetGuildBankTabInfo"] = [=[Sets the name and icon of a guild bank tab.]=],
 
-	["SetGuildBankTabPermissions"] = [=[Modifies the permissions for the GuildBankTab. Guild Leader Only.]=],
-	["SetGuildBankTabPermissions"] = [=[Edits permissions for a bank tab.]=],
+	["SetGuildBankTabPermissions"] = [=[Modifies the permissions for a guild bank tab.]=],
+	-- ["SetGuildBankTabPermissions"] = [=[Edits permissions for a bank tab.]=],
 
-	["SetGuildBankWithdrawGoldLimit"] = [=[Sets the gold withdraw limit from the guild bank. Guild Leader Only.]=],
-	["SetGuildBankWithdrawGoldLimit"] = [=[ SetGuildBankWithdrawGoldLimit(amount)]=],
+	["SetGuildBankWithdrawGoldLimit"] = [=[Sets the gold withdraw limit for the guild bank.]=],
+	-- ["SetGuildBankWithdrawGoldLimit"] = [=[ SetGuildBankWithdrawGoldLimit(amount)]=],
 
-	["SetGuildInfoText"] = [=[Sets the persistant Guild Information data. Limit is 500 letters (GuildInfoEditBox is limited to this number). Longer texts are possible, but will be reseted during the day.]=],
-	["SetGuildInfoText"] = [=[Changes the Guild Info to selected text.]=],
+	-- ["SetGuildInfoText"] = [=[Sets the persistant Guild Information data. Limit is 500 letters (GuildInfoEditBox is limited to this number). Longer texts are possible, but will be reseted during the day.]=],
+	["SetGuildInfoText"] = [=[Sets the guild info text.]=],
 
 	-- ["SetGuildRosterSelection"] = [=[Selects/deselects a guild member according current sorting order.]=],
 	-- ["SetGuildRosterSelection"] = [=[<p>Sets the the current selected guild member in the guild roster according the active sorting.</p>]=],
 	["SetGuildRosterSelection"] = [=[Selects a guild member in the roster.]=],
 
-	["SetGuildRosterShowOffline"] = [=[Sets/Resets the show offline members flag.]=],
-	["SetGuildRosterShowOffline"] = [=[Shows offline guild members in subsequent calls to the guild roster API.]=],
+	["SetGuildRosterShowOffline"] = [=[Sets the show offline guild members flag.]=],
+	-- ["SetGuildRosterShowOffline"] = [=[Shows offline guild members in subsequent calls to the guild roster API.]=],
 
-	["SetLFGComment"] = [=[Sets the comment in the raid browser.]=],
-	["SetLFGComment"] = [=[Sets your comment in the LFG interface.<br>]=],
+	["SetLFGComment"] = [=[Sets the comment in the LFG browser.]=],
+	-- ["SetLFGComment"] = [=[Sets your comment in the LFG interface.<br>]=],
 
 	["SetLootMethod"] = [=[Set the current loot method.]=],
-	["SetLootMethod"] = [=[ SetLootMethod(method [,masterPlayer or threshold]) ]=],
+	-- ["SetLootMethod"] = [=[ SetLootMethod(method [,masterPlayer or threshold]) ]=],
 
-	["SetLootThreshold"] = [=[Set the threshold for group/master loot.]=],
-	["SetLootThreshold"] = [=[Sets the loot quality threshold as a number for the party or raid.]=],
+	-- ["SetLootThreshold"] = [=[Set the threshold for group/master loot.]=],
+	["SetLootThreshold"] = [=[Sets the loot quality threshold for group/master loot.]=],
 
-	["SetMultiCastSpell"] = [=[Assigns a spellID to a multicast (totem bar) actionID.]=],
+	-- ["SetMultiCastSpell"] = [=[Assigns a spellID to a multicast (totem bar) actionID.]=],
 	["SetMultiCastSpell"] = [=[Sets the totem spell for a specific totem bar slot.]=],
 
-	["SetOptOutOfLoot"] = [=[Enables or disables automatic passing on all loot.]=],
-	["SetOptOutOfLoot"] = [=[Controls whether the player is automatically passing on all loot.]=],
+	["SetOptOutOfLoot"] = [=[Sets whether to automatically pass on all loot.]=],
+	-- ["SetOptOutOfLoot"] = [=[Controls whether the player is automatically passing on all loot.]=],
 
-	["SetOverrideBinding"] = [=[Set (or clear) an override key binding.]=],
-	["SetOverrideBinding"] = [=[Alters an override binding.]=],
+	["SetOverrideBinding"] = [=[Sets an override key binding.]=],
+	-- ["SetOverrideBinding"] = [=[Alters an override binding.]=],
 
-	["SetOverrideBindingClick"] = [=[Sets an override binding that acts like a mouse click on a button.]=],
-	["SetOverrideBindingClick"] = [=[Creates an override binding that performs a button click.]=],
+	["SetOverrideBindingClick"] = [=[Sets an override binding that performs a button click.]=],
+	-- ["SetOverrideBindingClick"] = [=[Creates an override binding that performs a button click.]=],
 
-	["SetPVP"] = [=[Sets the players PVP mode (1 to enable, nil to toggle off eventually).]=],
-	["SetPVP"] = [=[Permaflags the player for PvP combat.]=],
+	-- ["SetPVP"] = [=[Sets the players PVP mode (1 to enable, nil to toggle off eventually).]=],
+	["SetPVP"] = [=[Flags the player for PvP combat.]=],
 
-	["SetRaidDifficultyID"] = [=[Sets the players Raid Difficulty settings (for 10-man, 25-man instances). See [[difficultyID]].]=],
-	["SetRaidDifficultyID"] = [=[Changes the player's preferred raid difficulty.]=],
+	-- ["SetRaidDifficultyID"] = [=[Sets the players Raid Difficulty settings (for 10-man, 25-man instances). See [[difficultyID]].]=],
+	["SetRaidDifficultyID"] = [=[Sets the raid difficulty.]=],
 
-	["SetRaidTarget"] = [=[Sets a raid icon on a unit.]=],
-	["SetRaidTarget"] = [=[Set which [[Target marker|raid target]] will be shown over a mob or raid member.]=],
+	["SetRaidTarget"] = [=[Assigns a [[Target marker|raid target]] icon to a unit.]=],
+	-- ["SetRaidTarget"] = [=[Set which [[Target marker|raid target]] will be shown over a mob or raid member.]=],
 
-	["SetSelectedArtifact"] = [=[Sets the selected artifact to raceIndex.]=],
-	["SetSelectedArtifact"] = [=[Set the artifact-pointer to raceIndex.]=],
+	["SetSelectedArtifact"] = [=[Sets the selected artifact to an archaeology race.]=],
+	-- ["SetSelectedArtifact"] = [=[Set the artifact-pointer to raceIndex.]=],
 
-	["SetTracking"] = [=[Enables or disables a tracking method.]=],
-	["SetTracking"] = [=[Enables or disables a tracking method with a specified id.]=],
+	["SetTracking"] = [=[Sets a minimap tracking method.]=],
+	-- ["SetTracking"] = [=[Enables or disables a tracking method with a specified id.]=],
 
 	["SetTrainerServiceTypeFilter"] = [=[Sets the status of a skill filter in the trainer window.]=],
 
-	["SetView"] = [=[Sets camera position to a specified (1-5) predefined camera position.]=],
-	["SetView"] = [=[Sets a camera perspective from one previously saved with [[API SaveView|SaveView]]. The last position loaded is stored in the [[CVar cameraView]].]=],
+	["SetView"] = [=[Sets the camera to a predefined camera position (1-5).]=],
+	-- ["SetView"] = [=[Sets a camera perspective from one previously saved with [[API SaveView|SaveView]]. The last position loaded is stored in the [[CVar cameraView]].]=],
 
-	["SetWatchedFactionIndex"] = [=[Sets which faction should be watched in Blizzard reputation bar.]=],
-	["SetWatchedFactionIndex"] = [=[Sets the faction to be watched.]=],
+	["SetWatchedFactionIndex"] = [=[Watches a faction in the reputation window.]=],
+	-- ["SetWatchedFactionIndex"] = [=[Sets the faction to be watched.]=],
 
-	["SetupFullscreenScale"] = [=[Configures scale of full-screen views, such as the world map, to best fill screen.]=],
-	["SetupFullscreenScale"] = [=[The purpose of this function isn't exactly clear, but from the way it's used it would appear to be a function that appropriately scales a frame for full-screen views, such as the world map frame, to fit on the screen maximally depending on the aspect ratio. Why this wasn't implemented in lua isn't entirely clear, though it may require info for the screen geometry which isn't exposed through the standard UI.]=],
+	["SetupFullscreenScale"] = [=[Sizes a frame to take up the entire screen regardless of screen resolution.]=],
+	-- ["SetupFullscreenScale"] = [=[The purpose of this function isn't exactly clear, but from the way it's used it would appear to be a function that appropriately scales a frame for full-screen views, such as the world map frame, to fit on the screen maximally depending on the aspect ratio. Why this wasn't implemented in lua isn't entirely clear, though it may require info for the screen geometry which isn't exposed through the standard UI.]=],
 
-	["SignPetition"] = [=[Signs the current petition.]=],
-	["SignPetition"] = [=[Adds the player's signature to the currently viewed petition.]=],
+	["SignPetition"] = [=[Signs the currently viewed petition.]=],
+	-- ["SignPetition"] = [=[Adds the player's signature to the currently viewed petition.]=],
 
-	["SitStandOrDescendStart"] = [=[The player sits, stands, or descends.]=],
-	["SitStandOrDescendStart"] = [=[The player sits, stands, or begins to descend (while swimming or flying)]=],
+	["SitStandOrDescendStart"] = [=[Makes the player sit, stand, or descend (while swimming or flying).]=],
+	-- ["SitStandOrDescendStart"] = [=[The player sits, stands, or begins to descend (while swimming or flying)]=],
 
-	["SocketItemToArtifact"] = [=[Add a keystone to the [[API SetSelectedArtifact|selected]] artifact.]=],
-	["SocketItemToArtifact"] = [=[Socked a [[Keystone]] to the selected artifact.]=],
+	["SocketItemToArtifact"] = [=[Adds a [[keystone]] to the selected archaeology artifact.]=],
+	-- ["SocketItemToArtifact"] = [=[Socked a [[Keystone]] to the selected artifact.]=],
 
-	["SortGuildRoster"] = [=[Sorts guildroster according "sort". Any unknown values sort on "name".]=],
-	["SortGuildRoster"] = [=[<p>Sorts the guild roster on a certain column. Sorts by name by default. Repeating the same sort will revert sorting.</p>]=],
+	["SortGuildRoster"] = [=[Sorts the guild roster on a certain column.]=],
+	-- ["SortGuildRoster"] = [=[<p>Sorts the guild roster on a certain column. Sorts by name by default. Repeating the same sort will revert sorting.</p>]=],
 
-	["SpellCanTargetUnit"] = [=[Returns true if the spell awaiting target selection can be cast on the specified unit.]=],
-	["SpellCanTargetUnit"] = [=[Checks if the spell awaiting target selection can be cast on a specified unit.]=],
+	["SpellCanTargetUnit"] = [=[True if the spell awaiting target selection can be cast on the specified unit.]=],
+	-- ["SpellCanTargetUnit"] = [=[Checks if the spell awaiting target selection can be cast on a specified unit.]=],
 
-	["SpellIsTargeting"] = [=[Returns true if a spell has been cast and is awaiting target selection.]=],
-	["SpellIsTargeting"] = [=[Returns whether a spell is about to be cast, waiting for the player to select a target.]=],
+	["SpellIsTargeting"] = [=[True if a spell is about to be cast and is waiting for the player to select a target.]=],
+	-- ["SpellIsTargeting"] = [=[Returns whether a spell is about to be cast, waiting for the player to select a target.]=],
 
 	["SpellStopCasting"] = [=[Stops the current spellcast.]=],
-	["SpellStopCasting"] = [=[Stops the current spellcasting.]=],
+	-- ["SpellStopCasting"] = [=[Stops the current spellcasting.]=],
 
 	["SpellStopTargeting"] = [=[Cancels the spell awaiting target selection.]=],
-	["SpellStopTargeting"] = [=[Cancels the spell awaiting target selection.  ]=],
+	-- ["SpellStopTargeting"] = [=[Cancels the spell awaiting target selection.  ]=],
 
 	["SpellTargetUnit"] = [=[Casts the spell awaiting target selection on the specified unit.]=],
-	["SpellTargetUnit"] = [=[This specifies the target that the spell should use without needing you to click the target or make it your main target.]=],
+	-- ["SpellTargetUnit"] = [=[This specifies the target that the spell should use without needing you to click the target or make it your main target.]=],
 
-	["SplitContainerItem"] = [=[Picks up part of a stack.]=],
-	["SplitContainerItem"] = [=[Picks up part of a stack of items from a container, placing them on the cursor.]=],
+	-- ["SplitContainerItem"] = [=[Picks up part of a stack.]=],
+	["SplitContainerItem"] = [=[Places part of a stack of items from a container onto the cursor.]=],
 
-	["StartDuel"] = [=[Challenge someone to a duel (by name)]=],
-	["StartDuel"] = [=[Invites the specified player to a duel.]=],
+	["StartDuel"] = [=[Challenges the specified player to a duel.]=],
+	-- ["StartDuel"] = [=[Invites the specified player to a duel.]=],
 
 	["StopMusic"] = [=[Stops the currently playing music.]=],
-	["StopMusic"] = [=[Stops the currently played music file.]=],
+	-- ["StopMusic"] = [=[Stops the currently played music file.]=],
 
-	["Stuck"] = [=[Informs the game engine that the player is Stuck.]=],
+	-- ["Stuck"] = [=[Informs the game engine that the player is Stuck.]=],
 	["Stuck"] = [=[Notifies the game engine that the player is stuck.]=],
 
 	-- ["SummonRandomCritter"] = [=[Summons a random critter companion.]=],
 	-- ["SummonRandomCritter"] = [=[Summons a random non-combat pet companion.]=],
 	["SummonRandomCritter"] = [=[No longer does anything.]=],
 
-	["SwapRaidSubgroup"] = [=[Swaps raid members into different groups.]=],
-	["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
+	["SwapRaidSubgroup"] = [=[Swaps two raid members into different groups.]=],
+	-- ["SwapRaidSubgroup"] = [=[Swaps two players in a raid.]=],
 
 	["TakeInboxItem"] = [=[Take the attached item from the mailbox message at index.]=],
 	["TakeInboxItem"] = [=[Take all money attached in a given letter in your inbox.]=],
