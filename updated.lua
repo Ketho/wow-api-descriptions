@@ -675,7 +675,7 @@ local t = {
 	["NotifyInspect"] = [=[Requests another player's inventory and talent info before inspecting.]=],
 	["NumTaxiNodes"] = [=[Returns the number of flight paths on the taxi map.]=],
 	["OfferPetition"] = [=[Offers a petition to your target.]=],
-	["PartialPlayTime"] = [=[Trye if the account is considered "tired" for players on Chinese realms.]=],
+	["PartialPlayTime"] = [=[True if the account is considered "tired" for players on Chinese realms.]=],
 	["PetAssistMode"] = [=[Set your pet to Assist mode.]=],
 	["PetCanBeAbandoned"] = [=[True if the pet can be abandoned.]=],
 	["PetCanBeRenamed"] = [=[True if the pet can be renamed.]=],
